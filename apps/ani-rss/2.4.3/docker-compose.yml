@@ -1,6 +1,6 @@
 services:
   ani-rss:
-    image: wushuo894/ani-rss:v2.4.2
+    image: wushuo894/ani-rss:v2.4.3
     container_name: ani-rss
     restart: always
     environment:
