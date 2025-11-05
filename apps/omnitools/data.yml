@@ -1,0 +1,27 @@
+name: OmniTools
+tags:
+  - 实用工具
+  - Web 服务器
+  - 开发工具
+title: 一套功能强大的日常任务网络工具，自托管。无广告，无追踪，只需通过浏览器即可享受快速便捷的实用功能！
+description:
+  en: Self-hosted collection of powerful web-based tools for everyday tasks. No
+    ads, no tracking, just fast, accessible utilities right from your browser!
+  zh: 一套功能强大的日常任务网络工具，自托管。无广告，无追踪，只需通过浏览器即可享受快速便捷的实用功能！
+additionalProperties:
+  key: omni-tools
+  name: OmniTools
+  tags:
+    - Tool
+    - Server
+    - DevTool
+  shortDescZh: 一套功能强大的日常任务网络工具，自托管。无广告，无追踪，只需通过浏览器即可享受快速便捷的实用功能！
+  shortDescEn: Self-hosted collection of powerful web-based tools for everyday
+    tasks. No ads, no tracking, just fast, accessible utilities right from your
+    browser!
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://omnitools.app/
+  github: https://github.com/iib0011/omni-tools
+  document: https://github.com/iib0011/omni-tools

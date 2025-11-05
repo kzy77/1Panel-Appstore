@@ -1,0 +1,15 @@
+services:
+  omni-tools:
+    image: iib0011/omni-tools:0.6.0
+    container_name: omni-tools
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:80"
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
