@@ -1,6 +1,6 @@
 services:
     qwen-free-api:
-        image: vuldocker/qwen-free-api:0.0.23.1
+        image: vuldocker/qwen-free-api:0.0.23.2
         container_name: ${CONTAINER_NAME}
         ports:
             - ${PANEL_APP_PORT_HTTP}:8000
