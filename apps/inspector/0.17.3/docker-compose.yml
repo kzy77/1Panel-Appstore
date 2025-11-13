@@ -1,6 +1,6 @@
 services:
   inspector:
-    image: ghcr.io/modelcontextprotocol/inspector:0.17.2
+    image: ghcr.io/modelcontextprotocol/inspector:0.17.3
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
