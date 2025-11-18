@@ -1,6 +1,6 @@
 services:
   chatnio:
-    image: programzmh/chatnio:4.24.2
+    image: programzmh/chatnio:4.25.0
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
