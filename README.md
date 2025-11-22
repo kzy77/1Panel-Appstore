@@ -37,42 +37,44 @@
 
 支持一键部署AI免费API接口，使用方式请参考应用内**README介绍**
 
+>
+
 <table>
 <tr>
 <td width="33%" align="center">
 
-<a href="./apps/deepseek-free-api/README.md">
-<img src="./apps/deepseek-free-api/logo.png" width="60" height="60" alt="DeepSeek-Free-API">
+<!-- <a href="./apps/deepseek-free-api/README.md"> -->
+<!-- <img src="./apps/deepseek-free-api/logo.png" width="60" height="60" alt="DeepSeek-Free-API"> -->
 <br><b>DeepSeek-Free-API</b>
 </a>
 
 🚀 DeepSeek-V3 & R1大模型逆向API
 
-<kbd>latest</kbd> • [官网链接](https://github.com/LLM-Red-Team/deepseek-free-api)
+<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/deepseek-free-api)
 
 </td>
 <td width="33%" align="center">
 
-<a href="./apps/kimi-free-api/README.md">
-<img src="./apps/kimi-free-api/logo.png" width="60" height="60" alt="Kimi-Free-API">
+<!-- <a href="./apps/kimi-free-api/README.md"> -->
+<!-- <img src="./apps/kimi-free-api/logo.png" width="60" height="60" alt="Kimi-Free-API"> -->
 <br><b>Kimi-Free-API</b>
 </a>
 
 🚀 KIMI AI 长文本大模型逆向API, 支持Kimi-K2模型
 
-<kbd>latest</kbd> • [官网链接](https://github.com/LLM-Red-Team/kimi-free-api)
+<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/kimi-free-api)
 
 </td>
 <td width="33%" align="center">
 
-<a href="./apps/qwen-free-api/README.md">
-<img src="./apps/qwen-free-api/logo.png" width="60" height="60" alt="Qwen-Free-API">
+<!-- <a href="./apps/qwen-free-api/README.md"> -->
+<!-- <img src="./apps/qwen-free-api/logo.png" width="60" height="60" alt="Qwen-Free-API"> -->
 <br><b>Qwen-Free-API</b>
 </a>
 
 🚀 阿里通义千问3.0大模型逆向API,支持Qwen3-Coder模型
 
-<kbd>latest</kbd> • [官网链接](https://github.com/LLM-Red-Team/qwen-free-api)
+<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/qwen-free-api)
 
 </td>
 </tr>
@@ -82,8 +84,8 @@
 <tr>
 <td width="33%" align="center">
 
-<a href="./apps/glm-free-api/README.md">
-<img src="./apps/glm-free-api/logo.png" width="60" height="60" alt="GLM-Free-API">
+<!-- <a href="./apps/glm-free-api/README.md">
+<img src="./apps/glm-free-api/logo.png" width="60" height="60" alt="GLM-Free-API"> -->
 <br><b>GLM-Free-API</b>
 </a>
 
@@ -94,26 +96,26 @@
 </td>
 <td width="33%" align="center">
 
-<a href="./apps/jimeng-free-api/README.md">
-<img src="./apps/jimeng-free-api/logo.png" width="60" height="60" alt="Jimeng-Free-API">
+<!-- <a href="./apps/jimeng-free-api/README.md">
+<img src="./apps/jimeng-free-api/logo.png" width="60" height="60" alt="Jimeng-Free-API"> -->
 <br><b>Jimeng-Free-API</b>
 </a>
 
 🚀 即梦3.0逆向API【特长：图像生成顶流】
 
-<kbd>latest</kbd> • [官网链接](https://github.com/LLM-Red-Team/jimeng-free-api)
+<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/jimeng-free-api)
 
 </td>
 <td width="33%" align="center">
 
-<a href="./apps/spark-free-api/README.md">
-<img src="./apps/spark-free-api/logo.png" width="60" height="60" alt="Spark-Free-API">
+<!-- <a href="./apps/spark-free-api/README.md">
+<img src="./apps/spark-free-api/logo.png" width="60" height="60" alt="Spark-Free-API"> -->
 <br><b>Spark-Free-API</b>
 </a>
 
 🚀 讯飞星火大模型逆向API【特长：办公助手】
 
-<kbd>latest</kbd> • [官网链接](https://github.com/LLM-Red-Team/spark-free-api)
+<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/spark-free-api)
 
 </td>
 </tr>
@@ -123,38 +125,38 @@
 <tr>
 <td width="33%" align="center">
 
-<a href="./apps/minimax-free-api/README.md">
-<img src="./apps/minimax-free-api/logo.png" width="60" height="60" alt="Minimax-Free-API">
+<!-- <a href="./apps/minimax-free-api/README.md">
+<img src="./apps/minimax-free-api/logo.png" width="60" height="60" alt="Minimax-Free-API"> -->
 <br><b>Minimax-Free-API</b>
 </a>
 
 🚀 MiniMax大模型海螺AI逆向API【特长：超自然语音】
 
-<kbd>latest</kbd> • [官网链接](https://github.com/LLM-Red-Team/minimax-free-api)
+<kbd>已下架/kbd> • [官网链接](https://github.com/LLM-Red-Team/minimax-free-api)
 
 </td>
 <td width="33%" align="center">
 
-<a href="./apps/step-free-api/README.md">
-<img src="./apps/step-free-api/logo.png" width="60" height="60" alt="Step-Free-API">
+<!-- <a href="./apps/step-free-api/README.md">
+<img src="./apps/step-free-api/logo.png" width="60" height="60" alt="Step-Free-API"> -->
 <br><b>Step-Free-API</b>
 </a>
 
 🚀 阶跃星辰跃问Step 多模态大模型逆向API【特长：超强多模态】
 
-<kbd>latest</kbd> • [官网链接](https://github.com/LLM-Red-Team/step-free-api)
+<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/step-free-api)
 
 </td>
 <td width="33%" align="center">
 
-<a href="./apps/metaso-free-api/README.md">
-<img src="./apps/metaso-free-api/logo.png" width="60" height="60" alt="Metaso-Free-API">
+<!-- <a href="./apps/metaso-free-api/README.md">
+<img src="./apps/metaso-free-api/logo.png" width="60" height="60" alt="Metaso-Free-API"> -->
 <br><b>Metaso-Free-API</b>
 </a>
 
 🚀 秘塔AI搜索逆向API【特长：超强检索超长输出】
 
-<kbd>latest</kbd> • [官网链接](https://github.com/LLM-Red-Team/metaso-free-api)
+<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/metaso-free-api)
 
 </td>
 </tr>
