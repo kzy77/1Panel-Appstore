@@ -1,6 +1,6 @@
 services:
   one-hub:
-    image: martialbe/one-api:v0.14.25
+    image: martialbe/one-api:v0.14.26
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
