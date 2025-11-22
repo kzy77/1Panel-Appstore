@@ -10,22 +10,3 @@
 # Update
 /update
 
-# Cursor
-.cursorrules
-.cursor
-
-# CodeBuddy
-.codebuddy
-
-# Qoder
-.qoder
-
-# Free-API系列
-apps/deepseek-free-api
-apps/glm-free-api
-apps/jimen-free-api
-apps/kimi-free-api
-apps/qwen-free-api
-apps/step-free-api
-apps/meta-free-api
-apps/mini-free-api
