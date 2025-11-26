@@ -37,9 +37,12 @@
 
 - 支持一键部署AI免费API接口，使用方式请参考应用内**README介绍**
 
-- **Free-API系列应用均已下架，原项目由于供应链投毒，被植入恶意代码，请及时停止运行并删除这些服务！！！**
+- **Free-API系列应用已下架，原项目由于供应链投毒，被植入恶意代码，请及时停止运行并删除这些服务！！！**
 
->
+- 经过几天的排查和重构，已重新上架[GLM-Free-API](https://github.com/xiaoY233/GLM-Free-API)、[MiniMax-Free-API](https://github.com/xiaoY233/MiniMax-Free-API)、[Qwen-Free-API](https://github.com/xiaoY233/Qwen-Free-API)、[Kimi-Free-API](https://github.com/xiaoY233/Kimi-Free-API)，欢迎各位对源码进行审查，如果不放心，建议还是暂停使用
+
+- 其他的Free-API系列看情况再搞了，有些用不了，也不是啥太好用的模型就暂时不搞了
+
 
 <table>
 <tr>
@@ -57,26 +60,26 @@
 </td>
 <td width="33%" align="center">
 
-<!-- <a href="./apps/kimi-free-api/README.md"> -->
-<!-- <img src="./apps/kimi-free-api/logo.png" width="60" height="60" alt="Kimi-Free-API"> -->
+<a href="./apps/kimi-free-api/README.md">
+<img src="./apps/kimi-free-api/logo.png" width="60" height="60" alt="Kimi-Free-API">
 <br><b>Kimi-Free-API</b>
 </a>
 
 🚀 KIMI AI 长文本大模型逆向API, 支持Kimi-K2模型
 
-<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/kimi-free-api)
+<kbd>1.0.0</kbd> • [官网链接](https://github.com/xiaoY233/Kimi-Free-API)
 
 </td>
 <td width="33%" align="center">
 
-<!-- <a href="./apps/qwen-free-api/README.md"> -->
-<!-- <img src="./apps/qwen-free-api/logo.png" width="60" height="60" alt="Qwen-Free-API"> -->
+<a href="./apps/qwen-free-api/README.md">
+<img src="./apps/qwen-free-api/logo.png" width="60" height="60" alt="Qwen-Free-API">
 <br><b>Qwen-Free-API</b>
 </a>
 
 🚀 阿里通义千问3.0大模型逆向API,支持Qwen3-Coder模型
 
-<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/qwen-free-api)
+<kbd>1.0.0</kbd> • [官网链接](https://github.com/xiaoY233/Qwen-Free-API)
 
 </td>
 </tr>
@@ -86,14 +89,14 @@
 <tr>
 <td width="33%" align="center">
 
-<!-- <a href="./apps/glm-free-api/README.md">
-<img src="./apps/glm-free-api/logo.png" width="60" height="60" alt="GLM-Free-API"> -->
+<a href="./apps/glm-free-api/README.md">
+<img src="./apps/glm-free-api/logo.png" width="60" height="60" alt="GLM-Free-API">
 <br><b>GLM-Free-API</b>
 </a>
 
 🚀 智谱清言ChatGLM-4-Plus大模型逆向API
 
-<kbd>latest</kbd> • [官网链接](https://github.com/LLM-Red-Team/glm-free-api)
+<kbd>1.0.0</kbd> • [官网链接](https://github.com/xiaoY233/GLM-Free-API)
 
 </td>
 <td width="33%" align="center">
@@ -127,14 +130,14 @@
 <tr>
 <td width="33%" align="center">
 
-<!-- <a href="./apps/minimax-free-api/README.md">
-<img src="./apps/minimax-free-api/logo.png" width="60" height="60" alt="Minimax-Free-API"> -->
+<a href="./apps/minimax-free-api/README.md">
+<img src="./apps/minimax-free-api/logo.png" width="60" height="60" alt="Minimax-Free-API">
 <br><b>Minimax-Free-API</b>
 </a>
 
 🚀 MiniMax大模型海螺AI逆向API【特长：超自然语音】
 
-<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/minimax-free-api)
+<kbd>1.0.0</kbd> • [官网链接](https://github.com/xiaoY233/MiniMax-Free-API)
 
 </td>
 <td width="33%" align="center">
