@@ -39,9 +39,9 @@
 
 - **Free-API系列应用已下架，原项目由于供应链投毒，被植入恶意代码，请及时停止运行并删除这些服务！！！**
 
-- 经过几天的排查和重构，已重新上架[GLM-Free-API](https://github.com/xiaoY233/GLM-Free-API)、[MiniMax-Free-API](https://github.com/xiaoY233/MiniMax-Free-API)、[Qwen-Free-API](https://github.com/xiaoY233/Qwen-Free-API)、[Kimi-Free-API](https://github.com/xiaoY233/Kimi-Free-API)，欢迎各位对源码进行审查，如果不放心，建议还是暂停使用
+- 经过几天的排查和重构，已重新上架[GLM-Free-API](https://github.com/xiaoY233/GLM-Free-API)、[MiniMax-Free-API](https://github.com/xiaoY233/MiniMax-Free-API)、[Qwen-Free-API](https://github.com/xiaoY233/Qwen-Free-API)、[Kimi-Free-API](https://github.com/xiaoY233/Kimi-Free-API)，欢迎各位对源码进行审查，如果不放心，建议还是暂停使用！
 
-- 其他的Free-API系列看情况再搞了，有些用不了，也不是啥太好用的模型就暂时不搞了
+- 其他的Free-API系列看情况再搞了，后续添加DeepSeek-Free-API应用。
 
 
 <table>
