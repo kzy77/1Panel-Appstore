@@ -1,0 +1,41 @@
+# Git Sync Configuration
+
+# Repository settings
+include_forks: false # Include forked repositories
+include_wiki: true # Include wiki's
+include_repos: [] # Include specific repositories
+exclude_repos: [] # Exclude specific repositories
+include_orgs: [] # Include repositories from specific organizations
+exclude_orgs: [] # Exclude repositories from specific organizations
+raw_git_urls: [] # Raw valid git URLs
+
+# Authentication
+username: <username>
+tokens: [<token 1>]
+
+# Server settings
+backup_dir: /path/to/backup
+clone_type: bare # Clone type: bare, shallow, mirror or full. Default: bare
+cron: 0 0 * * * # run every 24 hours at 00:00
+concurrency: 5
+retry:
+  count: 3
+  delay: 10 # in seconds
+platform: github
+server:
+  domain: github.com
+  protocol: https
+notification:
+  enabled: true
+  only_failures: false
+  ntfy:
+    topic: 'backup'
+    server: 'https://ntfy.sh' # Optional
+    username: 'akash' # Optional
+    password: 'password' # Optional
+    priority: 4 # Optional (1-5)
+    tags: ['backup'] # Optional
+  gotify:
+    url: 'http://localhost:2444'
+    app_token: 'your_app_token'
+    priority: 4 # Optional (1-5)

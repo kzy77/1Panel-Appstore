@@ -20,5 +20,5 @@ additionalProperties:
     - arm64
 
   website: https://www.aliyun.com/product/bailian
-  github: https://github.com/LLM-Red-Team/qwen-free-api
-  document: https://github.com/LLM-Red-Team/kimi-free-api
+  github: https://github.com/xiaoY233/Qwen-Free-API
+  document: https://github.com/xiaoY233/Qwen-Free-API

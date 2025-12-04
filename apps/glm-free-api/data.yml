@@ -20,5 +20,5 @@ additionalProperties:
     - arm64
 
   website: https://open.bigmodel.cn/
-  github: https://github.com/LLM-Red-Team/glm-free-api
-  document: https://github.com/LLM-Red-Team/glm-free-api
+  github: https://github.com/xiaoY233/GLM-Free-API
+  document: https://github.com/xiaoY233/GLM-Free-API

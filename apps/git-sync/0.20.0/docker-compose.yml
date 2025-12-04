@@ -1,7 +1,7 @@
 
 services:
   git-sync:
-    image: ghcr.io/akashrajpurohit/git-sync:latest
+    image: ghcr.io/akashrajpurohit/git-sync:v0.20.0
     container_name: git-sync
     environment:
       - PUID=${PUID}

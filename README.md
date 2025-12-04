@@ -39,23 +39,23 @@
 
 - **Free-API系列应用已下架，原项目由于供应链投毒，被植入恶意代码，请及时停止运行并删除这些服务！！！**
 
-- 经过几天的排查和重构，已重新上架[GLM-Free-API](https://github.com/xiaoY233/GLM-Free-API)、[MiniMax-Free-API](https://github.com/xiaoY233/MiniMax-Free-API)、[Qwen-Free-API](https://github.com/xiaoY233/Qwen-Free-API)、[Kimi-Free-API](https://github.com/xiaoY233/Kimi-Free-API)，欢迎各位对源码进行审查，如果不放心，建议还是暂停使用！
+- 经过几天的排查和重构，已重新上架[GLM-Free-API](https://github.com/xiaoY233/GLM-Free-API)、[MiniMax-Free-API](https://github.com/xiaoY233/MiniMax-Free-API)、[Qwen-Free-API](https://github.com/xiaoY233/Qwen-Free-API)、[Kimi-Free-API](https://github.com/xiaoY233/Kimi-Free-API)，[DeepSeek-Free-API](https://github.com/xiaoY233/DeepSeek-Free-API),欢迎各位对源码进行审查，如果不放心，建议还是暂停使用！
 
-- 其他的Free-API系列看情况再搞了，后续添加DeepSeek-Free-API应用。
+- 其他的Free-API系列看情况再搞了,后续主要更新上述几个Free-API兼容Gemini-cli和Claude的API接入。
 
 
 <table>
 <tr>
 <td width="33%" align="center">
 
-<!-- <a href="./apps/deepseek-free-api/README.md"> -->
-<!-- <img src="./apps/deepseek-free-api/logo.png" width="60" height="60" alt="DeepSeek-Free-API"> -->
+<a href="./apps/deepseek-free-api/README.md">
+<img src="./apps/deepseek-free-api/logo.png" width="60" height="60" alt="DeepSeek-Free-API">
 <br><b>DeepSeek-Free-API</b>
 </a>
 
 🚀 DeepSeek-V3 & R1大模型逆向API
 
-<kbd>已下架</kbd> • [官网链接](https://github.com/LLM-Red-Team/deepseek-free-api)
+<kbd>1.0.0</kbd> • [官网链接](https://github.com/xiaoY233/DeepSeek-Free-API)
 
 </td>
 <td width="33%" align="center">
@@ -369,7 +369,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 高性能Rust对象存储系统，提供S3兼容API
 
-<kbd>latest</kbd> • [官网链接](https://github.com/rustfs/rustfs)
+<kbd>1.0.0-alpha.70</kbd> • [官网链接](https://github.com/rustfs/rustfs)
 
 </td>
 </tr>
@@ -432,18 +432,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 <kbd>9.2.8</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
-<td width="33%" align="center">
 
-<a href="./apps/netbox/README.md">
-<img src="./apps/netbox/logo.png" width="60" height="60" alt="NetBox">
-<br><b>NetBox</b>
-</a>
-
-🏢 开源数据中心和网络资源管理平台
-
-<kbd>latest</kbd> • [官网链接](https://netbox.dev/)
-
-</td>
 <td width="33%" align="center">
 
 <a href="./apps/kali-linux/README.md">
@@ -472,7 +461,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 💬 开源现代设计的 ChatGPT/LLMs UI/框架
 
-<kbd>1.114.6</kbd> • [官网链接](https://github.com/lobehub/lobe-chat)
+<kbd>1.143.1</kbd> • [官网链接](https://github.com/lobehub/lobe-chat)
 
 </td>
 <td width="33%" align="center">
@@ -607,7 +596,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>latest</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2025.12.3-1f6ea4127</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -619,7 +608,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 💬 下一代 AI 一站式解决方案，综合性 AI 服务管理平台
 
-<kbd>3.11.2</kbd> • [官网链接](https://chatnio.net)
+<kbd>4.25.0</kbd> • [官网链接](https://chatnio.net)
 
 </td>
 </tr>
@@ -679,7 +668,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📥 高性能Usenet下载工具，支持Web界面管理
 
-<kbd>25.2</kbd> • [官网链接](https://nzbget.net/)
+<kbd>25.4</kbd> • [官网链接](https://nzbget.net/)
 
 </td>
 <td width="33%" align="center">
@@ -703,7 +692,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎬 开箱即用的跨平台影视聚合播放器，支持多源搜索和在线播放
 
-<kbd>4.1.1</kbd> • [官网链接](https://github.com/MoonTechLab/LunaTV)
+<kbd>4.3.0</kbd> • [官网链接](https://github.com/MoonTechLab/LunaTV)
 
 </td>
 </tr>
@@ -775,7 +764,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 开源跨平台远程桌面客户端，支持多种协议
 
-<kbd>1.4.35</kbd> • [官网链接](https://remmina.org/)
+<kbd>1.4.40</kbd> • [官网链接](https://remmina.org/)
 
 </td>
 <td width="33%" align="center">
@@ -787,7 +776,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 多平台Git仓库自动同步与备份工具，支持定时任务和Docker部署
 
-<kbd>latest</kbd> • [官网链接](https://github.com/AkashRajpurohit/git-sync)
+<kbd>0.20.0</kbd> • [官网链接](https://github.com/AkashRajpurohit/git-sync)
 
 </td>
 </tr>
@@ -804,7 +793,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.24.22</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.30.18</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -816,7 +805,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ 轻量级服务器监控代理，支持实时性能数据收集
 
-<kbd>0.16.1</kbd> • [官网链接](https://github.com/henrygd/beszel)
+<kbd>0.17.0</kbd> • [官网链接](https://github.com/henrygd/beszel)
 
 </td>
 <td width="33%" align="center">
@@ -838,7 +827,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 跨平台P2P文件同步和分享工具
 
-<kbd>3.0.3</kbd> • [官网链接](https://www.resilio.com/sync/)
+<kbd>3.1.2</kbd> • [官网链接](https://www.resilio.com/sync/)
 
 </td>
 <td width="33%" align="center">
@@ -879,7 +868,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 Docker 镜像加速与私有部署服务，支持多平台和多架构
 
-<kbd>0.3.3</kbd> • [官网链接](https://kspeeder.istoreos.com/)
+<kbd>0.4.1</kbd> • [官网链接](https://kspeeder.istoreos.com/)
 
 </td>
 <td width="33%" align="center">
@@ -961,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔐 跨平台开源密码管理器，支持Web界面和多种平台，安全可靠
 
-<kbd>2.7.9</kbd> • [官网链接](https://keepassxc.org/)
+<kbd>2.7.10</kbd> • [官网链接](https://keepassxc.org/)
 
 </td>
 <td width="33%" align="center">
@@ -973,7 +962,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 高性能网盘资源搜索API服务，支持TG频道和插件搜索，智能排序和网盘类型分类
 
-<kbd>latest</kbd> • [官网链接](https://github.com/fish2018/pansou)
+<kbd>sha-fb7fec2</kbd> • [官网链接](https://github.com/fish2018/pansou)
 
 </td>
 <td width="33%" align="center">
@@ -1029,7 +1018,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 监控Docker基础镜像自动更新
 
-<kbd>8.1.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
+<kbd>8.1.1</kbd> • [官网链接](https://github.com/sergi0g/cup/)
 
 </td>
 </tr>
@@ -1046,7 +1035,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ Docker镜像加速命令查询获取、镜像搜索、配置教程文档展示UI面板
 
-<kbd>latest</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
+<kbd>4.0.7</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
 
 </td>
 <td width="33%" align="center">
@@ -1070,7 +1059,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧙‍♂️ 现代化开源Docker管理Web面板
 
-<kbd>0.15.1</kbd> • [官网链接](https://arcane.ofkm.dev/)
+<kbd>1.9.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
 
 </td>
 </tr>

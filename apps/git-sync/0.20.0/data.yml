@@ -1,0 +1,30 @@
+additionalProperties:
+    formFields:
+        - default: ./config.yaml
+          edit: true
+          envKey: GITSYNC_CONFIG_PATH
+          labelEn: Config Path
+          labelZh: 配置文件路径
+          required: true
+          type: text
+        - default: ./backups
+          edit: true
+          envKey: GITSYNC_BACKUP_PATH
+          labelEn: Backup Path
+          labelZh: 备份目录
+          required: true
+          type: text
+        - default: 1000
+          edit: true
+          envKey: PUID
+          labelEn: PUID
+          labelZh: 用户ID(PUID)
+          required: true
+          type: number
+        - default: 1000
+          edit: true
+          envKey: PGID
+          labelEn: PGID
+          labelZh: 用户组ID(PGID)
+          required: true
+          type: number 

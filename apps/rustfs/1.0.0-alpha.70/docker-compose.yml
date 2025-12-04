@@ -1,0 +1,35 @@
+
+services:
+  rustfs:
+    image: rustfs/rustfs:1.0.0-alpha.70
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:9000" # S3 API port
+    environment:
+      - RUSTFS_CONSOLE_ENABLE=true
+      - RUSTFS_LOG_LEVEL=info
+    volumes:
+      - ./data:/data
+      - ./logs:/logs
+    networks:
+      - 1panel-network
+    restart: always
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "wget",
+          "--no-verbose",
+          "--tries=1",
+          "--spider",
+          "http://localhost:9000/health",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
