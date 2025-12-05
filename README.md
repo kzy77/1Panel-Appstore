@@ -67,7 +67,7 @@
 
 🚀 KIMI AI 长文本大模型逆向API, 支持Kimi-K2模型
 
-<kbd>1.0.1</kbd> • [官网链接](https://github.com/xiaoY233/Kimi-Free-API)
+<kbd>1.0.2</kbd> • [官网链接](https://github.com/xiaoY233/Kimi-Free-API)
 
 </td>
 <td width="33%" align="center">
@@ -461,7 +461,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 💬 开源现代设计的 ChatGPT/LLMs UI/框架
 
-<kbd>1.143.1</kbd> • [官网链接](https://github.com/lobehub/lobe-chat)
+<kbd>1.143.2</kbd> • [官网链接](https://github.com/lobehub/lobe-chat)
 
 </td>
 <td width="33%" align="center">
@@ -555,7 +555,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 模型上下文协议调试工具，支持MCP服务器测试与开发
 
-<kbd>0.17.3</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
+<kbd>0.17.5</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
 
 </td>
 <td width="33%" align="center">
@@ -711,7 +711,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>1.14.9</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>1.14.10</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
@@ -793,7 +793,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.30.18</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.30.20</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -909,7 +909,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.10</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.11</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">

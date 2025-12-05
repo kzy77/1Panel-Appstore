@@ -1,6 +1,6 @@
 services:
   kimi-free-api:
-    image: akashrajpuroh1t/kimi-free-api-fix:1.0.1
+    image: akashrajpuroh1t/kimi-free-api-fix:1.0.2
     container_name: ${CONTAINER_NAME}
     ports:
       - ${PANEL_APP_PORT_HTTP}:8000
