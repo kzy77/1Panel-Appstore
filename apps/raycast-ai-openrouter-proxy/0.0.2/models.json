@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Moonshotai Kimi-K2",
+    "id": "moonshotai/kimi-k2:free",
+    "contextLength": 33000,
+    "capabilities": ["vision", "tools"],
+    "temperature": 0
+  },
+  {
+    "name": "DeepSeek V3",
+    "id": "deepseek/deepseek-chat-v3-0324:free",
+    "contextLength": 33000,
+    "capabilities": ["tools"]
+  },
+  {
+    "name": "Qwen3 Coder",
+    "id": "qwen/qwen3-coder:free",
+    "contextLength": 262000,
+    "capabilities": ["tools"]
+  },
+  {
+    "name": "DeepSeek-R1-0528",
+    "id": "deepseek/deepseek-r1-0528:free",
+    "contextLength": 164000,
+    "capabilities": ["vision", "tools"]
+  },
+  {
+    "name": "Gemini 2.5 Flash Thinking",
+    "id": "google/gemini-2.5-flash-preview-05-20:thinking",
+    "contextLength": 1000000,
+    "capabilities": ["vision", "tools"],
+    "temperature": 0
+  },
+  {
+    "name": "Claude Sonnet 4",
+    "id": "anthropic/claude-sonnet-4",
+    "contextLength": 200000,
+    "capabilities": ["vision", "tools"],
+    "temperature": 0.7
+  }
+]

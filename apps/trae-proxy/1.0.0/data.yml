@@ -1,0 +1,11 @@
+additionalProperties:
+  formFields:
+    - default: "443"
+      envKey: PANEL_APP_PORT_HTTPS
+      label:
+        en: Proxy-Port
+        zh: 代理端口
+      required: true
+      type: number
+      edit: true
+      rule: paramPort

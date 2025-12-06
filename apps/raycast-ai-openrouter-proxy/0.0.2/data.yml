@@ -1,0 +1,35 @@
+additionalProperties:
+  formFields:
+    - default: 11435
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Proxy Server Port
+      labelZh: 代理服务器端口
+      label:
+        en: Proxy Server Port
+        zh: 代理服务器端口
+        zh-Hant: 代理服務器埠
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      envKey: PANEL_APP_API_KEY
+      labelEn: API Key
+      labelZh: API密钥
+      label:
+        en: API Key
+        zh: API密钥
+        zh-Hant: API密鑰
+      required: true
+      rule: ""
+      type: password
+    - default: "https://openrouter.ai/api/v1"
+      envKey: PANEL_APP_BASE_URL
+      labelEn: API Base URL
+      labelZh: API基础URL
+      label:
+        en: API Base URL
+        zh: API基础URL
+        zh-Hant: API基礎URL
+      required: true
+      rule: ""
+      type: text

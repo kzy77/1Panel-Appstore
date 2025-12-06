@@ -1,0 +1,19 @@
+services:
+  raycast-ai-proxy:
+    image: vuldocker/raycast-ai-openrouter-proxy:0.0.2
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3000
+    volumes:
+      - ./models.json:/app/models.json:ro
+    environment:
+      - API_KEY=${PANEL_APP_API_KEY}
+      - BASE_URL=${PANEL_APP_BASE_URL}
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
