@@ -1,7 +1,7 @@
 services:
   metamcp:
     container_name: ${CONTAINER_NAME}
-    image: ghcr.io/metatool-ai/metamcp:2.4.17
+    image: ghcr.io/metatool-ai/metamcp:2.4.21
     pull_policy: always
     ports:
       - ${PANEL_APP_PORT_HTTP}:12008

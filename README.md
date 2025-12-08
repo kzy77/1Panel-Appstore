@@ -79,7 +79,7 @@
 
 🚀 阿里通义千问3.0大模型逆向API,支持Qwen3-Coder模型
 
-<kbd>1.0.0</kbd> • [官网链接](https://github.com/xiaoY233/Qwen-Free-API)
+<kbd>1.0.1</kbd> • [官网链接](https://github.com/xiaoY233/Qwen-Free-API)
 
 </td>
 </tr>
@@ -137,7 +137,7 @@
 
 🚀 MiniMax大模型海螺AI逆向API【特长：超自然语音】
 
-<kbd>1.0.0</kbd> • [官网链接](https://github.com/xiaoY233/MiniMax-Free-API)
+<kbd>1.0.1</kbd> • [官网链接](https://github.com/xiaoY233/MiniMax-Free-API)
 
 </td>
 <td width="33%" align="center">
@@ -275,7 +275,7 @@
 
 自托管全能书签管理工具，支持AI自动标签功能
 
-<kbd>0.29.0</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
+<kbd>0.29.1</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
 
 </td>
 <td width="33%" align="center">
@@ -527,7 +527,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 统一的AI模型管理和调用平台，支持多种大语言模型集成
 
-<kbd>0.14.26</kbd> • [官网链接](https://github.com/one-hub/one-hub)
+<kbd>0.14.27</kbd> • [官网链接](https://github.com/one-hub/one-hub)
 
 </td>
 <td width="33%" align="center">
@@ -556,7 +556,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 开源可视化AI工作流构建平台，拖拽式设计LLM应用
 
-<kbd>3.0.11</kbd> • [官网链接](https://github.com/FlowiseAI/Flowise)
+<kbd>3.0.12</kbd> • [官网链接](https://github.com/FlowiseAI/Flowise)
 
 </td>
 <td width="33%" align="center">
@@ -580,7 +580,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 MCP聚合器、编排器、中间件、网关于一体的Docker解决方案
 
-<kbd>2.4.17</kbd> • [官网链接](https://github.com/metatool-ai/metamcp)
+<kbd>2.4.21</kbd> • [官网链接](https://github.com/metatool-ai/metamcp)
 
 </td>
 </tr>
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>1.123.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>1.123.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -922,7 +922,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 Docker 镜像加速与私有部署服务，支持多平台和多架构
 
-<kbd>0.4.1</kbd> • [官网链接](https://kspeeder.istoreos.com/)
+<kbd>0.5.0</kbd> • [官网链接](https://kspeeder.istoreos.com/)
 
 </td>
 <td width="33%" align="center">
@@ -963,7 +963,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.11</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.14</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
