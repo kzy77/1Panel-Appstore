@@ -178,7 +178,7 @@
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>6.7.0-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>6.7.1-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -304,7 +304,7 @@
 
 文档、白板和数据库完全整合的工作空间
 
-<kbd>0.25.5</kbd> • [官网链接](https://github.com/toeverything/AFFiNE)
+<kbd>0.25.7</kbd> • [官网链接](https://github.com/toeverything/AFFiNE)
 
 </td>
 <td width="33%" align="center">
@@ -486,7 +486,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.10.1</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.11.0</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">

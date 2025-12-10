@@ -1,6 +1,6 @@
 services:
   affine:
-    image: ghcr.io/toeverything/affine:0.25.5
+    image: ghcr.io/toeverything/affine:0.25.7
     container_name: ${CONTAINER_NAME}
     ports:
       - ${PANEL_APP_PORT_HTTP}:3010
