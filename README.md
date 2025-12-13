@@ -222,7 +222,7 @@
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.23.2</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.24.0</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -275,7 +275,7 @@
 
 自托管全能书签管理工具，支持AI自动标签功能
 
-<kbd>0.29.1</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
+<kbd>0.29.3</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
 
 </td>
 <td width="33%" align="center">
@@ -486,7 +486,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.11.0</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.11.1</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.0.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.0.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
