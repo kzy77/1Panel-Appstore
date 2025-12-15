@@ -1,7 +1,7 @@
 services:
   glance-agent:
     container_name: ${CONTAINER_NAME}
-    image: glanceapp/agent:latest
+    image: glanceapp/agent:v0.1.0
     environment:
       TOKEN: ${AGENT_TOKEN}
     volumes:

@@ -1,7 +1,19 @@
-# Glance Python 远程服务器监控 Agent
+# Glance 远程服务器监控 Agent
 
 ## 项目简介
 本项目为 Glance Dashboard 提供远程服务器监控数据采集，使用 Python3 + FastAPI 实现，兼容 Glance `server-stats` 组件前端展示。支持 Docker 部署，适合多服务器统一监控。
+
+## 更新说明
+
+Glance官方已经发布了agent，项目地址：[glance-agent](https://github.com/glanceapp/agent)
+本次更新后，保留本人使用 Python3 + FastAPI 实现的版本，同时新增了对 Glance 官方 agent 的支持。
+因为原生支持官方的agent，所以更推荐使用官方版本
+
+## 版本说明
+
+- 0.1.0  官方稳定版本 推荐
+- latest  官方最新版本
+- custom  作者自己写的版本 项目保留
 
 ## 功能特性
 - 采集主机名、平台、启动时间、CPU 负载/温度、内存、磁盘等信息
@@ -9,6 +21,18 @@
 - 支持 Docker 镜像和 docker-compose 一键部署
 - 可多实例部署，适配多服务器场景
 - **主机名自动识别**：容器内自动优先读取宿主机 `/etc/hostname`，无需手动配置
+
+## 配置方法
+
+在配置文件中添加以下内容：
+
+- type: server-stats
+  servers:
+  - type: remote
+    name: Custom Server Name
+    url: http://<server IP or domain>:27973
+    token: <token from above, if set>
+
 
 ## API 说明
 - 路径：`/api/sysinfo/all`
@@ -212,5 +236,6 @@
 ```
 
 ## 参考
+- [Glance-Agent](https://github.com/glanceapp/agent)
 - [Glance-Monitor](https://github.com/arch3rPro/Glance-Monitor)
 - [Document文档](https://github.com/arch3rPro/Glance-Monitor/blob/main/server-status-agent/README.md)
