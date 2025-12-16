@@ -1,0 +1,49 @@
+services:
+  socket-proxy:
+    image: ghcr.io/linuxserver/socket-proxy:latest
+    container_name: ${CONTAINER_NAME}
+    environment:
+      - ALLOW_START=${ALLOW_START}
+      - ALLOW_STOP=${ALLOW_STOP}
+      - ALLOW_RESTARTS=${ALLOW_RESTARTS}
+      - AUTH=${AUTH}
+      - BUILD=${BUILD}
+      - COMMIT=${COMMIT}
+      - CONFIGS=${CONFIGS}
+      - CONTAINERS=${CONTAINERS}
+      - DISABLE_IPV6=${DISABLE_IPV6}
+      - DISTRIBUTION=${DISTRIBUTION}
+      - EVENTS=${EVENTS}
+      - EXEC=${EXEC}
+      - IMAGES=${IMAGES}
+      - INFO=${INFO}
+      - LOG_LEVEL=${LOG_LEVEL}
+      - NETWORKS=${NETWORKS}
+      - NODES=${NODES}
+      - PING=${PING}
+      - PLUGINS=${PLUGINS}
+      - POST=${POST}
+      - SECRETS=${SECRETS}
+      - SERVICES=${SERVICES}
+      - SESSION=${SESSION}
+      - SWARM=${SWARM}
+      - SYSTEM=${SYSTEM}
+      - TASKS=${TASKS}
+      - TZ=Etc/UTC
+      - VERSION=${VERSION}
+      - VOLUMES=${VOLUMES}
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:2375
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    restart: always
+    read_only: true
+    tmpfs:
+      - /run
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true

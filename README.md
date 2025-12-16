@@ -662,7 +662,24 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.0.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.1.0</kbd> • [官网链接](https://n8n.io/)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/next-ai-draw-io/README.md">
+<img src="./apps/next-ai-draw-io/logo.png" width="60" height="60" alt="Next-AI-Draw-IO">
+<br><b>Next AI Draw.io</b>
+</a>
+
+🤖 AI驱动的图表创建工具
+
+<kbd>0.4.1</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
 
 </td>
 </tr>
@@ -864,6 +881,15 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 </td>
 <td width="33%" align="center">
 
+<a href="./apps/docker-socket-proxy/README.md">
+<img src="./apps/docker-socket-proxy/logo.png" width="60" height="60" alt="Docker-Socket-Proxy">
+<br><b>Docker-Socket-Proxy</b>
+</a>
+
+🔒 Docker socket代理，支持访问规则限制和权限控制
+
+<kbd>3.2.9</kbd> • [官网链接](https://github.com/Tecnativa/docker-socket-proxy)
+
 </td>
 </tr>
 </table>
@@ -963,7 +989,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.16</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.17</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">

@@ -1,0 +1,330 @@
+additionalProperties:
+  formFields:
+    - default: "2375"
+      envKey: PANEL_APP_PORT_HTTP
+      required: true
+      type: number
+      labelEn: Port
+      labelZh: 端口
+      edit: true
+      rule: paramPort
+    - default: "0"
+      envKey: ALLOW_START
+      required: false
+      type: select
+      labelEn: ALLOW_START
+      labelZh: ALLOW_START（允许启动）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: ALLOW_STOP
+      required: false
+      type: select
+      labelEn: ALLOW_STOP
+      labelZh: ALLOW_STOP（允许停止）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: ALLOW_RESTARTS
+      required: false
+      type: select
+      labelEn: ALLOW_RESTARTS
+      labelZh: ALLOW_RESTARTS（允许重启）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: AUTH
+      required: false
+      type: select
+      labelEn: AUTH
+      labelZh: AUTH（认证）
+      values:
+        - label: 0-关闭
+          value: "0"
+        - label: 1-开启
+          value: "1"
+    - default: "0"
+      envKey: BUILD
+      required: false
+      type: select
+      labelEn: BUILD
+      labelZh: BUILD（构建）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: COMMIT
+      required: false
+      type: select
+      labelEn: COMMIT
+      labelZh: COMMIT（提交）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: CONFIGS
+      required: false
+      type: select
+      labelEn: CONFIGS
+      labelZh: CONFIGS（配置）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: CONTAINERS
+      required: false
+      type: select
+      labelEn: CONTAINERS
+      labelZh: CONTAINERS（容器）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: DISABLE_IPV6
+      required: false
+      type: select
+      labelEn: DISABLE_IPV6
+      labelZh: DISABLE_IPV6（禁用IPv6）
+      values:
+        - label: 0-关闭
+          value: "0"
+        - label: 1-开启
+          value: "1"
+    - default: "0"
+      envKey: DISTRIBUTION
+      required: false
+      type: select
+      labelEn: DISTRIBUTION
+      labelZh: DISTRIBUTION（镜像分发）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "1"
+      envKey: EVENTS
+      required: false
+      type: select
+      labelEn: EVENTS
+      labelZh: EVENTS（事件）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: EXEC
+      required: false
+      type: select
+      labelEn: EXEC
+      labelZh: EXEC（执行）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: IMAGES
+      required: false
+      type: select
+      labelEn: IMAGES
+      labelZh: IMAGES（镜像）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: INFO
+      required: false
+      type: select
+      labelEn: INFO
+      labelZh: INFO（信息）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "info"
+      envKey: LOG_LEVEL
+      required: false
+      type: select
+      labelEn: LOG_LEVEL
+      labelZh: LOG_LEVEL（日志级别）
+      values:
+        - label: debug-调试
+          value: "debug"
+        - label: info-信息
+          value: "info"
+        - label: notice-通知
+          value: "notice"
+        - label: warning-警告
+          value: "warning"
+        - label: err-错误
+          value: "err"
+        - label: crit-严重
+          value: "crit"
+        - label: alert-警报
+          value: "alert"
+        - label: emerg-紧急
+          value: "emerg"
+    - default: "0"
+      envKey: NETWORKS
+      required: false
+      type: select
+      labelEn: NETWORKS
+      labelZh: NETWORKS（网络）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: NODES
+      required: false
+      type: select
+      labelEn: NODES
+      labelZh: NODES（节点）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "1"
+      envKey: PING
+      required: false
+      type: select
+      labelEn: PING
+      labelZh: PING（探针/PING）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: PLUGINS
+      required: false
+      type: select
+      labelEn: PLUGINS
+      labelZh: PLUGINS（插件）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: POST
+      required: false
+      type: select
+      labelEn: POST
+      labelZh: POST（POST请求）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: SECRETS
+      required: false
+      type: select
+      labelEn: SECRETS
+      labelZh: SECRETS（机密/Secrets）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: SERVICES
+      required: false
+      type: select
+      labelEn: SERVICES
+      labelZh: SERVICES（服务）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: SESSION
+      required: false
+      type: select
+      labelEn: SESSION
+      labelZh: SESSION（会话）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: SWARM
+      required: false
+      type: select
+      labelEn: SWARM
+      labelZh: SWARM（Swarm集群）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: SYSTEM
+      required: false
+      type: select
+      labelEn: SYSTEM
+      labelZh: SYSTEM（系统）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: TASKS
+      required: false
+      type: select
+      labelEn: TASKS
+      labelZh: TASKS（任务）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "1"
+      envKey: VERSION
+      required: false
+      type: select
+      labelEn: VERSION
+      labelZh: VERSION（版本）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"
+    - default: "0"
+      envKey: VOLUMES
+      required: false
+      type: select
+      labelEn: VOLUMES
+      labelZh: VOLUMES（卷）
+      values:
+        - label: 0-禁止
+          value: "0"
+        - label: 1-允许
+          value: "1"

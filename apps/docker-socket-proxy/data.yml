@@ -1,0 +1,25 @@
+name: Docker-Socket-Proxy
+tags:
+  - 实用工具
+  - 开发工具
+title: 通过代理控制 Docker 套接字
+description:
+  en: Proxy over your Docker socket to restrict which requests it accepts
+  zh: 通过代理控制 Docker 套接字
+additionalProperties:
+  key: docker-socket-proxy
+  name: Docker-Socket-Proxy
+  tags:
+    - Tool
+    - DevTool
+  shortDescZh: 通过代理控制 Docker 套接字
+  shortDescEn: Proxy over your Docker socket to restrict which requests it accepts
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/linuxserver/docker-socket-proxy
+  github: https://github.com/linuxserver/docker-socket-proxy
+  document: https://github.com/linuxserver/docker-socket-proxy
+  architectures:
+    - amd64
+    - arm64

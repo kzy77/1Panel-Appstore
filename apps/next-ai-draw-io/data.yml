@@ -1,0 +1,26 @@
+name: Next AI Draw.io
+tags:
+  - 实用工具
+  - Web 服务器
+title: AI驱动的图表创建工具 - 对话、绘制、可视化
+description:
+  en: AI-Powered Diagram Creation Tool - Chat, Draw, Visualize
+  zh: AI驱动的图表创建工具 - 对话、绘制、可视化
+additionalProperties:
+  key: next-ai-draw-io
+  name: Next AI Draw.io
+  tags:
+    - Tool
+    - Server
+  shortDescZh: AI驱动的图表创建工具 - 对话、绘制、可视化
+  shortDescEn: AI-Powered Diagram Creation Tool - Chat, Draw, Visualize
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://next-ai-drawio.jiang.jp/
+  github: https://github.com/DayuanJiang/next-ai-draw-io
+  document: https://github.com/DayuanJiang/next-ai-draw-io
+  memoryRequired: 2048
+  architectures:
+    - amd64
+    - arm64
