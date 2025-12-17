@@ -1,0 +1,26 @@
+additionalProperties:
+  formFields:
+    - default: "8502"
+      envKey: PANEL_APP_PORT_HTTP
+      required: true
+      type: number
+      labelEn: Port
+      labelZh: 端口
+      edit: true
+      rule: paramPort
+    - default: "5055"
+      envKey: PANEL_APP_PORT_API
+      required: true
+      type: number
+      labelEn: API Port
+      labelZh: API端口
+      edit: true
+      rule: paramPort
+    - default: "8000"
+      envKey: PANEL_APP_PORT_DB
+      required: true
+      type: number
+      labelEn: Database Port
+      labelZh: 数据库端口
+      edit: true
+      rule: paramPort
