@@ -316,7 +316,7 @@
 
 开源自托管个人笔记工具，支持AI增强笔记检索
 
-<kbd>1.7.0</kbd> • [官网链接](https://github.com/blinko-space/blinko)
+<kbd>1.7.1</kbd> • [官网链接](https://github.com/blinko-space/blinko)
 
 </td>
 <td width="33%" align="center">
@@ -429,7 +429,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.2.8</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.2.9</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.1.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.1.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -679,7 +679,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 AI驱动的图表创建工具
 
-<kbd>0.4.1</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
+<kbd>0.4.3</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
 
 </td>
 <td width="33%" align="center">
