@@ -1,0 +1,78 @@
+additionalProperties:
+  formFields:additionalProperties:
+  formFields:
+    - default: 8080
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: HTTP 端口
+      labelEn: HTTP Port
+      label:
+        zh: HTTP 端口
+        en: HTTP Port
+      description:
+        zh: "HTTP 端口"
+        en: "HTTP Port"
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: ./data
+      envKey: DATA_PATH
+      labelZh: 输出路径
+      labelEn: Output Path
+      label:
+        zh: 输出路径
+        en: Output Path
+      description:
+        zh: 生成的报告和数据保存位置
+        en: Generated reports and data storage location
+      required: false
+      type: text
+      edit: true
+    - default: "*/30 * * * *"
+      envKey: CRON_SCHEDULE
+      labelZh: 定时任务表达式
+      labelEn: Cron Expression
+      label:
+        zh: 定时任务表达式
+        en: Cron Expression
+      required: false
+      type: text
+      edit: true
+    - default: cron
+      envKey: RUN_MODE
+      labelZh: 运行模式
+      labelEn: Run Mode
+      label:
+        zh: 运行模式
+        en: Run Mode
+      required: false
+      type: select
+      values:
+        - label: Cron
+          value: cron
+        - label: Once
+          value: once
+      edit: true
+    - default: "false"
+      envKey: IMMEDIATE_RUN
+      labelZh: 启动时立即执行一次
+      labelEn: Execute immediately upon startup
+      label:
+        zh: 启动时立即执行一次
+        en: Execute immediately upon startup
+      required: false
+      type: select
+      values:
+        - label: "True"
+          value: "true"
+        - label: "False"
+          value: "false"
+      edit: true
+    - default: "3333"
+      envKey: MCP_PORT
+      required: true
+      type: number
+      labelEn: MCP_Port
+      labelZh: MCP端口
+      edit: true
+      rule: paramPort

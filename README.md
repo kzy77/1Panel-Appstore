@@ -580,7 +580,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 MCP聚合器、编排器、中间件、网关于一体的Docker解决方案
 
-<kbd>2.4.21</kbd> • [官网链接](https://github.com/metatool-ai/metamcp)
+<kbd>2.4.22</kbd> • [官网链接](https://github.com/metatool-ai/metamcp)
 
 </td>
 </tr>
@@ -692,6 +692,18 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 📝 私有的、多模型的Google Notebook LM替代方案，支持多模态内容和AI播客生成
 
 <kbd>1.2.4</kbd> • [官网链接](https://www.open-notebook.ai/)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/trendradar/README.md">
+<img src="./apps/trendradar/logo.png" width="60" height="60" alt="TrendRadar">
+<br><b>TrendRadar</b>
+</a>
+
+📊 轻量级多平台趋势监控工具，AI驱动的热点话题分析
+
+<kbd>4.0.2</kbd> • [官网链接](https://github.com/sansan0/TrendRadar)
 
 </td>
 </tr>
@@ -876,7 +888,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.30.22</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.30.23</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1001,7 +1013,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.17</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.18</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
