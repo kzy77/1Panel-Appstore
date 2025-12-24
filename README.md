@@ -178,7 +178,7 @@
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>6.7.1-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>6.7.2-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -287,7 +287,7 @@
 
 自托管协作书签管理工具，支持网页归档和团队协作
 
-<kbd>2.13.2</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
+<kbd>2.13.3</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
 
 </td>
 </tr>
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.1.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.2.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -679,7 +679,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 AI驱动的图表创建工具
 
-<kbd>0.4.4</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
+<kbd>0.4.6</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
 
 </td>
 <td width="33%" align="center">
@@ -888,7 +888,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.30.24</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.30.25</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1013,7 +1013,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.18</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.19</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
