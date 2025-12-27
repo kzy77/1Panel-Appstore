@@ -178,7 +178,7 @@
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>6.7.5-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>6.8.0-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -287,7 +287,7 @@
 
 自托管协作书签管理工具，支持网页归档和团队协作
 
-<kbd>2.13.3</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
+<kbd>2.13.4</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
 
 </td>
 </tr>
@@ -515,7 +515,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>0.10.3</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>0.10.4</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -1013,7 +1013,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.22</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.23</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
