@@ -178,7 +178,7 @@
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>6.8.0-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>6.8.2-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -287,7 +287,7 @@
 
 自托管协作书签管理工具，支持网页归档和团队协作
 
-<kbd>2.13.4</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
+<kbd>2.13.5</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
 
 </td>
 </tr>
@@ -888,7 +888,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.30.25</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.31.0</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1054,7 +1054,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔐 跨平台开源密码管理器，支持Web界面和多种平台，安全可靠
 
-<kbd>2.7.10</kbd> • [官网链接](https://keepassxc.org/)
+<kbd>2.7.11</kbd> • [官网链接](https://keepassxc.org/)
 
 </td>
 <td width="33%" align="center">
