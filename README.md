@@ -830,7 +830,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>2.6.7</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>2.7.0</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
@@ -888,7 +888,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.31.0</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.31.1</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
