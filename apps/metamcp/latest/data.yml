@@ -7,6 +7,7 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
+      edit: true
       label:
         en: Web Port
         zh: HTTP 端口
@@ -17,6 +18,7 @@ additionalProperties:
       required: true
       rule: paramCommon
       type: text
+      edit: true
       label:
         en: Database
         zh: 数据库名
@@ -28,6 +30,7 @@ additionalProperties:
       required: true
       rule: paramCommon
       type: text
+      edit: true
       label:
         en: User
         zh: 数据库用户
@@ -39,6 +42,7 @@ additionalProperties:
       required: true
       rule: paramComplexity
       type: password
+      edit: true
       label:
         en: Password
         zh: 数据库用户密码
@@ -48,6 +52,7 @@ additionalProperties:
       labelZh: 应用访问地址
       required: true
       type: text
+      edit: true
       label:
         en: Application URL
         zh: 应用访问地址
@@ -57,6 +62,7 @@ additionalProperties:
       labelZh: 公共应用访问地址
       required: true
       type: text
+      edit: true
       label:
         en: Public Application URL
         zh: 公共应用访问地址
@@ -68,6 +74,7 @@ additionalProperties:
       required: true
       rule: paramComplexity
       type: password
+      edit: true
       label:
         en: Auth Secret
         zh: 认证密钥
