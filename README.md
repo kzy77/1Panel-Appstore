@@ -275,7 +275,7 @@
 
 自托管全能书签管理工具，支持AI自动标签功能
 
-<kbd>0.29.3</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
+<kbd>0.30.0</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
 
 </td>
 <td width="33%" align="center">
@@ -316,7 +316,7 @@
 
 开源自托管个人笔记工具，支持AI增强笔记检索
 
-<kbd>1.8.0</kbd> • [官网链接](https://github.com/blinko-space/blinko)
+<kbd>1.8.1</kbd> • [官网链接](https://github.com/blinko-space/blinko)
 
 </td>
 <td width="33%" align="center">
@@ -388,7 +388,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 简单安全去中心化的内网穿透 VPN 组网方案
 
-<kbd>2.4.5</kbd> • [官网链接](https://github.com/EasyTier/Easytier)
+<kbd>2.5.0</kbd> • [官网链接](https://github.com/EasyTier/Easytier)
 
 </td>
 <td width="33%" align="center">
@@ -679,7 +679,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 AI驱动的图表创建工具
 
-<kbd>0.4.7</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
+<kbd>0.4.8</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
 
 </td>
 <td width="33%" align="center">
@@ -806,7 +806,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>1.14.10</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>1.14.12</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
@@ -1013,7 +1013,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.24</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.25</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
