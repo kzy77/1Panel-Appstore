@@ -316,7 +316,7 @@
 
 开源自托管个人笔记工具，支持AI增强笔记检索
 
-<kbd>1.8.1</kbd> • [官网链接](https://github.com/blinko-space/blinko)
+<kbd>1.8.2</kbd> • [官网链接](https://github.com/blinko-space/blinko)
 
 </td>
 <td width="33%" align="center">
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.2.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.2.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
