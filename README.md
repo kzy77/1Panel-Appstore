@@ -178,7 +178,7 @@
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>6.8.5-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>6.8.9-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -734,7 +734,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖼️ 高效云存储和图床平台管理工具
 
-<kbd>2.1.0</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
+<kbd>2.2.0</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
 
 </td>
 </tr>
@@ -794,7 +794,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>1.14.12</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>1.14.14</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
