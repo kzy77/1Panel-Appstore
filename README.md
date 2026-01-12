@@ -178,7 +178,7 @@
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>6.8.9-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>6.9.0-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -316,7 +316,7 @@
 
 开源自托管个人笔记工具，支持AI增强笔记检索
 
-<kbd>1.8.2</kbd> • [官网链接](https://github.com/blinko-space/blinko)
+<kbd>1.8.3</kbd> • [官网链接](https://github.com/blinko-space/blinko)
 
 </td>
 <td width="33%" align="center">
@@ -734,7 +734,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖼️ 高效云存储和图床平台管理工具
 
-<kbd>2.2.0</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
+<kbd>2.2.2</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
 
 </td>
 </tr>
