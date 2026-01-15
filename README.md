@@ -357,7 +357,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 开源Airtable替代品，将任何数据库转换为智能电子表格
 
-<kbd>0.301.0</kbd> • [官网链接](https://github.com/nocodb/nocodb)
+<kbd>0.301.1</kbd> • [官网链接](https://github.com/nocodb/nocodb)
 
 </td>
 <td width="33%" align="center">
@@ -638,7 +638,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.6.5</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.7.2</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.4.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.4.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
