@@ -486,7 +486,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.11.3</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.11.4</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.4.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.4.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
