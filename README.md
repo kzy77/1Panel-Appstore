@@ -178,7 +178,7 @@
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>6.9.3-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>6.9.5-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -357,7 +357,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 开源Airtable替代品，将任何数据库转换为智能电子表格
 
-<kbd>0.301.1</kbd> • [官网链接](https://github.com/nocodb/nocodb)
+<kbd>0.301.2</kbd> • [官网链接](https://github.com/nocodb/nocodb)
 
 </td>
 <td width="33%" align="center">
@@ -429,7 +429,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.3.1</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.3.2</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.4.4</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.5.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -1001,7 +1001,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.32</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.33</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1167,7 +1167,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ Docker镜像加速命令查询获取、镜像搜索、配置教程文档展示UI面板
 
-<kbd>4.0.8</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
+<kbd>4.0.9</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
 
 </td>
 <td width="33%" align="center">
