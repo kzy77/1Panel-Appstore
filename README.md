@@ -178,7 +178,7 @@
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>6.9.7-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>6.9.8-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -568,7 +568,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 模型上下文协议调试工具，支持MCP服务器测试与开发
 
-<kbd>0.18.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
+<kbd>0.19.0-hotfix</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
 
 </td>
 <td width="33%" align="center">
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.5.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.5.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
