@@ -474,7 +474,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 💬 开源现代设计的 ChatGPT/LLMs UI/框架
 
-<kbd>1.143.2</kbd> • [官网链接](https://github.com/lobehub/lobe-chat)
+<kbd>1.143.3</kbd> • [官网链接](https://github.com/lobehub/lobe-chat)
 
 </td>
 <td width="33%" align="center">
@@ -539,7 +539,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>1.4.1</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>1.4.2</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -679,7 +679,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 AI驱动的图表创建工具
 
-<kbd>0.4.11</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
+<kbd>0.4.12</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
 
 </td>
 <td width="33%" align="center">
@@ -734,7 +734,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖼️ 高效云存储和图床平台管理工具
 
-<kbd>2.3.0</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
+<kbd>2.3.1</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
 
 </td>
 </tr>
