@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.5.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.6.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -1001,7 +1001,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.33</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.34</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
