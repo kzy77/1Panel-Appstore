@@ -178,7 +178,7 @@
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.0.0</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.0.0-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -429,7 +429,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.3.2</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.3.2.1</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
