@@ -888,7 +888,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ 轻量级服务器监控代理，支持实时性能数据收集
 
-<kbd>0.18.2</kbd> • [官网链接](https://github.com/henrygd/beszel)
+<kbd>0.18.3</kbd> • [官网链接](https://github.com/henrygd/beszel)
 
 </td>
 <td width="33%" align="center">
@@ -1001,7 +1001,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.40</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.41</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1167,7 +1167,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ Docker镜像加速命令查询获取、镜像搜索、配置教程文档展示UI面板
 
-<kbd>4.0.9</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
+<kbd>4.1.0</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
 
 </td>
 <td width="33%" align="center">
