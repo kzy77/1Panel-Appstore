@@ -400,7 +400,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 NPS客户端，轻量级高性能内网穿透代理工具
 
-<kbd>0.33.14</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.34.1</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 <td width="33%" align="center">
@@ -498,7 +498,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.5.1</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.5.2</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.6.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.7.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -734,7 +734,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖼️ 高效云存储和图床平台管理工具
 
-<kbd>2.3.2</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
+<kbd>2.3.3</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
 
 </td>
 </tr>
@@ -751,7 +751,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📥 高性能Usenet下载工具，支持Web界面管理
 
-<kbd>25.4</kbd> • [官网链接](https://nzbget.net/)
+<kbd>26.0</kbd> • [官网链接](https://nzbget.net/)
 
 </td>
 <td width="33%" align="center">
@@ -1001,7 +1001,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.4.41</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.4.42</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
