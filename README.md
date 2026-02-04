@@ -55,7 +55,7 @@
 
 🚀 DeepSeek-V3 & R1大模型逆向API
 
-<kbd>1.0.0</kbd> • [官网链接](https://github.com/xiaoY233/DeepSeek-Free-API)
+<kbd>1.0.1</kbd> • [官网链接](https://github.com/xiaoY233/DeepSeek-Free-API)
 
 </td>
 <td width="33%" align="center">
@@ -486,7 +486,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.11.4</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.12.0</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">
@@ -515,7 +515,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>0.10.5</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>0.10.7</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -556,7 +556,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 开源可视化AI工作流构建平台，拖拽式设计LLM应用
 
-<kbd>3.0.12</kbd> • [官网链接](https://github.com/FlowiseAI/Flowise)
+<kbd>3.0.13</kbd> • [官网链接](https://github.com/FlowiseAI/Flowise)
 
 </td>
 <td width="33%" align="center">
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.7.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.7.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
