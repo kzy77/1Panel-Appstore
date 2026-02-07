@@ -33,7 +33,7 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.235
-    image: chaitin/safeline-detector:9.3.2
+    image: chaitin/safeline-detector:9.3.2.1
     volumes:
       - ${SAFELINE_DIR}/resources/detector:/resources/detector
       - ${SAFELINE_DIR}/logs/detector:/logs/detector
@@ -45,7 +45,7 @@ services:
   safeline-tengine:
     container_name: ${CONTAINER_NAME}-tengine
     restart: always
-    image: chaitin/safeline-tengine:9.3.2
+    image: chaitin/safeline-tengine:9.3.2.1
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/resolv.conf:/etc/resolv.conf:ro
@@ -69,7 +69,7 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.237
-    image: chaitin/safeline-luigi:9.3.2
+    image: chaitin/safeline-luigi:9.3.2.1
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ${SAFELINE_DIR}/resources/luigi:/app/data
@@ -90,7 +90,7 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.238
-    image: chaitin/safeline-fvm:9.3.2
+    image: chaitin/safeline-fvm:9.3.2.1
     volumes:
       - /etc/localtime:/etc/localtime:ro
     logging:
@@ -126,11 +126,13 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.240
-    image: chaitin/safeline-chaos:9.3.2
+    image: chaitin/safeline-chaos:9.3.2.1
     logging:
       options:
         max-size: 100m
         max-file: '5'
+    environment:
+      - DB_ADDR=postgres://safeline-ce:${POSTGRES_PASSWORD}@safeline-pg/safeline-ce?sslmode=disable
     volumes:
       - ${SAFELINE_DIR}/resources/sock:/app/sock
       - ${SAFELINE_DIR}/resources/chaos:/app/chaos
