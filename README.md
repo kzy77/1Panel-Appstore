@@ -304,7 +304,7 @@
 
 文档、白板和数据库完全整合的工作空间
 
-<kbd>0.26.0</kbd> • [官网链接](https://github.com/toeverything/AFFiNE)
+<kbd>0.26.2</kbd> • [官网链接](https://github.com/toeverything/AFFiNE)
 
 </td>
 <td width="33%" align="center">
@@ -568,7 +568,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 模型上下文协议调试工具，支持MCP服务器测试与开发
 
-<kbd>0.19.0-hotfix</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
+<kbd>0.20.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
 
 </td>
 <td width="33%" align="center">
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.7.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.7.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -1001,7 +1001,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>2.5.1</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>2.5.2</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
