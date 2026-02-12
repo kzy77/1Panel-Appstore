@@ -400,7 +400,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 NPS客户端，轻量级高性能内网穿透代理工具
 
-<kbd>0.34.2</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.34.3</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 <td width="33%" align="center">
@@ -486,7 +486,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.12.1</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.13.0</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.7.3</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.8.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
