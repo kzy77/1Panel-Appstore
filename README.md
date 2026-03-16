@@ -775,7 +775,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎬 开箱即用的跨平台影视聚合播放器，支持多源搜索和在线播放
 
-<kbd>100.1.1</kbd> • [官网链接](https://github.com/MoonTechLab/LunaTV)
+<kbd>100.1.2</kbd> • [官网链接](https://github.com/MoonTechLab/LunaTV)
 
 </td>
 </tr>
@@ -876,7 +876,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.31.15</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.31.16</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
