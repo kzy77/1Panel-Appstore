@@ -222,7 +222,7 @@
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.70.2</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.70.3</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -357,7 +357,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 开源Airtable替代品，将任何数据库转换为智能电子表格
 
-<kbd>0.301.3</kbd> • [官网链接](https://github.com/nocodb/nocodb)
+<kbd>0.301.4</kbd> • [官网链接](https://github.com/nocodb/nocodb)
 
 </td>
 <td width="33%" align="center">
@@ -486,7 +486,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.13.0</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.13.1</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">
@@ -515,7 +515,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>0.11.5-allinone</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>0.11.6</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -960,7 +960,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 Docker 镜像加速与私有部署服务，支持多平台和多架构
 
-<kbd>0.7.3</kbd> • [官网链接](https://kspeeder.istoreos.com/)
+<kbd>0.7.5</kbd> • [官网链接](https://kspeeder.istoreos.com/)
 
 </td>
 <td width="33%" align="center">
