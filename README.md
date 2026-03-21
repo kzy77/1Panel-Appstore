@@ -178,7 +178,7 @@
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.3.2-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.3.3-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -357,7 +357,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 开源Airtable替代品，将任何数据库转换为智能电子表格
 
-<kbd>0.301.4</kbd> • [官网链接](https://github.com/nocodb/nocodb)
+<kbd>0.301.5</kbd> • [官网链接](https://github.com/nocodb/nocodb)
 
 </td>
 <td width="33%" align="center">
@@ -486,7 +486,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.13.1</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.13.2</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">
@@ -498,7 +498,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.6.1</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.6.2</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -515,7 +515,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>0.11.6</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>0.11.7</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -662,7 +662,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.13.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.13.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -794,7 +794,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.0.5</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.0.6</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
@@ -818,7 +818,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.0.2</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.1.0</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
