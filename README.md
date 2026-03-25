@@ -18,15 +18,89 @@
 </p>
 
 ### 📖 仓库介绍
- - 本仓库包含多个适用于 1Panel 的应用，旨在为用户提供简单、快速的安装与更新体验。应用均为开源项目，支持通过 1Panel 的计划任务功能自动化安装和更新。通过仓库提供的脚本，可以轻松地将应用集成到 1Panel 系统中。
- - 仓库主打优质应用合集，不追求大而全(很多基本用不上的应用会干扰检索查看)，有推荐的应用可以在issue中进行提交
+
+- 本仓库包含多个适用于 1Panel 的应用，旨在为用户提供简单、快速的安装与更新体验。应用均为开源项目，支持通过 1Panel 的计划任务功能自动化安装和更新。通过仓库提供的脚本，可以轻松地将应用集成到 1Panel 系统中。
+- 仓库主打优质应用合集，不追求大而全(很多基本用不上的应用会干扰检索查看)，有推荐的应用可以在issue中进行提交
 
 ### ⚠️ 仓库申明
 
-
 - 非官方，第三方应用商店
 - 不对任何原始镜像的有效性做出任何明示或暗示的保证或声明，安全性和风险自查
-- 个人仓库，可以Fork后自行更新，但是严禁未经授权，私自删除个人信息后合并发布 
+- 个人仓库，可以Fork后自行更新，但是严禁未经授权，私自删除个人信息后合并发布
+
+
+### 🚀 使用方法
+
+#### 📋 添加脚本到 1Panel 计划任务
+
+1. 在 1Panel 控制面板中，进入"计划任务"页面。
+2. 点击"新增任务"，选择任务类型为"Shell 脚本"。
+3. 在脚本框中粘贴以下代码：
+
+```bash
+#!/bin/bash
+
+# 清理旧的临时目录
+rm -rf /tmp/appstore_merge
+
+# 克隆 appstore-arch3rPro
+git clone --depth=1 https://ghfast.top/https://github.com/arch3rPro/1Panel-Appstore /tmp/appstore_merge/appstore-arch3rPro
+
+# 复制 数据（完整复制）
+cp -rf /tmp/appstore_merge/appstore-arch3rPro/apps/* /opt/1panel/resource/apps/local/
+
+# 清理临时目录
+rm -rf /tmp/appstore_merge
+echo "应用商店数据已更新"
+```
+
+### 🤖 使用 AI 快速生成应用配置
+
+本仓库提供了 Skill 配置，支持在 Cursor、Windsurf、Claude Code 等 AI 客户端中快速生成 1Panel 应用配置。
+
+#### 📁 Skills 目录结构
+
+```
+skills/
+├── SKILL.md              # 1Panel App Builder 技能定义
+├── README.md             # 使用文档
+├── templates/            # 配置模板
+│   ├── data.yml.tpl      # 应用元数据模板
+│   └── docker-compose.yml.tpl # 编排文件模板
+├── scripts/              # 工具脚本
+│   ├── generate-app.sh   # 主生成脚本
+│   ├── download-icon.sh  # 图标下载工具
+│   └── validate-app.sh   # 配置验证工具
+├── references/           # 参考示例
+│   └── 1panel-examples.md
+└── examples/             # 使用示例
+    └── example-usage.md
+```
+
+#### 💡 使用示例
+
+只需向 AI 提供以下任一信息，即可自动生成完整的应用配置：
+
+```
+# GitHub 项目
+添加应用 AList https://github.com/alist-org/alist
+
+# docker-compose 文件
+根据这个 docker-compose.yml 生成 1Panel 应用配置
+
+# docker run 命令
+将这个 docker run 命令转换为 1Panel 应用：
+docker run -d --name=nginx -p 80:80 nginx:latest
+```
+
+#### ✨ AI 生成的配置包含
+
+- `data.yml` - 应用元数据（顶层）
+- `version/data.yml` - 参数定义（表单字段）
+- `docker-compose.yml` - Docker 编排文件
+- `README.md` - 中文文档
+- `README_en.md` - 英文文档
+- `logo.png` - 应用图标
 
 
 ### 📱 应用列表
@@ -36,13 +110,9 @@
 #### 🤖LLM免费API接口
 
 - 支持一键部署AI免费API接口，使用方式请参考应用内**README介绍**
-
 - **Free-API系列应用已下架，原项目由于供应链投毒，被植入恶意代码，请及时停止运行并删除这些服务！！！**
-
 - 经过几天的排查和重构，已重新上架[GLM-Free-API](https://github.com/xiaoY233/GLM-Free-API)、[MiniMax-Free-API](https://github.com/xiaoY233/MiniMax-Free-API)、[Qwen-Free-API](https://github.com/xiaoY233/Qwen-Free-API)、[Kimi-Free-API](https://github.com/xiaoY233/Kimi-Free-API)，[DeepSeek-Free-API](https://github.com/xiaoY233/DeepSeek-Free-API),欢迎各位对源码进行审查，如果不放心，建议还是暂停使用！
-
 - 其他的Free-API系列看情况再搞了,后续主要更新上述几个Free-API兼容Gemini-cli和Claude的API接入。
-
 
 <table>
 <tr>
@@ -103,8 +173,8 @@
 
 <!-- <a href="./apps/jimeng-free-api/README.md">
 <img src="./apps/jimeng-free-api/logo.png" width="60" height="60" alt="Jimeng-Free-API"> -->
-<br><b>Jimeng-Free-API</b>
-</a>
+
+<b>Jimeng-Free-API</b> </a>
 
 🚀 即梦3.0逆向API【特长：图像生成顶流】
 
@@ -115,8 +185,8 @@
 
 <!-- <a href="./apps/spark-free-api/README.md">
 <img src="./apps/spark-free-api/logo.png" width="60" height="60" alt="Spark-Free-API"> -->
-<br><b>Spark-Free-API</b>
-</a>
+
+<b>Spark-Free-API</b> </a>
 
 🚀 讯飞星火大模型逆向API【特长：办公助手】
 
@@ -144,8 +214,8 @@
 
 <!-- <a href="./apps/step-free-api/README.md">
 <img src="./apps/step-free-api/logo.png" width="60" height="60" alt="Step-Free-API"> -->
-<br><b>Step-Free-API</b>
-</a>
+
+<b>Step-Free-API</b> </a>
 
 🚀 阶跃星辰跃问Step 多模态大模型逆向API【特长：超强多模态】
 
@@ -156,8 +226,8 @@
 
 <!-- <a href="./apps/metaso-free-api/README.md">
 <img src="./apps/metaso-free-api/logo.png" width="60" height="60" alt="Metaso-Free-API"> -->
-<br><b>Metaso-Free-API</b>
-</a>
+
+<b>Metaso-Free-API</b> </a>
 
 🚀 秘塔AI搜索逆向API【特长：超强检索超长输出】
 
@@ -207,7 +277,6 @@
 </td>
 </tr>
 </table>
-
 
 #### 📝 文档与内容管理
 
@@ -662,7 +731,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.13.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.14.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -876,7 +945,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.31.17</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.31.18</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1197,33 +1266,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 </tr>
 </table>
 
-### 🚀 使用方法
-
-#### 📋 添加脚本到 1Panel 计划任务
-
-1. 在 1Panel 控制面板中，进入"计划任务"页面。
-2. 点击"新增任务"，选择任务类型为"Shell 脚本"。
-3. 在脚本框中粘贴以下代码：
-
-```bash
-#!/bin/bash
-
-# 清理旧的临时目录
-rm -rf /tmp/appstore_merge
-
-# 克隆 appstore-arch3rPro
-git clone --depth=1 https://ghfast.top/https://github.com/arch3rPro/1Panel-Appstore /tmp/appstore_merge/appstore-arch3rPro
-
-# 复制 数据（完整复制）
-cp -rf /tmp/appstore_merge/appstore-arch3rPro/apps/* /opt/1panel/resource/apps/local/
-
-# 清理临时目录
-rm -rf /tmp/appstore_merge
-echo "应用商店数据已更新"
-```
-
 
 <!-- 橙色风格 -->
 
 ![Copyright-arch3rPro](https://img.shields.io/badge/Copyright-arch3rPro-ff9800?style=flat&logo=github&logoColor=white)
-
