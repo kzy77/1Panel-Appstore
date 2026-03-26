@@ -555,7 +555,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.13.2</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.13.3</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">
@@ -567,7 +567,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.6.3</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.7.0</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -731,7 +731,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.14.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.14.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -803,7 +803,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖼️ 高效云存储和图床平台管理工具
 
-<kbd>2.3.3</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
+<kbd>2.3.5</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
 
 </td>
 </tr>
