@@ -1570,7 +1570,7 @@ services:
       - ssrf_proxy_network
       - default
   web:
-    image: langgenius/dify-web:1.13.2
+    image: langgenius/dify-web:1.13.3
     container_name: ${CONTAINER_NAME}
     env_file:
       - dify.env
