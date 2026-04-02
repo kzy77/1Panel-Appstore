@@ -59,7 +59,23 @@ Based on user input type, extract Docker deployment details:
 2. Extract the image name and tag
 3. Identify exposed ports and data directories
 
-### Step 2: Generate App Key and Metadata
+### Step 2: Resolve Latest Version (Create Version + latest)
+
+Always create **two** version directories when possible:
+
+- `latest/` uses image tag `latest`
+- `<version>/` uses the **latest concrete tag** from the registry
+
+**How to resolve the latest concrete tag:**
+
+1. If the image is on **GitHub Container Registry** (`ghcr.io`), query tags from GitHub Packages (GHCR).
+2. Otherwise, query **Docker Hub** tags.
+3. Prefer the newest semver-like tag (e.g., `v1.2.3` or `1.2.3`). If none exist, pick the most recently updated non-`latest` tag.
+4. If you cannot resolve a concrete tag, fall back to the image tag from input and warn the user.
+
+**Rule:** The `latest/` directory must **always** use `image: ...:latest`. The `<version>/` directory must **always** use `image: ...:<version>`.
+
+### Step 3: Generate App Key and Metadata
 
 **App Key Rules:**
 - Lowercase only
@@ -100,7 +116,7 @@ additionalProperties:
     # Add: arm/v7, arm/v6, s390x if supported
 ```
 
-### Step 3: Define Parameters (version/data.yml)
+### Step 4: Define Parameters (version/data.yml)
 
 Parameters become UI form fields in 1Panel. Define user-configurable values:
 
@@ -170,7 +186,25 @@ additionalProperties:
 - `paramExtUrl`: Valid URL format
 - Empty string: No validation
 
-### Step 4: Create docker-compose.yml
+### Port envKey Naming (Use 1Panel Standard Names)
+
+Prefer these **standard** `envKey` names (observed across apps in `apps/`):
+
+- `PANEL_APP_PORT_HTTP` (primary Web/UI port)
+- `PANEL_APP_PORT_HTTPS`
+- `PANEL_APP_PORT_API`
+- `PANEL_APP_PORT_ADMIN`
+- `PANEL_APP_PORT_PROXY`
+- `PANEL_APP_PORT_PROXY_HTTP`
+- `PANEL_APP_PORT_PROXY_HTTPS`
+- `PANEL_APP_PORT_DB`
+- `PANEL_APP_PORT_SSH`
+- `PANEL_APP_PORT_S3`
+- `PANEL_APP_PORT_SYNC`
+
+**Guideline:** Use the most semantically correct name first; only invent new suffixes if none of the standard names fit.
+
+### Step 5: Create docker-compose.yml
 
 Convert the original Docker deployment to use variable substitution:
 
@@ -199,12 +233,20 @@ networks:
 1. Always use `${CONTAINER_NAME}` for container_name
 2. Always use `restart: always`
 3. Always connect to `1panel-network` (external network)
-4. Port mapping uses `PANEL_APP_PORT_*` variables from data.yml
+4. Port mapping uses `PANEL_APP_PORT_*` variables from version/data.yml
 5. Volume paths use relative `./data/` for persistence
 6. Add `labels: createdBy: "Apps"`
 7. Keep original environment variables but use defaults
 
-### Step 5: Create README Files
+**Port Mapping Format (Important):**
+
+Use quoted mappings like:
+```
+- "${PANEL_APP_PORT_HTTP}:8080"
+```
+and ensure the same `envKey` exists in `version/data.yml`.
+
+### Step 6: Create README Files
 
 **README.md (Chinese):**
 ```markdown
@@ -269,17 +311,19 @@ Brief description of the application.
 - GitHub: https://github.com/org/repo
 ```
 
-### Step 6: Download App Icon
+### Step 7: Download App Icon
 
-Search and download the app logo from these sources (in order):
+**Priority order:**
+1. **Search the GitHub repository** for common icon files (e.g., `logo.png`, `icon.png`, `assets/logo.png`, `.github/icon.png`). Use the repo's raw download URL if found.
+2. If not found, search and download the app logo from these sources (in order):
 
 1. **Dashboard Icons**: https://dashboardicons.com/icons?q={app-name}
 2. **Simple Icons**: https://simpleicons.org/?q={app-name}
 3. **Selfh.st Icons**: https://selfh.st/icons/
 
-Save as `logo.png` in the app root directory.
+**Do not** create a placeholder or incorrect icon. If not found, warn and leave `logo.png` for manual replacement.
 
-### Step 7: Create Data Directory Structure
+### Step 8: Create Data Directory Structure
 
 Create the `data/` directory inside the version folder:
 ```bash
@@ -294,13 +338,16 @@ Before delivering the app package, verify:
 
 - [ ] App key is lowercase with hyphens only
 - [ ] All required fields in top-level data.yml are present
-- [ ] Version data.yml has proper parameter definitions
+- [ ] `latest/` and `<version>/` directories both exist (when a concrete tag is resolvable)
+- [ ] `latest/` uses image tag `latest`
+- [ ] `<version>/` uses the concrete latest tag from registry
+- [ ] Version data.yml has proper parameter definitions (formFields)
 - [ ] docker-compose.yml uses variable substitution correctly
 - [ ] `1panel-network` is defined as external network
 - [ ] Volume paths use relative `./data/` format
 - [ ] README files are created with proper documentation
 - [ ] Logo file exists (logo.png)
-- [ ] Version directory follows semver or uses "latest"
+- [ ] Version directory follows semver; avoid only `latest`
 
 ## Common Patterns
 
