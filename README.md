@@ -565,7 +565,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.7.0</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.8.0</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -582,7 +582,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>0.12.0</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>0.12.1</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -705,7 +705,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.8.3</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.8.4</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -759,6 +759,47 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 📝 私有的、多模型的Google Notebook LM替代方案，支持多模态内容和AI播客生成
 
 <kbd>1.2.4</kbd> • [官网链接](https://www.open-notebook.ai/)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/sub2api/README.md">
+<img src="./apps/sub2api/logo.png" width="60" height="60" alt="Sub2API">
+<br><b>Sub2API</b>
+</a>
+
+🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
+
+<kbd>0.1.106</kbd> • [官网链接](https://sub2api.org)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/cliproxyapi-plus/README.md">
+<img src="./apps/cliproxyapi-plus/logo.png" width="60" height="60" alt="CLIProxyAPI Plus">
+<br><b>CLIProxyAPI Plus</b>
+</a>
+
+🔗 CLIProxyAPI Plus 代理API服务
+
+<kbd>6.9.9-0</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPIPlus)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/trae-proxy/README.md">
+<img src="./apps/trae-proxy/logo.png" width="60" height="60" alt="Trae-Proxy">
+<br><b>Trae-Proxy</b>
+</a>
+
+🎯 一个智能的API代理工具，专门用于拦截和重定向OpenAI API请求到自定义后端服务
+
+<kbd>1.0.0</kbd> • [官网链接](https://github.com/arch3rPro/Trae-Proxy)
 
 </td>
 </tr>

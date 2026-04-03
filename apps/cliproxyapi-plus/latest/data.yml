@@ -2,49 +2,49 @@ additionalProperties:
   formFields:
     - default: 8317
       edit: true
-      envKey: PANEL_APP_PORT_8317
-      labelEn: Port 8317
-      labelZh: 端口 8317
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Web UI Port
+      labelZh: Web界面端口
       required: true
       rule: paramPort
       type: number
     - default: 8085
       edit: true
-      envKey: PANEL_APP_PORT_8085
-      labelEn: Port 8085
-      labelZh: 端口 8085
+      envKey: PANEL_APP_PORT_PROXY
+      labelEn: Proxy Port
+      labelZh: 代理端口
       required: true
       rule: paramPort
       type: number
     - default: 1455
       edit: true
       envKey: PANEL_APP_PORT_1455
-      labelEn: Port 1455
-      labelZh: 端口 1455
+      labelEn: Additional Port 1455
+      labelZh: 额外端口 1455
       required: true
       rule: paramPort
       type: number
     - default: 54545
       edit: true
       envKey: PANEL_APP_PORT_54545
-      labelEn: Port 54545
-      labelZh: 端口 54545
+      labelEn: Additional Port 54545
+      labelZh: 额外端口 54545
       required: true
       rule: paramPort
       type: number
     - default: 51121
       edit: true
       envKey: PANEL_APP_PORT_51121
-      labelEn: Port 51121
-      labelZh: 端口 51121
+      labelEn: Additional Port 51121
+      labelZh: 额外端口 51121
       required: true
       rule: paramPort
       type: number
     - default: 11451
       edit: true
       envKey: PANEL_APP_PORT_11451
-      labelEn: Port 11451
-      labelZh: 端口 11451
+      labelEn: Additional Port 11451
+      labelZh: 额外端口 11451
       required: true
       rule: paramPort
       type: number

@@ -26,11 +26,11 @@ AI API 网关平台，用于分发和管理 AI 产品订阅的 API 配额。
 **数据库连接设置：**
 - PostgreSQL 主机: `postgres`（Docker 网络内使用服务名，不是 localhost）
 - Redis 主机: `redis`（Docker 网络内使用服务名，不是 localhost）
-- PostgreSQL 密码: 请使用强密码
+- PostgreSQL 密码: 由系统自动生成（可在部署时自定义）
 
 **JWT 密钥要求：**
-- 长度必须至少 32 字符
-- 生产环境请使用随机生成的强密码
+- 由系统自动生成随机强密码
+- 长度至少 32 字符
 
 ### 数据目录
 
@@ -38,6 +38,11 @@ AI API 网关平台，用于分发和管理 AI 产品订阅的 API 配额。
 - `postgres_data` - PostgreSQL 数据库数据
 - `redis_data` - Redis 缓存数据
 - `./data` - 应用配置和数据
+
+## 版本说明
+
+- **latest**: 最新开发版本
+- **0.1.106**: 最新稳定版本（推荐）
 
 ## 相关链接
 
@@ -49,7 +54,7 @@ AI API 网关平台，用于分发和管理 AI 产品订阅的 API 配额。
 
 1. **数据库连接**：在 Docker 部署中，PostgreSQL 和 Redis 使用服务名（`postgres`、`redis`）进行连接，请勿使用 `localhost`
 
-2. **JWT 密钥**：必须至少 32 字符，建议使用随机字符串
+2. **JWT 密钥和数据库密码**：系统会自动生成强密码，部署后会自动填入，无需手动设置
 
 3. **首次部署**：如果遇到数据库连接错误，请确保：
    - PostgreSQL 容器已完全启动（等待约 10-30 秒）
