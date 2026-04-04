@@ -1,0 +1,27 @@
+name: LiteLLM
+tags:
+  - 实用工具
+  - AI
+title: 使用 OpenAI 格式调用所有 LLM API
+  [Bedrock、Huggingface、VertexAI、TogetherAI、Azure、OpenAI、Groq 等]
+description:
+  en: Call all LLM APIs using the OpenAI format [Bedrock, Huggingface, VertexAI,
+    TogetherAI, Azure, OpenAI, Groq etc.]
+  zh: 使用 OpenAI 格式调用所有 LLM API
+    [Bedrock、Huggingface、VertexAI、TogetherAI、Azure、OpenAI、Groq 等]
+additionalProperties:
+  key: litellm
+  name: LiteLLM
+  tags:
+    - Tool
+    - AI
+  shortDescZh: 使用 OpenAI 格式调用所有 LLM API
+    [Bedrock、Huggingface、VertexAI、TogetherAI、Azure、OpenAI、Groq 等]
+  shortDescEn: Call all LLM APIs using the OpenAI format [Bedrock, Huggingface,
+    VertexAI, TogetherAI, Azure, OpenAI, Groq etc.]
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  website: https://github.com/BerriAI/litellm
+  github: https://github.com/BerriAI/litellm
+  document: https://docs.litellm.ai/docs/

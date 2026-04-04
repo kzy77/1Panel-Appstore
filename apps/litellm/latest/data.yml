@@ -1,0 +1,21 @@
+additionalProperties:
+  formFields:
+    - default: "4000"
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        en: Port
+        zh: 端口
+      required: true
+      type: number
+      edit: true
+      rule: paramPort
+    - default: sk-litellm-change-in-production
+      envKey: LITELLM_MASTER_KEY
+      label:
+        en: LITELLM_MASTER_KEY
+        zh: LITELLM密钥
+      required: true
+      type: password
+      edit: true
+      rule: paramComplexity
+      random: true
