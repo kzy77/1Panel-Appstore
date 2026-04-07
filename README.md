@@ -246,7 +246,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.3.9-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.4.3-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -565,7 +565,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.8.0</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.9.1</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -582,7 +582,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>0.12.1</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>0.12.2</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -902,7 +902,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.0.6</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.0.7</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
