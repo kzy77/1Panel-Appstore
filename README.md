@@ -383,7 +383,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 开源自托管个人笔记工具，支持AI增强笔记检索
 
-<kbd>1.8.6</kbd> • [官网链接](https://github.com/blinko-space/blinko)
+<kbd>1.8.7</kbd> • [官网链接](https://github.com/blinko-space/blinko)
 
 </td>
 <td width="33%" align="center">
@@ -582,7 +582,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>0.12.6</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>0.12.8</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
