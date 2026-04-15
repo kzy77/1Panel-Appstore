@@ -289,7 +289,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.71.1</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.80.0</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -623,7 +623,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 开源可视化AI工作流构建平台，拖拽式设计LLM应用
 
-<kbd>3.1.1</kbd> • [官网链接](https://github.com/FlowiseAI/Flowise)
+<kbd>3.1.2</kbd> • [官网链接](https://github.com/FlowiseAI/Flowise)
 
 </td>
 <td width="33%" align="center">
@@ -746,7 +746,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 AI驱动的图表创建工具
 
-<kbd>0.4.13</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
+<kbd>0.4.15</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
 
 </td>
 <td width="33%" align="center">
@@ -787,7 +787,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 CLIProxyAPI Plus 代理API服务
 
-<kbd>6.9.9-0</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPIPlus)
+<kbd>6.9.23-0</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPIPlus)
 
 </td>
 <td width="33%" align="center">

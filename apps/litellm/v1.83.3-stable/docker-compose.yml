@@ -1,6 +1,6 @@
 services:
   litellm:
-    image: ghcr.io/berriai/litellm:v1.83.0-nightly
+    image: ghcr.io/berriai/litellm:v1.83.3-stable
     container_name: ${CONTAINER_NAME}
     #########################################
     ## Uncomment these lines to start proxy with a config.yaml file ##
