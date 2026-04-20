@@ -455,7 +455,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 简单安全去中心化的内网穿透 VPN 组网方案
 
-<kbd>2.6.0</kbd> • [官网链接](https://github.com/EasyTier/Easytier)
+<kbd>2.6.1</kbd> • [官网链接](https://github.com/EasyTier/Easytier)
 
 </td>
 <td width="33%" align="center">
@@ -496,7 +496,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.3.4</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.3.5</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -984,7 +984,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.31.21</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.31.22</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
