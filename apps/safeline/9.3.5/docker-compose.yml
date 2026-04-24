@@ -90,7 +90,7 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.238
-    image: chaitin/safeline-fvm:9.3.3
+    image: chaitin/safeline-fvm:9.3.5
     volumes:
       - /etc/localtime:/etc/localtime:ro
     logging:
@@ -126,7 +126,7 @@ services:
     networks:
       1panel-network:
         ipv4_address: ${SUBNET_PREFIX}.240
-    image: chaitin/safeline-chaos:9.3.3
+    image: chaitin/safeline-chaos:9.3.5
     logging:
       options:
         max-size: 100m
