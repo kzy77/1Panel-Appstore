@@ -496,7 +496,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.3.5</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.3.6</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -582,7 +582,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>0.12.15-allinone</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>0.13.1-allinone</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -705,7 +705,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.9.0</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.9.1</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -729,7 +729,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.18.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.18.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
