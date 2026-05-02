@@ -705,7 +705,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.9.1</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.9.2</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -729,7 +729,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.19.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.19.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -926,7 +926,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.2.0</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.2.1</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
