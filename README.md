@@ -289,7 +289,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.80.1</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.80.2</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -313,7 +313,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 美观强大的在线静态博客管理器，支持多种平台
 
-<kbd>4.1.1</kbd> • [官网链接](https://github.com/Qexo/Qexo)
+<kbd>4.2.0</kbd> • [官网链接](https://github.com/Qexo/Qexo)
 
 </td>
 </tr>
@@ -455,7 +455,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 简单安全去中心化的内网穿透 VPN 组网方案
 
-<kbd>2.6.1</kbd> • [官网链接](https://github.com/EasyTier/Easytier)
+<kbd>2.6.3</kbd> • [官网链接](https://github.com/EasyTier/Easytier)
 
 </td>
 <td width="33%" align="center">
