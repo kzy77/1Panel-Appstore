@@ -606,7 +606,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>1.4.6</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>1.4.7</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -729,7 +729,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.19.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.20.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -842,7 +842,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖼️ 高效云存储和图床平台管理工具
 
-<kbd>2.3.5</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
+<kbd>2.4.0</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
 
 </td>
 </tr>
