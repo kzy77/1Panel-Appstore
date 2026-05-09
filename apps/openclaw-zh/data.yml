@@ -1,0 +1,27 @@
+name: OpenClaw Chinese
+tags:
+  - AI / 大模型
+title: OpenClaw 汉化发行版，开源、自托管的个人 AI 助理
+description: OpenClaw 汉化发行版，开源、自托管的个人 AI 助理
+additionalProperties:
+  key: openclaw-zh
+  name: OpenClaw Chinese
+  tags:
+    - AI
+  shortDescZh: OpenClaw 汉化发行版，开源、自托管的个人 AI 助理
+  shortDescEn: Chinese localized OpenClaw distribution, a self-hosted personal AI assistant
+  description:
+    en: Chinese localized OpenClaw distribution, a self-hosted personal AI assistant
+    zh: OpenClaw 汉化发行版，开源、自托管的个人 AI 助理
+    zh-Hant: OpenClaw 漢化發行版，開源、自托管的個人 AI 助理
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  batchInstallSupport: true
+  website: https://openclaw.qt.cool/
+  github: https://github.com/1186258278/OpenClawChineseTranslation
+  document: https://github.com/1186258278/OpenClawChineseTranslation/blob/main/DOCKER_README.md
+  architectures:
+    - amd64
+    - arm64

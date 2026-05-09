@@ -342,7 +342,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 自托管全能书签管理工具，支持AI自动标签功能
 
-<kbd>0.31.0</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
+<kbd>0.32.0</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
 
 </td>
 <td width="33%" align="center">
@@ -424,7 +424,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 开源Airtable替代品，将任何数据库转换为智能电子表格
 
-<kbd>2026.04.5</kbd> • [官网链接](https://github.com/nocodb/nocodb)
+<kbd>2026.05.0</kbd> • [官网链接](https://github.com/nocodb/nocodb)
 
 </td>
 <td width="33%" align="center">
@@ -729,7 +729,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.20.5</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.20.6</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
