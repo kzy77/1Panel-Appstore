@@ -19,22 +19,3 @@ additionalProperties:
             zh-Hant: Web UI 埠
             zh: Web UI 端口
             tr: Web UI Bağlantı Noktası
-        - default: http://hermes-agent:8642
-          edit: true
-          envKey: PANEL_APP_HERMES_GATEWAY
-          labelEn: Hermes Agent Gateway
-          labelZh: Hermes Agent 网关地址
-          required: true
-          rule: paramExtUrl
-          type: text
-          label:
-            en: Hermes Agent Gateway
-            es-es: Puerta de enlace del Hermes Agent
-            ja: Hermes Agent ゲートウェイ
-            ms: Gerbang Hermes Agent
-            pt-br: Gateway do Hermes Agent
-            ru: Шлюз Hermes Agent
-            ko: Hermes Agent 게이트웨이
-            zh-Hant: Hermes Agent 閘道位址
-            zh: Hermes Agent 网关地址
-            tr: Hermes Agent Ağ Geçidi

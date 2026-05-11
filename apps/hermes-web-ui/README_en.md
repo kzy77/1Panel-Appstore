@@ -2,21 +2,6 @@
 
 A full-featured web dashboard for Hermes Agent. Manage AI chat sessions, monitor usage & costs, configure platform channels, schedule cron jobs, browse skills — all from a clean, responsive web interface.
 
-## Deployment
-
-This is a standalone Web UI app that does **not include** the Hermes Agent service. Install the official [Hermes Agent](https://github.com/1Panel-dev/appstore/tree/dev/apps/hermes-agent) from 1Panel app store first, then install this app to connect to your existing Agent.
-
-### Setup Steps
-
-1. Install **Hermes Agent** from 1Panel app store (official app)
-2. Install **Hermes Web UI** (this app)
-3. Configure the "Hermes Agent Gateway" URL during installation (default: `http://hermes-agent:8642`)
-4. If you changed the Agent container name, adjust the hostname in the gateway URL accordingly
-
-### Networking
-
-Both apps use the `1panel-network` and communicate via Docker internal networking — no additional ports need to be exposed.
-
 ## Features
 
 - **AI Chat** — Real-time streaming via SSE, multi-session management, Markdown rendering with syntax highlighting
@@ -34,16 +19,15 @@ Both apps use the `1panel-network` and communicate via Docker internal networkin
 
 ## Usage
 
+### Architecture
+
+This app includes two services:
+- **hermes-agent**: Uses the official 1Panel-maintained Hermes Agent image ([1panel/hermes-agent](https://hub.docker.com/r/1panel/hermes-agent))
+- **hermes-webui**: Community-maintained full-featured web dashboard
+
 ### Default Port
 
 - Web UI: `6060` (configurable during installation)
-
-### Configuration Parameters
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| Web UI Port | `6060` | Web dashboard access port |
-| Agent Gateway | `http://hermes-agent:8642` | Hermes Agent gateway URL |
 
 ### Default Credentials
 
@@ -52,14 +36,16 @@ Both apps use the `1panel-network` and communicate via Docker internal networkin
   docker logs <container-name> | grep token
   ```
 - You can also set a custom token via `AUTH_TOKEN` environment variable
+- Set `AUTH_DISABLED=true` to disable authentication
 
 ### Data Directories
 
+- `./data` — Hermes Agent runtime data (sessions, configs, profiles)
 - `./webui-data` — Web UI data (auth token, etc.)
 
-### Model Configuration
+### Prerequisites
 
-Make sure to configure your AI model API keys via the Hermes Agent web interface or this app's Model Management page before use.
+Make sure to configure your AI model API keys via the Web UI's Model Management page before use.
 
 ## Links
 

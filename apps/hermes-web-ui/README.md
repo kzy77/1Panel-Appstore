@@ -2,21 +2,6 @@
 
 Hermes Agent 的全功能 Web 管理面板。管理 AI 聊天会话、监控使用量与成本、配置平台渠道、调度定时任务、浏览技能等，全部通过简洁响应式 Web 界面完成。
 
-## 部署说明
-
-本应用为独立的 Web UI 面板，**不包含** Hermes Agent 服务。使用前请先在 1Panel 中安装官方 [Hermes Agent](https://github.com/1Panel-dev/appstore/tree/dev/apps/hermes-agent) 应用，然后安装本应用连接到已有的 Agent。
-
-### 安装步骤
-
-1. 在 1Panel 应用商店安装 **Hermes Agent**（官方应用）
-2. 安装本应用 **Hermes Web UI**
-3. 安装时配置「Hermes Agent 网关地址」，默认为 `http://hermes-agent:8642`
-4. 如果安装 Agent 时修改了容器名称，请相应调整网关地址中的主机名
-
-### 网络要求
-
-两个应用均使用 `1panel-network` 网络，通过 Docker 内部网络通信，无需暴露额外端口。
-
 ## 功能特点
 
 - **AI 聊天** — 实时流式 SSE 传输，多会话管理，Markdown 渲染与代码高亮
@@ -34,16 +19,15 @@ Hermes Agent 的全功能 Web 管理面板。管理 AI 聊天会话、监控使�
 
 ## 使用说明
 
+### 架构说明
+
+本应用包含两个服务：
+- **hermes-agent**：使用 1Panel 官方维护的 Hermes Agent 镜像（[1panel/hermes-agent](https://hub.docker.com/r/1panel/hermes-agent)）
+- **hermes-webui**：社区维护的全功能 Web 管理面板
+
 ### 默认端口
 
 - Web 界面: `6060`（可在安装时修改）
-
-### 配置参数
-
-| 参数 | 默认值 | 说明 |
-|------|--------|------|
-| Web UI 端口 | `6060` | Web 管理面板的访问端口 |
-| Agent 网关地址 | `http://hermes-agent:8642` | Hermes Agent 的网关地址 |
 
 ### 默认认证
 
@@ -52,14 +36,16 @@ Hermes Agent 的全功能 Web 管理面板。管理 AI 聊天会话、监控使�
   docker logs <容器名> | grep token
   ```
 - 也可通过环境变量 `AUTH_TOKEN` 设置自定义 Token
+- 如需禁用认证，可将 `AUTH_DISABLED` 设置为 `true`
 
 ### 数据目录
 
+- `./data` — Hermes Agent 运行时数据（会话、配置、配置文件）
 - `./webui-data` — Web UI 数据（Auth Token 等）
 
-### 模型配置
+### 前置条件
 
-使用前请确保已在 Hermes Agent 的 Web 界面或本应用的模型管理页面配置好 AI 模型的 API 密钥。
+使用前请确保已在 Web 界面的模型管理页面配置好 AI 模型的 API 密钥。
 
 ## 相关链接
 
