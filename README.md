@@ -455,7 +455,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 简单安全去中心化的内网穿透 VPN 组网方案
 
-<kbd>2.6.3</kbd> • [官网链接](https://github.com/EasyTier/Easytier)
+<kbd>2.6.4</kbd> • [官网链接](https://github.com/EasyTier/Easytier)
 
 </td>
 <td width="33%" align="center">
@@ -553,7 +553,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.14.0</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.14.1</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">
@@ -729,7 +729,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.20.6</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.21.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
