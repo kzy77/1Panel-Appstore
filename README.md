@@ -246,7 +246,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.5.3-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.5.4-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -705,7 +705,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.9.2</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.9.3</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -729,7 +729,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.21.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.21.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
