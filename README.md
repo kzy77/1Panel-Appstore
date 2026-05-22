@@ -289,7 +289,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.80.2</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.90.0</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -729,7 +729,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.22.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.22.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -902,7 +902,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.0.11</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.0.12</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
