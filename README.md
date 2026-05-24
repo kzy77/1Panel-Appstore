@@ -926,7 +926,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.2.1</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.3.0</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
