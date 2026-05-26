@@ -1,200 +1,61 @@
 # 1Panel App Builder
 
-快速生成符合 1Panel 本地应用商店规范的 APP 配置文件。
+这个目录提供 1Panel 本地应用商店打包辅助脚本。AI 使用入口是 `SKILL.md`，人工常用入口是下面几个脚本。
 
-## 功能特性
-
-- ✅ 支持多种输入源（GitHub、docker-compose、docker run、本地文件）
-- ✅ 自动抽取应用信息并生成标准化配置
-- ✅ 自动下载应用图标（支持多个图标源）
-- ✅ 生成中英文 README
-- ✅ 符合 1Panel 应用商店规范
-
-## 目录结构
-
-```
-1panel-app-builder/
-├── SKILL.md              # 技能定义文件
-├── README.md             # 使用文档
-├── templates/            # 配置模板
-│   ├── data.yml.tpl      # 应用元数据模板
-│   └── docker-compose.yml.tpl # 编排文件模板
-├── scripts/              # 工具脚本
-│   ├── generate-app.sh   # 主生成脚本
-│   └── download-icon.sh  # 图标下载工具
-└── examples/             # 使用示例
-    └── example-usage.md
-```
-
-## 快速开始
-
-### 1. 基本用法
+## 快速使用
 
 ```bash
-# GitHub 项目
-./scripts/generate-app.sh https://github.com/alist-org/alist
+cd /root/github/1Panel-Appstore/skills
 
-# docker-compose 文件链接
-./scripts/generate-app.sh https://raw.githubusercontent.com/.../docker-compose.yml
+# 从 compose 生成草稿，跳过图标下载
+./scripts/generate-app.sh --app-key my-app --name MyApp --version 1.2.3 --icon-mode skip ./docker-compose.yml
 
-# docker run 命令
-./scripts/generate-app.sh "docker run -d --name=alist -p 5244:5244 xhofe/alist:v3.45.0"
+# 下载或复用图标
+./scripts/download-icon.sh --mode cache-only my-app ../apps/my-app/logo.png
+./scripts/download-icon.sh --mode required --url https://example.com/logo.png my-app ../apps/my-app/logo.png
 
-# 本地文件
-./scripts/generate-app.sh ./my-docker-compose.yml
+# 验证应用
+./scripts/validate-app.sh ../apps/my-app
+
+# 验证 skills 工具链
+./tests/run_all.sh
 ```
 
-### 2. 输出示例
+## 生成脚本
 
-```
-./apps/alist/v3.45.0/
-├── data.yml          # 应用元数据
-├── docker-compose.yml # 编排文件
-├── logo.png          # 应用图标
-├── README.md         # 中文简介
-└── README_en.md      # 英文简介
-```
+`scripts/generate-app.sh` 支持 GitHub URL、compose URL、本地 compose 文件和 `docker run` 命令。
 
-### 3. 生成的配置文件
+常用参数：
 
-#### data.yml 示例
-
-```yaml
-name: AList
-tags:
-    - 实用工具
-    - 云存储
-title: 支持多存储的文件列表程序和私人网盘
-description: 支持多存储的文件列表程序和私人网盘
-additionalProperties:
-    key: alist
-    name: AList
-    tags:
-        - Storage
-        - Tool
-    shortDescZh: 支持多存储的文件列表程序和私人网盘
-    shortDescEn: Supporting multi-storage file listing program
-    website: https://alist.nn.ci/
-    github: https://github.com/alist-org/alist
-    architectures:
-      - amd64
-      - arm64
+```text
+--output <dir>       输出目录，默认 ./apps
+--app-key <key>      指定应用目录名
+--name <name>        指定应用显示名
+--version <tag>      指定具体版本目录和镜像 tag
+--icon-mode <mode>   auto|required|skip|cache-only
+--icon-url <url>     使用指定图标 URL
+--force              允许覆盖已有生成目录
+--dry-run            只解析并输出结果，不写文件
 ```
 
-#### docker-compose.yml 示例
+## 图标策略
 
-```yaml
-services:
-  alist:
-    container_name: ${CONTAINER_NAME}
-    restart: always
-    networks:
-      - 1panel-network
-    ports:
-      - "${PANEL_APP_PORT_HTTP}:5244"
-    volumes:
-      - ./data/data:/opt/alist/data
-    environment:
-      - PUID=0
-      - PGID=0
-      - UMASK=022
-    image: xhofe/alist:v3.45.0
-    labels:
-      createdBy: "Apps"
-networks:
-  1panel-network:
-    external: true
-```
+脚本不会创建占位图。图标模式：
 
-## 高级用法
+- `auto`: 优先缓存，缺失时尝试网络源；找不到也不阻塞生成。
+- `skip`: 跳过图标处理，适合草稿生成。
+- `cache-only`: 只读 `skills/.cache/icons`，不访问网络。
+- `required`: 找不到有效图标时失败。
 
-### 指定输出目录
+## 校验范围
 
-```bash
-./scripts/generate-app.sh https://github.com/alist-org/alist ./my-apps
-```
+`scripts/validate-app.sh` 会检查：
 
-### 单独下载图标
+- 应用目录结构和必需文件。
+- `additionalProperties.key` 是否等于目录名。
+- `PANEL_APP_PORT_*` 是否在版本 `data.yml` 中定义。
+- `latest/` 镜像是否使用 `latest` tag。
+- `logo.png` 是否疑似 HTML/XML 错误响应。
+- 1Panel 常见 compose 约束，如 `${CONTAINER_NAME}`、`1panel-network`、`createdBy: "Apps"`。
 
-```bash
-./scripts/download-icon.sh alist ./logo.png 200
-```
-
-### 图标源优先级
-
-1. [Dashboard Icons](https://dashboardicons.com/icons)
-2. [Simple Icons](https://simpleicons.org/)
-3. [selfh.st Icons](https://selfh.st/icons/)
-
-## 依赖工具
-
-必需：
-- `bash` - 脚本执行环境
-- `curl` - HTTP 请求
-- `jq` - JSON 解析
-- `yq` - YAML 解析（可选，用于高级解析）
-
-可选：
-- `ImageMagick` (convert) - 图标尺寸调整
-- `sips` (macOS) - 图标尺寸调整
-- `tree` - 目录树显示
-
-## 配置模板说明
-
-### data.yml 模板变量
-
-| 变量 | 说明 | 示例 |
-|------|------|------|
-| `${APP_NAME}` | 应用名称 | AList |
-| `${APP_KEY}` | 应用键名 | alist |
-| `${TITLE_ZH}` | 中文标题 | 文件列表程序 |
-| `${DESC_ZH}` | 中文描述 | 支持多存储... |
-| `${TAG_1}` | 标签1 | 实用工具 |
-| `${WEBSITE}` | 官网 | https://alist.nn.ci/ |
-| `${GITHUB}` | GitHub | https://github.com/alist-org/alist |
-
-### docker-compose.yml 模板变量
-
-| 变量 | 说明 | 示例 |
-|------|------|------|
-| `${SERVICE_NAME}` | 服务名 | alist |
-| `${IMAGE}` | 镜像名 | xhofe/alist |
-| `${TAG}` | 镜像标签 | v3.45.0 |
-| `${PORT}` | 端口 | 5244 |
-
-## 下一步操作
-
-生成配置后：
-
-1. ✅ 检查 `data.yml` 中的应用信息是否准确
-2. ✅ 补充完善应用描述和标签
-3. ✅ 替换 `logo.png` 为合适的应用图标
-4. ✅ 测试 `docker-compose.yml` 是否正常工作
-5. ✅ 提交到 1Panel 应用商店仓库
-
-## 常见问题
-
-### Q: 图标下载失败怎么办？
-
-A: 手动从以下网站下载图标：
-- https://dashboardicons.com/icons?q=<应用名>
-- https://simpleicons.org/?q=<应用名>
-- https://selfh.st/icons/
-
-### Q: 如何处理多服务应用？
-
-A: 生成后手动编辑 `docker-compose.yml`，添加其他服务。
-
-### Q: 版本号如何确定？
-
-A: 默认从镜像标签提取，也可手动指定。
-
-## 参考资源
-
-- [1Panel 官方文档](https://1panel.cn/docs/)
-- [1Panel 应用商店仓库](https://github.com/1Panel-dev/appstore)
-- [Docker Compose 文档](https://docs.docker.com/compose/)
-
-## 许可证
-
-MIT License
+生成结果仍需要人工审查 metadata、README、架构、端口语义和多服务依赖。

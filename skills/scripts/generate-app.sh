@@ -18,12 +18,18 @@ NC='\033[0m' # No Color
 # 默认配置
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TEMPLATE_DIR="${SCRIPT_DIR}/../templates"
-OUTPUT_BASE="${2:-./apps}"
-ICON_SOURCES=(
-  "https://dashboardicons.com/icons"
-  "https://simpleicons.org/icons"
-  "https://selfh.st/icons"
-)
+OUTPUT_BASE="./apps"
+ICON_MODE="auto"
+ICON_URL=""
+ICON_CACHE_DIR="${SCRIPT_DIR}/../.cache/icons"
+USER_APP_KEY=""
+USER_APP_NAME=""
+USER_VERSION=""
+FORCE=false
+DRY_RUN=false
+POSITIONAL=()
+SERVICE_VOLUMES=()
+SERVICE_ENV=()
 
 # 打印帮助
 print_help() {
@@ -31,7 +37,7 @@ print_help() {
 ${BLUE}1Panel App Builder${NC} - 快速生成 1Panel 应用配置
 
 ${YELLOW}用法:${NC}
-  $0 <输入源> [输出目录]
+  $0 [选项] <输入源> [输出目录]
 
 ${YELLOW}输入源支持:${NC}
   1. GitHub 项目链接
@@ -59,6 +65,17 @@ ${YELLOW}示例:${NC}
   $0 https://github.com/alist-org/alist
   $0 ./my-docker-compose.yml ./my-apps
   $0 "docker run -d --name nginx -p 80:80 nginx:latest"
+  $0 --app-key demo-app --name DemoApp --version 1.2.3 --icon-mode skip ./docker-compose.yml
+
+${YELLOW}选项:${NC}
+  --output <目录>              输出目录（默认: ./apps）
+  --app-key <key>              显式指定应用目录名
+  --name <名称>                显式指定应用显示名
+  --version <版本>             显式指定具体版本目录和镜像 tag
+  --icon-mode <模式>           auto|required|skip|cache-only
+  --icon-url <URL>             使用指定图标 URL
+  --force                      允许覆盖已有输出目录
+  --dry-run                    只解析和打印结果，不写文件
 EOF
 }
 
@@ -66,6 +83,79 @@ EOF
 log_info() { echo -e "${GREEN}[INFO]${NC} $1"; }
 log_warn() { echo -e "${YELLOW}[WARN]${NC} $1"; }
 log_error() { echo -e "${RED}[ERROR]${NC} $1"; }
+
+normalize_app_key() {
+  echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' _' '--' | tr -cd 'a-z0-9.-'
+}
+
+parse_args() {
+  POSITIONAL=()
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      --output|-o)
+        OUTPUT_BASE="${2:-}"
+        shift 2
+        ;;
+      --app-key)
+        USER_APP_KEY="${2:-}"
+        shift 2
+        ;;
+      --name)
+        USER_APP_NAME="${2:-}"
+        shift 2
+        ;;
+      --version)
+        USER_VERSION="${2:-}"
+        shift 2
+        ;;
+      --icon-mode)
+        ICON_MODE="${2:-}"
+        shift 2
+        ;;
+      --icon-url)
+        ICON_URL="${2:-}"
+        shift 2
+        ;;
+      --force)
+        FORCE=true
+        shift
+        ;;
+      --dry-run)
+        DRY_RUN=true
+        shift
+        ;;
+      -h|--help)
+        print_help
+        exit 0
+        ;;
+      --)
+        shift
+        POSITIONAL+=("$@")
+        break
+        ;;
+      -*)
+        log_error "未知选项: $1"
+        exit 2
+        ;;
+      *)
+        POSITIONAL+=("$1")
+        shift
+        ;;
+    esac
+  done
+
+  case "$ICON_MODE" in
+    auto|required|skip|cache-only) ;;
+    *)
+      log_error "无效图标模式: $ICON_MODE"
+      exit 2
+      ;;
+  esac
+
+  if [[ ${#POSITIONAL[@]} -gt 1 ]]; then
+    OUTPUT_BASE="${POSITIONAL[1]}"
+  fi
+}
 
 # 解析镜像引用（支持 registry/namespace/repo:tag）
 parse_image_ref() {
@@ -110,10 +200,10 @@ get_latest_tag_docker_hub() {
   local repo_path="$2"
   local url="https://hub.docker.com/v2/repositories/${namespace}/${repo_path}/tags?page_size=100&ordering=last_updated"
   local tags
-  tags=$(curl -s "$url" | jq -r '.results[].name' 2>/dev/null || true)
+  tags=$(curl -fsSL --connect-timeout 5 --max-time 20 "$url" | jq -r '.results[].name' 2>/dev/null || true)
 
   local semver
-  semver=$(echo "$tags" | grep -E '^[vV]?[0-9]+\\.[0-9]+(\\.[0-9]+)?$' | head -n1 || true)
+  semver=$(echo "$tags" | grep -E '^[vV]?[0-9]+\.[0-9]+(\.[0-9]+)?$' | sort -V | tail -n1 || true)
   if [[ -n "$semver" ]]; then
     echo "$semver"
     return 0
@@ -130,16 +220,16 @@ get_latest_tag_ghcr() {
   local repo_path="$2"
   local token tags
 
-  token=$(curl -s "https://ghcr.io/token?service=ghcr.io&scope=repository:${namespace}/${repo_path}:pull" | jq -r '.token' 2>/dev/null || true)
+  token=$(curl -fsSL --connect-timeout 5 --max-time 20 "https://ghcr.io/token?service=ghcr.io&scope=repository:${namespace}/${repo_path}:pull" | jq -r '.token' 2>/dev/null || true)
   if [[ -z "$token" || "$token" == "null" ]]; then
     echo "latest"
     return 0
   fi
 
-  tags=$(curl -s -H "Authorization: Bearer ${token}" "https://ghcr.io/v2/${namespace}/${repo_path}/tags/list" | jq -r '.tags[]' 2>/dev/null || true)
+  tags=$(curl -fsSL --connect-timeout 5 --max-time 20 -H "Authorization: Bearer ${token}" "https://ghcr.io/v2/${namespace}/${repo_path}/tags/list" | jq -r '.tags[]' 2>/dev/null || true)
 
   local semver
-  semver=$(echo "$tags" | grep -E '^[vV]?[0-9]+\\.[0-9]+(\\.[0-9]+)?$' | sort -V | tail -n1 || true)
+  semver=$(echo "$tags" | grep -E '^[vV]?[0-9]+\.[0-9]+(\.[0-9]+)?$' | sort -V | tail -n1 || true)
   if [[ -n "$semver" ]]; then
     echo "$semver"
     return 0
@@ -278,11 +368,11 @@ extract_from_github() {
 
   # 获取项目信息
   local repo_info
-  repo_info=$(curl -s "$api_url" 2>/dev/null || echo "{}")
+  repo_info=$(curl -fsSL --connect-timeout 5 --max-time 20 "$api_url" 2>/dev/null || echo "{}")
 
   # 提取字段
   APP_NAME=$(echo "$repo_info" | jq -r '.name // empty')
-  APP_KEY=$(echo "$APP_NAME" | tr '[:upper:]' '[:lower:]')
+  APP_KEY=$(normalize_app_key "$APP_NAME")
   DESCRIPTION=$(echo "$repo_info" | jq -r '.description // empty')
   GITHUB="$github_url"
   WEBSITE=$(echo "$repo_info" | jq -r '.homepage // empty')
@@ -306,11 +396,11 @@ extract_from_compose() {
   log_info "正在解析 docker-compose 内容"
 
   # 提取服务名
-  SERVICE_NAME=$(echo "$compose_content" | yq '.services | keys | .[0]' 2>/dev/null || echo "")
+  SERVICE_NAME=$(echo "$compose_content" | yq -r '.services | keys | .[0]' 2>/dev/null || echo "")
 
   # 提取镜像
   local image
-  image=$(echo "$compose_content" | yq ".services.${SERVICE_NAME}.image" 2>/dev/null || echo "")
+  image=$(echo "$compose_content" | yq -r ".services[\"${SERVICE_NAME}\"].image" 2>/dev/null || echo "")
   parse_image_ref "$image"
 
   # 提取端口
@@ -318,11 +408,23 @@ extract_from_compose() {
   while IFS= read -r line; do
     [[ -z "$line" || "$line" == "null" ]] && continue
     PORT_ENTRIES+=("$line")
-  done < <(echo "$compose_content" | yq ".services.${SERVICE_NAME}.ports[]" 2>/dev/null || true)
+  done < <(echo "$compose_content" | yq -r ".services[\"${SERVICE_NAME}\"].ports[]" 2>/dev/null || true)
 
   if [[ ${#PORT_ENTRIES[@]} -eq 0 ]]; then
     PORT_ENTRIES=("8080")
   fi
+
+  SERVICE_VOLUMES=()
+  while IFS= read -r line; do
+    [[ -z "$line" || "$line" == "null" ]] && continue
+    SERVICE_VOLUMES+=("$line")
+  done < <(echo "$compose_content" | yq -r ".services[\"${SERVICE_NAME}\"].volumes[]?" 2>/dev/null || true)
+
+  SERVICE_ENV=()
+  while IFS= read -r line; do
+    [[ -z "$line" || "$line" == "null" ]] && continue
+    SERVICE_ENV+=("$line")
+  done < <(echo "$compose_content" | yq -r ".services[\"${SERVICE_NAME}\"].environment[]?" 2>/dev/null || true)
 
   log_info "服务名: $SERVICE_NAME"
   log_info "镜像: $IMAGE_BASE:$TAG"
@@ -341,7 +443,7 @@ extract_from_docker_run() {
   parse_image_ref "$image_ref"
 
   # 提取容器名
-  SERVICE_NAME=$(echo "$cmd" | grep -oE '\-\-name[= ]+[^ ]+' | awk '{print $NF}' || echo "app")
+  SERVICE_NAME=$(echo "$cmd" | grep -oE '\-\-name(=| )[A-Za-z0-9_.-]+' | sed -E 's/^--name[= ]//' || echo "app")
 
   # 提取端口
   PORT_ENTRIES=()
@@ -354,8 +456,20 @@ extract_from_docker_run() {
     PORT_ENTRIES=("8080")
   fi
 
+  SERVICE_VOLUMES=()
+  while IFS= read -r line; do
+    [[ -z "$line" ]] && continue
+    SERVICE_VOLUMES+=("$line")
+  done < <(echo "$cmd" | grep -oE '(-v|--volume)(=| )[^ ]+' | sed -E 's/^(-v|--volume)[= ]//' || true)
+
+  SERVICE_ENV=()
+  while IFS= read -r line; do
+    [[ -z "$line" ]] && continue
+    SERVICE_ENV+=("$line")
+  done < <(echo "$cmd" | grep -oE '(-e|--env)(=| )[^ ]+' | sed -E 's/^(-e|--env)[= ]//' || true)
+
   APP_NAME="$SERVICE_NAME"
-  APP_KEY=$(echo "$SERVICE_NAME" | tr '[:upper:]' '[:lower:]')
+  APP_KEY=$(normalize_app_key "$SERVICE_NAME")
 
   log_info "应用名称: $APP_NAME"
   log_info "镜像: $IMAGE_BASE:$TAG"
@@ -466,11 +580,41 @@ EOF
 
   cat >> "$output_file" << EOF
     volumes:
+EOF
+
+  if ((${#SERVICE_VOLUMES[@]} > 0)); then
+    local volume
+    for volume in "${SERVICE_VOLUMES[@]}"; do
+      cat >> "$output_file" << EOF
+      - ${volume}
+EOF
+    done
+  else
+    cat >> "$output_file" << EOF
       - ./data/data:/app/data
+EOF
+  fi
+
+  cat >> "$output_file" << EOF
     environment:
+EOF
+
+  if ((${#SERVICE_ENV[@]} > 0)); then
+    local env
+    for env in "${SERVICE_ENV[@]}"; do
+      cat >> "$output_file" << EOF
+      - ${env}
+EOF
+    done
+  else
+    cat >> "$output_file" << EOF
       - PUID=0
       - PGID=0
       - UMASK=022
+EOF
+  fi
+
+  cat >> "$output_file" << EOF
     image: ${IMAGE_BASE:-app}:${image_tag}
     labels:
       createdBy: "Apps"
@@ -531,58 +675,30 @@ EOF
 download_icon() {
   local app_name="$1"
   local output_file="$2"
-  local github_url="${3:-}"
-  local icon_name
+  local args=(--mode "$ICON_MODE" --cache-dir "$ICON_CACHE_DIR")
 
-  icon_name=$(echo "$app_name" | tr '[:upper:]' '[:lower:]')
-
-  log_info "尝试获取图标: $app_name"
-
-  # 优先从 GitHub 仓库内查找常见图标文件
-  if [[ -n "$github_url" ]]; then
-    local owner_repo repo_api candidate_paths
-    owner_repo=$(echo "$github_url" | sed -E 's|https?://github.com/||')
-    repo_api="https://api.github.com/repos/${owner_repo}"
-    candidate_paths=(
-      "logo.png"
-      "icon.png"
-      "logo.svg"
-      "icon.svg"
-      "assets/logo.png"
-      "assets/icon.png"
-      ".github/logo.png"
-      ".github/icon.png"
-    )
-
-    for path in "${candidate_paths[@]}"; do
-      local file_api="${repo_api}/contents/${path}"
-      local download_url
-      download_url=$(curl -s "$file_api" | jq -r '.download_url // empty' 2>/dev/null || true)
-      if [[ -n "$download_url" ]]; then
-        if curl -sSL -o "$output_file" "$download_url" 2>/dev/null && [[ -s "$output_file" ]]; then
-          log_info "图标来自仓库: ${path}"
-          return 0
-        fi
-      fi
-    done
+  if [[ -n "$ICON_URL" ]]; then
+    args+=(--url "$ICON_URL")
   fi
 
-  # 尝试各个图标源
-  for source in "${ICON_SOURCES[@]}"; do
-    local icon_url="${source}/${icon_name}.png"
-    if curl -sSL -o "$output_file" "$icon_url" 2>/dev/null && [[ -s "$output_file" ]]; then
-      log_info "图标下载成功: $icon_url"
-      return 0
-    fi
-  done
+  if bash "${SCRIPT_DIR}/download-icon.sh" "${args[@]}" "$app_name" "$output_file"; then
+    return 0
+  fi
+
+  if [[ "$ICON_MODE" == "required" ]]; then
+    log_error "图标为 required 模式，但未能获取图标"
+    return 1
+  fi
 
   log_warn "未找到图标，请手动补充 logo.png"
-  return 1
+  return 0
 }
 
 # 主函数
 main() {
-  local input="$1"
+  parse_args "$@"
+
+  local input="${POSITIONAL[0]:-}"
   local input_type
 
   # 参数检查
@@ -607,16 +723,16 @@ main() {
       fi
       ;;
     compose_url)
-      COMPOSE_CONTENT=$(curl -s "$input" 2>/dev/null)
+      COMPOSE_CONTENT=$(curl -fsSL --connect-timeout 5 --max-time 20 "$input" 2>/dev/null)
       extract_from_compose "$COMPOSE_CONTENT"
       APP_NAME="$SERVICE_NAME"
-      APP_KEY=$(echo "$SERVICE_NAME" | tr '[:upper:]' '[:lower:]')
+      APP_KEY=$(normalize_app_key "$SERVICE_NAME")
       ;;
     compose_file)
       COMPOSE_CONTENT=$(cat "$input")
       extract_from_compose "$COMPOSE_CONTENT"
       APP_NAME="$SERVICE_NAME"
-      APP_KEY=$(echo "$SERVICE_NAME" | tr '[:upper:]' '[:lower:]')
+      APP_KEY=$(normalize_app_key "$SERVICE_NAME")
       ;;
     docker_run)
       extract_from_docker_run "$input"
@@ -626,6 +742,16 @@ main() {
       exit 1
       ;;
   esac
+
+  if [[ -n "$USER_APP_NAME" ]]; then
+    APP_NAME="$USER_APP_NAME"
+  fi
+  if [[ -n "$USER_APP_KEY" ]]; then
+    APP_KEY=$(normalize_app_key "$USER_APP_KEY")
+  fi
+  if [[ -z "${APP_KEY:-}" ]]; then
+    APP_KEY=$(normalize_app_key "${APP_NAME:-app}")
+  fi
 
   # 生成端口映射数组
   HOST_PORTS=()
@@ -651,16 +777,33 @@ main() {
   done
 
   # 获取最新版本号
-  VERSION_TAG=$(get_latest_tag)
-  if [[ -z "$VERSION_TAG" ]]; then
-    VERSION_TAG="$TAG"
+  if [[ -n "$USER_VERSION" ]]; then
+    VERSION_TAG="$USER_VERSION"
+  else
+    VERSION_TAG=$(get_latest_tag)
+    if [[ -z "$VERSION_TAG" ]]; then
+      VERSION_TAG="$TAG"
+    fi
   fi
   if [[ -z "$VERSION_TAG" ]]; then
     VERSION_TAG="latest"
   fi
 
+  if [[ "$DRY_RUN" == "true" ]]; then
+    echo "app_key=${APP_KEY}"
+    echo "app_name=${APP_NAME:-}"
+    echo "service=${SERVICE_NAME:-}"
+    echo "image=${IMAGE_BASE:-}:${VERSION_TAG}"
+    echo "output=${OUTPUT_BASE}/${APP_KEY}"
+    exit 0
+  fi
+
   # 创建输出目录（latest + 具体版本）
   local output_dir_latest="${OUTPUT_BASE}/${APP_KEY}/latest"
+  if [[ -e "${OUTPUT_BASE}/${APP_KEY}" && "$FORCE" != "true" ]]; then
+    log_error "输出目录已存在: ${OUTPUT_BASE}/${APP_KEY}（如需覆盖请使用 --force）"
+    exit 1
+  fi
   mkdir -p "$output_dir_latest"
 
   local output_dir_version=""
@@ -687,7 +830,7 @@ main() {
   fi
 
   generate_readme "${OUTPUT_BASE}/${APP_KEY}"
-  download_icon "$APP_NAME" "${OUTPUT_BASE}/${APP_KEY}/logo.png" "${GITHUB:-}"
+  download_icon "$APP_NAME" "${OUTPUT_BASE}/${APP_KEY}/logo.png"
 
   # 生成上级目录的 data.yml
   generate_data_yml "${OUTPUT_BASE}/${APP_KEY}/data.yml"

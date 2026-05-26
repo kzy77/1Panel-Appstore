@@ -1,237 +1,71 @@
 # 使用示例
 
-## 示例 1：从 GitHub 项目生成
+## 从本地 compose 生成草稿
 
 ```bash
-# 输入
-./scripts/generate-app.sh https://github.com/alist-org/alist
+cd /root/github/1Panel-Appstore/skills
 
-# 输出
-./apps/alist/v3.45.0/
+./scripts/generate-app.sh \
+  --app-key demo-app \
+  --name DemoApp \
+  --version 1.25.3 \
+  --icon-mode skip \
+  --output ../apps \
+  /tmp/demo-compose.yml
+```
+
+生成结构：
+
+```text
+../apps/demo-app/
 ├── data.yml
-├── docker-compose.yml
-├── logo.png
 ├── README.md
-└── README_en.md
+├── README_en.md
+├── latest/
+│   ├── data.yml
+│   └── docker-compose.yml
+└── 1.25.3/
+    ├── data.yml
+    └── docker-compose.yml
 ```
 
-### 生成的 data.yml
+`latest/docker-compose.yml` 使用 `image: ...:latest`，`1.25.3/docker-compose.yml` 使用 `image: ...:1.25.3`。
 
-```yaml
-name: AList
-tags:
-    - 实用工具
-    - 云存储
-title: AList - 文件列表程序
-description: 支持多存储的文件列表程序和私人网盘
-additionalProperties:
-    key: alist
-    name: AList
-    tags:
-        - Storage
-        - Tool
-    shortDescZh: 支持多存储的文件列表程序和私人网盘
-    shortDescEn: Supporting multi-storage file listing program
-    website: https://alist.nn.ci/
-    github: https://github.com/alist-org/alist
-```
-
-### 生成的 docker-compose.yml
-
-```yaml
-services:
-  alist:
-    container_name: ${CONTAINER_NAME}
-    restart: always
-    networks:
-      - 1panel-network
-    ports:
-      - "${PANEL_APP_PORT_HTTP}:5244"
-    volumes:
-      - ./data/data:/opt/alist/data
-    environment:
-      - PUID=0
-      - PGID=0
-      - UMASK=022
-    image: xhofe/alist:v3.45.0
-    labels:
-      createdBy: "Apps"
-networks:
-  1panel-network:
-    external: true
-```
-
----
-
-## 示例 2：从 docker run 命令生成
+## docker run 输入
 
 ```bash
-# 输入
-./scripts/generate-app.sh "docker run -d --name=nginx -p 80:80 nginx:latest"
-
-# 输出
-./apps/nginx/latest/
-├── data.yml
-├── docker-compose.yml
-├── logo.png
-├── README.md
-└── README_en.md
+./scripts/generate-app.sh \
+  --app-key nginx-demo \
+  --name NginxDemo \
+  --version 1.25.3 \
+  --icon-mode cache-only \
+  "docker run -d --name nginx-demo -p 8080:80 -v ./data/html:/usr/share/nginx/html nginx:1.25.3"
 ```
 
-### 生成的 docker-compose.yml
+脚本会解析：
 
-```yaml
-services:
-  nginx:
-    container_name: ${CONTAINER_NAME}
-    restart: always
-    networks:
-      - 1panel-network
-    ports:
-      - "${PANEL_APP_PORT_HTTP}:80"
-    volumes:
-      - ./data/data:/app/data
-    environment:
-      - PUID=0
-      - PGID=0
-      - UMASK=022
-    image: nginx:latest
-    labels:
-      createdBy: "Apps"
-networks:
-  1panel-network:
-    external: true
-```
+- `--name` 作为服务名候选。
+- `-p` 生成 `PANEL_APP_PORT_*` 表单字段。
+- `-v` 保留到 compose 的 `volumes`。
+- 镜像 tag 作为版本候选；显式 `--version` 优先。
 
----
-
-## 示例 3：从 docker-compose 文件链接生成
+## 图标处理
 
 ```bash
-# 输入
-./scripts/generate-app.sh https://raw.githubusercontent.com/portainer/portainer/develop/docker-compose.yml
+# 只使用缓存，不访问网络
+./scripts/download-icon.sh --mode cache-only nginx ../apps/nginx-demo/logo.png
 
-# 输出
-./apps/portainer/latest/
-├── data.yml
-├── docker-compose.yml
-├── logo.png
-├── README.md
-└── README_en.md
+# 已知准确图标 URL 时强制下载，失败则退出非零
+./scripts/download-icon.sh --mode required --url https://example.com/nginx.png nginx ../apps/nginx-demo/logo.png
 ```
 
----
+脚本不会创建占位图。找不到真实图标时，应保留缺失状态并在交付说明中指出。
 
-## 示例 4：从本地文件生成
+## 验证
 
 ```bash
-# 创建测试文件
-cat > /tmp/test-compose.yml << 'EOF'
-version: '3'
-services:
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
-    volumes:
-      - redis-data:/data
-
-volumes:
-  redis-data:
-EOF
-
-# 运行脚本
-./scripts/generate-app.sh /tmp/test-compose.yml ./my-apps
-
-# 输出
-./my-apps/redis/7-alpine/
-├── data.yml
-├── docker-compose.yml
-├── logo.png
-├── README.md
-└── README_en.md
+./scripts/validate-app.sh ../apps/demo-app
+./tests/run_all.sh
 ```
 
----
-
-## 示例 5：单独下载图标
-
-```bash
-# 下载 Redis 图标
-./scripts/download-icon.sh redis ./redis-logo.png 200
-
-# 输出
-✓ 从 Simple Icons 下载成功
-✓ 图标下载完成: ./redis-logo.png
-```
-
----
-
-## 示例 6：自定义输出目录
-
-```bash
-# 输出到指定目录
-./scripts/generate-app.sh https://github.com/portainer/portainer ~/my-1panel-apps
-
-# 输出
-/Users/username/my-1panel-apps/portainer/latest/
-├── data.yml
-├── docker-compose.yml
-├── logo.png
-├── README.md
-└── README_en.md
-```
-
----
-
-## 完整工作流程示例
-
-```bash
-# 1. 生成应用配置
-./scripts/generate-app.sh https://github.com/alist-org/alist
-
-# 2. 查看生成的文件
-cd ./apps/alist/v3.45.0
-cat data.yml
-cat docker-compose.yml
-
-# 3. 手动优化配置
-# - 补充应用描述
-# - 添加合适的标签
-# - 替换 logo.png
-
-# 4. 测试 docker-compose
-docker-compose up -d
-
-# 5. 确认无误后，提交到应用商店
-git add .
-git commit -m "feat: add alist app"
-git push
-```
-
----
-
-## 故障排除
-
-### 问题：图标下载失败
-
-```bash
-# 手动下载图标
-# 访问：https://dashboardicons.com/icons?q=alist
-# 下载后保存为 logo.png
-```
-
-### 问题：端口冲突
-
-```bash
-# 修改 docker-compose.yml 中的端口映射
-ports:
-  - "${PANEL_APP_PORT_HTTP}:5244"  # 修改此处
-```
-
-### 问题：镜像版本不对
-
-```bash
-# 手动编辑 docker-compose.yml
-image: xhofe/alist:v3.45.0  # 修改版本号
-```
+`validate-app.sh` 负责结构和常见规则检查；仍需要人工检查 README、分类标签、架构支持、默认端口和多服务依赖是否合理。
