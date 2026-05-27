@@ -733,7 +733,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.9.3</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.9.4</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -745,7 +745,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.86.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.86.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -803,7 +803,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.130</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.131</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -844,7 +844,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.4.59</kbd> • [官网链接](https://9router.com)
+<kbd>0.4.63</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -1181,7 +1181,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.31.25</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.31.26</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1429,7 +1429,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📝 高性能低延迟的 Obsidian 笔记同步服务
 
-<kbd>3.1.1</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
+<kbd>3.1.2</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
 
 </td>
 <td width="33%" align="center">

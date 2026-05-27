@@ -8,6 +8,7 @@ cd /root/github/1Panel-Appstore/skills
 ./scripts/generate-app.sh \
   --app-key demo-app \
   --name DemoApp \
+  --service web \
   --version 1.25.3 \
   --icon-mode skip \
   --output ../apps \
@@ -45,9 +46,24 @@ cd /root/github/1Panel-Appstore/skills
 脚本会解析：
 
 - `--name` 作为服务名候选。
-- `-p` 生成 `PANEL_APP_PORT_*` 表单字段。
-- `-v` 保留到 compose 的 `volumes`。
+- `-p/--publish` 生成 `PANEL_APP_PORT_*` 表单字段。
+- `-v/--volume` 保留到 compose 的 `volumes`。
+- `-e/--env` 和 `--env-file` 保留到 compose。
 - 镜像 tag 作为版本候选；显式 `--version` 优先。
+
+## GitHub 输入
+
+```bash
+./scripts/generate-app.sh \
+  --app-key github-demo \
+  --name GitHubDemo \
+  --service web \
+  --version 1.2.3 \
+  --icon-mode skip \
+  https://github.com/example/demo
+```
+
+脚本会尝试仓库默认分支、`main`、`master` 下的常见 compose 路径；如果没有找到 compose，会从 README 中尝试提取单行 `docker run` 命令。生成结果仍需要人工审查。
 
 ## 图标处理
 
@@ -64,6 +80,7 @@ cd /root/github/1Panel-Appstore/skills
 ## 验证
 
 ```bash
+./scripts/generate-app.sh --check-deps
 ./scripts/validate-app.sh ../apps/demo-app
 ./tests/run_all.sh
 ```

@@ -25,11 +25,37 @@ assert_contains() {
   grep -qE -- "$pattern" "$file" || fail "expected pattern '$pattern' in $file"
 }
 
+make_fake_path_without() {
+  local dir="$1"
+  shift
+  mkdir -p "$dir"
+
+  local tool
+  for tool in awk basename cat chmod cmp cp dirname env find grep head mkdir mktemp mv printf rm sed sort tail tr; do
+    if command -v "$tool" >/dev/null 2>&1; then
+      ln -s "$(command -v "$tool")" "$dir/$tool"
+    fi
+  done
+}
+
 run_test() {
   local name="$1"
   shift
   echo "== $name =="
   "$@"
+}
+
+test_generate_app_reports_missing_dependencies() {
+  local fake_path="$TMP_DIR/fake-path"
+  make_fake_path_without "$fake_path"
+
+  if PATH="$fake_path" /usr/bin/bash "$ROOT_DIR/skills/scripts/generate-app.sh" --check-deps >/tmp/generate_missing_deps.out 2>&1; then
+    fail "dependency check should fail when yq/jq/curl are missing"
+  fi
+  assert_contains /tmp/generate_missing_deps.out "缺少依赖"
+  assert_contains /tmp/generate_missing_deps.out "yq"
+  assert_contains /tmp/generate_missing_deps.out "jq"
+  assert_contains /tmp/generate_missing_deps.out "curl"
 }
 
 test_download_icon_skip_mode_does_not_create_logo() {
@@ -107,6 +133,125 @@ YAML
   assert_contains "$output/demo-preserve/1.25.3/docker-compose.yml" "./data/nginx:/etc/nginx/conf.d"
   assert_contains "$output/demo-preserve/1.25.3/docker-compose.yml" "TZ=Asia/Shanghai"
   assert_contains "$output/demo-preserve/1.25.3/docker-compose.yml" "DEMO_FLAG=true"
+}
+
+test_generate_app_uses_explicit_compose_service() {
+  local compose="$TMP_DIR/compose-service.yml"
+  local output="$TMP_DIR/generated-service"
+  cat > "$compose" <<'YAML'
+services:
+  db:
+    image: postgres:16
+    ports:
+      - "15432:5432"
+  web:
+    image: ghcr.io/example/webapp:2.3.4
+    ports:
+      - "18080:8080"
+    environment:
+      - WEB_MODE=prod
+YAML
+
+  bash "$ROOT_DIR/skills/scripts/generate-app.sh" \
+    --service web \
+    --app-key demo-service \
+    --name DemoService \
+    --version 2.3.4 \
+    --output "$output" \
+    --icon-mode skip \
+    "$compose" >/tmp/generate_app_service.out
+
+  assert_contains "$output/demo-service/2.3.4/docker-compose.yml" "web:"
+  assert_contains "$output/demo-service/2.3.4/docker-compose.yml" "image: ghcr.io/example/webapp:2.3.4"
+  assert_contains "$output/demo-service/2.3.4/docker-compose.yml" "8080"
+  assert_contains "$output/demo-service/2.3.4/data.yml" "default: 18080"
+  assert_contains "$output/demo-service/2.3.4/docker-compose.yml" "WEB_MODE=prod"
+}
+
+test_generate_app_discovers_github_default_branch_compose() {
+  local fixture="$TMP_DIR/github-fixture"
+  local output="$TMP_DIR/generated-github"
+  mkdir -p "$fixture/api/repos/example" "$fixture/raw/example/demo/master"
+
+  cat > "$fixture/api/repos/example/demo" <<'JSON'
+{
+  "name": "demo",
+  "description": "Demo GitHub app",
+  "homepage": "https://demo.example",
+  "default_branch": "master"
+}
+JSON
+  cat > "$fixture/raw/example/demo/master/compose.yaml" <<'YAML'
+services:
+  demo:
+    image: nginx:1.25.3
+    ports:
+      - "18080:80"
+YAML
+
+  GITHUB_API_BASE_URL="file://${fixture}/api/repos" \
+  GITHUB_RAW_BASE_URL="file://${fixture}/raw" \
+    bash "$ROOT_DIR/skills/scripts/generate-app.sh" \
+      --app-key github-demo \
+      --version 1.25.3 \
+      --output "$output" \
+      --icon-mode skip \
+      "https://github.com/example/demo" >/tmp/generate_app_github.out
+
+  assert_contains "$output/github-demo/data.yml" "Demo GitHub app"
+  assert_contains "$output/github-demo/1.25.3/docker-compose.yml" "image: nginx:1.25.3"
+}
+
+test_generate_app_discovers_github_readme_docker_run() {
+  local fixture="$TMP_DIR/github-readme-fixture"
+  local output="$TMP_DIR/generated-github-readme"
+  mkdir -p "$fixture/api/repos/example" "$fixture/raw/example/readme-demo/main"
+
+  cat > "$fixture/api/repos/example/readme-demo" <<'JSON'
+{
+  "name": "readme-demo",
+  "description": "README docker run app",
+  "homepage": "",
+  "default_branch": "main"
+}
+JSON
+  cat > "$fixture/raw/example/readme-demo/main/README.md" <<'MD'
+# README Demo
+
+```bash
+docker run -d --name readme-demo -p 18080:80 -e "APP_TITLE=Readme Demo" nginx:1.25.3
+```
+MD
+
+  GITHUB_API_BASE_URL="file://${fixture}/api/repos" \
+  GITHUB_RAW_BASE_URL="file://${fixture}/raw" \
+    bash "$ROOT_DIR/skills/scripts/generate-app.sh" \
+      --app-key github-readme-demo \
+      --version 1.25.3 \
+      --output "$output" \
+      --icon-mode skip \
+      "https://github.com/example/readme-demo" >/tmp/generate_app_github_readme.out
+
+  assert_contains "$output/github-readme-demo/1.25.3/docker-compose.yml" "image: nginx:1.25.3"
+  assert_contains "$output/github-readme-demo/1.25.3/docker-compose.yml" "APP_TITLE=Readme Demo"
+  assert_contains "$output/github-readme-demo/1.25.3/data.yml" "default: 18080"
+}
+
+test_generate_app_parses_complex_docker_run_flags() {
+  local output="$TMP_DIR/generated-run"
+
+  bash "$ROOT_DIR/skills/scripts/generate-app.sh" \
+    --app-key docker-run-demo \
+    --name DockerRunDemo \
+    --version 1.2.3 \
+    --output "$output" \
+    --icon-mode skip \
+    'docker run -d --name docker-run-demo --env "APP_TITLE=My Demo" --env-file ./data/app.env --publish=127.0.0.1:18080:8080/tcp --volume=./data/demo:/data ghcr.io/example/demo:1.2.3' >/tmp/generate_app_run.out
+
+  assert_contains "$output/docker-run-demo/1.2.3/docker-compose.yml" "image: ghcr.io/example/demo:1.2.3"
+  assert_contains "$output/docker-run-demo/1.2.3/docker-compose.yml" "APP_TITLE=My Demo"
+  assert_contains "$output/docker-run-demo/1.2.3/docker-compose.yml" "./data/demo:/data"
+  assert_contains "$output/docker-run-demo/1.2.3/docker-compose.yml" "8080"
 }
 
 test_validate_app_rejects_undefined_port_variable() {
@@ -203,8 +348,13 @@ YAML
 
 run_test "download icon skip mode" test_download_icon_skip_mode_does_not_create_logo
 run_test "download icon cache-only mode" test_download_icon_cache_only_uses_cached_logo
+run_test "generate app dependency check" test_generate_app_reports_missing_dependencies
 run_test "generate app explicit options" test_generate_app_accepts_explicit_options_and_skips_icon
 run_test "generate app preserves compose fields" test_generate_app_preserves_compose_environment_and_volumes
+run_test "generate app explicit compose service" test_generate_app_uses_explicit_compose_service
+run_test "generate app github compose discovery" test_generate_app_discovers_github_default_branch_compose
+run_test "generate app github README docker run discovery" test_generate_app_discovers_github_readme_docker_run
+run_test "generate app complex docker run flags" test_generate_app_parses_complex_docker_run_flags
 run_test "validate undefined port variable" test_validate_app_rejects_undefined_port_variable
 run_test "validate latest image tag" test_validate_app_rejects_latest_wrong_tag
 

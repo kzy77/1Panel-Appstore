@@ -10,6 +10,12 @@ cd /root/github/1Panel-Appstore/skills
 # 从 compose 生成草稿，跳过图标下载
 ./scripts/generate-app.sh --app-key my-app --name MyApp --version 1.2.3 --icon-mode skip ./docker-compose.yml
 
+# 多服务 compose 指定主服务
+./scripts/generate-app.sh --service web --app-key my-app --name MyApp --version 1.2.3 --icon-mode skip ./docker-compose.yml
+
+# 检查依赖
+./scripts/generate-app.sh --check-deps
+
 # 下载或复用图标
 ./scripts/download-icon.sh --mode cache-only my-app ../apps/my-app/logo.png
 ./scripts/download-icon.sh --mode required --url https://example.com/logo.png my-app ../apps/my-app/logo.png
@@ -25,17 +31,21 @@ cd /root/github/1Panel-Appstore/skills
 
 `scripts/generate-app.sh` 支持 GitHub URL、compose URL、本地 compose 文件和 `docker run` 命令。
 
+GitHub URL 会按仓库默认分支、`main`、`master` 顺序尝试常见 compose 文件路径，例如 `docker-compose.yml`、`compose.yaml`、`deploy/docker-compose.yml`。如果没有找到 compose，会从 README 中尝试提取单行 `docker run` 命令作为草稿来源。
+
 常用参数：
 
 ```text
 --output <dir>       输出目录，默认 ./apps
 --app-key <key>      指定应用目录名
 --name <name>        指定应用显示名
+--service <name>     指定多服务 compose 的主服务
 --version <tag>      指定具体版本目录和镜像 tag
 --icon-mode <mode>   auto|required|skip|cache-only
 --icon-url <url>     使用指定图标 URL
 --force              允许覆盖已有生成目录
 --dry-run            只解析并输出结果，不写文件
+--check-deps         只检查依赖工具
 ```
 
 ## 图标策略

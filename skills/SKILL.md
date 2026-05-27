@@ -37,9 +37,9 @@ Some apps also include `latest/`. When both `latest/` and a concrete version exi
 ## Workflow
 
 1. Inspect the source deployment.
-   - GitHub: inspect README/deploy docs and registry image.
+   - GitHub: inspect README/deploy docs and registry image; the generator checks common compose paths before README `docker run` fallback.
    - Compose: parse services, image tags, ports, volumes, environment, dependencies.
-   - Docker run: parse image, `--name`, `-p`, `-v`, and `-e`.
+   - Docker run: parse image, `--name`, `-p/--publish`, `-v/--volume`, `-e/--env`, and `--env-file`.
 2. Choose a stable app key.
    - Lowercase, hyphenated, directory-safe.
    - `additionalProperties.key` must match the directory name.
@@ -95,11 +95,13 @@ Useful generation options:
 --output <dir>       Output base directory. Default: ./apps
 --app-key <key>      Override app directory key.
 --name <name>        Override display name.
+--service <name>     Select the main service from a multi-service compose file.
 --version <tag>      Override concrete version and image tag.
 --icon-mode <mode>   auto|required|skip|cache-only
 --icon-url <url>     Download icon from a known URL.
 --force              Allow overwriting an existing generated directory.
 --dry-run            Print parsed values without writing files.
+--check-deps         Check required local tools.
 ```
 
 Download an icon:

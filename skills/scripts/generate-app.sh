@@ -25,11 +25,17 @@ ICON_CACHE_DIR="${SCRIPT_DIR}/../.cache/icons"
 USER_APP_KEY=""
 USER_APP_NAME=""
 USER_VERSION=""
+USER_SERVICE=""
 FORCE=false
 DRY_RUN=false
+CHECK_DEPS_ONLY=false
 POSITIONAL=()
 SERVICE_VOLUMES=()
 SERVICE_ENV=()
+SERVICE_ENV_FILES=()
+DOCKER_RUN_CONTENT=""
+GITHUB_API_BASE_URL="${GITHUB_API_BASE_URL:-https://api.github.com/repos}"
+GITHUB_RAW_BASE_URL="${GITHUB_RAW_BASE_URL:-https://raw.githubusercontent.com}"
 
 # 打印帮助
 print_help() {
@@ -71,11 +77,13 @@ ${YELLOW}选项:${NC}
   --output <目录>              输出目录（默认: ./apps）
   --app-key <key>              显式指定应用目录名
   --name <名称>                显式指定应用显示名
+  --service <服务名>           从 compose 中选择主服务
   --version <版本>             显式指定具体版本目录和镜像 tag
   --icon-mode <模式>           auto|required|skip|cache-only
   --icon-url <URL>             使用指定图标 URL
   --force                      允许覆盖已有输出目录
   --dry-run                    只解析和打印结果，不写文件
+  --check-deps                 只检查脚本依赖
 EOF
 }
 
@@ -86,6 +94,25 @@ log_error() { echo -e "${RED}[ERROR]${NC} $1"; }
 
 normalize_app_key() {
   echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' _' '--' | tr -cd 'a-z0-9.-'
+}
+
+check_dependencies() {
+  local missing=()
+  local dep
+
+  for dep in curl jq yq python3; do
+    if ! command -v "$dep" >/dev/null 2>&1; then
+      missing+=("$dep")
+    fi
+  done
+
+  if ((${#missing[@]} > 0)); then
+    log_error "缺少依赖: ${missing[*]}"
+    log_info "请先安装缺失工具后再运行 generate-app.sh"
+    return 1
+  fi
+
+  return 0
 }
 
 parse_args() {
@@ -102,6 +129,10 @@ parse_args() {
         ;;
       --name)
         USER_APP_NAME="${2:-}"
+        shift 2
+        ;;
+      --service)
+        USER_SERVICE="${2:-}"
         shift 2
         ;;
       --version)
@@ -122,6 +153,10 @@ parse_args() {
         ;;
       --dry-run)
         DRY_RUN=true
+        shift
+        ;;
+      --check-deps)
+        CHECK_DEPS_ONLY=true
         shift
         ;;
       -h|--help)
@@ -358,13 +393,13 @@ detect_input_type() {
 # 从 GitHub 项目提取信息
 extract_from_github() {
   local github_url="$1"
-  local api_url temp_dir
+  local api_url
 
   log_info "正在从 GitHub 项目提取信息: $github_url"
 
-  # 转换为 API URL
-  # https://github.com/owner/repo -> https://api.github.com/repos/owner/repo
-  api_url="${github_url/github\.com/api.github.com\/repos}"
+  local owner_repo
+  owner_repo=$(echo "$github_url" | sed -E 's|https?://github.com/||; s|/$||; s|\.git$||')
+  api_url="${GITHUB_API_BASE_URL%/}/${owner_repo}"
 
   # 获取项目信息
   local repo_info
@@ -379,14 +414,94 @@ extract_from_github() {
   if [[ -z "$WEBSITE" ]]; then
     WEBSITE="$github_url"
   fi
+  DEFAULT_BRANCH=$(echo "$repo_info" | jq -r '.default_branch // "main"')
 
-  # 尝试查找 docker-compose.yml
-  local owner_repo
-  owner_repo=$(echo "$github_url" | sed -E 's|https?://github.com/||')
-  COMPOSE_URL="https://raw.githubusercontent.com/${owner_repo}/main/docker-compose.yml"
+  COMPOSE_CONTENT=$(discover_github_compose "$owner_repo" "$DEFAULT_BRANCH")
+  if [[ -z "${COMPOSE_CONTENT:-}" ]]; then
+    DOCKER_RUN_CONTENT=$(discover_github_docker_run "$owner_repo" "$DEFAULT_BRANCH")
+  fi
+  if [[ -z "${COMPOSE_CONTENT:-}" && -z "${DOCKER_RUN_CONTENT:-}" ]]; then
+    log_error "未在 GitHub 项目中发现常见 docker-compose 文件或 README docker run 命令"
+    exit 1
+  fi
 
   log_info "应用名称: $APP_NAME"
   log_info "描述: $DESCRIPTION"
+}
+
+discover_github_compose() {
+  local owner_repo="$1"
+  local default_branch="$2"
+  local branches=("$default_branch")
+  local branch path url content
+  local paths=(
+    "docker-compose.yml"
+    "docker-compose.yaml"
+    "compose.yml"
+    "compose.yaml"
+    "deploy/docker-compose.yml"
+    "deploy/docker-compose.yaml"
+    "docker/docker-compose.yml"
+    "docker/docker-compose.yaml"
+  )
+
+  if [[ "$default_branch" != "main" ]]; then
+    branches+=("main")
+  fi
+  if [[ "$default_branch" != "master" ]]; then
+    branches+=("master")
+  fi
+
+  for branch in "${branches[@]}"; do
+    for path in "${paths[@]}"; do
+      url="${GITHUB_RAW_BASE_URL%/}/${owner_repo}/${branch}/${path}"
+      content=$(curl -fsSL --connect-timeout 5 --max-time 20 "$url" 2>/dev/null || true)
+      if [[ -n "$content" ]] && echo "$content" | yq -e '.services' >/dev/null 2>&1; then
+        log_info "发现 compose 文件: ${path} (${branch})" >&2
+        printf '%s\n' "$content"
+        return 0
+      fi
+    done
+  done
+
+  return 0
+}
+
+discover_github_docker_run() {
+  local owner_repo="$1"
+  local default_branch="$2"
+  local branches=("$default_branch")
+  local branch path url content line
+  local paths=(
+    "README.md"
+    "README_en.md"
+    "docs/README.md"
+  )
+
+  if [[ "$default_branch" != "main" ]]; then
+    branches+=("main")
+  fi
+  if [[ "$default_branch" != "master" ]]; then
+    branches+=("master")
+  fi
+
+  for branch in "${branches[@]}"; do
+    for path in "${paths[@]}"; do
+      url="${GITHUB_RAW_BASE_URL%/}/${owner_repo}/${branch}/${path}"
+      content=$(curl -fsSL --connect-timeout 5 --max-time 20 "$url" 2>/dev/null || true)
+      if [[ -z "$content" ]]; then
+        continue
+      fi
+      line=$(printf '%s\n' "$content" | sed -n 's/^[[:space:]]*//; /docker run /{s/^`*//; s/`*$//; p; q;}')
+      if [[ -n "$line" ]]; then
+        log_info "发现 README docker run 命令: ${path} (${branch})" >&2
+        printf '%s\n' "$line"
+        return 0
+      fi
+    done
+  done
+
+  return 0
 }
 
 # 从 docker-compose 提取信息
@@ -396,11 +511,23 @@ extract_from_compose() {
   log_info "正在解析 docker-compose 内容"
 
   # 提取服务名
-  SERVICE_NAME=$(echo "$compose_content" | yq -r '.services | keys | .[0]' 2>/dev/null || echo "")
+  if [[ -n "$USER_SERVICE" ]]; then
+    SERVICE_NAME="$USER_SERVICE"
+    if ! echo "$compose_content" | yq -e ".services[\"${SERVICE_NAME}\"]" >/dev/null 2>&1; then
+      log_error "compose 中不存在指定服务: $SERVICE_NAME"
+      exit 1
+    fi
+  else
+    SERVICE_NAME=$(echo "$compose_content" | yq -r '.services | keys | .[0]' 2>/dev/null || echo "")
+  fi
 
   # 提取镜像
   local image
   image=$(echo "$compose_content" | yq -r ".services[\"${SERVICE_NAME}\"].image" 2>/dev/null || echo "")
+  if [[ -z "$image" || "$image" == "null" ]]; then
+    log_error "服务 ${SERVICE_NAME} 缺少 image，无法生成应用版本"
+    exit 1
+  fi
   parse_image_ref "$image"
 
   # 提取端口
@@ -426,6 +553,12 @@ extract_from_compose() {
     SERVICE_ENV+=("$line")
   done < <(echo "$compose_content" | yq -r ".services[\"${SERVICE_NAME}\"].environment[]?" 2>/dev/null || true)
 
+  SERVICE_ENV_FILES=()
+  while IFS= read -r line; do
+    [[ -z "$line" || "$line" == "null" ]] && continue
+    SERVICE_ENV_FILES+=("$line")
+  done < <(echo "$compose_content" | yq -r ".services[\"${SERVICE_NAME}\"].env_file[]?" 2>/dev/null || true)
+
   log_info "服务名: $SERVICE_NAME"
   log_info "镜像: $IMAGE_BASE:$TAG"
   log_info "端口数量: ${#PORT_ENTRIES[@]}"
@@ -437,36 +570,103 @@ extract_from_docker_run() {
 
   log_info "正在解析 docker run 命令"
 
-  # 提取镜像
-  local image_ref
-  image_ref=$(echo "$cmd" | awk '{print $NF}')
-  parse_image_ref "$image_ref"
-
-  # 提取容器名
-  SERVICE_NAME=$(echo "$cmd" | grep -oE '\-\-name(=| )[A-Za-z0-9_.-]+' | sed -E 's/^--name[= ]//' || echo "app")
-
-  # 提取端口
-  PORT_ENTRIES=()
+  local args=()
   while IFS= read -r line; do
-    [[ -z "$line" ]] && continue
-    PORT_ENTRIES+=("$line")
-  done < <(echo "$cmd" | grep -oE '\-p[= ]+[^ ]+' | awk '{print $NF}' || true)
+    args+=("$line")
+  done < <(python3 - "$cmd" <<'PY'
+import shlex
+import sys
+
+for item in shlex.split(sys.argv[1]):
+    print(item)
+PY
+)
+
+  local i=0
+  if [[ "${args[0]:-}" == "docker" && "${args[1]:-}" == "run" ]]; then
+    i=2
+  fi
+
+  SERVICE_NAME="app"
+  PORT_ENTRIES=()
+  SERVICE_VOLUMES=()
+  SERVICE_ENV=()
+  SERVICE_ENV_FILES=()
+
+  local image_ref=""
+  while ((i < ${#args[@]})); do
+    local arg="${args[$i]}"
+    case "$arg" in
+      --name=*)
+        SERVICE_NAME="${arg#--name=}"
+        ;;
+      --name)
+        ((i+=1))
+        SERVICE_NAME="${args[$i]:-app}"
+        ;;
+      -p|--publish)
+        ((i+=1))
+        PORT_ENTRIES+=("${args[$i]:-}")
+        ;;
+      -p=*|--publish=*)
+        PORT_ENTRIES+=("${arg#*=}")
+        ;;
+      -v|--volume)
+        ((i+=1))
+        SERVICE_VOLUMES+=("${args[$i]:-}")
+        ;;
+      -v=*|--volume=*)
+        SERVICE_VOLUMES+=("${arg#*=}")
+        ;;
+      -e|--env)
+        ((i+=1))
+        SERVICE_ENV+=("${args[$i]:-}")
+        ;;
+      -e=*|--env=*)
+        SERVICE_ENV+=("${arg#*=}")
+        ;;
+      --env-file)
+        ((i+=1))
+        SERVICE_ENV_FILES+=("${args[$i]:-}")
+        ;;
+      --env-file=*)
+        SERVICE_ENV_FILES+=("${arg#--env-file=}")
+        ;;
+      --)
+        ((i+=1))
+        image_ref="${args[$i]:-}"
+        break
+        ;;
+      -d|--detach|--rm|--init|-i|-t|-it|-ti|--privileged)
+        ;;
+      --restart|--network|--hostname|--user|--workdir|--entrypoint|--add-host|--dns)
+        ((i+=1))
+        ;;
+      --restart=*|--network=*|--hostname=*|--user=*|--workdir=*|--entrypoint=*|--add-host=*|--dns=*)
+        ;;
+      -*)
+        if [[ "$arg" != *=* && "${args[$((i + 1))]:-}" != -* && "${args[$((i + 1))]:-}" != "" ]]; then
+          ((i+=1))
+        fi
+        ;;
+      *)
+        image_ref="$arg"
+        break
+        ;;
+    esac
+    ((i+=1))
+  done
+
+  if [[ -z "$image_ref" ]]; then
+    log_error "未能从 docker run 命令中解析出镜像"
+    exit 1
+  fi
+
+  parse_image_ref "$image_ref"
 
   if [[ ${#PORT_ENTRIES[@]} -eq 0 ]]; then
     PORT_ENTRIES=("8080")
   fi
-
-  SERVICE_VOLUMES=()
-  while IFS= read -r line; do
-    [[ -z "$line" ]] && continue
-    SERVICE_VOLUMES+=("$line")
-  done < <(echo "$cmd" | grep -oE '(-v|--volume)(=| )[^ ]+' | sed -E 's/^(-v|--volume)[= ]//' || true)
-
-  SERVICE_ENV=()
-  while IFS= read -r line; do
-    [[ -z "$line" ]] && continue
-    SERVICE_ENV+=("$line")
-  done < <(echo "$cmd" | grep -oE '(-e|--env)(=| )[^ ]+' | sed -E 's/^(-e|--env)[= ]//' || true)
 
   APP_NAME="$SERVICE_NAME"
   APP_KEY=$(normalize_app_key "$SERVICE_NAME")
@@ -614,6 +814,18 @@ EOF
 EOF
   fi
 
+  if ((${#SERVICE_ENV_FILES[@]} > 0)); then
+    cat >> "$output_file" << EOF
+    env_file:
+EOF
+    local env_file
+    for env_file in "${SERVICE_ENV_FILES[@]}"; do
+      cat >> "$output_file" << EOF
+      - ${env_file}
+EOF
+    done
+  fi
+
   cat >> "$output_file" << EOF
     image: ${IMAGE_BASE:-app}:${image_tag}
     labels:
@@ -698,6 +910,12 @@ download_icon() {
 main() {
   parse_args "$@"
 
+  if [[ "$CHECK_DEPS_ONLY" == "true" ]]; then
+    check_dependencies
+    exit $?
+  fi
+  check_dependencies
+
   local input="${POSITIONAL[0]:-}"
   local input_type
 
@@ -717,9 +935,10 @@ main() {
   case "$input_type" in
     github)
       extract_from_github "$input"
-      COMPOSE_CONTENT=$(curl -s "$COMPOSE_URL" 2>/dev/null || echo "")
       if [[ -n "$COMPOSE_CONTENT" ]]; then
         extract_from_compose "$COMPOSE_CONTENT"
+      elif [[ -n "$DOCKER_RUN_CONTENT" ]]; then
+        extract_from_docker_run "$DOCKER_RUN_CONTENT"
       fi
       ;;
     compose_url)
