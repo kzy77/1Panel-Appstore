@@ -423,7 +423,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 开源Airtable替代品，将任何数据库转换为智能电子表格
 
-<kbd>2026.05.1</kbd> • [官网链接](https://github.com/nocodb/nocodb)
+<kbd>2026.05.2</kbd> • [官网链接](https://github.com/nocodb/nocodb)
 
 </td>
 <td width="33%" align="center">
@@ -745,7 +745,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.86.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.86.2</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.22.3</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.23.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -803,7 +803,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.131</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.132</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -938,7 +938,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.1</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.3</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -998,7 +998,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎵 使用小爱/红米音箱播放音乐，支持yt-dlp下载
 
-<kbd>0.5.7</kbd> • [官网链接](https://github.com/hanxi/xiaomusic)
+<kbd>0.5.8</kbd> • [官网链接](https://github.com/hanxi/xiaomusic)
 
 </td>
 <td width="33%" align="center">
@@ -1441,7 +1441,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📡 多平台热点推送
 
-<kbd>6.8.0</kbd> • [官网链接](https://github.com/sansan0/TrendRadar)
+<kbd>6.8.1</kbd> • [官网链接](https://github.com/sansan0/TrendRadar)
 
 </td>
 </tr>
