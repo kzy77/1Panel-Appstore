@@ -18,10 +18,9 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    image: samanhappy/mcphub:1.0.5
+    image: samanhappy/mcphub:1.0.7
     labels:
       createdBy: "Apps"
-
   postgres:
     image: pgvector/pgvector:pg17
     container_name: ${CONTAINER_NAME}-pg
@@ -43,7 +42,6 @@ services:
       start_period: 30s
     labels:
       createdBy: "Apps"
-
 networks:
   1panel-network:
     external: true

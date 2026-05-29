@@ -288,7 +288,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.90.0</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.90.1</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -593,7 +593,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.11.4</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.11.5</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.23.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.23.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -938,7 +938,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.3</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.4</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -950,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.5</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.7</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -1063,7 +1063,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎬 开箱即用的跨平台影视聚合播放器，支持多源搜索和在线播放
 
-<kbd>100.1.2</kbd> • [官网链接](https://github.com/MoonTechLab/LunaTV)
+<kbd>100.1.3</kbd> • [官网链接](https://github.com/MoonTechLab/LunaTV)
 
 </td>
 </tr>
@@ -1513,7 +1513,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔔 Docker镜像更新监控和通知工具
 
-<kbd>4.31.0</kbd> • [官网链接](https://github.com/crazy-max/diun)
+<kbd>4.32.0</kbd> • [官网链接](https://github.com/crazy-max/diun)
 
 </td>
 <td width="33%" align="center">
