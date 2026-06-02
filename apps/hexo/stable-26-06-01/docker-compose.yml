@@ -14,7 +14,7 @@ services:
       - TZ=Asia/Shanghai
       - GIT_USER=${GIT_USERNAME}
       - GIT_EMAIL=${GIT_MAIL}
-    image: bloodstar/hexo:stable-26-05-01
+    image: bloodstar/hexo:stable-26-06-01
     labels:
       createdBy: "Apps"
 networks:

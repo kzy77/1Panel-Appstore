@@ -300,7 +300,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 快速静态博客框架，支持Markdown编写，丰富的插件和主题
 
-<kbd>stable-26-05-01</kbd> • [官网链接](https://github.com/hexojs/hexo)
+<kbd>stable-26-06-01</kbd> • [官网链接](https://github.com/hexojs/hexo)
 
 </td>
 <td width="33%" align="center">
@@ -423,7 +423,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 开源Airtable替代品，将任何数据库转换为智能电子表格
 
-<kbd>2026.05.2</kbd> • [官网链接](https://github.com/nocodb/nocodb)
+<kbd>2026.05.3</kbd> • [官网链接](https://github.com/nocodb/nocodb)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.23.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.23.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -950,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.8</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.9</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -1123,7 +1123,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.3.2</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.3.3</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
