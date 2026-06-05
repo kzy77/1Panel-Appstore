@@ -245,7 +245,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.5.6-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.5.8-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -300,7 +300,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 快速静态博客框架，支持Markdown编写，丰富的插件和主题
 
-<kbd>stable-26-06-01</kbd> • [官网链接](https://github.com/hexojs/hexo)
+<kbd>stable-26-06-04</kbd> • [官网链接](https://github.com/hexojs/hexo)
 
 </td>
 <td width="33%" align="center">
@@ -663,7 +663,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 模型上下文协议调试工具，支持MCP服务器测试与开发
 
-<kbd>0.21.2</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
+<kbd>0.22.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.25.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.25.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -950,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.10</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.11</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -1429,7 +1429,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📝 高性能低延迟的 Obsidian 笔记同步服务
 
-<kbd>3.2.2</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
+<kbd>3.2.3</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
 
 </td>
 <td width="33%" align="center">
