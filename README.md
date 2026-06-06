@@ -745,7 +745,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.87.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.87.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.25.3</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.25.5</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
