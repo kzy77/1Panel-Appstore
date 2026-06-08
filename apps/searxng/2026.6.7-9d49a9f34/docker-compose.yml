@@ -10,7 +10,7 @@ services:
       - "${DATA_PATH}:/etc/searxng"
     environment:
       - BASE_URL=${SEARXNG_EXTERNAL_URL}
-    image: searxng/searxng:2026.6.6-e260a732c
+    image: searxng/searxng:2026.6.7-9d49a9f34
     labels:
       createdBy: "Apps"
 networks:
