@@ -704,7 +704,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.6.7-9d49a9f34</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.6.8-f3fab143b</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.25.5</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.25.6</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -803,7 +803,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.134</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.135</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -950,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.12</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.13</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -1429,7 +1429,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📝 高性能低延迟的 Obsidian 笔记同步服务
 
-<kbd>3.2.3</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
+<kbd>3.3.0</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
 
 </td>
 <td width="33%" align="center">
@@ -1441,7 +1441,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📡 多平台热点推送
 
-<kbd>6.9.0</kbd> • [官网链接](https://github.com/sansan0/TrendRadar)
+<kbd>6.9.1</kbd> • [官网链接](https://github.com/sansan0/TrendRadar)
 
 </td>
 </tr>
