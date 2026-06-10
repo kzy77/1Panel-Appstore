@@ -593,7 +593,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.11.5</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.11.6</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -733,7 +733,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.9.6</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.10.0</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -745,7 +745,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.88.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.88.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.25.6</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.26.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -938,7 +938,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.11</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.12</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -998,7 +998,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎵 使用小爱/红米音箱播放音乐，支持yt-dlp下载
 
-<kbd>0.6.0</kbd> • [官网链接](https://github.com/hanxi/xiaomusic)
+<kbd>0.6.1</kbd> • [官网链接](https://github.com/hanxi/xiaomusic)
 
 </td>
 <td width="33%" align="center">
@@ -1429,7 +1429,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📝 高性能低延迟的 Obsidian 笔记同步服务
 
-<kbd>3.3.0</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
+<kbd>3.3.1</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
 
 </td>
 <td width="33%" align="center">
