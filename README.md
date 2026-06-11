@@ -245,7 +245,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.5.8-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.6.0-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -704,7 +704,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.6.8-f3fab143b</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.6.10-f4c63c8eb</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.26.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.26.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -803,7 +803,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.135</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.136</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -938,7 +938,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.12</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.13</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -967,7 +967,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎭 提供浏览器自动化功能的 MCP 服务器
 
-<kbd>0.0.75</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
+<kbd>0.0.76</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
 
 </td>
 <td width="33%" align="center">
@@ -1080,7 +1080,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎵 LX Music 数据同步服务器与 Web 播放器
 
-<kbd>1.9.3</kbd> • [官网链接](https://xcq0607.github.io/lxserver/)
+<kbd>1.9.4</kbd> • [官网链接](https://xcq0607.github.io/lxserver/)
 
 </td>
 </tr>
@@ -1181,7 +1181,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.31.28</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.31.29</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">

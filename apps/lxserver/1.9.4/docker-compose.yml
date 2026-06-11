@@ -1,6 +1,6 @@
 services:
   lxserver:
-    image: xcq0607/lxserver:v1.9.3
+    image: xcq0607/lxserver:v1.9.4
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
