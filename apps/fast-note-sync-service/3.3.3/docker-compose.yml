@@ -1,6 +1,6 @@
 services:
   fast-note-sync-service:
-    image: haierkeys/fast-note-sync-service:3.3.1
+    image: haierkeys/fast-note-sync-service:3.3.3
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:

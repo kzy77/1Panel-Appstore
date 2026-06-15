@@ -245,7 +245,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.6.0-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.6.6-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -704,7 +704,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.6.10-f4c63c8eb</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.6.14-b3e08f2a4</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -745,7 +745,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.88.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.89.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.26.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.26.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -844,7 +844,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.4.71</kbd> • [官网链接](https://9router.com)
+<kbd>0.4.80</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -938,7 +938,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.13</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.14</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -950,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.13</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.14</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -1022,7 +1022,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖼️ 高效云存储和图床平台管理工具
 
-<kbd>2.4.1</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
+<kbd>2.4.2</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
 
 </td>
 </tr>
@@ -1181,7 +1181,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.31.29</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.32.0</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1347,7 +1347,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔐 跨平台开源密码管理器，支持Web界面和多种平台，安全可靠
 
-<kbd>2.7.11</kbd> • [官网链接](https://keepassxc.org/)
+<kbd>2.7.12</kbd> • [官网链接](https://keepassxc.org/)
 
 </td>
 <td width="33%" align="center">
@@ -1429,7 +1429,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📝 高性能低延迟的 Obsidian 笔记同步服务
 
-<kbd>3.3.1</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
+<kbd>3.3.3</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
 
 </td>
 <td width="33%" align="center">

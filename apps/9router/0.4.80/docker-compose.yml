@@ -1,21 +1,21 @@
 services:
-  keepassxc:
+  9router:
     container_name: ${CONTAINER_NAME}
-    image: linuxserver/keepassxc:2.7.11
     restart: always
     networks:
       - 1panel-network
     ports:
-      - ${PANEL_APP_PORT_HTTP}:3000
+      - "${PANEL_APP_PORT_HTTP}:20128"
+    volumes:
+      - ./data:/app/data
     environment:
       - TZ=Asia/Shanghai
-      - PUID=1000
-      - PGID=1000
-    volumes:
-      - ./config:/config
-      - ./db:/db
+      - DATA_DIR=/app/data
+      - PORT=20128
+      - HOSTNAME=0.0.0.0
+    image: decolua/9router:0.4.80
     labels:
-      createdBy: Apps
+      createdBy: "Apps"
 networks:
   1panel-network:
     external: true

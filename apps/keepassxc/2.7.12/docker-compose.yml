@@ -1,15 +1,19 @@
 services:
-  piclist:
-    image: kuingsmile/piclist:v2.4.1
+  keepassxc:
     container_name: ${CONTAINER_NAME}
+    image: linuxserver/keepassxc:2.7.12
     restart: always
     networks:
       - 1panel-network
     ports:
-      - ${PANEL_APP_PORT_HTTP}:36677
+      - ${PANEL_APP_PORT_HTTP}:3000
+    environment:
+      - TZ=Asia/Shanghai
+      - PUID=1000
+      - PGID=1000
     volumes:
-      - ${DATA_PATH}:/root/.piclist
-    command: node /usr/local/bin/picgo-server -k ${AUTH_KEY}
+      - ./config:/config
+      - ./db:/db
     labels:
       createdBy: Apps
 networks:
