@@ -423,7 +423,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 开源Airtable替代品，将任何数据库转换为智能电子表格
 
-<kbd>2026.06.0</kbd> • [官网链接](https://github.com/nocodb/nocodb)
+<kbd>2026.06.1</kbd> • [官网链接](https://github.com/nocodb/nocodb)
 
 </td>
 <td width="33%" align="center">
@@ -704,7 +704,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.6.14-b3e08f2a4</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.6.15-cf1410af8</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.26.3</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.26.4</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -938,7 +938,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.14</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.15</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -950,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.14</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.16</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -967,7 +967,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎭 提供浏览器自动化功能的 MCP 服务器
 
-<kbd>0.0.76</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
+<kbd>1.61.0-noble</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
 
 </td>
 <td width="33%" align="center">
@@ -1123,7 +1123,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.3.5</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.3.6</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
@@ -1181,7 +1181,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.32.0</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.32.2</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
