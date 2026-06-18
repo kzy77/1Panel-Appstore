@@ -704,7 +704,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.6.16-502c820a2</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.6.17-4dfdc822c</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.27.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.27.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -844,7 +844,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.4.80</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.2</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -938,7 +938,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.15</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.17</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
