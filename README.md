@@ -704,7 +704,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.6.17-4dfdc822c</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.6.19-fe1848673</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.27.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.27.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -786,7 +786,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📝 私有的、多模型的Google Notebook LM替代方案，支持多模态内容和AI播客生成
 
-<kbd>1.9.0</kbd> • [官网链接](https://www.open-notebook.ai/)
+<kbd>1.10.0</kbd> • [官网链接](https://www.open-notebook.ai/)
 
 </td>
 </tr>
@@ -844,7 +844,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.2</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.4</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -950,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.16</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.17</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -1039,7 +1039,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📥 高性能Usenet下载工具，支持Web界面管理
 
-<kbd>26.1</kbd> • [官网链接](https://nzbget.net/)
+<kbd>26.2</kbd> • [官网链接](https://nzbget.net/)
 
 </td>
 <td width="33%" align="center">
@@ -1265,7 +1265,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 Docker 镜像加速与私有部署服务，支持多平台和多架构
 
-<kbd>0.7.6</kbd> • [官网链接](https://kspeeder.istoreos.com/)
+<kbd>0.7.7</kbd> • [官网链接](https://kspeeder.istoreos.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1429,7 +1429,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📝 高性能低延迟的 Obsidian 笔记同步服务
 
-<kbd>3.3.3</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
+<kbd>3.3.6</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
 
 </td>
 <td width="33%" align="center">
@@ -1441,7 +1441,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📡 多平台热点推送
 
-<kbd>6.9.1</kbd> • [官网链接](https://github.com/sansan0/TrendRadar)
+<kbd>6.10.0</kbd> • [官网链接](https://github.com/sansan0/TrendRadar)
 
 </td>
 </tr>
@@ -1542,7 +1542,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🐳 轻量化 docker 可视化管理面板
 
-<kbd>1.10.4-lite</kbd> • [官网链接](https://dpanel.cc/)
+<kbd>1.10.5-lite</kbd> • [官网链接](https://dpanel.cc/)
 
 </td>
 </tr>

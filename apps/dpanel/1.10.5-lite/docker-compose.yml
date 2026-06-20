@@ -1,5 +1,6 @@
 services:
-  searxng:
+  dpanel:
+    image: "dpanel/dpanel:1.10.5-lite"
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -7,10 +8,10 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:8080"
     volumes:
-      - "${DATA_PATH}:/etc/searxng"
+      - ${DOCKER_SOCK_PATH}:/var/run/docker.sock
+      - ${DATA_PATH}:/dpanel
     environment:
-      - BASE_URL=${SEARXNG_EXTERNAL_URL}
-    image: searxng/searxng:2026.6.17-4dfdc822c
+      - APP_NAME=${APP_NAME}
     labels:
       createdBy: "Apps"
 networks:

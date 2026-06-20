@@ -1,17 +1,19 @@
 services:
-  dpanel:
-    image: "dpanel/dpanel:1.10.4-lite"
+  9router:
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
       - 1panel-network
     ports:
-      - "${PANEL_APP_PORT_HTTP}:8080"
+      - "${PANEL_APP_PORT_HTTP}:20128"
     volumes:
-      - ${DOCKER_SOCK_PATH}:/var/run/docker.sock
-      - ${DATA_PATH}:/dpanel
+      - ./data:/app/data
     environment:
-      - APP_NAME=${APP_NAME}
+      - TZ=Asia/Shanghai
+      - DATA_DIR=/app/data
+      - PORT=20128
+      - HOSTNAME=0.0.0.0
+    image: decolua/9router:0.5.4
     labels:
       createdBy: "Apps"
 networks:
