@@ -382,7 +382,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 开源自托管个人笔记工具，支持AI增强笔记检索
 
-<kbd>1.8.7</kbd> • [官网链接](https://github.com/blinko-space/blinko)
+<kbd>1.8.8</kbd> • [官网链接](https://github.com/blinko-space/blinko)
 
 </td>
 <td width="33%" align="center">
@@ -745,7 +745,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.89.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.89.2</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -844,7 +844,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.4</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.6</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -1181,7 +1181,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.32.2</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.32.4</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
