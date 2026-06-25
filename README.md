@@ -704,7 +704,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.6.23-e3713717f</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.6.24-f9f3d089e</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -733,7 +733,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.10.0</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.10.1</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.28.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.28.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -938,7 +938,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.19</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.20</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -1236,7 +1236,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 多AdGuardHome实例间配置同步工具
 
-<kbd>0.9.0</kbd> • [官网链接](https://github.com/bakito/adguardhome-sync)
+<kbd>0.9.1</kbd> • [官网链接](https://github.com/bakito/adguardhome-sync)
 
 </td>
 <td width="33%" align="center">
