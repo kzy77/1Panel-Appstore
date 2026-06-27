@@ -245,7 +245,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.6.6-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.7.0-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -704,7 +704,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.6.24-f9f3d089e</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.6.26-f8ffbf36f</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -803,7 +803,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.138</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.139</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -844,7 +844,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.8</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.12</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -950,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.17</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.18</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
