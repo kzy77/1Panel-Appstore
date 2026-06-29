@@ -704,7 +704,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.6.26-f8ffbf36f</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.6.28-357662d86</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -950,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.18</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.20</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -1123,7 +1123,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.4.0</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.4.1</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
