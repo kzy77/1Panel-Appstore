@@ -1,6 +1,6 @@
 services:
   new-api:
-    image: calciumion/new-api:v0.13.1
+    image: calciumion/new-api:v1.0.0-rc.16
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
@@ -25,8 +25,8 @@ services:
     healthcheck:
       test:
         - CMD-SHELL
-        - 'wget -q -O - http://localhost:3000/api/status | grep -o ''"success":\s*true''
-          | awk -F: ''{print $$2}'''
+        - 'wget -q -O - http://localhost:3000/api/status | grep -o "success":\s*true'
+          | awk -F: '{print $2}'
       interval: 30s
       timeout: 10s
       retries: 3
