@@ -167,7 +167,8 @@ validate_version_data_yml() {
 
   # 检查每个参数是否有 envKey
   local param_count
-  param_count=$(grep -c "envKey:" "$data_file" 2>/dev/null || echo "0")
+  param_count=$(grep -c "envKey:" "$data_file" 2>/dev/null || true)
+  param_count="${param_count:-0}"
 
   if [[ "$param_count" -eq 0 ]]; then
     log_warn "formFields 中未找到 envKey 定义"
@@ -211,6 +212,68 @@ validate_port_variables() {
   done <<< "$used"
 }
 
+image_tag() {
+  local image="$1"
+  local last_part
+
+  if [[ "$image" =~ @sha256: ]]; then
+    echo ""
+    return 0
+  fi
+
+  last_part="${image##*/}"
+  if [[ "$last_part" == *:* ]]; then
+    echo "${last_part##*:}"
+  else
+    echo "latest"
+  fi
+}
+
+image_repository_without_tag() {
+  local image="$1"
+  local repository first_component last_part
+
+  repository="${image%@sha256:*}"
+  last_part="${repository##*/}"
+  if [[ "$last_part" == *:* ]]; then
+    repository="${repository%:*}"
+  fi
+
+  first_component="${repository%%/*}"
+  if [[ "$repository" == */* ]] && [[ "$first_component" == *.* || "$first_component" == *:* || "$first_component" == "localhost" ]]; then
+    repository="${repository#*/}"
+  fi
+
+  echo "$repository"
+}
+
+is_dependency_image() {
+  local image="$1"
+  local repository
+  repository="$(image_repository_without_tag "$image")"
+
+  case "$repository" in
+    postgres|postgis/postgis|pgvector/pgvector|redis|valkey/valkey|mysql|mariadb|mongo|memcached|rabbitmq|clickhouse/clickhouse-server|elasticsearch|opensearchproject/opensearch|nginx|caddy|traefik|prom/prometheus|grafana/grafana|minio/minio)
+      return 0
+      ;;
+    *)
+      return 1
+      ;;
+  esac
+}
+
+is_latest_channel_tag() {
+  local tag="$1"
+  case "$tag" in
+    latest|stable|main-stable)
+      return 0
+      ;;
+    *)
+      return 1
+      ;;
+  esac
+}
+
 validate_image_tags() {
   local version_dir="$1"
   local compose_file="$2"
@@ -224,13 +287,9 @@ validate_image_tags() {
       continue
     fi
 
-    if [[ "$image" =~ :([^/:]+)$ ]]; then
-      tag="${BASH_REMATCH[1]}"
-    else
-      tag="latest"
-    fi
+    tag="$(image_tag "$image")"
 
-    if [[ "$version" == "latest" && "$tag" != "latest" ]]; then
+    if [[ "$version" == "latest" ]] && ! is_latest_channel_tag "$tag" && ! is_dependency_image "$image"; then
       log_error "latest 目录中的镜像必须使用 latest tag: $image"
     fi
 

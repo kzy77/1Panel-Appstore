@@ -1,6 +1,6 @@
 services:
   pairdrop:
-    image: linuxserver/pairdrop:v1.11.2
+    image: linuxserver/pairdrop:1.11.2
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:

@@ -245,7 +245,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.7.0-slim</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.7.1</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -288,7 +288,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.90.1</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.95.0</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -370,7 +370,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 文档、白板和数据库完全整合的工作空间
 
-<kbd>0.26.3</kbd> • [官网链接](https://github.com/toeverything/AFFiNE)
+<kbd>0.26.7</kbd> • [官网链接](https://github.com/toeverything/AFFiNE)
 
 </td>
 <td width="33%" align="center">
@@ -435,7 +435,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 高性能Rust对象存储系统，提供S3兼容API
 
-<kbd>1.0.0-alpha.70</kbd> • [官网链接](https://github.com/rustfs/rustfs)
+<kbd>1.0.0-beta.8</kbd> • [官网链接](https://github.com/rustfs/rustfs)
 
 </td>
 </tr>
@@ -478,7 +478,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 轻量级高性能内网穿透代理服务器
 
-<kbd>0.33.11</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.34.7</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 </tr>
@@ -495,7 +495,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.3.7</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.3.9</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -610,7 +610,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>0.13.2</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.16</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -634,7 +634,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>1.4.8</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>1.4.9</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -704,7 +704,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.6.30-d115c61a7</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.7.5-a6438586a</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -745,7 +745,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.90.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.91.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +757,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.29.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.29.5</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -803,7 +803,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.141</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.144</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -844,7 +844,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.15</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.18</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -897,7 +897,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 智能 AI API 代理中转服务平台
 
-<kbd>0.7.4</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
+<kbd>0.8.8</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
 
 </td>
 <td width="33%" align="center">
@@ -926,7 +926,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>v2.10.0</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.64</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -938,7 +938,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.22</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.25</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -950,7 +950,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.21</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.23</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -1010,7 +1010,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📁 开源支持多存储的文件列表程序和私人网盘
 
-<kbd>4.2.2-ffmpeg</kbd> • [官网链接](https://github.com/OpenListTeam/OpenList)
+<kbd>4.2.3</kbd> • [官网链接](https://github.com/OpenListTeam/OpenList)
 
 </td>
 <td width="33%" align="center">
@@ -1099,7 +1099,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.0.12</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.2.9</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
@@ -1140,7 +1140,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📈 Linux性能实时监测工具，全方位性能监控
 
-<kbd>2.2.6</kbd> • [官网链接](https://github.com/netdata/netdata)
+<kbd>2.10.3</kbd> • [官网链接](https://github.com/netdata/netdata)
 
 </td>
 <td width="33%" align="center">
@@ -1181,7 +1181,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.32.13</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.32.16</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1205,7 +1205,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔒 Docker socket代理，支持访问规则限制和权限控制
 
-<kbd>3.2.9</kbd> • [官网链接](https://github.com/Tecnativa/docker-socket-proxy)
+<kbd>3.4.2</kbd> • [官网链接](https://github.com/Tecnativa/docker-socket-proxy)
 
 </td>
 </tr>
@@ -1412,7 +1412,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎭 专业的 Web 应用自动化测试环境，支持多浏览器
 
-<kbd>1.55.0-noble</kbd> • [官网链接](https://playwright.dev/)
+<kbd>1.61.1-noble</kbd> • [官网链接](https://playwright.dev/)
 
 </td>
 </tr>
@@ -1429,7 +1429,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📝 高性能低延迟的 Obsidian 笔记同步服务
 
-<kbd>3.4.0</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
+<kbd>3.5.1</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
 
 </td>
 <td width="33%" align="center">
@@ -1525,7 +1525,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧙‍♂️ 现代化开源Docker管理Web面板
 
-<kbd>1.9.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
+<kbd>2.3.2</kbd> • [官网链接](https://arcane.ofkm.dev/)
 
 </td>
 </tr>
