@@ -1,0 +1,23 @@
+additionalProperties:
+  formFields:
+    - default: 1200
+      envKey: PANEL_APP_PORT_HTTP
+      label:
+        en: Port
+        zh: 端口
+        zh-Hant: 埠
+      required: true
+      rule: paramPort
+      type: number
+      edit: true
+    - default: rsshub
+      envKey: PANEL_REDIS_ROOT_PASSWORD
+      label:
+        en: Redis Password
+        zh: Redis 密码
+        zh-Hant: Redis 密碼
+      random: true
+      required: true
+      rule: paramCommon
+      type: password
+      edit: true

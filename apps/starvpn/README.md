@@ -1,43 +1,41 @@
-# StarVPN
+# 星空组网（StarVPN）
 
-StarVPN 是一款简单易用的自托管 VPN 服务，支持多平台和 Docker 快速部署，适合个人和团队安全上网。
+星空组网 Docker 客户端适合云服务器、轻量 Linux 主机和 NAS 容器环境部署。容器启动后会在日志中输出控制台访问地址，使用浏览器打开控制台并登录成员账号后，当前 Docker 宿主机会加入组网。
 
-## 主要功能
-- 支持多平台客户端接入
-- 简单易用的 Web 管理界面
-- 支持账号密码登录
-- 支持 Docker 一键部署
-- 高性能、安全稳定
+## 部署说明
 
-## 快速部署（Docker 示例）
-```yaml
-version: "3"
-services:
-  starvpn:
-    image: starvpn/starvpn:latest
-    container_name: starvpn
-    environment:
-      - STARS_USER=admin # 管理员账号
-      - STARS_PASS=admin # 管理员密码
-    ports:
-      - "8080:8080" # Web 管理端口
-    volumes:
-      - ./starvpn-data:/data
-    restart: always
+本应用按官方 Docker 文档配置：
+
+- 镜像：`registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client`
+- 网络模式：`host`
+- 特权模式：启用
+- 重启策略：`always`
+
+官方示例命令：
+
+```bash
+docker run -d --privileged --net=host --name stars.client --restart=always registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client:latest
 ```
 
-## 参数说明
-- **STARS_USER**：Web 管理员账号
-- **STARS_PASS**：Web 管理员密码
-- **8080**：Web 管理端口
-- **/data**：数据持久化目录
+## 首次使用
 
-## 常见问题 FAQ
-- 默认账号密码为 admin/admin，建议首次部署后及时修改。
-- 支持多平台客户端，详见官方文档。
-- 如需自定义端口或目录，请修改 compose 文件对应参数。
+1. 在 1Panel 中安装并启动应用。
+2. 查看容器日志，复制日志中输出的控制台访问地址：
+
+   ```bash
+   docker logs <容器名>
+   ```
+
+3. 在浏览器中打开控制台地址，使用星空组网成员账号登录。
+4. 登录后确认设备在线，并记录组网 IP；后续访问宿主机和其上服务时可使用该组网 IP 与原端口。
+
+## 注意事项
+
+- 官方 Docker 部署使用宿主机网络栈，因此本应用不提供端口映射配置。
+- 成员账号和密码需要在容器启动后进入控制台登录，不通过环境变量预设。
+- 若需要移除客户端，可在 1Panel 中卸载应用或删除对应容器。
 
 ## 官方文档与支持
+
 - 官网：[https://starvpn.cn/](https://starvpn.cn/)
-- 文档：[https://doc.starvpn.cn/#/docker](https://doc.starvpn.cn/#/docker)
-- GitHub：[https://github.com/starvpn/starvpn](https://github.com/starvpn/starvpn) 
+- Docker 文档：[https://doc.starvpn.cn/#/docker](https://doc.starvpn.cn/#/docker)

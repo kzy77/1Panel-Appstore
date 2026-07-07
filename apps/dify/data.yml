@@ -17,3 +17,6 @@ additionalProperties:
   website: https://dify.ai/
   github: https://github.com/langgenius/dify/
   document: https://docs.dify.ai/
+  architectures:
+    - amd64
+    - arm64

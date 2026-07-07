@@ -1,13 +1,13 @@
 services:
   # debug: docker compose run --rm -it browser-use-webui bash
   browser-use-webui:
-    image: ghcr.io/browser-use/web-ui:latest # Using precompiled image
+    image: ghcr.io/browser-use/web-ui:latest
     container_name: ${CONTAINER_NAME}
     ports:
       - "${PANEL_APP_PORT_HTTP}:7788"
-      - "6080:6080"
-      - "5901:5901"
-      - "9222:9222"
+      - "${PANEL_APP_PORT_NOVNC}:6080"
+      - "${PANEL_APP_PORT_VNC}:5901"
+      - "${PANEL_APP_PORT_CDP}:9222"
     environment:
       # LLM API Keys & Endpoints
       - OPENAI_ENDPOINT=${OPENAI_ENDPOINT:-https://api.openai.com/v1}
@@ -63,7 +63,7 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       # - ./my_chrome_data:/app/data/chrome_data # Optional: persist browser data
-    restart: unless-stopped
+    restart: always
     shm_size: "2gb"
     cap_add:
       - SYS_ADMIN

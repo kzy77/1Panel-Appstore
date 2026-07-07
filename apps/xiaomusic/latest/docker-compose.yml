@@ -1,8 +1,8 @@
 services:
   xiaomusic:
     image: hanxi/xiaomusic:latest
-    container_name: xiaomusic
-    restart: unless-stopped
+    container_name: ${CONTAINER_NAME}
+    restart: always
     ports:
       - ${PANEL_APP_PORT_HTTP}:8090
     environment:
@@ -11,3 +11,10 @@ services:
     volumes:
       - ${APP_DATA}/music:/app/music
       - ${APP_DATA}/conf:/app/conf
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true

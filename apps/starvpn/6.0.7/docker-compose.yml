@@ -1,12 +1,13 @@
 services:
   starvpn:
     image: registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client:6.0.7
-    container_name: starvpn
+    container_name: ${CONTAINER_NAME}
     restart: always
-    environment:
-      - STARS_USER=${STARS_USER}
-      - STARS_PASS=${STARS_PASS}
-    ports:
-      - "${PANEL_APP_PORT_HTTP}:8080"
-    volumes:
-      - "./starvpn-data:/data"
+    privileged: ${PRIVILEGED_MODE}
+    network_mode: ${NETWORK_MODE}
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

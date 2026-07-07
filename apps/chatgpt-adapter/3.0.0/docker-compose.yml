@@ -1,0 +1,29 @@
+services:
+  chatgpt-adapter:
+    image: ghcr.io/bincooo/chatgpt-adapter:v3.0.0
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    volumes:
+      - './config.yaml:/app/config.yaml'
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8080
+    labels:
+      createdBy: "Apps"
+  browser-less:
+    image: browserless/chrome:latest
+    container_name: ${CONTAINER_NAME}-browser
+    restart: always
+    environment:
+      - CONCURRENT=10
+      - TOKEN=your-browser-token
+    ports:
+      - ${PANEL_APP_PORT_BROWSER}:3000
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true

@@ -1,0 +1,9 @@
+# ChatGPT Adapter 配置示例文件
+# 详细配置请参考官方文档: https://bincooo.github.io/chatgpt-adapter
+
+# 基础服务配置
+port: 8080                    # 服务端口
+host: "0.0.0.0"              # 监听地址，0.0.0.0表示监听所有网卡
+debug: true                   # 调试模式，开启后会输出详细日志
+timeout: 300                  # 请求超时时间(秒)
+cors: true                    # 是否启用跨域支持

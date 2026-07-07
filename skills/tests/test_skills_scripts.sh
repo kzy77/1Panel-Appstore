@@ -332,7 +332,7 @@ services:
     restart: always
     networks:
       - 1panel-network
-    image: nginx:1.25.3
+    image: demo/demo-app:1.25.3
     labels:
       createdBy: "Apps"
 networks:
@@ -346,6 +346,91 @@ YAML
   assert_contains /tmp/validate_bad_latest.out "latest 目录"
 }
 
+test_validate_app_accepts_v_prefixed_version_tag() {
+  local app="$TMP_DIR/v-prefix/apps/demo-app"
+  mkdir -p "$app/1.2.3"
+  printf 'png' > "$app/logo.png"
+  cat > "$app/data.yml" <<'YAML'
+name: DemoApp
+tags:
+    - 实用工具
+title: Demo
+description: Demo
+additionalProperties:
+    key: demo-app
+    name: DemoApp
+    architectures:
+      - amd64
+YAML
+  cat > "$app/1.2.3/data.yml" <<'YAML'
+additionalProperties:
+  formFields: []
+YAML
+  cat > "$app/1.2.3/docker-compose.yml" <<'YAML'
+services:
+  demo:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    image: demo/demo-app:v1.2.3
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
+YAML
+
+  bash "$ROOT_DIR/skills/scripts/validate-app.sh" "$app" >/tmp/validate_v_prefix.out 2>&1
+  if grep -q "未检测到与目录名一致的镜像 tag" /tmp/validate_v_prefix.out; then
+    cat /tmp/validate_v_prefix.out >&2
+    fail "validator should accept v-prefixed tag for version directory"
+  fi
+}
+
+test_validate_app_detects_named_version_directory() {
+  local app="$TMP_DIR/named-version/apps/demo-app"
+  mkdir -p "$app/chromium-bundled-2026-07-06"
+  printf 'png' > "$app/logo.png"
+  cat > "$app/data.yml" <<'YAML'
+name: DemoApp
+tags:
+    - 实用工具
+title: Demo
+description: Demo
+additionalProperties:
+    key: demo-app
+    name: DemoApp
+    architectures:
+      - amd64
+YAML
+  cat > "$app/chromium-bundled-2026-07-06/data.yml" <<'YAML'
+additionalProperties:
+  formFields: []
+YAML
+  cat > "$app/chromium-bundled-2026-07-06/docker-compose.yml" <<'YAML'
+services:
+  demo:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    image: demo/demo-app:chromium-bundled-2026-07-06
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
+YAML
+
+  bash "$ROOT_DIR/skills/scripts/validate-app.sh" "$app" >/tmp/validate_named_version.out 2>&1
+  assert_contains /tmp/validate_named_version.out "检查版本目录: chromium-bundled-2026-07-06"
+  if grep -q "未找到版本目录" /tmp/validate_named_version.out; then
+    cat /tmp/validate_named_version.out >&2
+    fail "validator should detect named version directory"
+  fi
+}
+
 run_test "download icon skip mode" test_download_icon_skip_mode_does_not_create_logo
 run_test "download icon cache-only mode" test_download_icon_cache_only_uses_cached_logo
 run_test "generate app dependency check" test_generate_app_reports_missing_dependencies
@@ -357,5 +442,7 @@ run_test "generate app github README docker run discovery" test_generate_app_dis
 run_test "generate app complex docker run flags" test_generate_app_parses_complex_docker_run_flags
 run_test "validate undefined port variable" test_validate_app_rejects_undefined_port_variable
 run_test "validate latest image tag" test_validate_app_rejects_latest_wrong_tag
+run_test "validate v-prefixed version tag" test_validate_app_accepts_v_prefixed_version_tag
+run_test "validate named version directory" test_validate_app_detects_named_version_directory
 
 echo "All skills script tests passed."

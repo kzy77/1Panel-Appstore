@@ -22,3 +22,6 @@ additionalProperties:
   website: https://xdocs.hanxi.cc/
   github: https://github.com/hanxi/xiaomusic
   document: https://xdocs.hanxi.cc/
+  architectures:
+    - amd64
+    - arm64

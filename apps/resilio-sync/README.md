@@ -27,9 +27,9 @@ Resilio-sync（原名 BitTorrent Sync）使用 BitTorrent 协议在您的所有�
 
 | 文件目录               | 介绍                      |
 | ---------------------- | ------------------------- |
-| ./config:/config       | resilio-sync 配置文件位置 |
-| ./downloads:/downloads | 下载/缓存文件夹           |
-| ./data:/sync           | 同步文件夹根目录          |
+| ./data/config:/config    | resilio-sync 配置文件位置 |
+| ./data/downloads:/downloads | 下载/缓存文件夹           |
+| ./data/sync:/sync       | 同步文件夹根目录          |
 
 
 

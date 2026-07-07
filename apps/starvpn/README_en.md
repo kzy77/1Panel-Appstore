@@ -1,43 +1,41 @@
 # StarVPN
 
-StarVPN is an easy-to-use self-hosted VPN service, supporting multi-platform and Docker quick deployment, suitable for personal and team secure networking.
+The StarVPN Docker client is intended for cloud servers, lightweight Linux hosts, and NAS container environments. After the container starts, it prints the console URL in the container logs. Open that URL in a browser and sign in with a StarVPN member account to bind the Docker host to your network.
 
-## Main Features
-- Multi-platform client support
-- Simple web management UI
-- Account/password login
-- One-click Docker deployment
-- High performance, secure and stable
+## Deployment Notes
 
-## Quick Deployment (Docker Example)
-```yaml
-version: "3"
-services:
-  starvpn:
-    image: starvpn/starvpn:latest
-    container_name: starvpn
-    environment:
-      - STARS_USER=xxxxx # User username
-      - STARS_PASS=xxxxx # User password
-    ports:
-      - "8080:8080" # Web management port
-    volumes:
-      - ./starvpn-data:/data
-    restart: always
+This app follows the official Docker documentation:
+
+- Image: `registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client`
+- Network mode: `host`
+- Privileged mode: enabled
+- Restart policy: `always`
+
+Official example command:
+
+```bash
+docker run -d --privileged --net=host --name stars.client --restart=always registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client:latest
 ```
 
-## Parameter Description
-- **STARS_USER**:  username
-- **STARS_PASS**:  password
-- **8080**: Web management port
-- **/data**: Data persistence directory
+## First Use
 
-## FAQ
-- Default username/password is admin/admin. Please change it after first deployment.
-- Multi-platform clients supported, see official docs.
-- To customize port or directory, edit the compose file accordingly.
+1. Install and start the app in 1Panel.
+2. Check the container logs and copy the console URL:
 
-## Official Docs & Support
+   ```bash
+   docker logs <container-name>
+   ```
+
+3. Open the console URL in a browser and sign in with a StarVPN member account.
+4. After the device is online, note its private-network IP. You can then access the host and its services through that IP with the original service ports.
+
+## Notes
+
+- The official Docker deployment uses the host network stack, so this app does not expose configurable port mappings.
+- Member credentials are entered in the web console after startup; they are not preconfigured with environment variables.
+- To remove the client, uninstall the app in 1Panel or remove the container.
+
+## Official Resources
+
 - Website: [https://starvpn.cn/](https://starvpn.cn/)
-- Docs: [https://doc.starvpn.cn/#/docker](https://doc.starvpn.cn/#/docker)
-- GitHub: [https://github.com/starvpn/starvpn](https://github.com/starvpn/starvpn) 
+- Docker documentation: [https://doc.starvpn.cn/#/docker](https://doc.starvpn.cn/#/docker)

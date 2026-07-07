@@ -1,23 +1,20 @@
 name: Resilio-sync
 tags:
     - 实用工具
-    - 文件同步
-    - P2P
-    - BitTorrent
 title: resilio-sync
 description: 使用BitTorrent协议在您的所有设备之间同步文件和文件夹
 additionalProperties:
     key: resilio-sync
     name: Resilio-sync
     tags:
-        - 实用工具
-        - 文件同步
-        - P2P
-        - BitTorrent
+        - Tool
     shortDescZh: 一款基于点对点技术的文件同步和分享工具
     shortDescEn: a peer-to-peer file synchronization tool
     type: website
     crossVersionUpdate: true
     website: https://www.resilio.com/sync/
     github: https://github.com/resilio-inc
-    document: https://www.resilio.com/sync/
+    document: https://docs.linuxserver.io/images/docker-resilio-sync/
+    architectures:
+      - amd64
+      - arm64

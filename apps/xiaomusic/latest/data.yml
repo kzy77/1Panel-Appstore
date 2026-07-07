@@ -1,6 +1,6 @@
 additionalProperties:
   formFields:
-    - default: "/xiaomusic_music"
+    - default: "./data"
       edit: true
       envKey: "APP_DATA"
       labelEn: "Data Storage Path"

@@ -1,0 +1,224 @@
+# ChatGPT Adapter 配置示例文件
+# 详细配置请参考官方文档: https://bincooo.github.io/chatgpt-adapter
+
+# 基础服务配置
+port: 8080                    # 服务端口
+host: "0.0.0.0"              # 监听地址，0.0.0.0表示监听所有网卡
+debug: false                  # 调试模式，开启后会输出详细日志
+timeout: 300                  # 请求超时时间(秒)
+cors: true                    # 是否启用跨域支持
+
+# 代理配置(可选) - 某些服务可能需要代理访问
+# proxy: "http://127.0.0.1:7890"
+# proxy: "socks5://127.0.0.1:1080"
+
+# ==================== 模型配置 ====================
+
+# Coze 国际版配置
+coze:
+  websdk:
+    model: claude-35-sonnet-200k    # 可选: claude-35-sonnet-200k, claude-35-haiku-200k, gpt4o-8k, gpt4o-32k, gpt4o-128k, gpt4-125k, gpt35-16k
+    system: "你是一个有用的AI助手"
+    bot: custom-128k                # 默认bot名称，可自定义
+    accounts:
+      - email: "your_email@gmail.com"
+        password: "your_password"
+        validate: "your_email@gmail.com"
+
+# Browser-less服务配置 (Coze websdk必需)
+browser-less:
+  enabled: true                     # 启用browser-less服务
+  # reversal: "http://your-browser-less-service:8080"  # 如果使用外部browser-less服务
+
+# 注意:
+# 1. Coze websdk需要browser-less服务来获取cookies，必须配置browser-less.enabled=true或提供reversal URL
+# 2. accounts为gmail登录邮箱，仅限通过输入邮箱验证登录的账户可用，未实现人机验证
+# 3. 对网络要求较高，建议使用稳定的网络环境
+# 4. 也可以自行在coze.com部署websdk后获取bot_id，然后拼接成 coze/{bot_id}-xxxxx-1000-w 字符串作为model参数
+
+# Bing Copilot配置 (开发中...)
+bing:
+  proxied: true                     # 是否开启代理
+  cookies:
+    - scopeId: "your_scope_id"      # 从控制台脚本获取
+      idToken: "your_id_token"      # 从控制台脚本获取
+      cookie: "your_bing_cookie"    # 从F12网络面板获取
+# 获取方法请参考官方文档中的控制台脚本
+
+# Cursor Editor配置
+cursor:
+  checksum: 'zo-v9_v2qxRYcau35NDnAHAVxQkLe6IHw8opkpKV4oLyo0PhPeSpj4QTw2VJ20Lngrz7XNTQ/clDRF5FOm3B1uK-mQDyFBRqD8JNj4kLByaAfm4AqK6IMbFYcrqXMMXexubsTRrr1'
+# 注意: checksum为设备id，随机。若不配置将自动生成一个
+# authorization为网页登录后的cookie WorkosCursorSessionToken
+
+# ==================== Deepseek配置 ====================
+# Deepseek是一个强大的AI模型，支持中文对话
+deepseek:
+  # 必需：从浏览器获取的cookie
+  # 获取方法：
+  # 1. 访问 https://chat.deepseek.com/ 并登录
+  # 2. 打开浏览器开发者工具(F12) -> Network标签
+  # 3. 发送一条消息，找到请求头中的Cookie
+  # 4. 复制完整的cookie字符串
+  cookie: 'intercom-device-id-gxxx .......... xxx'
+
+  # 可选：自定义User-Agent（海外地区可能需要）
+  userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15'
+
+# 注意事项:
+# 1. 中国地区通常不需要配置cookie，但如果出现认证失败，仍需要配置
+# 2. 海外地区出现403错误时必须配置cookie和userAgent
+# 3. Cookie有效期有限，失效后需要重新获取
+# 4. 确保浏览器获取cookie时的IP与服务器IP一致（如果使用代理）
+# 5. authorization可通过控制台脚本获取:
+#    var token = localStorage.getItem('userToken'); console.log(JSON.parse(token).value);
+
+# Windsurf Editor配置
+windsurf:
+  proxied: false                    # 是否使用代理
+# authorization为网页登录后访问 https://codeium.com/profile?referrer=extension
+# F12查看网络面板的 GetAnalytics 请求头x-api-key
+
+# You.com配置
+you:
+  custom: true                      # 启动自定义模型，不存在会自动创建
+  task: false                       # 定时器过cf验证
+  model:
+    - 'custom_model_name'           # 自定义模型名称
+  cookies:
+    - 'your_you_cookie_here'        # 完整的cookie字符串
+
+# Grok配置
+grok:
+  think_reason: false               # 是否开启思考模式
+  disable_search: false             # 是否关闭联网搜索
+  cookies:
+    - 'your_grok_cookie'            # F12打开网络面板抓取cookie
+# authorization = cookie
+
+# ==================== 支持的模型列表 ====================
+
+# Coze模型:
+# - coze/websdk
+# - coze/{bot_id}-xxxx-1000-w
+
+# Bing模型:
+# - bing
+
+# Cursor模型:
+# - cursor/claude-3-5-sonnet-20241022
+# - claude-3.7-sonnet
+# - claude-3.7-sonnet-thinking
+# - cursor/claude-3-opus
+# - cursor/claude-3.5-haiku
+# - cursor/claude-3.5-sonnet
+# - cursor/cursor-small
+# - cursor/gpt-3.5-turbo
+# - cursor/gpt-4
+# - cursor/gpt-4-turbo-2024-04-09
+# - cursor/gpt-4o
+# - cursor/gpt-4o-mini
+# - cursor/o1-mini
+# - cursor/o1-prevew
+
+# Deepseek模型:
+# - deepseek-chat
+# - deepseek-reasoner
+
+# Windsurf模型:
+# - windsurf/claude-3-5-sonnet
+# - claude-3-7-sonnet
+# - claude-3-7-sonnet-think
+# - windsurf/gpt4o
+# - windsurf/deepseek-chat
+# - windsurf/deepseek-reasoner
+# - windsurf/gpt4-o3-mini
+# - windsurf/gemini-2.0-flash
+
+# You.com模型:
+# - you/gpt_4
+# - you/gpt_4o
+# - you/gpt_4o_mini
+# - you/gpt_4_turbo
+# - you/openai_o1
+# - you/openai_o1_mini
+# - you/claude_2
+# - you/claude_3_haiku
+# - you/claude_3_sonnet
+# - you/claude_3_5_sonnet
+# - you/claude_3_opus
+# - you/gemini_pro
+# - you/gemini_1_5_pro
+# - you/gemini_1_5_flash
+
+# Grok模型:
+# - grok-2
+# - grok-3
+
+# ==================== 可选配置 ====================
+
+# ==================== 认证配置 ====================
+# API密钥认证 - 为API访问添加安全验证
+auth:
+  keys:
+    - "sk-chatgpt-adapter-your-custom-key-here"     # 自定义API密钥1
+    - "sk-another-custom-api-key-for-backup"        # 自定义API密钥2（备用）
+    - "sk-team-shared-key-for-multiple-users"       # 团队共享密钥
+  whitelist:  # IP白名单(可选) - 只允许特定IP访问
+    - "127.0.0.1"                                   # 本地访问
+    - "192.168.1.0/24"                             # 局域网访问
+    - "your-server-public-ip"                       # 您的服务器公网IP
+
+# 注意事项:
+# 1. API密钥格式建议以"sk-"开头，但不是强制要求
+# 2. 可以配置多个密钥，支持密钥轮换和备份
+# 3. 如果配置了auth.keys，则所有API请求都必须携带有效的Authorization头
+# 4. IP白名单是可选的，如果配置了则只允许白名单内的IP访问
+# 5. 密钥长度建议至少32位，确保安全性
+
+# 日志配置(可选)
+# log:
+#   level: "info"                    # 日志级别: debug/info/warn/error
+#   file: "./logs/adapter.log"       # 日志文件路径
+#   max_size: 100                    # 单个日志文件最大大小(MB)
+#   max_backups: 5                   # 保留的日志文件数量
+#   max_age: 30                      # 日志文件保留天数
+
+# 限流配置(可选) - 防止API滥用
+# rate_limit:
+#   requests_per_minute: 60          # 每分钟最大请求数
+#   requests_per_hour: 1000          # 每小时最大请求数
+
+# 缓存配置(可选) - 提高响应速度
+# cache:
+#   type: "memory"                   # 缓存类型: memory/redis
+#   ttl: 3600                        # 缓存过期时间(秒)
+#   # Redis配置(当type为redis时)
+#   # redis:
+#   #   addr: "localhost:6379"
+#   #   password: ""
+#   #   db: 0
+
+# ==================== 使用说明 ====================
+# 1. 根据需要启用相应的模型配置
+# 2. Cookie和Token获取方法请参考官方文档: https://bincooo.github.io/chatgpt-adapter
+# 3. 某些服务可能需要代理才能正常访问
+# 4. 建议在生产环境中启用认证和限流配置
+# 5. 调试模式会输出详细日志，生产环境建议关闭
+# 6. 各模型的具体使用方法和参数请参考官方文档对应章节
+
+# ==================== API调用示例 ====================
+# curl -i -X POST \
+#    -H "Content-Type: application/json" \
+#    -H "Authorization: Bearer your_token_here" \
+#    -d '{
+#      "stream": true,
+#      "model": "coze/websdk",
+#      "messages": [
+#        {
+#          "role": "user",
+#          "content": "你好"
+#        }
+#      ]
+#    }' \
+#  'http://127.0.0.1:8080/v1/chat/completions'

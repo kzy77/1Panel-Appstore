@@ -7,9 +7,9 @@ services:
             - ${PANEL_APP_PORT_HTTP}:8888
             - ${PANEL_APP_PORT_SYNC}:55555
         volumes:
-            - ./config:/config
-            - ./downloads:/downloads
-            - ./data:/sync
+            - ./data/config:/config
+            - ./data/downloads:/downloads
+            - ./data/sync:/sync
         networks:
             - 1panel-network
         environment:
@@ -17,7 +17,7 @@ services:
             - PGID=1000
             - TZ=Asia/Shanghai
         labels:
-            createdBy: Apps
+            createdBy: "Apps"
 networks:
     1panel-network:
         external: true

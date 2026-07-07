@@ -1,6 +1,6 @@
 services:
   chatgpt-adapter:
-    image: 'ghcr.io/bincooo/chatgpt-adapter:latest'
+    image: ghcr.io/bincooo/chatgpt-adapter:latest
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
@@ -14,7 +14,7 @@ services:
   browser-less:
     image: browserless/chrome:latest
     container_name: ${CONTAINER_NAME}-browser
-    restart: unless-stopped
+    restart: always
     environment:
       - CONCURRENT=10
       - TOKEN=your-browser-token
@@ -22,6 +22,8 @@ services:
       - ${PANEL_APP_PORT_BROWSER}:3000
     networks:
       - 1panel-network
+    labels:
+      createdBy: "Apps"
 networks:
   1panel-network:
     external: true

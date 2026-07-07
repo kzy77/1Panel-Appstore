@@ -269,7 +269,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多款AI聊天逆向接口适配到OpenAI标准接口
 
-<kbd>latest</kbd> • [官网链接](https://github.com/bincooo/chatgpt-adapter)
+<kbd>3.0.0</kbd> • [官网链接](https://github.com/bincooo/chatgpt-adapter)
 
 </td>
 </tr>
@@ -441,6 +441,24 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 </tr>
 </table>
 
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/rsshub/README.md">
+<img src="./apps/rsshub/logo.png" width="60" height="60" alt="RSSHub">
+<br><b>RSSHub</b>
+</a>
+
+🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
+
+<kbd>chromium-bundled-2026-07-06</kbd> • [官网链接](https://docs.rsshub.app/)
+
+</td>
+</tr>
+</table>
+
 #### 🔒 安全与网络工具
 
 <table>
@@ -581,7 +599,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.14.2</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.15.0</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">
@@ -610,7 +628,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.16</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.18</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -704,7 +722,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.7.5-a6438586a</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.7.6-556d08c39</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -757,7 +775,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.29.5</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.29.6</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -803,19 +821,19 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.144</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.145</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
 
-<a href="./apps/cliproxyapi-plus/README.md">
-<img src="./apps/cliproxyapi-plus/logo.png" width="60" height="60" alt="CLIProxyAPI Plus">
-<br><b>CLIProxyAPI Plus</b>
+<a href="./apps/cliproxyapi/README.md">
+<img src="./apps/cliproxyapi/logo.png" width="60" height="60" alt="CLIProxyAPI">
+<br><b>CLIProxyAPI</b>
 </a>
 
-🔗 CLIProxyAPI Plus 代理API服务
+🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>6.9.28-0</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPIPlus)
+<kbd>7.2.50</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -885,7 +903,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 让 AI 代理可以访问网站，轻松实现在线任务自动化
 
-<kbd>latest</kbd> • [官网链接](https://browser-use.com/)
+<kbd>3.0.0</kbd> • [官网链接](https://browser-use.com/)
 
 </td>
 <td width="33%" align="center">
@@ -897,7 +915,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 智能 AI API 代理中转服务平台
 
-<kbd>0.8.8</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
+<kbd>0.8.9</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
 
 </td>
 <td width="33%" align="center">
@@ -926,7 +944,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.64</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.67</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -938,7 +956,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.25</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.26</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -979,7 +997,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 专注于隐私的 AI 问答搜索引擎
 
-<kbd>v1.12.2</kbd> • [官网链接](https://github.com/ItzCrazyKns/Vane)
+<kbd>1.12.2</kbd> • [官网链接](https://github.com/ItzCrazyKns/Vane)
 
 </td>
 </tr>
@@ -1051,7 +1069,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌱 开源高性能BT/PT下载工具，支持Web界面
 
-<kbd>2021.11.18</kbd> • [官网链接](https://transmissionbt.com/)
+<kbd>4.1.3</kbd> • [官网链接](https://transmissionbt.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1224,7 +1242,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 跨平台P2P文件同步和分享工具
 
-<kbd>3.1.2</kbd> • [官网链接](https://www.resilio.com/sync/)
+<kbd>3.1.2.1076-1-ls249</kbd> • [官网链接](https://www.resilio.com/sync/)
 
 </td>
 <td width="33%" align="center">
@@ -1306,7 +1324,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>4.0.3</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.1.67</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1359,7 +1377,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 高性能网盘资源搜索API服务，支持TG频道和插件搜索，智能排序和网盘类型分类
 
-<kbd>sha-fb7fec2</kbd> • [官网链接](https://github.com/fish2018/pansou)
+<kbd>sha-3060e01</kbd> • [官网链接](https://github.com/fish2018/pansou)
 
 </td>
 <td width="33%" align="center">
@@ -1371,7 +1389,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛠️ 为开发人员和IT从业者提供的在线工具集合，支持加密、转换、Web、图像等多类工具
 
-<kbd>2025.8.31-13b8f041</kbd> • [官网链接](https://github.com/sharevb/it-tools)
+<kbd>2026.1.4</kbd> • [官网链接](https://github.com/sharevb/it-tools)
 
 </td>
 </tr>

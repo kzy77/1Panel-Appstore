@@ -20,5 +20,8 @@ additionalProperties:
   crossVersionUpdate: true
   limit: 0
   website: https://browser-use.com/
-  github: https://github.com/browser-use/browser-use
-  document: https://github.com/browser-use/browser-use
+  github: https://github.com/browser-use/web-ui
+  document: https://github.com/browser-use/web-ui
+  architectures:
+    - amd64
+    - arm64

@@ -20,3 +20,10 @@ additionalProperties:
   website: https://d-jy.net/docs/nps/
   github: https://github.com/djylb/nps
   document: https://d-jy.net/docs/nps/
+  architectures:
+    - amd64
+    - arm64
+    - arm/v7
+    - 386
+    - ppc64le
+    - s390x

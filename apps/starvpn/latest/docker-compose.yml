@@ -1,0 +1,13 @@
+services:
+  starvpn:
+    image: registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    privileged: ${PRIVILEGED_MODE}
+    network_mode: ${NETWORK_MODE}
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

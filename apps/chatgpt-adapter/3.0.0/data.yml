@@ -1,0 +1,24 @@
+additionalProperties:
+  formFields:
+    - default: 8080
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: API Port
+      labelZh: API接口端口
+      label:
+        en: API Port
+        zh: API接口端口
+        zh-Hant: API接口埠
+      required: true
+      rule: paramPort
+      type: number
+    - default: 3000
+      envKey: PANEL_APP_PORT_BROWSER
+      labelEn: Browser-less Port
+      labelZh: Browser-less端口
+      label:
+        en: Browser-less Port
+        zh: Browser-less端口
+        zh-Hant: Browser-less埠
+      required: true
+      rule: paramPort
+      type: number

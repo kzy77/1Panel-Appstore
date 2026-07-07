@@ -55,6 +55,15 @@ yq_read() {
   fi
 }
 
+find_version_dirs() {
+  local app_dir="$1"
+  find "$app_dir" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | while IFS= read -r dir; do
+    if [[ -f "$dir/data.yml" || -f "$dir/docker-compose.yml" ]]; then
+      echo "$dir"
+    fi
+  done
+}
+
 # 检查目录结构
 check_directory_structure() {
   local app_dir="$1"
@@ -78,10 +87,10 @@ check_directory_structure() {
 
   # 查找版本目录
   local version_dirs
-  version_dirs=$(find "$app_dir" -mindepth 1 -maxdepth 1 -type d \( -name "v*" -o -name "latest" -o -name "[0-9]*" \) 2>/dev/null || echo "")
+  version_dirs=$(find_version_dirs "$app_dir" || echo "")
 
   if [[ -z "$version_dirs" ]]; then
-    log_error "未找到版本目录（如 1.0.0/, v1.0.0/, latest/）"
+    log_error "未找到版本目录（需包含 data.yml 或 docker-compose.yml）"
     return 0
   fi
 
@@ -293,7 +302,7 @@ validate_image_tags() {
       log_error "latest 目录中的镜像必须使用 latest tag: $image"
     fi
 
-    if [[ "$version" != "latest" && "$tag" == "$version" ]]; then
+    if [[ "$version" != "latest" ]] && { [[ "$tag" == "$version" ]] || [[ "$tag" == "v${version}" ]]; }; then
       matched_version=true
     fi
   done < <(grep -E '^[[:space:]]*image:[[:space:]]*' "$compose_file" | sed -E 's/^[[:space:]]*image:[[:space:]]*"?([^"]*)"?/\1/' || true)
@@ -392,7 +401,7 @@ main() {
 
   # 查找并验证版本目录
   local version_dirs
-  version_dirs=$(find "$app_dir" -mindepth 1 -maxdepth 1 -type d \( -name "v*" -o -name "latest" -o -name "[0-9]*" \) 2>/dev/null || echo "")
+  version_dirs=$(find_version_dirs "$app_dir" || echo "")
 
   for version_dir in $version_dirs; do
     validate_version_data_yml "$version_dir/data.yml"

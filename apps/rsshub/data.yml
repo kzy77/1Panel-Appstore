@@ -1,0 +1,26 @@
+name: RSSHub
+tags:
+  - 实用工具
+title: 全球最大的 RSS 网络
+description: 全球最大的 RSS 网络
+additionalProperties:
+  key: rsshub
+  name: RSSHub
+  tags:
+    - Tool
+  shortDescZh: 全球最大的 RSS 网络
+  shortDescEn: The world's largest RSS Network
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://docs.rsshub.app/
+  github: https://github.com/DIYgod/RSSHub
+  document: https://docs.rsshub.app/guide/
+  description:
+    en: 🧡 Everything is RSSible
+    zh: 🧡 万物皆可 RSS
+    zh-Hant: 🧡 萬物皆可 RSS
+  architectures:
+    - amd64
+    - arm64
