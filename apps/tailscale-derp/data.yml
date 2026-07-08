@@ -21,7 +21,7 @@ additionalProperties:
     limit: 0
     recommend: 50
     website: https://tailscale.com
-    github: https://github.com/yangchuansheng/ip_derper
+    github: https://github.com/tailscale/tailscale
     document: https://ameow.xyz/archives/tailscale-derp-server-deployment
     architectures:
       - amd64

@@ -453,7 +453,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-07-06</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-07-07</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 </tr>
@@ -556,7 +556,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔐 私有 WireGuard 网络组网工具
 
-<kbd>1.98.4</kbd> • [官网链接](https://tailscale.com)
+<kbd>1.98.8</kbd> • [官网链接](https://tailscale.com)
 
 </td>
 <td width="33%" align="center">
@@ -568,7 +568,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛰️ Tailscale DERP 中继服务器，无需域名即可使用
 
-<kbd>latest</kbd> • [官网链接](https://tailscale.com)
+<kbd>1.98.8</kbd> • [官网链接](https://tailscale.com)
 
 </td>
 </tr>
@@ -628,7 +628,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.18</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.20</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -722,7 +722,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.7.6-556d08c39</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.7.7-f69b22c45</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -775,7 +775,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.29.6</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.30.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -821,7 +821,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.145</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.146</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -833,7 +833,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.2.50</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>7.2.51</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -862,7 +862,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.18</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.20</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -915,7 +915,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 智能 AI API 代理中转服务平台
 
-<kbd>0.8.9</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
+<kbd>0.8.10</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
 
 </td>
 <td width="33%" align="center">
@@ -944,7 +944,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.67</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.70</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -998,6 +998,18 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 🔍 专注于隐私的 AI 问答搜索引擎
 
 <kbd>1.12.2</kbd> • [官网链接](https://github.com/ItzCrazyKns/Vane)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/speaches/README.md">
+<img src="./apps/speaches/logo.png" width="60" height="60" alt="Speaches">
+<br><b>Speaches</b>
+</a>
+
+🎙️ 兼容 OpenAI API 的流式语音识别、翻译和语音生成服务器
+
+<kbd>0.8.3-cuda</kbd> • [官网链接](https://github.com/speaches-ai/speaches)
 
 </td>
 </tr>
@@ -1242,7 +1254,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 跨平台P2P文件同步和分享工具
 
-<kbd>3.1.2.1076-1-ls249</kbd> • [官网链接](https://www.resilio.com/sync/)
+<kbd>3.1.2.1076-1-ls250</kbd> • [官网链接](https://www.resilio.com/sync/)
 
 </td>
 <td width="33%" align="center">
@@ -1324,7 +1336,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.1.67</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.1.68</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">

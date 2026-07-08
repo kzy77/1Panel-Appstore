@@ -89,5 +89,6 @@ tailscale netcheck
 ## Links
 
 - Website: https://tailscale.com
-- GitHub: https://github.com/yangchuansheng/ip_derper
+- Tailscale GitHub: https://github.com/tailscale/tailscale
+- DERP image project: https://github.com/yangchuansheng/ip_derper
 - Documentation: https://seepine.com/ops/tailscale/derper/

@@ -1,0 +1,28 @@
+additionalProperties:
+  formFields:
+    - default: 8000
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 'speaches'
+      edit: true
+      envKey: SECRET_KEY
+      labelEn: API Secret Key
+      labelZh: API 访问密钥
+      label:
+        en: Secret Key
+        ja: シークレットキー
+        ms: Kunci Rahsia
+        pt-br: Chave Secreta
+        ru: Секретный ключ
+        ko: 비밀 키
+        zh-hant: 密鑰
+        zh: Secret Key
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
