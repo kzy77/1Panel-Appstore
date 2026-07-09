@@ -11,3 +11,6 @@ services:
       - KEY=${KEY}
     labels:
       createdBy: Apps
+networks:
+  1panel-network:
+    external: true

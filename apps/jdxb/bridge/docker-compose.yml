@@ -8,9 +8,9 @@ services:
       - ${PANEL_APP_PORT_HTTP}:9118
     volumes:
       - ./store:/data/store
-    restart: unless-stopped
+    restart: always
     labels:
       createdBy: "Apps"
 networks:
   1panel-network:
-    external: true 
+    external: true

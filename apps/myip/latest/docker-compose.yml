@@ -1,0 +1,45 @@
+services:
+  myip:
+    image: jason5ng32/myip:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    stdin_open: true
+    tty: true
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:18966"
+    volumes:
+      - ./data/maxmind-db:/app/common/maxmind-db
+      - ./data/as-org-db:/app/common/as-org-db
+      - ./data/as-rel-db:/app/common/as-rel-db
+      - ./data/logs:/app/logs
+    environment:
+      - BACKEND_PORT=11966
+      - FRONTEND_PORT=18966
+      - ALLOWED_DOMAINS=${ALLOWED_DOMAINS}
+      - SECURITY_RATE_LIMIT=${SECURITY_RATE_LIMIT}
+      - SECURITY_DELAY_AFTER=${SECURITY_DELAY_AFTER}
+      - SECURITY_BLACKLIST_LOG_FILE_PATH=${SECURITY_BLACKLIST_LOG_FILE_PATH}
+      - LOG_LEVEL=${LOG_LEVEL}
+      - LOG_FORMAT=${LOG_FORMAT}
+      - LOG_HTTP=${LOG_HTTP}
+      - MAXMIND_ACCOUNT_ID=${MAXMIND_ACCOUNT_ID}
+      - MAXMIND_LICENSE_KEY=${MAXMIND_LICENSE_KEY}
+      - MAXMIND_AUTO_UPDATE=${MAXMIND_AUTO_UPDATE}
+      - CAIDA_AUTO_UPDATE=${CAIDA_AUTO_UPDATE}
+      - GOOGLE_MAP_API_KEY=${GOOGLE_MAP_API_KEY}
+      - IPINFO_API_TOKEN=${IPINFO_API_TOKEN}
+      - IPAPIIS_API_KEY=${IPAPIIS_API_KEY}
+      - IP2LOCATION_API_KEY=${IP2LOCATION_API_KEY}
+      - IPCHECKING_API_KEY=${IPCHECKING_API_KEY}
+      - IPCHECKING_API_ENDPOINT=${IPCHECKING_API_ENDPOINT}
+      - CLOUDFLARE_API=${CLOUDFLARE_API}
+      - RIPESTAT_SOURCE_APP=${RIPESTAT_SOURCE_APP}
+      - MAC_LOOKUP_API_KEY=${MAC_LOOKUP_API_KEY}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

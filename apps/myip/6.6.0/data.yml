@@ -1,0 +1,179 @@
+additionalProperties:
+  formFields:
+    - default: 18966
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: Web 端口
+      labelEn: Web Port
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      edit: true
+      envKey: ALLOWED_DOMAINS
+      labelZh: 允许访问的域名
+      labelEn: Allowed Domains
+      required: false
+      type: text
+    - default: 0
+      edit: true
+      envKey: SECURITY_RATE_LIMIT
+      labelZh: API 速率限制
+      labelEn: API Rate Limit
+      required: true
+      type: number
+    - default: 0
+      edit: true
+      envKey: SECURITY_DELAY_AFTER
+      labelZh: API 延迟阈值
+      labelEn: API Slowdown Threshold
+      required: true
+      type: number
+    - default: logs/blacklist-ip.log
+      edit: true
+      envKey: SECURITY_BLACKLIST_LOG_FILE_PATH
+      labelZh: 限流日志路径
+      labelEn: Rate Limit Log Path
+      required: true
+      type: text
+    - default: info
+      edit: true
+      envKey: LOG_LEVEL
+      labelZh: 日志级别
+      labelEn: Log Level
+      required: true
+      type: select
+      values:
+        - label: debug
+          value: debug
+        - label: info
+          value: info
+        - label: warn
+          value: warn
+        - label: error
+          value: error
+    - default: pretty
+      edit: true
+      envKey: LOG_FORMAT
+      labelZh: 日志格式
+      labelEn: Log Format
+      required: true
+      type: select
+      values:
+        - label: pretty
+          value: pretty
+        - label: json
+          value: json
+    - default: "false"
+      edit: true
+      envKey: LOG_HTTP
+      labelZh: 记录 HTTP 请求日志
+      labelEn: Enable HTTP Request Logs
+      required: true
+      type: select
+      values:
+        - label: "关闭"
+          value: "false"
+        - label: "开启"
+          value: "true"
+    - default: ""
+      edit: true
+      envKey: MAXMIND_ACCOUNT_ID
+      labelZh: MaxMind Account ID
+      labelEn: MaxMind Account ID
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: MAXMIND_LICENSE_KEY
+      labelZh: MaxMind License Key
+      labelEn: MaxMind License Key
+      required: false
+      type: password
+    - default: "false"
+      edit: true
+      envKey: MAXMIND_AUTO_UPDATE
+      labelZh: 自动更新 MaxMind 数据库
+      labelEn: Auto Update MaxMind Database
+      required: true
+      type: select
+      values:
+        - label: "关闭"
+          value: "false"
+        - label: "开启"
+          value: "true"
+    - default: "false"
+      edit: true
+      envKey: CAIDA_AUTO_UPDATE
+      labelZh: 自动更新 CAIDA 数据集
+      labelEn: Auto Update CAIDA Datasets
+      required: true
+      type: select
+      values:
+        - label: "关闭"
+          value: "false"
+        - label: "开启"
+          value: "true"
+    - default: ""
+      edit: true
+      envKey: GOOGLE_MAP_API_KEY
+      labelZh: Google Maps API Key
+      labelEn: Google Maps API Key
+      required: false
+      type: password
+    - default: ""
+      edit: true
+      envKey: IPINFO_API_TOKEN
+      labelZh: IPInfo API Token
+      labelEn: IPInfo API Token
+      required: false
+      type: password
+    - default: ""
+      edit: true
+      envKey: IPAPIIS_API_KEY
+      labelZh: IPAPI.is API Key
+      labelEn: IPAPI.is API Key
+      required: false
+      type: password
+    - default: ""
+      edit: true
+      envKey: IP2LOCATION_API_KEY
+      labelZh: IP2Location API Key
+      labelEn: IP2Location API Key
+      required: false
+      type: password
+    - default: ""
+      edit: true
+      envKey: IPCHECKING_API_KEY
+      labelZh: IPCheck.ing API Key
+      labelEn: IPCheck.ing API Key
+      required: false
+      type: password
+    - default: ""
+      edit: true
+      envKey: IPCHECKING_API_ENDPOINT
+      labelZh: IPCheck.ing API Endpoint
+      labelEn: IPCheck.ing API Endpoint
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: CLOUDFLARE_API
+      labelZh: Cloudflare API Key
+      labelEn: Cloudflare API Key
+      required: false
+      type: password
+    - default: ""
+      edit: true
+      envKey: RIPESTAT_SOURCE_APP
+      labelZh: RIPEstat Source App
+      labelEn: RIPEstat Source App
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: MAC_LOOKUP_API_KEY
+      labelZh: MAC Lookup API Key
+      labelEn: MAC Lookup API Key
+      required: false
+      type: password

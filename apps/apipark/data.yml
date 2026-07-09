@@ -13,14 +13,24 @@ additionalProperties:
     - DevTool
     - AI
   description:
-    en: Enterprise-level API lifecycle management platform providing comprehensive API design, development, debugging, publishing and operations management
+    en: Enterprise-level API lifecycle management platform providing
+      comprehensive API design, development, debugging, publishing and
+      operations management
     zh: 企业级API全生命周期管理平台，提供API设计、开发、调试、发布、运维等全生命周期管理
     zh-Hant: 企業級API全生命週期管理平台，提供API設計、開發、調試、發布、運維等全生命週期管理
-    ja: API設計、開発、デバッグ、公開、運用管理などの包括的なライフサイクル管理を提供するエンタープライズレベルのAPIライフサイクル管理プラットフォーム
-    ms: Platform pengurusan kitaran hidup API peringkat enterprise yang menyediakan pengurusan komprehensif reka bentuk, pembangunan, debug, penerbitan dan operasi API
-    pt-br: Plataforma de gerenciamento de ciclo de vida de API de nível empresarial fornecendo design, desenvolvimento, depuração, publicação e gerenciamento de operações de API abrangente
-    ru: Платформа управления жизненным циклом API корпоративного уровня, обеспечивающая комплексное управление проектированием, разработкой, отладкой, публикацией и эксплуатацией API
-    ko: API 설계, 개발, 디버깅, 게시 및 운영 관리의 포괄적인 라이프사이클 관리를 제공하는 엔터프라이즈급 API 라이프사이클 관리 플랫폼
+    ja:
+      API設計、開発、デバッグ、公開、運用管理などの包括的なライフサイクル管理を提供するエンタープライズレベルのAPIライフサイクル管理プラットフォーム
+    ms: Platform pengurusan kitaran hidup API peringkat enterprise yang
+      menyediakan pengurusan komprehensif reka bentuk, pembangunan, debug,
+      penerbitan dan operasi API
+    pt-br: Plataforma de gerenciamento de ciclo de vida de API de nível
+      empresarial fornecendo design, desenvolvimento, depuração, publicação e
+      gerenciamento de operações de API abrangente
+    ru: Платформа управления жизненным циклом API корпоративного уровня,
+      обеспечивающая комплексное управление проектированием, разработкой,
+      отладкой, публикацией и эксплуатацией API
+    ko: API 설계, 개발, 디버깅, 게시 및 운영 관리의 포괄적인 라이프사이클 관리를 제공하는 엔터프라이즈급 API 라이프사이클 관리
+      플랫폼
   type: tool
   crossVersionUpdate: true
   limit: 0
@@ -28,3 +38,6 @@ additionalProperties:
   website: https://apipark.com
   github: https://github.com/APIParkLab/APIPark
   document: https://docs.apipark.com
+  architectures:
+    - amd64
+    - arm64

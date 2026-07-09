@@ -5,12 +5,12 @@ services:
       - ${PANEL_APP_PORT_HTTP}:3000
     depends_on:
       - drawio
-    env_file: .env.local
     container_name: ${CONTAINER_NAME}
     networks:
       - 1panel-network
     labels:
       createdBy: Apps
+    restart: always
   drawio:
     image: jgraph/drawio:latest
     ports:
@@ -20,6 +20,7 @@ services:
       - 1panel-network
     labels:
       createdBy: Apps
+    restart: always
 networks:
   1panel-network:
     external: true

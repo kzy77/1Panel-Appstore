@@ -4,8 +4,8 @@ tags:
   - 开发工具
 title: 一款强大的工具，用于构建和部署 AI 驱动的代理和工作流
 description:
-  en: Langflow is a powerful tool for building and deploying AI-powered agents and
-    workflows.
+  en: Langflow is a powerful tool for building and deploying AI-powered agents
+    and workflows.
   zh: 一款强大的工具，用于构建和部署 AI 驱动的代理和工作流
 additionalProperties:
   key: langflow
@@ -22,3 +22,6 @@ additionalProperties:
   website: http://www.langflow.org/
   github: https://github.com/langflow-ai/langflow
   document: https://docs.example.com
+  architectures:
+    - amd64
+    - arm64

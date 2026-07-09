@@ -180,6 +180,13 @@ validate_version_data_yml() {
   param_count="${param_count:-0}"
 
   if [[ "$param_count" -eq 0 ]]; then
+    if has_yq; then
+      local form_count
+      form_count=$(yq_read "$data_file" '.additionalProperties.formFields | length // 0')
+      if [[ "${form_count:-0}" -eq 0 ]]; then
+        return 0
+      fi
+    fi
     log_warn "formFields 中未找到 envKey 定义"
   else
     log_info "找到 $param_count 个可配置参数"
@@ -262,7 +269,7 @@ is_dependency_image() {
   repository="$(image_repository_without_tag "$image")"
 
   case "$repository" in
-    postgres|postgis/postgis|pgvector/pgvector|redis|valkey/valkey|mysql|mariadb|mongo|memcached|rabbitmq|clickhouse/clickhouse-server|elasticsearch|opensearchproject/opensearch|nginx|caddy|traefik|prom/prometheus|grafana/grafana|minio/minio)
+    postgres|postgis/postgis|pgvector/pgvector|redis|valkey/valkey|mysql|mariadb|mongo|memcached|rabbitmq|clickhouse/clickhouse-server|elasticsearch|opensearchproject/opensearch|nginx|caddy|traefik|prom/prometheus|grafana/grafana|minio/minio|surrealdb/surrealdb|dushixiang/postgres|dushixiang/guacd|getmeili/meilisearch|casbin/casdoor|gcr.io/zenika-hub/alpine-chrome|zenika-hub/alpine-chrome|koala-ai/nginx)
       return 0
       ;;
     *)
@@ -274,7 +281,7 @@ is_dependency_image() {
 is_latest_channel_tag() {
   local tag="$1"
   case "$tag" in
-    latest|stable|main-stable)
+    latest|stable|main-stable|*-latest)
       return 0
       ;;
     *)
@@ -289,6 +296,11 @@ validate_image_tags() {
   local version image tag matched_version=false
 
   version="$(basename "$version_dir")"
+  case "$version" in
+    bridge|host|custom)
+      return 0
+      ;;
+  esac
   while IFS= read -r image; do
     [[ -z "$image" || "$image" == "null" ]] && continue
 
@@ -302,10 +314,10 @@ validate_image_tags() {
       log_error "latest 目录中的镜像必须使用 latest tag: $image"
     fi
 
-    if [[ "$version" != "latest" ]] && { [[ "$tag" == "$version" ]] || [[ "$tag" == "v${version}" ]]; }; then
+    if [[ "$version" != "latest" ]] && { [[ "$tag" == "$version" ]] || [[ "$tag" == "v${version}" ]] || [[ "$tag" == "${version}"[-_]* ]] || [[ "$tag" == "v${version}"[-_]* ]] || [[ "$version" == "${tag}"[-_]* ]] || [[ "$version" == "v${tag}"[-_]* ]] || [[ "$version" == "${tag#v}"[-_]* ]]; }; then
       matched_version=true
     fi
-  done < <(grep -E '^[[:space:]]*image:[[:space:]]*' "$compose_file" | sed -E 's/^[[:space:]]*image:[[:space:]]*"?([^"]*)"?/\1/' || true)
+  done < <(grep -E '^[[:space:]]*image:[[:space:]]*' "$compose_file" | sed -E 's/^[[:space:]]*image:[[:space:]]*//; s/[[:space:]]+#.*$//; s/^["'"'"']//; s/["'"'"']$//; s/\r$//' || true)
 
   if [[ "$version" != "latest" && "$matched_version" != "true" ]]; then
     log_warn "版本目录 ${version} 未检测到与目录名一致的镜像 tag，请确认是否为多服务或特殊版本"
@@ -356,7 +368,7 @@ validate_docker_compose() {
   fi
 
   # 检查 labels
-  if ! grep -q 'createdBy: "Apps"' "$compose_file"; then
+  if ! grep -qE 'createdBy:[[:space:]]*"?Apps"?' "$compose_file"; then
     log_warn "建议添加 labels: createdBy: \"Apps\""
   fi
 
@@ -369,7 +381,7 @@ validate_docker_compose() {
 
   # 检查数据卷路径
   if grep -q "volumes:" "$compose_file"; then
-    if grep -qE '^\s+- /[a-zA-Z]' "$compose_file"; then
+    if grep -E '^\s+- /[a-zA-Z]' "$compose_file" | grep -qvE '^\s+- /(var/run/docker\.sock|var/run|run|tmp|tmp/\.X11-unix|tmp/\.cache|etc/(localtime|timezone|hostname|passwd|group|os-release|resolv\.conf)|proc|sys|dev/net/tun|storage|var/log)(:|$)'; then
       log_warn "检测到绝对路径的数据卷，建议使用 ./data/ 相对路径"
     fi
   fi

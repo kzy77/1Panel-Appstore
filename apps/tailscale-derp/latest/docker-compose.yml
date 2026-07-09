@@ -11,7 +11,10 @@ services:
       - tailscale_data:/data
     networks:
       - 1panel-network
+    restart: always
     command: tailscaled --tun=userspace-networking --socks5-server=localhost:1055
+    labels:
+      createdBy: "Apps"
   
   derper:
     image: ghcr.io/yangchuansheng/ip_derper:latest

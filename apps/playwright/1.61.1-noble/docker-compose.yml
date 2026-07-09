@@ -12,7 +12,11 @@ services:
         chown -R pwuser:pwuser /home/pwuser/app &&
         chmod +x /home/pwuser/app/start.sh
       "
-    restart: "no"
+    restart: "always"
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
   playwright:
     image: mcr.microsoft.com/playwright:v1.61.1-noble
     container_name: ${CONTAINER_NAME}

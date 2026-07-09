@@ -1,11 +1,18 @@
 services:
   git-sync:
     image: ghcr.io/akashrajpurohit/git-sync:v0.21.0
-    container_name: git-sync
+    container_name: ${CONTAINER_NAME}
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
     volumes:
       - ${GITSYNC_CONFIG_PATH}:/git-sync/config.yaml
       - ${GITSYNC_BACKUP_PATH}:/backups
-    restart: unless-stopped
+    restart: always
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
+networks:
+  1panel-network:
+    external: true

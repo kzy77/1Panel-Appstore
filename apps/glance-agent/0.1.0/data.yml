@@ -1,7 +1,7 @@
 additionalProperties:
   formFields:
     - default: "27973"
-      envKey: AGENT_PORT
+      envKey: PANEL_APP_PORT_HTTP
       label:
         en: Agent-Port
         zh: Agent-端口

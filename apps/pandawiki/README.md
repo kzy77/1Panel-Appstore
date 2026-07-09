@@ -1,24 +1,20 @@
-![](https://cdn.jsdelivr.net/gh/chaitin/PandaWiki@refs/heads/main/images/banner.png)
+# PandaWiki
 
-## 👋 项目介绍
+PandaWiki 是一款 AI 大模型驱动的开源知识库搭建系统，可用于构建产品文档、技术文档、FAQ、博客系统，并提供 AI 创作、AI 问答、AI 搜索等能力。
 
-> 留个坑位，官网为提供手动安装方式，本安装脚本根据官方一键安装脚本生成的compose文件编写，暂时无法修改IP地址，安装成功后无法正常登录，请勿安装！！！
-> 蹲一个官方手动安装配置文档，如需使用，请先用一键安装脚本，也很方便
+## 使用说明
 
-PandaWiki 是一款 AI 大模型驱动的**开源知识库搭建系统**，帮助你快速构建智能化的 **产品文档、技术文档、FAQ、博客系统**，借助大模型的力量为你提供 **AI 创作、AI 问答、AI 搜索** 等能力。
+- 安装后通过 `https://服务器地址:管理后台 HTTPS 端口` 访问管理后台，默认端口为 `2443`。
+- 首次登录使用安装表单中填写的“管理后台密码”。请妥善保存该密码。
+- 内部服务密码请使用长度大于 8 位的随机字符串，建议仅包含数字和字母。
+- `容器子网前缀` 默认使用 `169.254.15`，如与宿主机或其他容器网络冲突，可在安装前调整。
+- 安装完成后需要在 PandaWiki 管理后台配置大模型服务并创建知识库。
 
-![](https://cdn.jsdelivr.net/gh/chaitin/PandaWiki@main/images/setup.png)
+## 数据目录
 
-## ⚡️ 界面展示
+应用数据保存在版本目录下的 `data/` 中，包括 PostgreSQL、Redis、MinIO、NATS、Qdrant、RagLite、Nginx/Caddy 配置与证书等运行数据。
 
-| PandaWiki 控制台                                             | Wiki 网站前台                                                |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![](https://cdn.jsdelivr.net/gh/chaitin/PandaWiki@main/images/screenshot-1.png) | ![](https://cdn.jsdelivr.net/gh/chaitin/PandaWiki@main/images/screenshot-2.png) |
-| ![](https://cdn.jsdelivr.net/gh/chaitin/PandaWiki@main/images/screenshot-3.png) | ![](https://cdn.jsdelivr.net/gh/chaitin/PandaWiki@main/images/screenshot-4.png) |
+## 官方文档
 
-## 🔥 功能与特色
-
-- AI 驱动智能化：AI 辅助创作、AI 辅助问答、AI 辅助搜索。
-- 强大的富文本编辑能力：兼容 Markdown 和 HTML，支持导出为 word、pdf、markdown 等多种格式。
-- 轻松与第三方应用进行集成：支持做成网页挂件挂在其他网站上，支持做成钉钉、飞书、企业微信等聊天机器人。
-- 通过第三方来源导入内容：根据网页 URL 导入、通过网站 Sitemap 导入、通过 RSS 订阅、通过离线文件导入等。
+- 安装文档：https://pandawiki.docs.baizhi.cloud/node/01971602-bb4e-7c90-99df-6d3c38cfd6d5
+- 项目仓库：https://github.com/chaitin/PandaWiki

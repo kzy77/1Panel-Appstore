@@ -54,14 +54,18 @@ services:
       timeout: 5s
       retries: 10
       start_period: 30s
+    labels:
+      createdBy: Apps
   redis:
     image: redis:latest
     container_name: ${CONTAINER_NAME}-redis
     restart: always
     networks:
       - 1panel-network
+    labels:
+      createdBy: Apps
 volumes:
-  mysql_data: null
+  mysql_data:
 networks:
   1panel-network:
     external: true

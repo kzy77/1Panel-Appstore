@@ -63,8 +63,6 @@ services:
       - BLOCK_MEDIA=false
       - MAX_CONCURRENT_PAGES=10
       - TZ=Asia/Shanghai
-    volumes:
-      - ./data/playwright:/tmp/.cache
     networks:
       - 1panel-network
     tmpfs:
@@ -82,6 +80,8 @@ services:
     volumes:
       - ./data/redis:/data
 
+    labels:
+      createdBy: Apps
   firecrawl-rabbitmq:
     image: rabbitmq:3-management
     container_name: ${CONTAINER_NAME}-rabbitmq
@@ -96,6 +96,8 @@ services:
     networks:
       - 1panel-network
 
+    labels:
+      createdBy: Apps
   firecrawl-postgres:
     image: postgres:16-alpine
     container_name: ${CONTAINER_NAME}-postgres
@@ -110,6 +112,8 @@ services:
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
 
+    labels:
+      createdBy: Apps
 networks:
   1panel-network:
     external: true

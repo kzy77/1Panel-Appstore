@@ -1,19 +1,23 @@
 services:
   netbird:
-      container_name: ${CONTAINER_NAME}
-      image: netbirdio/netbird:latest
-      hostname: Free-Node
-      cap_add:
-          - NET_ADMIN
-          - SYS_ADMIN
-          - SYS_RESOURCE
-      network_mode: host
-      environment:
-          - NB_SETUP_KEY=${NB_SETUP_KEY}
-      volumes:
-          - netbird-client:/var/lib/netbird
-      labels:
-          createdBy: "Apps"
+    container_name: ${CONTAINER_NAME}
+    image: netbirdio/netbird:latest
+    hostname: Free-Node
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
+      - SYS_RESOURCE
+    network_mode: host
+    environment:
+      - NB_SETUP_KEY=${NB_SETUP_KEY}
+    volumes:
+      - netbird-client:/var/lib/netbird
+    labels:
+      createdBy: "Apps"
+    restart: always
 volumes:
   netbird-client:
-      name: netbird-client
+    name: netbird-client
+networks:
+  1panel-network:
+    external: true

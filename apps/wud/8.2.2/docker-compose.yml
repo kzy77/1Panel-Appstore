@@ -10,6 +10,7 @@ services:
       - 1panel-network
     labels:
       createdBy: Apps
+    restart: always
 networks:
   1panel-network:
     external: true

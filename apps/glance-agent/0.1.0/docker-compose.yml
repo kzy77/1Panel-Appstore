@@ -7,11 +7,12 @@ services:
     volumes:
       - /storage:/storage:ro
     ports:
-      - ${AGENT_PORT}:27973
+      - ${PANEL_APP_PORT_HTTP}:27973
     networks:
       - 1panel-network
     labels:
       createdBy: Apps
+    restart: always
 networks:
   1panel-network:
     external: true

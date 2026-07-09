@@ -1,7 +1,7 @@
 services:
   web:
     image: haedlessdev/portnote:1.2.0
-    container_name: portnote
+    container_name: ${CONTAINER_NAME}
     restart: always
     ports:
       - "${PANEL_APP_PORT_HTTP}:3000"
@@ -14,6 +14,10 @@ services:
     depends_on:
       db:
         condition: service_started
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
   agent:
     image: haedlessdev/portnote-agent:1.2.0
     environment:
@@ -21,6 +25,11 @@ services:
     depends_on:
       db:
         condition: service_started
+    restart: always
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
   db:
     image: postgres:17
     restart: always
@@ -30,5 +39,12 @@ services:
       POSTGRES_DB: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
 volumes:
-  postgres_data: 
+  postgres_data:
+networks:
+  1panel-network:
+    external: true

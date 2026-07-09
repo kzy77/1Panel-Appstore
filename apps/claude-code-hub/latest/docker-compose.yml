@@ -2,9 +2,7 @@ name: ${COMPOSE_PROJECT_NAME:-claude-code-hub}
 services:
   postgres:
     image: postgres:18
-    restart: unless-stopped
-    env_file:
-      - ./.env
+    restart: always
     environment:
       POSTGRES_USER: ${DB_USER:-postgres}
       POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
@@ -22,9 +20,11 @@ services:
       start_period: 10s
     networks:
       - 1panel-network
+    labels:
+      createdBy: Apps
   redis:
     image: redis:7-alpine
-    restart: unless-stopped
+    restart: always
     volumes:
       - ./data/redis:/data
     command: redis-server --appendonly yes
@@ -36,6 +36,8 @@ services:
       start_period: 5s
     networks:
       - 1panel-network
+    labels:
+      createdBy: Apps
   app:
     container_name: ${CONTAINER_NAME}
     image: ghcr.io/ding113/claude-code-hub:latest
@@ -44,8 +46,6 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
-    env_file:
-      - ./.env
     environment:
       NODE_ENV: production
       DSN: postgresql://${DB_USER:-postgres}:${DB_PASSWORD:-postgres}@postgres:5432/${DB_NAME:-claude_code_hub}
@@ -61,15 +61,10 @@ services:
       TZ: Asia/Shanghai
     ports:
       - "${PANEL_APP_PORT_HTTP}:3000"
-    restart: unless-stopped
+    restart: always
     healthcheck:
-      test:
-        [
-          "CMD",
-          "node",
-          "-e",
-          "fetch('http://' + (process.env.HOSTNAME || '127.0.0.1') + ':3000/api/actions/health').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
-        ]
+      test: ["CMD", "node", "-e", "fetch('http://' + (process.env.HOSTNAME || '127.0.0.1')
+            + ':3000/api/actions/health').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
       interval: 30s
       timeout: 5s
       retries: 3

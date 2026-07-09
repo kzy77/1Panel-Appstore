@@ -2,7 +2,7 @@ services:
   karakeep:
     image: ghcr.io/karakeep-app/karakeep:latest
     container_name: ${CONTAINER_NAME}
-    restart: unless-stopped
+    restart: always
     volumes:
       # By default, the data is stored in a docker volume called "data".
       # If you want to mount a custom directory, change the volume mapping to:
@@ -21,10 +21,14 @@ services:
       # You almost never want to change the value of the DATA_DIR variable.
       # If you want to mount a custom directory, change the volume mapping above instead.
       DATA_DIR: /data # DON'T CHANGE THIS
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
   chrome:
     image: gcr.io/zenika-hub/alpine-chrome:123
     container_name: chrome-${CONTAINER_NAME}
-    restart: unless-stopped
+    restart: always
     command:
       - --no-sandbox
       - --disable-gpu
@@ -32,15 +36,26 @@ services:
       - --remote-debugging-address=0.0.0.0
       - --remote-debugging-port=9222
       - --hide-scrollbars
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
   meilisearch:
     image: getmeili/meilisearch:v1.11.1
     container_name: meili-${CONTAINER_NAME}
-    restart: unless-stopped
+    restart: always
     environment:
       MEILI_NO_ANALYTICS: "true"
     volumes:
       - meilisearch:/meili_data
 
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
 volumes:
   meilisearch:
   data:
+networks:
+  1panel-network:
+    external: true

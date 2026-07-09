@@ -13,10 +13,15 @@ additionalProperties:
     - AI
     - Tool
   shortDescZh: 提供浏览器自动化功能的 MCP 服务器
-  shortDescEn: Playwright MCP server that provides browser automation capabilities
+  shortDescEn: Playwright MCP server that provides browser automation
+    capabilities
   description:
-    zh: 一个基于 Playwright 的模型上下文协议 (MCP) 服务器，为 LLM 提供浏览器自动化功能。使用结构化可访问性快照与网页交互，无需截图或视觉调优模型。
-    en: A Model Context Protocol (MCP) server that provides browser automation capabilities using Playwright. This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.
+    zh: 一个基于 Playwright 的模型上下文协议 (MCP) 服务器，为 LLM
+      提供浏览器自动化功能。使用结构化可访问性快照与网页交互，无需截图或视觉调优模型。
+    en: A Model Context Protocol (MCP) server that provides browser automation
+      capabilities using Playwright. This server enables LLMs to interact with
+      web pages through structured accessibility snapshots, bypassing the need
+      for screenshots or visually-tuned models.
   type: tool
   crossVersionUpdate: true
   limit: 0
@@ -24,3 +29,6 @@ additionalProperties:
   website: https://github.com/microsoft/playwright-mcp
   github: https://github.com/microsoft/playwright-mcp
   document: https://github.com/microsoft/playwright-mcp#readme
+  architectures:
+    - amd64
+    - arm64

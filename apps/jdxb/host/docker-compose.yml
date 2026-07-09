@@ -10,6 +10,9 @@ services:
     cap_add:
       - NET_ADMIN
       - SYS_ADMIN
-    restart: unless-stopped
+    restart: always
     labels:
-      createdBy: "Apps" 
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true

@@ -13,3 +13,6 @@ services:
     command: ${COMMAND}
     labels:
       createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true

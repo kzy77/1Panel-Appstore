@@ -10,4 +10,9 @@ services:
       - ./kspeeder-config:/kspeeder-config
     restart: always
     labels:
-      createdBy: "Apps" 
+      createdBy: "Apps"
+    networks:
+      - 1panel-network
+networks:
+  1panel-network:
+    external: true

@@ -21,3 +21,6 @@ additionalProperties:
   website: https://pairdrop.net/
   github: https://github.com/schlagmichdoch/PairDrop
   document: https://github.com/schlagmichdoch/PairDrop
+  architectures:
+    - amd64
+    - arm64

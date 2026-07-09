@@ -13,8 +13,11 @@ additionalProperties:
   shortDescZh: 专业的 Web 应用自动化测试环境
   shortDescEn: Professional web application automation testing environment
   description:
-    zh: 基于 Microsoft Playwright 的现代 Web 应用自动化测试环境。支持 Chromium、Firefox 和 WebKit 浏览器，提供完整的端到端测试解决方案。
-    en: Modern web application automation testing environment based on Microsoft Playwright. Supports Chromium, Firefox, and WebKit browsers with comprehensive end-to-end testing solutions.
+    zh: 基于 Microsoft Playwright 的现代 Web 应用自动化测试环境。支持 Chromium、Firefox 和 WebKit
+      浏览器，提供完整的端到端测试解决方案。
+    en: Modern web application automation testing environment based on Microsoft
+      Playwright. Supports Chromium, Firefox, and WebKit browsers with
+      comprehensive end-to-end testing solutions.
   type: website
   crossVersionUpdate: true
   limit: 0
@@ -22,3 +25,6 @@ additionalProperties:
   website: https://playwright.dev/
   github: https://github.com/microsoft/playwright
   document: https://playwright.dev/docs/intro
+  architectures:
+    - amd64
+    - arm64

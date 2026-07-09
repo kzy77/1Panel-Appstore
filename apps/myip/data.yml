@@ -1,0 +1,25 @@
+name: MyIP
+tags:
+  - 实用工具
+title: IP 与网络检测工具箱
+description: MyIP 是一个开源 IP 与网络检测工具箱，可查看本机 IP、查询 IP 信息，并提供 WebRTC/DNS 泄露检测、可用性检测、网速测试、全球延迟、MTR、Whois、MAC 查询等工具。
+additionalProperties:
+  key: myip
+  name: MyIP
+  tags:
+    - Tool
+  shortDescZh: 开源 IP 与网络检测工具箱
+  shortDescEn: Open-source IP and network toolbox
+  description:
+    zh: MyIP 是一个开源 IP 与网络检测工具箱，可查看本机 IPv4/IPv6、查询 IP 信息，并提供 WebRTC/DNS 泄露检测、网站可用性检测、网络测速、全球延迟测试、MTR、Whois、MAC 查询、浏览器指纹等网络工具。
+    en: MyIP is an open-source IP and network toolbox for checking IPv4/IPv6 addresses, IP information, WebRTC and DNS leak tests, website availability, speed tests, global latency, MTR, Whois, MAC lookup and browser fingerprint tools.
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://ipcheck.ing
+  github: https://github.com/jason5ng32/MyIP
+  document: https://github.com/jason5ng32/MyIP#readme
+  architectures:
+    - amd64
+    - arm64

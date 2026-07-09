@@ -32,6 +32,8 @@ services:
     volumes:
       - ./data/postgresql:/var/lib/postgresql/data
     restart: always
+    labels:
+      createdBy: Apps
   guacd:
     container_name: guacd-${CONTAINER_NAME}
     image: dushixiang/guacd:latest

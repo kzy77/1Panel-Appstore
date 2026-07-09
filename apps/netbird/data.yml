@@ -16,11 +16,14 @@ additionalProperties:
     - Local
     - DevTool
   shortDescZh: 基于WireGuard协议的VPN网络工具
-  shortDescEn: Connect your devices into a secure WireGuard®-based overlay network
-    with SSO, MFA and granular access controls.
+  shortDescEn: Connect your devices into a secure WireGuard®-based overlay
+    network with SSO, MFA and granular access controls.
   type: tool
   crossVersionUpdate: true
   limit: 0
   website: https://netbird.io/
   github: https://github.com/netbirdio/netbird
   document: https://docs.netbird.io
+  architectures:
+    - amd64
+    - arm64

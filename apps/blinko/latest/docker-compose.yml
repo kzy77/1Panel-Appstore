@@ -34,12 +34,15 @@ services:
       POSTGRES_USER: ${PANEL_DB_USER}
       POSTGRES_PASSWORD: ${PANEL_DB_USER_PASSWORD}
     healthcheck:
-      test:
-        ["CMD", "pg_isready", "-U", "postgres", "-d", "postgres"]
+      test: ["CMD", "pg_isready", "-U", "postgres", "-d", "postgres"]
       interval: 5s
       timeout: 10s
-      retries: 5   
+      retries: 5
 
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
 networks:
   1panel-network:
     external: true

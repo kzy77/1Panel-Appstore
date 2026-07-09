@@ -19,3 +19,6 @@ additionalProperties:
   website: https://karakeep.app/
   github: https://github.com/karakeep-app/karakeep
   document: https://docs.karakeep.app/
+  architectures:
+    - amd64
+    - arm64

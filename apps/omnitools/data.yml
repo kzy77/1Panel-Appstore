@@ -9,7 +9,7 @@ description:
     ads, no tracking, just fast, accessible utilities right from your browser!
   zh: 一套功能强大的日常任务网络工具，自托管。无广告，无追踪，只需通过浏览器即可享受快速便捷的实用功能！
 additionalProperties:
-  key: omni-tools
+  key: omnitools
   name: OmniTools
   tags:
     - Tool
@@ -25,3 +25,6 @@ additionalProperties:
   website: https://omnitools.app/
   github: https://github.com/iib0011/omni-tools
   document: https://github.com/iib0011/omni-tools
+  architectures:
+    - amd64
+    - arm64

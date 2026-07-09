@@ -9,13 +9,19 @@ additionalProperties:
   tags:
     - AI
   description:
-    en: Comprehensive AI service management platform with intelligent routing, multi-provider support and enterprise-grade features
+    en: Comprehensive AI service management platform with intelligent routing,
+      multi-provider support and enterprise-grade features
     zh: 综合性 AI 服务管理平台，提供智能路由、多提供商支持和企业级功能
     zh-Hant: 綜合性 AI 服務管理平台，提供智能路由、多提供商支持和企業級功能
     ja: インテリジェントルーティング、マルチプロバイダーサポート、エンタープライズグレード機能を備えた包括的なAIサービス管理プラットフォーム
-    ms: Platform pengurusan perkhidmatan AI komprehensif dengan penghalaan pintar, sokongan berbilang pembekal dan ciri gred perusahaan
-    pt-br: Plataforma abrangente de gerenciamento de serviços de IA com roteamento inteligente, suporte a múltiplos provedores e recursos de nível empresarial
-    ru: Комплексная платформа управления сервисами ИИ с интеллектуальной маршрутизацией, поддержкой множественных провайдеров и корпоративными функциями
+    ms: Platform pengurusan perkhidmatan AI komprehensif dengan penghalaan
+      pintar, sokongan berbilang pembekal dan ciri gred perusahaan
+    pt-br: Plataforma abrangente de gerenciamento de serviços de IA com
+      roteamento inteligente, suporte a múltiplos provedores e recursos de nível
+      empresarial
+    ru: Комплексная платформа управления сервисами ИИ с интеллектуальной
+      маршрутизацией, поддержкой множественных провайдеров и корпоративными
+      функциями
     ko: 지능형 라우팅, 다중 공급자 지원 및 엔터프라이즈급 기능을 갖춘 포괄적인 AI 서비스 관리 플랫폼
   type: tool
   crossVersionUpdate: true
@@ -24,3 +30,6 @@ additionalProperties:
   website: https://chatnio.net
   github: https://github.com/Deeptrain-Community/chatnio
   document: https://docs.chatnio.net
+  architectures:
+    - amd64
+    - arm64

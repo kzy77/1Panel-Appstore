@@ -1,8 +1,13 @@
 services:
   lucky:
     image: gdy666/lucky
-    container_name: lucky
+    container_name: ${CONTAINER_NAME}
     network_mode: host
     volumes:
       - "${LUCKY_CONF_PATH:-./luckyconf}:/goodluck"
-    restart: always 
+    restart: always
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true

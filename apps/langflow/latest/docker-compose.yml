@@ -3,7 +3,7 @@ services:
     image: langflowai/langflow:latest # or another version tag on https://hub.docker.com/r/langflowai/langflow
     container_name: ${CONTAINER_NAME}
     pull_policy: always # set to 'always' when using 'latest' image
-    user: root               
+    user: root
     ports:
       - "${PANEL_APP_PORT_HTTP}:7860"
     depends_on:
@@ -19,6 +19,7 @@ services:
       - 1panel-network
     labels:
       createdBy: "Apps"
+    restart: always
   postgres:
     image: postgres:16
     container_name: ${CONTAINER_NAME}-postgres
@@ -35,6 +36,7 @@ services:
       - 1panel-network
     labels:
       createdBy: "Apps"
+    restart: always
 volumes:
   langflow-postgres:
   langflow-data:

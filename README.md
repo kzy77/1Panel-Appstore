@@ -245,7 +245,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.7.1</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.7.2</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -453,7 +453,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-07-07</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-07-08</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 </tr>
@@ -569,6 +569,18 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 🛰️ Tailscale DERP 中继服务器，无需域名即可使用
 
 <kbd>1.98.8</kbd> • [官网链接](https://tailscale.com)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/myip/README.md">
+<img src="./apps/myip/logo.png" width="60" height="60" alt="MyIP">
+<br><b>MyIP</b>
+</a>
+
+🌐 开源 IP 与网络检测工具箱，支持 IP 信息、DNS 泄露、测速、延迟、MTR、Whois 等检测
+
+<kbd>6.6.0</kbd> • [官网链接](https://ipcheck.ing)
 
 </td>
 </tr>
@@ -722,7 +734,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.7.7-f69b22c45</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.7.8-1412926f5</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -751,7 +763,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.10.1</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.10.2</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -775,7 +787,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.30.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.30.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -944,7 +956,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.70</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.78</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -956,7 +968,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.26</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.27</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -1580,4 +1592,4 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 <!-- 橙色风格 -->
 
-!\[Copyright-arch3rPro]\(<https://img.shields.io/badge/Copyright-arch3rPro-ff9800?style=flat&logo=github&logoColor=white> null)
+![Copyright-arch3rPro](https://img.shields.io/badge/Copyright-arch3rPro-ff9800?style=flat&logo=github&logoColor=white)

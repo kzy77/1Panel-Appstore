@@ -1,9 +1,16 @@
 services:
   lucky:
     image: gdy666/lucky
-    container_name: lucky
+    container_name: ${CONTAINER_NAME}
     ports:
       - "${PANEL_APP_PORT_HTTP:-16601}:16601"
     volumes:
       - "${LUCKY_CONF_PATH:-./luckyconf}:/goodluck"
-    restart: always 
+    restart: always
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
+networks:
+  1panel-network:
+    external: true

@@ -21,14 +21,19 @@ additionalProperties:
     - Network
     - Ops
   shortDescZh: 轻量级服务器端口管理与可视化工具，支持多平台部署。
-  shortDescEn: Lightweight server port management and visualization tool, cross-platform supported.
+  shortDescEn: Lightweight server port management and visualization tool,
+    cross-platform supported.
   description:
     zh: PortNote 是一款轻量级服务器端口管理与可视化工具，支持多平台部署，适合资产与端口信息管理。
-    en: PortNote is a lightweight server port management and visualization tool, suitable for asset and port information management.
+    en: PortNote is a lightweight server port management and visualization tool,
+      suitable for asset and port information management.
   type: website
   crossVersionUpdate: true
   limit: 0
   recommend: 0
   website: https://github.com/crocofied/PortNote
   github: https://github.com/crocofied/PortNote
-  document: https://github.com/crocofied/PortNote/blob/main/README.md 
+  document: https://github.com/crocofied/PortNote/blob/main/README.md
+  architectures:
+    - amd64
+    - arm64

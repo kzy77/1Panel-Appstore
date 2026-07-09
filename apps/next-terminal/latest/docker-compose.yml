@@ -19,7 +19,7 @@ services:
       - postgresql
       - guacd
 
-    labels:  
+    labels:
       createdBy: "Apps"
   postgresql:
     container_name: postgresql-${CONTAINER_NAME}
@@ -34,6 +34,8 @@ services:
       - ./data/postgresql:/var/lib/postgresql/data
     restart: always
 
+    labels:
+      createdBy: Apps
   guacd:
     container_name: guacd-${CONTAINER_NAME}
     image: dushixiang/guacd:latest
@@ -45,9 +47,9 @@ services:
 
     environment:
       - GUACD_LOG_LEVEL=debug
-    labels:  
+    labels:
       createdBy: "Apps"
 
-networks:  
-  1panel-network:  
+networks:
+  1panel-network:
     external: true

@@ -20,3 +20,6 @@ additionalProperties:
   website: https://easytier.cn/
   github: https://github.com/EasyTier/EasyTier
   document: https://easytier.cn/guide/installation.html
+  architectures:
+    - amd64
+    - arm64

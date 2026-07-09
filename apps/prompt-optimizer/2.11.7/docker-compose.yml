@@ -2,7 +2,7 @@ services:
   prompt-optimizer:
     image: linshen/prompt-optimizer:2.11.7
     container_name: ${CONTAINER_NAME}
-    restart: unless-stopped
+    restart: always
     ports:
       - ${PANEL_APP_PORT_HTTP}:80
     environment:

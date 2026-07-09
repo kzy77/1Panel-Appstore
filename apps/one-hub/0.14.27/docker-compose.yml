@@ -41,14 +41,18 @@ services:
       - MYSQL_DATABASE=${PANEL_DB_NAME}
     networks:
       - 1panel-network
+    labels:
+      createdBy: Apps
   redis:
     image: redis:latest
     container_name: ${CONTAINER_NAME}-redis
     restart: always
     networks:
       - 1panel-network
+    labels:
+      createdBy: Apps
 volumes:
-  onehub-mysql_data: null
+  onehub-mysql_data:
 networks:
   1panel-network:
     external: true

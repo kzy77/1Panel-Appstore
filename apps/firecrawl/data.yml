@@ -5,7 +5,8 @@ tags:
   - 爬虫
 title: 将任意网站转换为适合大语言模型的结构化数据
 description:
-  en: Turn any website into LLM-ready structured data. Scrape, crawl, search and extract clean markdown, structured JSON or screenshots from websites
+  en: Turn any website into LLM-ready structured data. Scrape, crawl, search and
+    extract clean markdown, structured JSON or screenshots from websites
   zh: 将任意网站转换为适合大语言模型的结构化数据。支持抓取、爬取、搜索和提取干净的 Markdown、结构化 JSON 或截图
 additionalProperties:
   key: firecrawl
@@ -23,3 +24,6 @@ additionalProperties:
   website: https://www.firecrawl.dev
   github: https://github.com/firecrawl/firecrawl
   document: https://docs.firecrawl.dev
+  architectures:
+    - amd64
+    - arm64

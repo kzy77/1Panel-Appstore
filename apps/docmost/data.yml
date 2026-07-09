@@ -12,7 +12,8 @@ additionalProperties:
   shortDescEn: Open-source collaborative wiki and documentation software.
   description:
     zh: Docmost是Notion和Confluence等开源软件的替代品。
-    en: Docmost is an open-source alternative to the likes of Notion and Confluence.
+    en: Docmost is an open-source alternative to the likes of Notion and
+      Confluence.
   type: website
   crossVersionUpdate: true
   limit: 0
@@ -20,3 +21,6 @@ additionalProperties:
   website: https://docmost.com/
   github: https://github.com/docmost/docmost
   document: https://docmost.com/docs/
+  architectures:
+    - amd64
+    - arm64
