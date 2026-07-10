@@ -1,0 +1,26 @@
+name: OmniRoute
+tags:
+  - AI / 大模型
+title: OmniRoute - 免费 AI 网关
+description: OmniRoute 是一个免费、开源的 AI 网关，将 Claude Code、Codex、Cursor、Cline 等工具接入 237 个 AI 提供商（其中 90+ 免费），提供自动故障转移、RTK + Caveman 压缩（节省 15-95% token）、OpenAI/Claude/Gemini 兼容 API、MCP 与 A2A 服务。
+additionalProperties:
+  key: omniroute
+  name: OmniRoute
+  tags:
+    - AI
+  shortDescZh: 免费开源 AI 网关，接入 237 个提供商，90+ 免费
+  shortDescEn: Free open-source AI gateway connecting 237 providers, 90+ free
+  description:
+    zh: OmniRoute 是一个免费、开源的 AI 网关，将 Claude Code、Codex、Cursor、Cline、Copilot 等工具接入 237 个 AI 提供商（其中 90+ 免费层级）。支持自动故障转移、17 种路由策略、RTK + Caveman 压缩（节省 15-95% token），兼容 OpenAI、Claude、Gemini、Codex API，并内置 MCP 与 A2A 服务。
+    en: OmniRoute is a free, open-source AI gateway that connects Claude Code, Codex, Cursor, Cline, Copilot and more to 237 AI providers (90+ free tiers). Features auto-fallback, 17 routing strategies, RTK + Caveman compression (15-95% token savings), OpenAI/Claude/Gemini/Codex compatible APIs, and built-in MCP and A2A services.
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://omniroute.online
+  github: https://github.com/diegosouzapw/OmniRoute
+  document: https://github.com/diegosouzapw/OmniRoute#readme
+  memoryRequired: 1024
+  architectures:
+    - amd64
+    - arm64

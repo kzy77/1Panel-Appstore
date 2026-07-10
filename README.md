@@ -105,6 +105,459 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 以下是当前在本仓库中提供的应用列表及其版本信息，**点击应用名称可查看应用详细介绍文档**
 
+#### 🤖 AI 与智能应用
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/lobe-chat-data/README.md">
+<img src="./apps/lobe-chat-data/logo.png" width="60" height="60" alt="LobeChat-Data">
+<br><b>LobeChat-Data</b>
+</a>
+
+💬 开源现代设计的 ChatGPT/LLMs UI/框架
+
+<kbd>1.143.3</kbd> • [官网链接](https://github.com/lobehub/lobe-chat)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/dify/README.md">
+<img src="./apps/dify/logo.png" width="60" height="60" alt="Dify">
+<br><b>Dify</b>
+</a>
+
+🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
+
+<kbd>1.15.0</kbd> • [官网链接](https://github.com/langgenius/dify)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/prompt-optimizer/README.md">
+<img src="./apps/prompt-optimizer/logo.png" width="60" height="60" alt="Prompt-Optimizer">
+<br><b>Prompt-Optimizer</b>
+</a>
+
+🚀 强大的AI提示词优化工具，支持多种主流大语言模型
+
+<kbd>2.11.7</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/new-api/README.md">
+<img src="./apps/new-api/logo.png" width="60" height="60" alt="New-API">
+<br><b>New-API</b>
+</a>
+
+🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
+
+<kbd>1.0.0-rc.20</kbd> • [官网链接](https://docs.newapi.pro/)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/one-hub/README.md">
+<img src="./apps/one-hub/logo.png" width="60" height="60" alt="One-Hub">
+<br><b>One-Hub</b>
+</a>
+
+🔗 统一的AI模型管理和调用平台，支持多种大语言模型集成
+
+<kbd>0.14.27</kbd> • [官网链接](https://github.com/one-hub/one-hub)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/gpt-load/README.md">
+<img src="./apps/gpt-load/logo.png" width="60" height="60" alt="GPT-Load">
+<br><b>GPT-Load</b>
+</a>
+
+🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
+
+<kbd>1.4.9</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/flowise/README.md">
+<img src="./apps/flowise/logo.png" width="60" height="60" alt="Flowise">
+<br><b>Flowise</b>
+</a>
+
+🔮 开源可视化AI工作流构建平台，拖拽式设计LLM应用
+
+<kbd>3.1.3</kbd> • [官网链接](https://github.com/FlowiseAI/Flowise)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/inspector/README.md">
+<img src="./apps/inspector/logo.png" width="60" height="60" alt="MCP Inspector">
+<br><b>MCP Inspector</b>
+</a>
+
+🔍 模型上下文协议调试工具，支持MCP服务器测试与开发
+
+<kbd>0.22.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/metamcp/README.md">
+<img src="./apps/metamcp/logo.png" width="60" height="60" alt="MetaMCP">
+<br><b>MetaMCP</b>
+</a>
+
+🚀 MCP聚合器、编排器、中间件、网关于一体的Docker解决方案
+
+<kbd>2.4.22</kbd> • [官网链接](https://github.com/metatool-ai/metamcp)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/higress/README.md">
+<img src="./apps/higress/logo.png" width="60" height="60" alt="Higress">
+<br><b>Higress</b>
+</a>
+
+🌐 阿里巴巴开源的下一代云原生网关
+
+<kbd>latest</kbd> • [官网链接](https://github.com/alibaba/higress)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/searxng/README.md">
+<img src="./apps/searxng/logo.png" width="60" height="60" alt="SearXNG">
+<br><b>SearXNG</b>
+</a>
+
+🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
+
+<kbd>2026.7.9-8456831a0</kbd> • [官网链接](https://docs.searxng.org/)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/chatnio/README.md">
+<img src="./apps/chatnio/logo.png" width="60" height="60" alt="ChatNio">
+<br><b>ChatNio</b>
+</a>
+
+💬 下一代 AI 一站式解决方案，综合性 AI 服务管理平台
+
+<kbd>4.25.0</kbd> • [官网链接](https://chatnio.net)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/langflow/README.md">
+<img src="./apps/langflow/logo.png" width="60" height="60" alt="Langflow">
+<br><b>Langflow</b>
+</a>
+
+🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
+
+<kbd>1.10.2</kbd> • [官网链接](https://langflow.org/)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/litellm/README.md">
+<img src="./apps/litellm/logo.png" width="60" height="60" alt="LiteLLM">
+<br><b>LiteLLM</b>
+</a>
+
+🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
+
+<kbd>1.91.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/n8n-zh/README.md">
+<img src="./apps/n8n-zh/logo.png" width="60" height="60" alt="n8n-zh">
+<br><b>n8n-zh</b>
+</a>
+
+🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
+
+<kbd>2.30.2</kbd> • [官网链接](https://n8n.io/)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/next-ai-draw-io/README.md">
+<img src="./apps/next-ai-draw-io/logo.png" width="60" height="60" alt="Next-AI-Draw-IO">
+<br><b>Next AI Draw.io</b>
+</a>
+
+🤖 AI驱动的图表创建工具
+
+<kbd>0.4.15</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/open-notebook/README.md">
+<img src="./apps/open-notebook/logo.png" width="60" height="60" alt="Open-Notebook">
+<br><b>Open Notebook</b>
+</a>
+
+📝 私有的、多模型的Google Notebook LM替代方案，支持多模态内容和AI播客生成
+
+<kbd>1.10.0</kbd> • [官网链接](https://www.open-notebook.ai/)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/omniroute/README.md">
+<img src="./apps/omniroute/logo.png" width="60" height="60" alt="OmniRoute">
+<br><b>OmniRoute</b>
+</a>
+
+🚀 免费 AI 网关，接入 237 个 AI 提供商（90+ 免费），兼容 OpenAI/Claude/Gemini API
+
+<kbd>3.8.46</kbd> • [官网链接](https://omniroute.online)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/sub2api/README.md">
+<img src="./apps/sub2api/logo.png" width="60" height="60" alt="Sub2API">
+<br><b>Sub2API</b>
+</a>
+
+🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
+
+<kbd>0.1.149</kbd> • [官网链接](https://sub2api.org)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/cliproxyapi/README.md">
+<img src="./apps/cliproxyapi/logo.png" width="60" height="60" alt="CLIProxyAPI">
+<br><b>CLIProxyAPI</b>
+</a>
+
+🔗 AI CLI/OAuth 账号代理 API 服务
+
+<kbd>7.2.54</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/trae-proxy/README.md">
+<img src="./apps/trae-proxy/logo.png" width="60" height="60" alt="Trae-Proxy">
+<br><b>Trae-Proxy</b>
+</a>
+
+🎯 一个智能的API代理工具，专门用于拦截和重定向OpenAI API请求到自定义后端服务
+
+<kbd>1.0.0</kbd> • [官网链接](https://github.com/arch3rPro/Trae-Proxy)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/9router/README.md">
+<img src="./apps/9router/logo.png" width="60" height="60" alt="9Router">
+<br><b>9Router</b>
+</a>
+
+🚀 免费 AI 路由器和 Token 节省工具
+
+<kbd>0.5.20</kbd> • [官网链接](https://9router.com)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/apipark/README.md">
+<img src="./apps/apipark/logo.png" width="60" height="60" alt="APIPark">
+<br><b>APIPark</b>
+</a>
+
+🌐 开源企业级 API 全生命周期管理平台
+
+<kbd>1.9.6-beta</kbd> • [官网链接](https://apipark.com)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/axonhub/README.md">
+<img src="./apps/axonhub/logo.png" width="60" height="60" alt="AxonHub">
+<br><b>AxonHub</b>
+</a>
+
+🤖 一站式AI开发平台 - 统一API网关
+
+<kbd>0.9.43</kbd> • [官网链接](https://github.com/looplj/axonhub)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/browser-use/README.md">
+<img src="./apps/browser-use/logo.png" width="60" height="60" alt="Browser Use">
+<br><b>Browser Use</b>
+</a>
+
+🌐 让 AI 代理可以访问网站，轻松实现在线任务自动化
+
+<kbd>3.0.0</kbd> • [官网链接](https://browser-use.com/)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/claude-code-hub/README.md">
+<img src="./apps/claude-code-hub/logo.png" width="60" height="60" alt="Claude Code Hub">
+<br><b>Claude Code Hub</b>
+</a>
+
+🔗 智能 AI API 代理中转服务平台
+
+<kbd>0.8.10</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/craft-agents/README.md">
+<img src="./apps/craft-agents/logo.png" width="60" height="60" alt="Craft Agents">
+<br><b>Craft Agents</b>
+</a>
+
+🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
+
+<kbd>0.9.2</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/firecrawl/README.md">
+<img src="./apps/firecrawl/logo.png" width="60" height="60" alt="Firecrawl">
+<br><b>Firecrawl</b>
+</a>
+
+🔥 将任意网站转换为适合大语言模型的结构化数据
+
+<kbd>2.11.81</kbd> • [官网链接](https://www.firecrawl.dev)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/hermes-web-ui/README.md">
+<img src="./apps/hermes-web-ui/logo.png" width="60" height="60" alt="Hermes Web UI">
+<br><b>Hermes Web UI</b>
+</a>
+
+🧭 Hermes Agent 的全功能 Web 管理面板
+
+<kbd>0.6.27</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/mcphub/README.md">
+<img src="./apps/mcphub/logo.png" width="60" height="60" alt="MCPHub">
+<br><b>MCPHub</b>
+</a>
+
+🔌 MCP 服务器统一管理中心
+
+<kbd>1.0.23</kbd> • [官网链接](https://docs.mcphub.app)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/playwright-mcp/README.md">
+<img src="./apps/playwright-mcp/logo.png" width="60" height="60" alt="Playwright MCP">
+<br><b>Playwright MCP</b>
+</a>
+
+🎭 提供浏览器自动化功能的 MCP 服务器
+
+<kbd>0.0.77</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/vane/README.md">
+<img src="./apps/vane/logo.png" width="60" height="60" alt="Vane">
+<br><b>Vane</b>
+</a>
+
+🔍 专注于隐私的 AI 问答搜索引擎
+
+<kbd>1.12.2</kbd> • [官网链接](https://github.com/ItzCrazyKns/Vane)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/speaches/README.md">
+<img src="./apps/speaches/logo.png" width="60" height="60" alt="Speaches">
+<br><b>Speaches</b>
+</a>
+
+🎙️ 兼容 OpenAI API 的流式语音识别、翻译和语音生成服务器
+
+<kbd>0.8.3-cuda</kbd> • [官网链接](https://github.com/speaches-ai/speaches)
+
+</td>
+</tr>
+</table>
+
 #### 🤖LLM免费API接口
 
 - 支持一键部署AI免费API接口，使用方式请参考应用内**README介绍**
@@ -245,7 +698,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.7.2</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.8.0</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -456,6 +909,18 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 <kbd>chromium-bundled-2026-07-08</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
+<td width="33%" align="center">
+
+<a href="./apps/fast-note-sync-service/README.md">
+<img src="./apps/fast-note-sync-service/logo.png" width="60" height="60" alt="Fast Note Sync Service">
+<br><b>Fast Note Sync Service</b>
+</a>
+
+📝 高性能低延迟的 Obsidian 笔记同步服务
+
+<kbd>3.5.1</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
+
+</td>
 </tr>
 </table>
 
@@ -513,7 +978,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.3.9</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.3.10</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -581,447 +1046,6 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 🌐 开源 IP 与网络检测工具箱，支持 IP 信息、DNS 泄露、测速、延迟、MTR、Whois 等检测
 
 <kbd>6.6.0</kbd> • [官网链接](https://ipcheck.ing)
-
-</td>
-</tr>
-</table>
-
-#### 🤖 AI 与智能应用
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/lobe-chat-data/README.md">
-<img src="./apps/lobe-chat-data/logo.png" width="60" height="60" alt="LobeChat-Data">
-<br><b>LobeChat-Data</b>
-</a>
-
-💬 开源现代设计的 ChatGPT/LLMs UI/框架
-
-<kbd>1.143.3</kbd> • [官网链接](https://github.com/lobehub/lobe-chat)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/dify/README.md">
-<img src="./apps/dify/logo.png" width="60" height="60" alt="Dify">
-<br><b>Dify</b>
-</a>
-
-🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
-
-<kbd>1.15.0</kbd> • [官网链接](https://github.com/langgenius/dify)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/prompt-optimizer/README.md">
-<img src="./apps/prompt-optimizer/logo.png" width="60" height="60" alt="Prompt-Optimizer">
-<br><b>Prompt-Optimizer</b>
-</a>
-
-🚀 强大的AI提示词优化工具，支持多种主流大语言模型
-
-<kbd>2.11.7</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/new-api/README.md">
-<img src="./apps/new-api/logo.png" width="60" height="60" alt="New-API">
-<br><b>New-API</b>
-</a>
-
-🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
-
-<kbd>1.0.0-rc.20</kbd> • [官网链接](https://docs.newapi.pro/)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/one-hub/README.md">
-<img src="./apps/one-hub/logo.png" width="60" height="60" alt="One-Hub">
-<br><b>One-Hub</b>
-</a>
-
-🔗 统一的AI模型管理和调用平台，支持多种大语言模型集成
-
-<kbd>0.14.27</kbd> • [官网链接](https://github.com/one-hub/one-hub)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/gpt-load/README.md">
-<img src="./apps/gpt-load/logo.png" width="60" height="60" alt="GPT-Load">
-<br><b>GPT-Load</b>
-</a>
-
-🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
-
-<kbd>1.4.9</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/flowise/README.md">
-<img src="./apps/flowise/logo.png" width="60" height="60" alt="Flowise">
-<br><b>Flowise</b>
-</a>
-
-🔮 开源可视化AI工作流构建平台，拖拽式设计LLM应用
-
-<kbd>3.1.3</kbd> • [官网链接](https://github.com/FlowiseAI/Flowise)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/inspector/README.md">
-<img src="./apps/inspector/logo.png" width="60" height="60" alt="MCP Inspector">
-<br><b>MCP Inspector</b>
-</a>
-
-🔍 模型上下文协议调试工具，支持MCP服务器测试与开发
-
-<kbd>0.22.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/metamcp/README.md">
-<img src="./apps/metamcp/logo.png" width="60" height="60" alt="MetaMCP">
-<br><b>MetaMCP</b>
-</a>
-
-🚀 MCP聚合器、编排器、中间件、网关于一体的Docker解决方案
-
-<kbd>2.4.22</kbd> • [官网链接](https://github.com/metatool-ai/metamcp)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/higress/README.md">
-<img src="./apps/higress/logo.png" width="60" height="60" alt="Higress">
-<br><b>Higress</b>
-</a>
-
-🌐 阿里巴巴开源的下一代云原生网关
-
-<kbd>latest</kbd> • [官网链接](https://github.com/alibaba/higress)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/searxng/README.md">
-<img src="./apps/searxng/logo.png" width="60" height="60" alt="SearXNG">
-<br><b>SearXNG</b>
-</a>
-
-🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
-
-<kbd>2026.7.8-1412926f5</kbd> • [官网链接](https://docs.searxng.org/)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/chatnio/README.md">
-<img src="./apps/chatnio/logo.png" width="60" height="60" alt="ChatNio">
-<br><b>ChatNio</b>
-</a>
-
-💬 下一代 AI 一站式解决方案，综合性 AI 服务管理平台
-
-<kbd>4.25.0</kbd> • [官网链接](https://chatnio.net)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/langflow/README.md">
-<img src="./apps/langflow/logo.png" width="60" height="60" alt="Langflow">
-<br><b>Langflow</b>
-</a>
-
-🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
-
-<kbd>1.10.2</kbd> • [官网链接](https://langflow.org/)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/litellm/README.md">
-<img src="./apps/litellm/logo.png" width="60" height="60" alt="LiteLLM">
-<br><b>LiteLLM</b>
-</a>
-
-🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
-
-<kbd>1.91.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/n8n-zh/README.md">
-<img src="./apps/n8n-zh/logo.png" width="60" height="60" alt="n8n-zh">
-<br><b>n8n-zh</b>
-</a>
-
-🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
-
-<kbd>2.30.1</kbd> • [官网链接](https://n8n.io/)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/next-ai-draw-io/README.md">
-<img src="./apps/next-ai-draw-io/logo.png" width="60" height="60" alt="Next-AI-Draw-IO">
-<br><b>Next AI Draw.io</b>
-</a>
-
-🤖 AI驱动的图表创建工具
-
-<kbd>0.4.15</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/open-notebook/README.md">
-<img src="./apps/open-notebook/logo.png" width="60" height="60" alt="Open-Notebook">
-<br><b>Open Notebook</b>
-</a>
-
-📝 私有的、多模型的Google Notebook LM替代方案，支持多模态内容和AI播客生成
-
-<kbd>1.10.0</kbd> • [官网链接](https://www.open-notebook.ai/)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/sub2api/README.md">
-<img src="./apps/sub2api/logo.png" width="60" height="60" alt="Sub2API">
-<br><b>Sub2API</b>
-</a>
-
-🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
-
-<kbd>0.1.146</kbd> • [官网链接](https://sub2api.org)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/cliproxyapi/README.md">
-<img src="./apps/cliproxyapi/logo.png" width="60" height="60" alt="CLIProxyAPI">
-<br><b>CLIProxyAPI</b>
-</a>
-
-🔗 AI CLI/OAuth 账号代理 API 服务
-
-<kbd>7.2.51</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/trae-proxy/README.md">
-<img src="./apps/trae-proxy/logo.png" width="60" height="60" alt="Trae-Proxy">
-<br><b>Trae-Proxy</b>
-</a>
-
-🎯 一个智能的API代理工具，专门用于拦截和重定向OpenAI API请求到自定义后端服务
-
-<kbd>1.0.0</kbd> • [官网链接](https://github.com/arch3rPro/Trae-Proxy)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/9router/README.md">
-<img src="./apps/9router/logo.png" width="60" height="60" alt="9Router">
-<br><b>9Router</b>
-</a>
-
-🚀 免费 AI 路由器和 Token 节省工具
-
-<kbd>0.5.20</kbd> • [官网链接](https://9router.com)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/apipark/README.md">
-<img src="./apps/apipark/logo.png" width="60" height="60" alt="APIPark">
-<br><b>APIPark</b>
-</a>
-
-🌐 开源企业级 API 全生命周期管理平台
-
-<kbd>1.9.6-beta</kbd> • [官网链接](https://apipark.com)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/axonhub/README.md">
-<img src="./apps/axonhub/logo.png" width="60" height="60" alt="AxonHub">
-<br><b>AxonHub</b>
-</a>
-
-🤖 一站式AI开发平台 - 统一API网关
-
-<kbd>0.9.43</kbd> • [官网链接](https://github.com/looplj/axonhub)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/browser-use/README.md">
-<img src="./apps/browser-use/logo.png" width="60" height="60" alt="Browser Use">
-<br><b>Browser Use</b>
-</a>
-
-🌐 让 AI 代理可以访问网站，轻松实现在线任务自动化
-
-<kbd>3.0.0</kbd> • [官网链接](https://browser-use.com/)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/claude-code-hub/README.md">
-<img src="./apps/claude-code-hub/logo.png" width="60" height="60" alt="Claude Code Hub">
-<br><b>Claude Code Hub</b>
-</a>
-
-🔗 智能 AI API 代理中转服务平台
-
-<kbd>0.8.10</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/craft-agents/README.md">
-<img src="./apps/craft-agents/logo.png" width="60" height="60" alt="Craft Agents">
-<br><b>Craft Agents</b>
-</a>
-
-🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
-
-<kbd>0.9.2</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/firecrawl/README.md">
-<img src="./apps/firecrawl/logo.png" width="60" height="60" alt="Firecrawl">
-<br><b>Firecrawl</b>
-</a>
-
-🔥 将任意网站转换为适合大语言模型的结构化数据
-
-<kbd>2.11.78</kbd> • [官网链接](https://www.firecrawl.dev)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/hermes-web-ui/README.md">
-<img src="./apps/hermes-web-ui/logo.png" width="60" height="60" alt="Hermes Web UI">
-<br><b>Hermes Web UI</b>
-</a>
-
-🧭 Hermes Agent 的全功能 Web 管理面板
-
-<kbd>0.6.27</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/mcphub/README.md">
-<img src="./apps/mcphub/logo.png" width="60" height="60" alt="MCPHub">
-<br><b>MCPHub</b>
-</a>
-
-🔌 MCP 服务器统一管理中心
-
-<kbd>1.0.23</kbd> • [官网链接](https://docs.mcphub.app)
-
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="33%" align="center">
-
-<a href="./apps/playwright-mcp/README.md">
-<img src="./apps/playwright-mcp/logo.png" width="60" height="60" alt="Playwright MCP">
-<br><b>Playwright MCP</b>
-</a>
-
-🎭 提供浏览器自动化功能的 MCP 服务器
-
-<kbd>0.0.77</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/vane/README.md">
-<img src="./apps/vane/logo.png" width="60" height="60" alt="Vane">
-<br><b>Vane</b>
-</a>
-
-🔍 专注于隐私的 AI 问答搜索引擎
-
-<kbd>1.12.2</kbd> • [官网链接](https://github.com/ItzCrazyKns/Vane)
-
-</td>
-<td width="33%" align="center">
-
-<a href="./apps/speaches/README.md">
-<img src="./apps/speaches/logo.png" width="60" height="60" alt="Speaches">
-<br><b>Speaches</b>
-</a>
-
-🎙️ 兼容 OpenAI API 的流式语音识别、翻译和语音生成服务器
-
-<kbd>0.8.3-cuda</kbd> • [官网链接](https://github.com/speaches-ai/speaches)
 
 </td>
 </tr>
@@ -1307,7 +1331,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 Docker 镜像加速与私有部署服务，支持多平台和多架构
 
-<kbd>0.7.10</kbd> • [官网链接](https://kspeeder.istoreos.com/)
+<kbd>0.7.14</kbd> • [官网链接](https://kspeeder.istoreos.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1462,18 +1486,6 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 <table>
 <tr>
-<td width="33%" align="center">
-
-<a href="./apps/fast-note-sync-service/README.md">
-<img src="./apps/fast-note-sync-service/logo.png" width="60" height="60" alt="Fast Note Sync Service">
-<br><b>Fast Note Sync Service</b>
-</a>
-
-📝 高性能低延迟的 Obsidian 笔记同步服务
-
-<kbd>3.5.1</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
-
-</td>
 <td width="33%" align="center">
 
 <a href="./apps/trendradar/README.md">

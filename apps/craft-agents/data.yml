@@ -17,8 +17,8 @@ additionalProperties:
   limit: 0
   recommend: 0
   website: https://agents.craft.do
-  github: https://github.com/lukilabs/craft-agents-oss
-  document: https://github.com/lukilabs/craft-agents-oss#readme
+  github: https://github.com/craft-ai-agents/craft-agents-oss
+  document: https://github.com/craft-ai-agents/craft-agents-oss#readme
   architectures:
     - amd64
     - arm64

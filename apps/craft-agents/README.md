@@ -218,8 +218,8 @@ ssh -L 9100:localhost:9100 user@your-server
 ## 相关链接
 
 - 官方网站: https://agents.craft.do
-- GitHub: https://github.com/lukilabs/craft-agents-oss
-- 文档: https://github.com/lukilabs/craft-agents-oss#readme
+- GitHub: https://github.com/craft-ai-agents/craft-agents-oss
+- 文档: https://github.com/craft-ai-agents/craft-agents-oss#readme
 
 ## 许可证
 

@@ -1,0 +1,51 @@
+additionalProperties:
+  formFields:
+    - default: 20128
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: 仪表盘端口
+      labelEn: Dashboard Port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 20129
+      edit: true
+      envKey: PANEL_APP_PORT_API
+      labelZh: API 端口
+      labelEn: API Port
+      required: true
+      rule: paramPort
+      type: number
+    - default: ""
+      edit: true
+      envKey: JWT_SECRET
+      labelZh: JWT 密钥
+      labelEn: JWT Secret
+      required: false
+      type: password
+    - default: ""
+      edit: true
+      envKey: API_KEY_SECRET
+      labelZh: API Key 加密密钥
+      labelEn: API Key Secret
+      required: false
+      type: password
+    - default: ""
+      edit: true
+      envKey: INITIAL_PASSWORD
+      labelZh: 初始管理员密码
+      labelEn: Initial Admin Password
+      required: true
+      type: password
+    - default: "false"
+      edit: true
+      envKey: REQUIRE_API_KEY
+      labelZh: 所有请求强制校验 API Key
+      labelEn: Require API Key for All Requests
+      required: true
+      type: select
+      values:
+        - label: "关闭"
+          value: "false"
+        - label: "开启"
+          value: "true"
