@@ -1,18 +1,16 @@
 services:
-  new-api:
-    image: calciumion/new-api:v1.0.0-rc.20
+  searxng:
     container_name: ${CONTAINER_NAME}
     restart: always
-    ports:
-      - ${PANEL_APP_PORT_HTTP}:3000
     networks:
       - 1panel-network
-    command: --log-dir /app/logs
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8080"
     volumes:
-      - ./data:/data
-      - ./logs:/app/logs
+      - "${DATA_PATH}:/etc/searxng"
     environment:
-      - TZ=${TZ}
+      - BASE_URL=${SEARXNG_EXTERNAL_URL}
+    image: searxng/searxng:2026.7.11-62a1ab7ed
     labels:
       createdBy: "Apps"
 networks:

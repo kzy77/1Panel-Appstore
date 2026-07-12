@@ -159,7 +159,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.20</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.21</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.7.9-8456831a0</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.7.11-62a1ab7ed</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.91.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.91.2</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -335,7 +335,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 📝 私有的、多模型的Google Notebook LM替代方案，支持多模态内容和AI播客生成
 
-<kbd>1.10.0</kbd> • [官网链接](https://www.open-notebook.ai/)
+<kbd>1.11.0</kbd> • [官网链接](https://www.open-notebook.ai/)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.150</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.151</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -487,7 +487,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.86</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.91</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -511,7 +511,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.23</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.24</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -806,7 +806,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 自托管协作书签管理工具，支持网页归档和团队协作
 
-<kbd>2.15.0</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
+<kbd>2.15.1</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
 
 </td>
 </tr>
@@ -906,7 +906,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-07-08</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-07-11</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1579,7 +1579,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧙‍♂️ 现代化开源Docker管理Web面板
 
-<kbd>2.3.2</kbd> • [官网链接](https://arcane.ofkm.dev/)
+<kbd>2.4.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
 
 </td>
 </tr>
