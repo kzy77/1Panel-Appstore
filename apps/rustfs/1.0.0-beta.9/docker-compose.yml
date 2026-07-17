@@ -1,7 +1,7 @@
 
 services:
   rustfs:
-    image: rustfs/rustfs:1.0.0-beta.8
+    image: rustfs/rustfs:1.0.0-beta.9
     container_name: ${CONTAINER_NAME}
     ports:
       - "${PANEL_APP_PORT_HTTP}:9000" # S3 API port

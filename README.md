@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.7.14-58e02a01a</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.7.16-b72a87676</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.31.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.31.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.155</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.158</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -405,7 +405,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.30</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.35</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -487,7 +487,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.110</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.112</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -499,7 +499,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.29</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.30</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -698,7 +698,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.8.8-armv7</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.8.9-armv7</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -888,7 +888,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 高性能Rust对象存储系统，提供S3兼容API
 
-<kbd>1.0.0-beta.8</kbd> • [官网链接](https://github.com/rustfs/rustfs)
+<kbd>1.0.0-beta.9</kbd> • [官网链接](https://github.com/rustfs/rustfs)
 
 </td>
 </tr>
@@ -906,7 +906,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-07-14</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-07-16</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -918,7 +918,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📝 高性能低延迟的 Obsidian 笔记同步服务
 
-<kbd>3.5.1</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
+<kbd>3.5.7</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
 
 </td>
 </tr>
@@ -1021,7 +1021,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔐 私有 WireGuard 网络组网工具
 
-<kbd>1.98.8</kbd> • [官网链接](https://tailscale.com)
+<kbd>1.98.9</kbd> • [官网链接](https://tailscale.com)
 
 </td>
 <td width="33%" align="center">
@@ -1033,7 +1033,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛰️ Tailscale DERP 中继服务器，无需域名即可使用
 
-<kbd>1.98.8</kbd> • [官网链接](https://tailscale.com)
+<kbd>1.98.9</kbd> • [官网链接](https://tailscale.com)
 
 </td>
 <td width="33%" align="center">
