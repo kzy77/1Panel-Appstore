@@ -130,7 +130,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 开源LLM应用开发平台，支持AI工作流和RAG管道
 
-<kbd>1.15.0</kbd> • [官网链接](https://github.com/langgenius/dify)
+<kbd>1.16.0</kbd> • [官网链接](https://github.com/langgenius/dify)
 
 </td>
 <td width="33%" align="center">
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.7.16-b72a87676</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.7.17-81c9c2386</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.31.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.31.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.158</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.160</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -487,7 +487,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.112</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.114</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -698,7 +698,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.8.9-armv7</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.8.11-armv7</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -888,7 +888,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 高性能Rust对象存储系统，提供S3兼容API
 
-<kbd>1.0.0-beta.9</kbd> • [官网链接](https://github.com/rustfs/rustfs)
+<kbd>1.0.0-beta.10</kbd> • [官网链接](https://github.com/rustfs/rustfs)
 
 </td>
 </tr>
@@ -906,7 +906,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-07-16</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-07-17</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
