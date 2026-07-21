@@ -1,0 +1,27 @@
+name: DeepTutor
+tags:
+  - AI / 大模型
+title: DeepTutor - 终身个性化 AI 辅导平台
+description: DeepTutor 是一个开源的终身个性化 AI 辅导平台，集成 RAG 知识库、多模型支持、智能体、测验与记忆系统，帮助用户基于私有资料构建个性化的学习与辅导体验。
+additionalProperties:
+  key: deeptutor
+  name: DeepTutor
+  tags:
+    - AI
+  shortDescZh: 终身个性化 AI 辅导平台，支持 RAG 知识库与多模型
+  shortDescEn: Lifelong personalized AI tutoring with RAG knowledge bases
+  description:
+    zh: DeepTutor 是一个开源的终身个性化 AI 辅导平台，集成 RAG 知识库、多模型支持、智能体、测验与长期记忆系统。用户可基于私有资料构建个性化学习路径，进行问答、生成测验、管理知识库，打造可持续的个性化辅导体验。
+    en: DeepTutor is an open-source lifelong personalized AI tutoring platform integrating RAG knowledge bases, multi-model support, agents, quizzes, and long-term memory. Build personalized learning paths from your own materials, run Q&A, generate quizzes, and manage knowledge bases for a continuous tutoring experience.
+    zh-Hant: DeepTutor 是一個開源的終身個性化 AI 輔導平台，集成 RAG 知識庫、多模型支持、智能體、測驗與長期記憶系統。用戶可基於私有資料構建個性化學習路徑，進行問答、生成測驗、管理知識庫，打造可持續的個性化輔導體驗。
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://deeptutor.info
+  github: https://github.com/HKUDS/DeepTutor
+  document: https://github.com/HKUDS/DeepTutor#readme
+  memoryRequired: 2048
+  architectures:
+    - amd64
+    - arm64

@@ -1,0 +1,18 @@
+additionalProperties:
+  formFields:
+    - default: 3782
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: 前端端口
+      labelEn: Frontend Port
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8001
+      edit: true
+      envKey: PANEL_APP_PORT_API
+      labelZh: 后端 API 端口
+      labelEn: Backend API Port
+      required: true
+      rule: paramPort
+      type: number
