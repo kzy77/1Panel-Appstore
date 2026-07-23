@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.7.19-6da6eee26</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.7.22-ef8f6470e</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.31.4</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.32.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -335,7 +335,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 📝 私有的、多模型的Google Notebook LM替代方案，支持多模态内容和AI播客生成
 
-<kbd>1.13.0</kbd> • [官网链接](https://www.open-notebook.ai/)
+<kbd>1.14.0</kbd> • [官网链接](https://www.open-notebook.ai/)
 
 </td>
 <td width="33%" align="center">
@@ -374,6 +374,23 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 <tr>
 <td width="33%" align="center">
 
+<a href="./apps/openmaic/README.md">
+<img src="./apps/openmaic/logo.png" width="60" height="60" alt="OpenMAIC">
+<br><b>OpenMAIC</b>
+</a>
+
+🤖 多智能体课堂生成平台，一键生成课件、测验与交互模拟
+
+<kbd>0.3.0</kbd> • [官网链接](https://open.maic.chat)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
 <a href="./apps/sub2api/README.md">
 <img src="./apps/sub2api/logo.png" width="60" height="60" alt="Sub2API">
 <br><b>Sub2API</b>
@@ -381,7 +398,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.162</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.163</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -393,7 +410,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.2.92</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>7.2.94</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -487,7 +504,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.11.1</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.11.2</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -504,7 +521,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.120</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.123</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -516,7 +533,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.31</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.32</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -923,7 +940,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-07-20</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-07-22</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1182,7 +1199,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.2.10</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.3.0</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
@@ -1307,7 +1324,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 跨平台P2P文件同步和分享工具
 
-<kbd>3.1.2.1076-1-ls251</kbd> • [官网链接](https://www.resilio.com/sync/)
+<kbd>3.1.2.1076-1-ls252</kbd> • [官网链接](https://www.resilio.com/sync/)
 
 </td>
 <td width="33%" align="center">
@@ -1389,7 +1406,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.1.75</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.1.77</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1572,7 +1589,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ Docker镜像加速命令查询获取、镜像搜索、配置教程文档展示UI面板
 
-<kbd>4.1.2</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
+<kbd>5.0.0</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
 
 </td>
 <td width="33%" align="center">
@@ -1596,7 +1613,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧙‍♂️ 现代化开源Docker管理Web面板
 
-<kbd>2.4.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
+<kbd>2.5.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
 
 </td>
 </tr>

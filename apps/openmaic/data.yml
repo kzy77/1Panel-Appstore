@@ -1,0 +1,27 @@
+name: OpenMAIC
+tags:
+  - AI / 大模型
+title: OpenMAIC - 一键生成沉浸式多智能体课堂
+description: OpenMAIC 是一个开源的多智能体学习平台，由多智能体编排驱动，可一键生成课件、测验、交互式模拟与项目式学习活动，由可开口讲题、可在白板书写并实时互动的 AI 老师与 AI 同学共同呈现。
+additionalProperties:
+  key: openmaic
+  name: OpenMAIC
+  tags:
+    - AI
+  shortDescZh: 多智能体课堂生成平台，一键生成课件、测验与交互模拟
+  shortDescEn: Multi-agent classroom generation in one click
+  description:
+    zh: OpenMAIC 是一个开源的多智能体学习平台。由多智能体编排驱动，它能在数分钟内根据主题或私有资料生成完整课堂，包含课件、测验、交互式 HTML 模拟与项目式学习（PBL）活动。AI 老师与 AI 同学可开口讲解、在白板书写公式并实时与你讨论，支持导出可编辑的 .pptx 课件或交互式 .html 页面。
+    en: OpenMAIC is an open-source multi-agent learning platform. Powered by multi-agent orchestration, it generates a full lesson in minutes from a topic or your own materials, including slides, quizzes, interactive HTML simulations, and project-based learning (PBL) activities. AI teachers and AI classmates can speak, draw on a whiteboard, and engage in real-time discussions with you.
+    zh-Hant: OpenMAIC 是一個開源的多智能體學習平台。由多智能體編排驅動，它能在數分鐘內根據主題或私有資料生成完整課堂，包含課件、測驗、互動式 HTML 模擬與專案式學習（PBL）活動。AI 老師與 AI 同學可口頭講解、在白板書寫公式並即時與你討論，支援匯出可編輯的 .pptx 課件或互動式 .html 頁面。
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://open.maic.chat
+  github: https://github.com/THU-MAIC/OpenMAIC
+  document: https://github.com/THU-MAIC/OpenMAIC#readme
+  memoryRequired: 4096
+  architectures:
+    - amd64
+    - arm64
