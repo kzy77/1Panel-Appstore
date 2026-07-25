@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎓 终身个性化 AI 辅导平台，支持 RAG 知识库、多模型与长期记忆
 
-<kbd>1.5.2</kbd> • [官网链接](https://deeptutor.info)
+<kbd>1.5.4</kbd> • [官网链接](https://deeptutor.info)
 
 </td>
 </tr>
@@ -521,7 +521,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.133</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.134</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
