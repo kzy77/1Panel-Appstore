@@ -18,7 +18,7 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    image: samanhappy/mcphub:1.0.24
+    image: samanhappy/mcphub:1.0.25
     labels:
       createdBy: "Apps"
   postgres:

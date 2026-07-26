@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.7.22-ef8f6470e</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.7.25-0909dbc9e</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -282,7 +282,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.10.2</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.11.0</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.32.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.32.5</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -398,7 +398,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.163</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.165</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -533,7 +533,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.32</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.33</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -545,7 +545,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.24</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.25</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -732,7 +732,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.9.1-armv7</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.9.3</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -922,7 +922,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 高性能Rust对象存储系统，提供S3兼容API
 
-<kbd>1.0.0-beta.10</kbd> • [官网链接](https://github.com/rustfs/rustfs)
+<kbd>1.0.0-beta.11</kbd> • [官网链接](https://github.com/rustfs/rustfs)
 
 </td>
 </tr>
@@ -940,7 +940,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-07-22</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-07-25</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1110,7 +1110,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📁 开源支持多存储的文件列表程序和私人网盘
 
-<kbd>4.2.3</kbd> • [官网链接](https://github.com/OpenListTeam/OpenList)
+<kbd>4.2.4</kbd> • [官网链接](https://github.com/OpenListTeam/OpenList)
 
 </td>
 <td width="33%" align="center">
@@ -1223,7 +1223,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.5.2</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.6.0</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
