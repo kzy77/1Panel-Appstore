@@ -1,0 +1,26 @@
+name: Ignis
+tags:
+    - 实用工具
+title: 在浏览器中运行 Obsidian 的兼容层
+description: Ignis 是一个兼容层，为 Obsidian 使用的 Electron API 提供浏览器兼容实现，让 Obsidian 在标准浏览器中运行，同时将你的笔记库保留在服务器上。
+additionalProperties:
+    key: ignis
+    name: Ignis
+    tags:
+        - Tool
+        - Notes
+    shortDescZh: 在浏览器中运行 Obsidian，无需远程桌面。
+    shortDescEn: Run Obsidian in the browser. No remote desktop required.
+    description:
+        en: Ignis is a compatibility shim that provides browser-compatible implementations of the Electron APIs used by Obsidian, allowing Obsidian to run in a standard browser while keeping your vault on the server.
+        zh: Ignis 是一个兼容层，为 Obsidian 使用的 Electron API 提供浏览器兼容实现，让 Obsidian 在标准浏览器中运行，同时将你的笔记库保留在服务器上。
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://ignis.thiefling.com/
+    github: https://github.com/Nystik-gh/ignis
+    document: https://ignis.thiefling.com/docs/
+    architectures:
+      - amd64
+      - arm64

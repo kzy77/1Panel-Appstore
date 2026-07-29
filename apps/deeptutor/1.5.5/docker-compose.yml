@@ -1,0 +1,20 @@
+services:
+  deeptutor:
+    image: ghcr.io/hkuds/deeptutor:1.5.5
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:3782"
+      - "${PANEL_APP_PORT_API}:8001"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - TZ=Asia/Shanghai
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

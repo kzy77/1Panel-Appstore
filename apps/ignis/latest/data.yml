@@ -1,0 +1,24 @@
+additionalProperties:
+    formFields:
+        - default: "8080"
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: HTTP Port
+          labelZh: HTTP 端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: "1000"
+          envKey: PUID
+          labelEn: User ID (PUID)
+          labelZh: 用户 ID (PUID)
+          required: true
+          rule: paramCommon
+          type: text
+        - default: "1000"
+          envKey: PGID
+          labelEn: Group ID (PGID)
+          labelZh: 组 ID (PGID)
+          required: true
+          rule: paramCommon
+          type: text
