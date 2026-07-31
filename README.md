@@ -521,7 +521,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.150</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.156</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -1317,7 +1317,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔒 Docker socket代理，支持访问规则限制和权限控制
 
-<kbd>3.4.2</kbd> • [官网链接](https://github.com/Tecnativa/docker-socket-proxy)
+<kbd>3.4.3</kbd> • [官网链接](https://github.com/Tecnativa/docker-socket-proxy)
 
 </td>
 </tr>
