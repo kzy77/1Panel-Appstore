@@ -200,7 +200,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔮 开源可视化AI工作流构建平台，拖拽式设计LLM应用
 
-<kbd>3.1.3</kbd> • [官网链接](https://github.com/FlowiseAI/Flowise)
+<kbd>3.1.4</kbd> • [官网链接](https://github.com/FlowiseAI/Flowise)
 
 </td>
 <td width="33%" align="center">
@@ -212,7 +212,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 模型上下文协议调试工具，支持MCP服务器测试与开发
 
-<kbd>1.0.1</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
+<kbd>2.0.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
 
 </td>
 <td width="33%" align="center">
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.7.28-c01178d03</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.7.31-6bfd82705</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -282,7 +282,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.11.0</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.11.1</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.33.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.33.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -347,7 +347,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 网关，接入 237 个 AI 提供商（90+ 免费），兼容 OpenAI/Claude/Gemini API
 
-<kbd>3.8.48</kbd> • [官网链接](https://omniroute.online)
+<kbd>3.8.49</kbd> • [官网链接](https://omniroute.online)
 
 </td>
 </tr>
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎓 终身个性化 AI 辅导平台，支持 RAG 知识库、多模型与长期记忆
 
-<kbd>1.5.5</kbd> • [官网链接](https://deeptutor.info)
+<kbd>1.5.7</kbd> • [官网链接](https://deeptutor.info)
 
 </td>
 </tr>
@@ -398,7 +398,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.166</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.169</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -410,7 +410,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.2.103</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>7.2.111</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -439,7 +439,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.40</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.45</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -521,7 +521,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.156</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.167</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -922,7 +922,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 高性能Rust对象存储系统，提供S3兼容API
 
-<kbd>1.0.0-beta.11</kbd> • [官网链接](https://github.com/rustfs/rustfs)
+<kbd>1.0.0-beta.12</kbd> • [官网链接](https://github.com/rustfs/rustfs)
 
 </td>
 </tr>
@@ -940,7 +940,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-07-27</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-07-31</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -964,7 +964,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔥 在浏览器中运行 Obsidian，无需远程桌面
 
-<kbd>0.8.8</kbd> • [官网链接](https://github.com/Nystik-gh/ignis)
+<kbd>0.8.9</kbd> • [官网链接](https://github.com/Nystik-gh/ignis)
 
 </td>
 </tr>
@@ -1067,7 +1067,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔐 私有 WireGuard 网络组网工具
 
-<kbd>1.98.9</kbd> • [官网链接](https://tailscale.com)
+<kbd>1.98.10</kbd> • [官网链接](https://tailscale.com)
 
 </td>
 <td width="33%" align="center">
@@ -1079,7 +1079,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛰️ Tailscale DERP 中继服务器，无需域名即可使用
 
-<kbd>1.98.9</kbd> • [官网链接](https://tailscale.com)
+<kbd>1.98.10</kbd> • [官网链接](https://tailscale.com)
 
 </td>
 <td width="33%" align="center">
@@ -1091,7 +1091,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 开源 IP 与网络检测工具箱，支持 IP 信息、DNS 泄露、测速、延迟、MTR、Whois 等检测
 
-<kbd>7.1.0</kbd> • [官网链接](https://ipcheck.ing)
+<kbd>7.2.1</kbd> • [官网链接](https://ipcheck.ing)
 
 </td>
 </tr>
@@ -1418,7 +1418,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.2</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.4</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1524,7 +1524,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎭 专业的 Web 应用自动化测试环境，支持多浏览器
 
-<kbd>1.62.0-noble</kbd> • [官网链接](https://playwright.dev/)
+<kbd>1.62.1-noble</kbd> • [官网链接](https://playwright.dev/)
 
 </td>
 </tr>
@@ -1584,7 +1584,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 监控Docker基础镜像自动更新
 
-<kbd>8.3.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
+<kbd>8.3.1</kbd> • [官网链接](https://github.com/sergi0g/cup/)
 
 </td>
 </tr>
@@ -1625,7 +1625,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧙‍♂️ 现代化开源Docker管理Web面板
 
-<kbd>2.5.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
+<kbd>2.6.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
 
 </td>
 </tr>
