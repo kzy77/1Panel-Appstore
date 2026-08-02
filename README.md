@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.7.31-6bfd82705</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.8.1-8892414dc</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -828,7 +828,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 自托管全能书签管理工具，支持AI自动标签功能
 
-<kbd>0.32.0</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
+<kbd>0.33.1</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
 
 </td>
 <td width="33%" align="center">
@@ -940,7 +940,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-07-31</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-08-01</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1211,7 +1211,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.3.0</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.3.1</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
