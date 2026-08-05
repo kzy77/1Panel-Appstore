@@ -1,6 +1,6 @@
 services:
   starvpn:
-    image: registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client:6.0.8
+    image: registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client:6.0.9
     container_name: ${CONTAINER_NAME}
     restart: always
     privileged: ${PRIVILEGED_MODE}
