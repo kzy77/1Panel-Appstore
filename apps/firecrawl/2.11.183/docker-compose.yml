@@ -1,6 +1,6 @@
 services:
   firecrawl-api:
-    image: ghcr.io/firecrawl/firecrawl:2.11.174
+    image: ghcr.io/firecrawl/firecrawl:2.11.183
     container_name: ${CONTAINER_NAME}
     restart: always
     environment:
