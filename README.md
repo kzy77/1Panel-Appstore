@@ -159,7 +159,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.23</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.24</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.34.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.34.4</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -398,7 +398,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.171</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.172</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -521,7 +521,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.188</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.192</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -1067,7 +1067,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔐 私有 WireGuard 网络组网工具
 
-<kbd>1.98.10</kbd> • [官网链接](https://tailscale.com)
+<kbd>1.102.2</kbd> • [官网链接](https://tailscale.com)
 
 </td>
 <td width="33%" align="center">
@@ -1079,7 +1079,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛰️ Tailscale DERP 中继服务器，无需域名即可使用
 
-<kbd>1.98.10</kbd> • [官网链接](https://tailscale.com)
+<kbd>1.102.2</kbd> • [官网链接](https://tailscale.com)
 
 </td>
 <td width="33%" align="center">
@@ -1122,7 +1122,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📁 开源支持多存储的文件列表程序和私人网盘
 
-<kbd>4.2.4</kbd> • [官网链接](https://github.com/OpenListTeam/OpenList)
+<kbd>4.2.5</kbd> • [官网链接](https://github.com/OpenListTeam/OpenList)
 
 </td>
 <td width="33%" align="center">
