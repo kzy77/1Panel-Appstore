@@ -521,7 +521,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.192</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.193</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -545,7 +545,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.27</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.28</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -732,7 +732,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>7.9.5</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>7.9.6</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
