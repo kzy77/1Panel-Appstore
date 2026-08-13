@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.8.11-e8e710e42</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.8.12-54613defc</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -282,7 +282,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.11.2</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.11.3</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.96.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.96.2</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -410,7 +410,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.2.125</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>7.2.129</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -521,7 +521,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.197</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.198</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -775,7 +775,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.95.1-beta.test-3</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.95.1-beta.2</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -1211,7 +1211,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.3.3</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.3.4</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
@@ -1418,7 +1418,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.6</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.9</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
