@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.8.12-54613defc</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.8.13-ef9a188cc</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -398,7 +398,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.173</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.176</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -533,7 +533,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.39</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>0.6.42</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -775,7 +775,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.95.1-beta.2</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.96.0-beta-2</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -1293,7 +1293,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.32.21</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.32.22</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">

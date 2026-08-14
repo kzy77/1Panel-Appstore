@@ -20,7 +20,7 @@ services:
       createdBy: "Apps"
   hermes-webui:
     container_name: ${CONTAINER_NAME}
-    image: ekkoye8888/hermes-web-ui:v0.6.39
+    image: ekkoye8888/hermes-web-ui:v0.6.42
     entrypoint: ["node", "dist/server/index.js"]
     restart: always
     networks:
