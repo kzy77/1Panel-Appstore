@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.8.13-ef9a188cc</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.8.14-094c33d40</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -439,7 +439,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.50</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.55</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -521,7 +521,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.198</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.199</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -775,7 +775,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.96.0-beta-2</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.96.0-cf.beta.1</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -952,7 +952,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📝 高性能低延迟的 Obsidian 笔记同步服务
 
-<kbd>3.6.0</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
+<kbd>3.6.1</kbd> • [官网链接](https://github.com/haierkeys/fast-note-sync-service)
 
 </td>
 <td width="33%" align="center">
