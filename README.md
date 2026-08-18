@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.8.16-b2da6b90f</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.8.17-374939b88</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎓 终身个性化 AI 辅导平台，支持 RAG 知识库、多模型与长期记忆
 
-<kbd>1.5.12</kbd> • [官网链接](https://deeptutor.info)
+<kbd>1.5.13</kbd> • [官网链接](https://deeptutor.info)
 
 </td>
 </tr>
@@ -410,7 +410,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.2.129</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>7.2.135</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -504,7 +504,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.11.4</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.12.0</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -521,7 +521,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.204</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.207</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -533,7 +533,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>0.6.42</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>1.0.0</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -545,7 +545,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.28</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.29</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -840,7 +840,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 自托管协作书签管理工具，支持网页归档和团队协作
 
-<kbd>2.16.0</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
+<kbd>2.16.1</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
 
 </td>
 </tr>
@@ -1024,7 +1024,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.4.0-rc.1</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.4.0</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -1091,7 +1091,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 开源 IP 与网络检测工具箱，支持 IP 信息、DNS 泄露、测速、延迟、MTR、Whois 等检测
 
-<kbd>7.2.1</kbd> • [官网链接](https://ipcheck.ing)
+<kbd>7.3.0</kbd> • [官网链接](https://ipcheck.ing)
 
 </td>
 </tr>
@@ -1211,7 +1211,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.3.6</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.3.7</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
@@ -1252,7 +1252,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📈 Linux性能实时监测工具，全方位性能监控
 
-<kbd>2.10.4</kbd> • [官网链接](https://github.com/netdata/netdata)
+<kbd>2.11.0</kbd> • [官网链接](https://github.com/netdata/netdata)
 
 </td>
 <td width="33%" align="center">
@@ -1418,7 +1418,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.9</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.10</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1601,7 +1601,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ Docker镜像加速命令查询获取、镜像搜索、配置教程文档展示UI面板
 
-<kbd>5.1.3</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
+<kbd>5.1.4</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
 
 </td>
 <td width="33%" align="center">
