@@ -398,7 +398,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.1.177</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.1.178</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -521,7 +521,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔥 将任意网站转换为适合大语言模型的结构化数据
 
-<kbd>2.11.207</kbd> • [官网链接](https://www.firecrawl.dev)
+<kbd>2.11.209</kbd> • [官网链接](https://www.firecrawl.dev)
 
 </td>
 <td width="33%" align="center">
@@ -1235,7 +1235,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.6.3</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.7.1</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
