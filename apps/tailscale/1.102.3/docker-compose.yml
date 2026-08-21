@@ -1,7 +1,7 @@
 services:
   tailscaled:
     container_name: ${CONTAINER_NAME}
-    image: tailscale/tailscale:v1.102.2
+    image: tailscale/tailscale:v1.102.3
     hostname: ${HOSTNAME:-tailscale}
     restart: always
     volumes:
