@@ -1,0 +1,21 @@
+services:
+  ignis:
+    image: nobbe/ignis:0.8.10
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    networks:
+      - 1panel-network
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+    volumes:
+      - ./data/vaults:/vaults
+      - ./data/app:/app/data
+      - ./data/obsidian-app:/app/obsidian-app
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:8080
+    labels:
+      createdBy: Apps
+networks:
+  1panel-network:
+    external: true
