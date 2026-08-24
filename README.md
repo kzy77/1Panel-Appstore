@@ -183,7 +183,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>2.0.0-beta.14</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>2.0.0-beta.15</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.97.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.98.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -410,7 +410,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.2.139</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>7.2.140</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -492,7 +492,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 智能 AI API 代理中转服务平台
 
-<kbd>0.9.3</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
+<kbd>0.9.4</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
 
 </td>
 <td width="33%" align="center">
@@ -545,7 +545,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.31</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.32</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 </tr>
@@ -1336,7 +1336,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 跨平台P2P文件同步和分享工具
 
-<kbd>3.1.2.1076-1-ls254</kbd> • [官网链接](https://www.resilio.com/sync/)
+<kbd>3.1.2.1076-1-ls255</kbd> • [官网链接](https://www.resilio.com/sync/)
 
 </td>
 <td width="33%" align="center">
@@ -1418,7 +1418,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.15</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.17</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
