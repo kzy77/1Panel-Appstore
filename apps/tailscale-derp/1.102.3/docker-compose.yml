@@ -1,6 +1,7 @@
 services:
   tailscale:
     image: tailscale/tailscale:v1.102.3
+    container_name: ${CONTAINER_NAME}
     environment:
       - TS_HOSTNAME=tailscale-docker
       - TS_AUTH_ONCE=true
@@ -18,7 +19,6 @@ services:
 
   derper:
     image: ghcr.io/yangchuansheng/ip_derper:latest
-    container_name: ${CONTAINER_NAME}
     restart: always
     networks:
       - 1panel-network
