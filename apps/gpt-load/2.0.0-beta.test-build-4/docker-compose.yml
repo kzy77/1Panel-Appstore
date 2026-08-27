@@ -1,6 +1,6 @@
 services:
   gpt-load:
-    image: ghcr.io/tbphp/gpt-load:v2.0.0-beta.15
+    image: ghcr.io/tbphp/gpt-load:v2.0.0-beta.test-build-4
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
