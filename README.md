@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.37.2-pc-arm64</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.37.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -367,11 +367,6 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 <kbd>1.5.17</kbd> • [官网链接](https://deeptutor.info)
 
 </td>
-</tr>
-</table>
-
-<table>
-<tr>
 <td width="33%" align="center">
 
 <a href="./apps/openmaic/README.md">
@@ -382,6 +377,18 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 🤖 多智能体课堂生成平台，一键生成课件、测验与交互模拟
 
 <kbd>0.3.0</kbd> • [官网链接](https://open.maic.chat)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/deepseek-harness/README.md">
+<img src="./apps/deepseek-harness/logo.png" width="60" height="60" alt="DeepSeek-Harness">
+<br><b>DeepSeek-Harness</b>
+</a>
+
+🧠 DeepSeek 开源智能体开发环境
+
+<kbd>0.1.1-rc.2</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
 
 </td>
 </tr>
@@ -1195,6 +1202,18 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 <kbd>2.0.0</kbd> • [官网链接](https://xcq0607.github.io/lxserver/)
 
 </td>
+<td width="33%" align="center">
+
+<a href="./apps/nitter/README.md">
+<img src="./apps/nitter/logo.png" width="60" height="60" alt="Nitter">
+<br><b>Nitter</b>
+</a>
+
+🕊️ 免费开源的 Twitter/X 前端，注重隐私
+
+<kbd>latest</kbd> • [官网链接](https://github.com/zedeus/nitter)
+
+</td>
 </tr>
 </table>
 
@@ -1235,7 +1254,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.7.3</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.8.0</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
@@ -1542,6 +1561,18 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 📡 多平台热点推送
 
 <kbd>6.10.0</kbd> • [官网链接](https://github.com/sansan0/TrendRadar)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/we-mp-rss/README.md">
+<img src="./apps/we-mp-rss/logo.png" width="60" height="60" alt="WeRSS">
+<br><b>WeRSS</b>
+</a>
+
+📰 微信公众号 RSS 订阅助手，支持内容抓取、RSS 生成和多主题
+
+<kbd>1.4.5</kbd> • [官网链接](https://github.com/rachelos/we-mp-rss)
 
 </td>
 </tr>

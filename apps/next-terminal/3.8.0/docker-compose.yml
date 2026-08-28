@@ -1,6 +1,6 @@
 services:
   next-terminal:
-    image: dushixiang/next-terminal:v3.7.3
+    image: dushixiang/next-terminal:v3.8.0
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
