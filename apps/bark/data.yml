@@ -1,0 +1,25 @@
+name: Bark
+tags:
+  - 实用工具
+title: 自托管 iOS 推送通知服务
+description: Bark 是一款注重隐私、免费开源的 iOS 推送通知服务，通过简单接口即可向 iPhone 发送自定义通知，支持设备注册、加密推送、历史记录与 Web 控制台。
+additionalProperties:
+  key: bark
+  name: Bark
+  tags:
+    - Tool
+  shortDescZh: 通知推送工具
+  shortDescEn: Notification push tool
+  description:
+    zh: Bark 是一款注重隐私、免费开源的 iOS 推送通知服务。安装 Bark App 并注册设备后，可通过简单的 HTTP 接口向自己的 iPhone 推送自定义通知，支持标题/正文/Markdown、分组、自定义铃声、角标、加密推送与历史记录等能力，并自带 Web 控制台。
+    en: Bark is a privacy-focused, free and open-source iOS push notification service. After installing the Bark app and registering a device, you can send custom notifications to your iPhone via simple HTTP endpoints, with support for title/body/Markdown, grouping, custom sounds, badges, encrypted pushes, history and a built-in Web console.
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://bark.day.app/
+  github: https://github.com/Finb/bark-server
+  document: https://bark.day.app/
+  architectures:
+    - amd64
+    - arm64

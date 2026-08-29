@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.8.22-9fea41204</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.8.28-a30b2d474</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.37.3</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.37.4</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -947,7 +947,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-08-25</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-08-28</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1312,7 +1312,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.32.25</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.32.28</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1336,7 +1336,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔒 Docker socket代理，支持访问规则限制和权限控制
 
-<kbd>3.4.3</kbd> • [官网链接](https://github.com/Tecnativa/docker-socket-proxy)
+<kbd>3.4.4</kbd> • [官网链接](https://github.com/Tecnativa/docker-socket-proxy)
 
 </td>
 </tr>
@@ -1573,6 +1573,18 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 📰 微信公众号 RSS 订阅助手，支持内容抓取、RSS 生成和多主题
 
 <kbd>1.4.5</kbd> • [官网链接](https://github.com/rachelos/we-mp-rss)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/bark/README.md">
+<img src="./apps/bark/logo.png" width="60" height="60" alt="Bark">
+<br><b>Bark</b>
+</a>
+
+🔔 注重隐私、免费开源的 iOS 推送通知服务
+
+<kbd>2.3.5</kbd> • [官网链接](https://github.com/Finb/bark-server)
 
 </td>
 </tr>
