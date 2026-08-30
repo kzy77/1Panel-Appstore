@@ -159,7 +159,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.26</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.27</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.8.28-a30b2d474</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.8.29-d226b78bc</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -446,7 +446,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.55</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.59</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -917,7 +917,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 开源Airtable替代品，将任何数据库转换为智能电子表格
 
-<kbd>2026.08.2-pre.01</kbd> • [官网链接](https://github.com/nocodb/nocodb)
+<kbd>2026.08.2-pre.02</kbd> • [官网链接](https://github.com/nocodb/nocodb)
 
 </td>
 <td width="33%" align="center">
@@ -947,7 +947,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-08-28</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-08-29</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1254,7 +1254,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.8.0</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.8.1</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
