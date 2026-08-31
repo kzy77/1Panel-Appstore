@@ -1,19 +1,20 @@
 services:
-  hubcmd-ui:
-    image: dqzboy/hubcmd-ui:v5.1.4
+  new-api:
+    image: calciumion/new-api:v1.0.0-rc.29
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
       - ${PANEL_APP_PORT_HTTP}:3000
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - 1panel-network
+    command: --log-dir /app/logs
+    volumes:
+      - ./data:/data
+      - ./logs:/app/logs
     environment:
-      - LOG_LEVEL=INFO
-      - SIMPLE_LOGS=true
+      - TZ=${TZ}
     labels:
-      createdBy: Apps
+      createdBy: "Apps"
 networks:
   1panel-network:
     external: true
