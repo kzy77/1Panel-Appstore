@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.98.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.99.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -847,7 +847,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 自托管协作书签管理工具，支持网页归档和团队协作
 
-<kbd>2.16.1</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
+<kbd>2.16.2</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
 
 </td>
 </tr>
