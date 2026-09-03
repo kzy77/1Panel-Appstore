@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.99.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.99.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -511,7 +511,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.13.0</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.13.1</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -1230,7 +1230,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.3.7</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.3.8</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
