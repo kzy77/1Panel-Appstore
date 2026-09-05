@@ -1,0 +1,45 @@
+additionalProperties:
+  formFields:
+    - default: 8787
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelZh: Web 端口
+      labelEn: WebUI Port
+      required: true
+      rule: paramPort
+      type: number
+    - default: /root/.hermes
+      edit: true
+      envKey: HERMES_HOME
+      labelZh: Hermes 数据目录（宿主机路径）
+      labelEn: Hermes home directory (host path)
+      required: true
+      type: text
+    - default: /root/workspace
+      edit: true
+      envKey: HERMES_WORKSPACE
+      labelZh: 工作区目录（宿主机路径）
+      labelEn: Workspace directory (host path)
+      required: false
+      type: text
+    - default: 1000
+      edit: true
+      envKey: WANTED_UID
+      labelZh: 运行用户 UID（与 .hermes 属主一致）
+      labelEn: Wanted UID (match .hermes owner)
+      required: true
+      type: number
+    - default: 1000
+      edit: true
+      envKey: WANTED_GID
+      labelZh: 运行用户 GID（与 .hermes 属主一致）
+      labelEn: Wanted GID (match .hermes owner)
+      required: true
+      type: number
+    - default: ""
+      edit: true
+      envKey: HERMES_WEBUI_PASSWORD
+      labelZh: WebUI 密码（暴露公网时必填）
+      labelEn: WebUI Password (required when exposed publicly)
+      required: false
+      type: password

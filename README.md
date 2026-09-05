@@ -545,6 +545,23 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 </td>
 <td width="33%" align="center">
 
+<a href="./apps/hermes-webui/README.md">
+<img src="./apps/hermes-webui/logo.png" width="60" height="60" alt="Hermes WebUI">
+<br><b>Hermes WebUI</b>
+</a>
+
+🛰️ Hermes Agent 的 Web 界面（第三方，单容器）
+
+<kbd>0.52.264</kbd> • [官网链接](https://github.com/nesquena/hermes-webui)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="33%" align="center">
+
 <a href="./apps/mcphub/README.md">
 <img src="./apps/mcphub/logo.png" width="60" height="60" alt="MCPHub">
 <br><b>MCPHub</b>
@@ -555,11 +572,6 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 <kbd>1.0.34</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
-</tr>
-</table>
-
-<table>
-<tr>
 <td width="33%" align="center">
 
 <a href="./apps/playwright-mcp/README.md">
@@ -584,6 +596,11 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 <kbd>1.12.2</kbd> • [官网链接](https://github.com/ItzCrazyKns/Vane)
 
 </td>
+</tr>
+</table>
+
+<table>
+<tr>
 <td width="33%" align="center">
 
 <a href="./apps/speaches/README.md">

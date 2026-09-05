@@ -1,0 +1,25 @@
+services:
+  hermes-webui:
+    image: ghcr.io/nesquena/hermes-webui:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:8787"
+    volumes:
+      - ${HERMES_HOME}:/home/hermeswebui/.hermes
+      - ${HERMES_WORKSPACE}:/workspace
+    environment:
+      - WANTED_UID=${WANTED_UID}
+      - WANTED_GID=${WANTED_GID}
+      - HERMES_WEBUI_HOST=0.0.0.0
+      - HERMES_WEBUI_PORT=8787
+      - HERMES_WEBUI_STATE_DIR=/home/hermeswebui/.hermes/webui
+      - HERMES_WEBUI_PASSWORD=${HERMES_WEBUI_PASSWORD}
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true

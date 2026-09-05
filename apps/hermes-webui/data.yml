@@ -1,0 +1,25 @@
+name: Hermes WebUI
+tags:
+  - AI / 大模型
+title: Hermes Agent 的 Web 界面（第三方）
+description: Hermes Agent 的 Web 界面，通过浏览器或手机即可使用 Hermes Agent，支持会话管理、工作区文件浏览、密码认证等。
+additionalProperties:
+  key: hermes-webui
+  name: Hermes WebUI
+  tags:
+    - AI
+  shortDescZh: Hermes Agent 的 Web 界面
+  shortDescEn: Web interface for Hermes Agent
+  description:
+    zh: Hermes WebUI 是 Hermes Agent 的 Web 界面（第三方项目），通过浏览器或手机即可使用 Hermes Agent。支持 AI 会话管理、工作区文件浏览与编辑、项目/标签组织、工具调用卡片、密码认证等功能。单容器部署，容器内同时运行 Agent 与 Web 界面，直接挂载宿主机已有的 Hermes 数据目录（~/.hermes）与工作区目录。
+    en: Hermes WebUI is a third-party web interface for Hermes Agent, letting you use Hermes Agent from the browser or your phone. It features AI session management, a workspace file browser with editing, project/tag organization, tool call cards, password auth and more. Single-container deployment runs the agent and the web UI in-process, mounting your existing Hermes home (~/.hermes) and workspace from the host.
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/nesquena/hermes-webui
+  github: https://github.com/nesquena/hermes-webui
+  document: https://github.com/nesquena/hermes-webui
+  architectures:
+    - amd64
+    - arm64
