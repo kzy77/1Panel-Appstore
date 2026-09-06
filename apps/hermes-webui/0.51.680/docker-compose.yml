@@ -1,6 +1,6 @@
 services:
   hermes-webui:
-    image: ghcr.io/nesquena/hermes-webui:0.52.264
+    image: ghcr.io/nesquena/hermes-webui:0.51.680
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:

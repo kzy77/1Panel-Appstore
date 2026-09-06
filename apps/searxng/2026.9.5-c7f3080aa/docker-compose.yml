@@ -1,19 +1,16 @@
 services:
-  9router:
+  searxng:
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
       - 1panel-network
     ports:
-      - "${PANEL_APP_PORT_HTTP}:20128"
+      - "${PANEL_APP_PORT_HTTP}:8080"
     volumes:
-      - ./data:/app/data
+      - "${DATA_PATH}:/etc/searxng"
     environment:
-      - TZ=Asia/Shanghai
-      - DATA_DIR=/app/data
-      - PORT=20128
-      - HOSTNAME=0.0.0.0
-    image: decolua/9router:0.5.65
+      - BASE_URL=${SEARXNG_EXTERNAL_URL}
+    image: searxng/searxng:2026.9.5-c7f3080aa
     labels:
       createdBy: "Apps"
 networks:

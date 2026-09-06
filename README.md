@@ -159,7 +159,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.31</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.33</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.9.3-a1144dda3</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.9.5-c7f3080aa</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -405,7 +405,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.2.0</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.2.1</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -446,7 +446,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.65</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.69</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -552,7 +552,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🛰️ Hermes Agent 的 Web 界面（第三方，单容器）
 
-<kbd>0.52.264</kbd> • [官网链接](https://github.com/nesquena/hermes-webui)
+<kbd>0.51.680</kbd> • [官网链接](https://github.com/nesquena/hermes-webui)
 
 </td>
 </tr>
@@ -756,7 +756,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>8.3.0</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>8.3.1</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -964,7 +964,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-09-03</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-09-05</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1048,7 +1048,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.4.0</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.4.1</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -1329,7 +1329,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.32.33</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.32.35</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1560,7 +1560,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎭 专业的 Web 应用自动化测试环境，支持多浏览器
 
-<kbd>1.62.1-noble</kbd> • [官网链接](https://playwright.dev/)
+<kbd>1.63.0-noble</kbd> • [官网链接](https://playwright.dev/)
 
 </td>
 </tr>
