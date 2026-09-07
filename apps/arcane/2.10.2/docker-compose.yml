@@ -1,19 +1,22 @@
 services:
-  hubcmd-ui:
-    image: dqzboy/hubcmd-ui:v5.1.5
+  arcane:
+    image: ghcr.io/ofkm/arcane:v2.10.2
     container_name: ${CONTAINER_NAME}
-    restart: always
     ports:
       - ${PANEL_APP_PORT_HTTP}:3000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    networks:
-      - 1panel-network
+      - ./data:/app/data
     environment:
-      - LOG_LEVEL=INFO
-      - SIMPLE_LOGS=true
+      - APP_ENV=production
+      - PUID=2000
+      - PGID=2000
+      - PUBLIC_SESSION_SECRET=${PUBLIC_SESSION_SECRET}
+    restart: always
     labels:
       createdBy: Apps
+    networks:
+      - 1panel-network
 networks:
   1panel-network:
     external: true

@@ -40,7 +40,7 @@ services:
       createdBy: Apps
   app:
     container_name: ${CONTAINER_NAME}
-    image: ghcr.io/ding113/claude-code-hub:v0.9.4
+    image: ghcr.io/ding113/claude-code-hub:v0.9.5
     depends_on:
       postgres:
         condition: service_healthy

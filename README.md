@@ -183,7 +183,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>2.0.0-beta.test-build-4</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>2.0.0-rc.7</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -212,7 +212,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 模型上下文协议调试工具，支持MCP服务器测试与开发
 
-<kbd>2.4.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
+<kbd>2.5.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎓 终身个性化 AI 辅导平台，支持 RAG 知识库、多模型与长期记忆
 
-<kbd>1.6.1</kbd> • [官网链接](https://deeptutor.info)
+<kbd>1.6.4</kbd> • [官网链接](https://deeptutor.info)
 
 </td>
 <td width="33%" align="center">
@@ -417,7 +417,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.2.146</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>7.2.151</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -499,7 +499,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 智能 AI API 代理中转服务平台
 
-<kbd>0.9.4</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
+<kbd>0.9.5</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
 
 </td>
 <td width="33%" align="center">
@@ -581,7 +581,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎭 提供浏览器自动化功能的 MCP 服务器
 
-<kbd>0.0.79</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
+<kbd>0.0.80</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
 
 </td>
 <td width="33%" align="center">
@@ -1115,7 +1115,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 开源 IP 与网络检测工具箱，支持 IP 信息、DNS 泄露、测速、延迟、MTR、Whois 等检测
 
-<kbd>7.4.0</kbd> • [官网链接](https://ipcheck.ing)
+<kbd>7.5.0</kbd> • [官网链接](https://ipcheck.ing)
 
 </td>
 </tr>
@@ -1341,7 +1341,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ 轻量级服务器监控代理，支持实时性能数据收集
 
-<kbd>0.18.8</kbd> • [官网链接](https://github.com/henrygd/beszel)
+<kbd>0.19.0</kbd> • [官网链接](https://github.com/henrygd/beszel)
 
 </td>
 <td width="33%" align="center">
@@ -1413,7 +1413,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 Docker 镜像加速与私有部署服务，支持多平台和多架构
 
-<kbd>0.7.16</kbd> • [官网链接](https://kspeeder.istoreos.com/)
+<kbd>0.7.17</kbd> • [官网链接](https://kspeeder.istoreos.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1454,7 +1454,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.27</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.28</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1507,7 +1507,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 高性能网盘资源搜索API服务，支持TG频道和插件搜索，智能排序和网盘类型分类
 
-<kbd>sha-a3f4391</kbd> • [官网链接](https://github.com/fish2018/pansou)
+<kbd>sha-a54498f</kbd> • [官网链接](https://github.com/fish2018/pansou)
 
 </td>
 <td width="33%" align="center">
@@ -1661,7 +1661,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ Docker镜像加速命令查询获取、镜像搜索、配置教程文档展示UI面板
 
-<kbd>5.1.5</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
+<kbd>5.1.7</kbd> • [官网链接](https://github.com/dqzboy/Docker-Proxy)
 
 </td>
 <td width="33%" align="center">
@@ -1685,7 +1685,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧙‍♂️ 现代化开源Docker管理Web面板
 
-<kbd>2.9.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
+<kbd>2.10.2</kbd> • [官网链接](https://arcane.ofkm.dev/)
 
 </td>
 </tr>
