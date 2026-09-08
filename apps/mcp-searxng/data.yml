@@ -1,0 +1,29 @@
+name: MCP-SearXNG
+tags:
+  - AI / 大模型
+  - 开发工具
+  - 实用工具
+title: SearXNG MCP 搜索服务器
+description: 通过 SearXNG 为 AI 助手提供隐私友好的网络搜索能力的 MCP 服务器，支持 Claude、Cursor 等任意 MCP 客户端。
+additionalProperties:
+  key: mcp-searxng
+  name: MCP-SearXNG
+  tags:
+    - AI
+    - DevTool
+    - Tool
+  shortDescZh: 通过 SearXNG 为 AI 助手提供私有网络搜索
+  shortDescEn: Private web search for AI assistants via SearXNG
+  description:
+    zh: 一个模型上下文协议（MCP）服务器，将 SearXNG 的搜索 API 集成给 AI 助手，为 Claude、Cursor、Codex 等任意 MCP 客户端提供隐私友好的网络搜索能力。支持通用/新闻/文章搜索、分页、时间范围/语言/安全搜索过滤、多实例故障转移与并行扇出、搜索缓存、URL 内容读取（Markdown 转换与 PDF 文本提取）、FlareSolverr/Byparr 浏览器求解、SSRF 防护、可选 HTTP 传输（MCP SDK v2 Streamable HTTP）等功能。本包以 HTTP 服务模式部署，客户端通过 /mcp 端点连接。
+    en: A Model Context Protocol (MCP) server that integrates the SearXNG API for AI assistants, giving Claude, Cursor, Codex and any MCP client privacy-respecting web search. Features include general/news/article search with pagination, time-range/language/safe-search filters, multi-instance failover and fan-out, search caching, URL content reading (Markdown conversion and bounded PDF text extraction), FlareSolverr/Byparr browser solving, SSRF protection, and an optional HTTP transport (MCP SDK v2 Streamable HTTP). This package deploys it as an HTTP service; clients connect via the /mcp endpoint.
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/ihor-sokoliuk/mcp-searxng
+  github: https://github.com/ihor-sokoliuk/mcp-searxng
+  document: https://github.com/ihor-sokoliuk/mcp-searxng/blob/main/CONFIGURATION.md
+  architectures:
+    - amd64
+    - arm64

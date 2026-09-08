@@ -159,7 +159,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.33</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.35</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -183,7 +183,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>2.0.0-rc.7</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>2.0.0-rc.8</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.9.5-c7f3080aa</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.9.7-3e454637f</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.99.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.100.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.38.3</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.38.4</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎓 终身个性化 AI 辅导平台，支持 RAG 知识库、多模型与长期记忆
 
-<kbd>1.6.4</kbd> • [官网链接](https://deeptutor.info)
+<kbd>1.6.5</kbd> • [官网链接](https://deeptutor.info)
 
 </td>
 <td width="33%" align="center">
@@ -388,7 +388,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧠 DeepSeek 开源智能体开发环境
 
-<kbd>0.1.1-rc.2</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
+<kbd>0.1.2-rc.1</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
 
 </td>
 </tr>
@@ -405,7 +405,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.2.1</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.2.2</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -417,7 +417,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.2.151</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>7.2.152</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -511,7 +511,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.13.1</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.13.3</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -569,7 +569,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.34</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.35</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -611,6 +611,18 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 🎙️ 兼容 OpenAI API 的流式语音识别、翻译和语音生成服务器
 
 <kbd>0.8.3-cuda</kbd> • [官网链接](https://github.com/speaches-ai/speaches)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/mcp-searxng/README.md">
+<img src="./apps/mcp-searxng/logo.png" width="60" height="60" alt="MCP-SearXNG">
+<br><b>MCP-SearXNG</b>
+</a>
+
+🔍 通过 SearXNG 为 AI 助手提供私有网络搜索的 MCP 服务器
+
+<kbd>2.1.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
 
 </td>
 </tr>
@@ -756,7 +768,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>8.3.1</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>8.4.1</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -799,7 +811,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.96.0-cf.beta.1</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.96.0-cf.beta.25</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -964,7 +976,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-09-05</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-09-07</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1216,7 +1228,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎵 LX Music 数据同步服务器与 Web 播放器
 
-<kbd>2.0.0</kbd> • [官网链接](https://xcq0607.github.io/lxserver/)
+<kbd>2.0.1</kbd> • [官网链接](https://xcq0607.github.io/lxserver/)
 
 </td>
 <td width="33%" align="center">
@@ -1454,7 +1466,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.28</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.29</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1702,7 +1714,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🐳 轻量化 docker 可视化管理面板
 
-<kbd>1.10.7</kbd> • [官网链接](https://dpanel.cc/)
+<kbd>1.10.8</kbd> • [官网链接](https://dpanel.cc/)
 
 </td>
 </tr>
