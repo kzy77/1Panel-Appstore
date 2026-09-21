@@ -1,0 +1,176 @@
+additionalProperties:
+  formFields:
+    - default: 80
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Web UI port
+      labelZh: Web 界面端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8080
+      edit: true
+      envKey: PANEL_APP_PORT_API
+      labelEn: Backend API port
+      labelZh: 后端 API 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 9000
+      edit: true
+      envKey: PANEL_APP_PORT_S3
+      labelEn: MinIO S3 port
+      labelZh: MinIO S3 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 9001
+      edit: true
+      envKey: PANEL_APP_PORT_ADMIN
+      labelEn: MinIO Console port
+      labelZh: MinIO 控制台端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 8888
+      edit: true
+      envKey: PANEL_APP_PORT_SEARXNG
+      labelEn: SearXNG port
+      labelZh: SearXNG 端口
+      required: true
+      rule: paramPort
+      type: number
+
+    - default: postgres
+      edit: true
+      envKey: DB_USER
+      labelEn: Database user
+      labelZh: 数据库用户名
+      required: true
+      rule: paramCommon
+      type: text
+    - default: weknoraDBpass123
+      edit: true
+      envKey: DB_PASSWORD
+      labelEn: Database password
+      labelZh: 数据库密码
+      random: true
+      required: true
+      rule: paramCommon
+      type: password
+    - default: WeKnora
+      edit: true
+      envKey: DB_NAME
+      labelEn: Database name
+      labelZh: 数据库名
+      required: true
+      rule: paramCommon
+      type: text
+    - default: weknoraRedispass123
+      edit: true
+      envKey: REDIS_PASSWORD
+      labelEn: Redis password
+      labelZh: Redis 密码
+      random: true
+      required: true
+      rule: paramCommon
+      type: password
+
+    - default: weknoraJWTsecret0123456789
+      edit: true
+      envKey: JWT_SECRET
+      labelEn: JWT secret
+      labelZh: JWT 密钥
+      random: true
+      required: false
+      rule: paramCommon
+      type: password
+    - default: a1b2c3d4e5f60718293a4b5c6d7e8f90
+      edit: true
+      envKey: SYSTEM_AES_KEY
+      labelEn: AES-256 master key (exactly 32 ASCII chars)
+      labelZh: AES-256 主密钥（必须正好 32 个字符）
+      required: true
+      rule: paramCommon
+      type: text
+    - default: searxng,qdrant,milvus,weaviate,doris-fe,doris-be,minio
+      edit: true
+      envKey: SSRF_WHITELIST_EXTRA
+      labelEn: SSRF allow-list (extra hosts / domains / CIDR, comma separated)
+      labelZh: SSRF 白名单（额外主机/域名/CIDR，逗号分隔）
+      required: false
+      type: text
+
+    - default: minioadmin
+      edit: true
+      envKey: MINIO_ACCESS_KEY_ID
+      labelEn: MinIO access key
+      labelZh: MinIO 访问密钥
+      required: true
+      rule: paramCommon
+      type: text
+    - default: weknoraMinioSecret123
+      edit: true
+      envKey: MINIO_SECRET_ACCESS_KEY
+      labelEn: MinIO secret key
+      labelZh: MinIO 私钥
+      random: true
+      required: true
+      rule: paramCommon
+      type: password
+    - default: weknora
+      edit: true
+      envKey: MINIO_BUCKET_NAME
+      labelEn: MinIO bucket name
+      labelZh: MinIO 存储桶名称
+      required: true
+      rule: paramCommon
+      type: text
+
+    - default: weknoraSearxngSecret0123456789
+      edit: true
+      envKey: SEARXNG_SECRET
+      labelEn: SearXNG secret
+      labelZh: SearXNG 密钥
+      random: true
+      required: true
+      rule: paramCommon
+      type: password
+    - default: http://host.docker.internal:11434
+      edit: true
+      envKey: OLLAMA_BASE_URL
+      labelEn: Ollama base URL
+      labelZh: Ollama 地址
+      required: false
+      type: text
+
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TZ
+      labelEn: Timezone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: debug
+      edit: true
+      envKey: LOG_LEVEL
+      labelEn: Log level
+      labelZh: 日志级别
+      required: true
+      type: select
+      values:
+        - label: DEBUG
+          value: debug
+        - label: INFO
+          value: info
+        - label: WARN
+          value: warn
+        - label: ERROR
+          value: error
+    - default: 50
+      edit: true
+      envKey: MAX_FILE_SIZE_MB
+      labelEn: Max upload size (MB)
+      labelZh: 最大上传大小（MB）
+      required: true
+      type: number

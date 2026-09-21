@@ -269,7 +269,7 @@ is_dependency_image() {
   repository="$(image_repository_without_tag "$image")"
 
   case "$repository" in
-    postgres|postgis/postgis|pgvector/pgvector|redis|valkey/valkey|mysql|mariadb|mongo|memcached|rabbitmq|clickhouse/clickhouse-server|elasticsearch|opensearchproject/opensearch|nginx|caddy|traefik|prom/prometheus|grafana/grafana|minio/minio|surrealdb/surrealdb|dushixiang/postgres|dushixiang/guacd|getmeili/meilisearch|casbin/casdoor|gcr.io/zenika-hub/alpine-chrome|zenika-hub/alpine-chrome|koala-ai/nginx)
+    postgres|postgis/postgis|pgvector/pgvector|paradedb/paradedb|redis|valkey/valkey|mysql|mariadb|mongo|memcached|rabbitmq|clickhouse/clickhouse-server|elasticsearch|opensearchproject/opensearch|nginx|caddy|traefik|prom/prometheus|grafana/grafana|minio/minio|surrealdb/surrealdb|dushixiang/postgres|dushixiang/guacd|getmeili/meilisearch|casbin/casdoor|gcr.io/zenika-hub/alpine-chrome|zenika-hub/alpine-chrome|koala-ai/nginx)
       return 0
       ;;
     *)

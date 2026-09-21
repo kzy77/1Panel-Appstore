@@ -1,6 +1,6 @@
 services:
   ignis:
-    image: nobbe/ignis:0.8.10
+    image: nobbe/ignis:0.8.11
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

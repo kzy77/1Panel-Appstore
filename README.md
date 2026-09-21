@@ -159,7 +159,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.38</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.39</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.9.19-e831fc2a1</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.9.20-2e624bed4</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -388,7 +388,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧠 DeepSeek 开源智能体开发环境
 
-<kbd>0.1.5-rc.1</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
+<kbd>0.1.5-rc.2</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
 
 </td>
 </tr>
@@ -417,7 +417,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.3.8</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>7.3.9</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -623,6 +623,18 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 🔍 通过 SearXNG 为 AI 助手提供私有网络搜索的 MCP 服务器
 
 <kbd>2.3.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/weknora/README.md">
+<img src="./apps/weknora/logo.png" width="60" height="60" alt="WeKnora">
+<br><b>WeKnora</b>
+</a>
+
+📚 腾讯开源的 LLM 知识平台，支持 RAG 问答、智能体与知识图谱
+
+<kbd>0.8.0</kbd> • [官网链接](https://github.com/Tencent/WeKnora)
 
 </td>
 </tr>
@@ -1000,7 +1012,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔥 在浏览器中运行 Obsidian，无需远程桌面
 
-<kbd>0.8.10</kbd> • [官网链接](https://github.com/Nystik-gh/ignis)
+<kbd>0.8.11</kbd> • [官网链接](https://github.com/Nystik-gh/ignis)
 
 </td>
 </tr>
@@ -1060,7 +1072,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.4.1</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.4.2-rc.1</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -1353,7 +1365,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ 轻量级服务器监控代理，支持实时性能数据收集
 
-<kbd>0.19.0</kbd> • [官网链接](https://github.com/henrygd/beszel)
+<kbd>0.20.0</kbd> • [官网链接](https://github.com/henrygd/beszel)
 
 </td>
 <td width="33%" align="center">
@@ -1466,7 +1478,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.33</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.36</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1697,7 +1709,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧙‍♂️ 现代化开源Docker管理Web面板
 
-<kbd>2.12.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
+<kbd>2.13.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
 
 </td>
 </tr>

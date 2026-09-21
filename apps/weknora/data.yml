@@ -1,0 +1,24 @@
+name: WeKnora
+tags:
+    - AI / 大模型
+    - 实用工具
+title: 腾讯开源的 LLM 知识平台，把文档变成可问答、可推理的知识资产
+description: WeKnora 是腾讯开源的企业级 LLM 知识框架，围绕 RAG 问答、ReAct 智能体与自动 Wiki 三大能力构建。支持 PDF/Word/Excel/图片等文档解析、知识图谱、多数据源同步、20+ 大模型供应商与多空间 RBAC，可完全私有化部署。
+additionalProperties:
+  key: weknora
+  name: WeKnora
+  tags:
+    - AI
+    - Tool
+  shortDescZh: 腾讯开源的 LLM 知识平台，把文档变成可问答、可推理的知识资产
+  shortDescEn: Tencent's open-source LLM knowledge platform that turns documents into queryable, reasoning-capable knowledge assets
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://weknora.weixin.qq.com
+  github: https://github.com/Tencent/WeKnora
+  document: https://github.com/Tencent/WeKnora
+  architectures:
+    - amd64
+    - arm64
