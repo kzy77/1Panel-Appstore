@@ -159,7 +159,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.39</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.40</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.40.3</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.40.5</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -780,7 +780,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>8.5.5</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>8.5.7</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
