@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.9.20-2e624bed4</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.9.22-2ed96e6fc</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.101.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.102.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.40.5</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.41.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -446,7 +446,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.75</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.85</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -622,7 +622,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 通过 SearXNG 为 AI 助手提供私有网络搜索的 MCP 服务器
 
-<kbd>2.3.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
+<kbd>2.4.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
 
 </td>
 <td width="33%" align="center">
@@ -780,7 +780,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>8.5.7</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>8.5.8</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -988,7 +988,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-09-19</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-09-22</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
