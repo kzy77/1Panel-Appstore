@@ -40,6 +40,22 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
+    - default: 7474
+      edit: true
+      envKey: PANEL_APP_PORT_NEO4J_HTTP
+      labelEn: Neo4j Browser port
+      labelZh: Neo4j Browser 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 7687
+      edit: true
+      envKey: PANEL_APP_PORT_NEO4J_BOLT
+      labelEn: Neo4j Bolt port
+      labelZh: Neo4j Bolt 端口
+      required: true
+      rule: paramPort
+      type: number
 
     - default: postgres
       edit: true
@@ -75,6 +91,27 @@ additionalProperties:
       required: true
       rule: paramCommon
       type: password
+    - default: "true"
+      edit: true
+      envKey: NEO4J_ENABLE
+      labelEn: Enable knowledge graph (Neo4j)
+      labelZh: 启用知识图谱（Neo4j）
+      required: true
+      type: select
+      values:
+        - label: "ON"
+          value: "true"
+        - label: "OFF"
+          value: "false"
+    - default: weknoraNeo4jpass123
+      edit: true
+      envKey: NEO4J_PASSWORD
+      labelEn: Neo4j password
+      labelZh: Neo4j 密码
+      random: true
+      required: true
+      rule: paramCommon
+      type: password
 
     - default: weknoraJWTsecret0123456789
       edit: true
@@ -98,6 +135,13 @@ additionalProperties:
       envKey: SSRF_WHITELIST_EXTRA
       labelEn: SSRF allow-list (extra hosts / domains / CIDR, comma separated)
       labelZh: SSRF 白名单（额外主机/域名/CIDR，逗号分隔）
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WEKNORA_BOOTSTRAP_SYSTEM_ADMIN_EMAIL
+      labelEn: Bootstrap system admin email (optional; must equal a registered account's email)
+      labelZh: 引导系统管理员邮箱（可选；必须与已注册账号的邮箱完全一致）
       required: false
       type: text
 
