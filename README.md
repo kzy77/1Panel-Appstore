@@ -212,7 +212,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 模型上下文协议调试工具，支持MCP服务器测试与开发
 
-<kbd>2.7.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
+<kbd>2.8.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.41.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.41.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -417,7 +417,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.3.15</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>7.3.16</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -569,7 +569,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.39</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.40</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -634,7 +634,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 📚 腾讯开源的 LLM 知识平台，支持 RAG 问答、智能体与知识图谱
 
-<kbd>0.8.0</kbd> • [官网链接](https://github.com/Tencent/WeKnora)
+<kbd>0.8.2</kbd> • [官网链接](https://github.com/Tencent/WeKnora)
 
 </td>
 </tr>
@@ -988,7 +988,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-09-23</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-09-24</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1072,7 +1072,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.4.2-rc.1</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.4.2-rc.2</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -1396,7 +1396,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 跨平台P2P文件同步和分享工具
 
-<kbd>3.1.2.1076-1-ls258</kbd> • [官网链接](https://www.resilio.com/sync/)
+<kbd>3.1.2.1076-1-ls260</kbd> • [官网链接](https://www.resilio.com/sync/)
 
 </td>
 <td width="33%" align="center">
