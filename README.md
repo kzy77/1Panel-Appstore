@@ -446,7 +446,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.86</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.91</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -569,7 +569,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.0.40</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.0.41</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -988,7 +988,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-09-25</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-09-26</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1271,7 +1271,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.3.13</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.3.14</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
@@ -1668,7 +1668,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 监控Docker基础镜像自动更新
 
-<kbd>9.1.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
+<kbd>9.2.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
 
 </td>
 </tr>
