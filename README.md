@@ -183,7 +183,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>2.0.0-rc.31</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>2.0.0-rc.36</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎓 终身个性化 AI 辅导平台，支持 RAG 知识库、多模型与长期记忆
 
-<kbd>1.6.10</kbd> • [官网链接](https://deeptutor.info)
+<kbd>1.6.12</kbd> • [官网链接](https://deeptutor.info)
 
 </td>
 <td width="33%" align="center">
@@ -417,7 +417,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>7.3.16</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>8.0.2</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -499,7 +499,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 智能 AI API 代理中转服务平台
 
-<kbd>0.9.5</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
+<kbd>0.9.6</kbd> • [官网链接](https://github.com/ding113/claude-code-hub)
 
 </td>
 <td width="33%" align="center">
@@ -988,7 +988,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-09-26</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-09-27</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1012,7 +1012,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔥 在浏览器中运行 Obsidian，无需远程桌面
 
-<kbd>0.8.12</kbd> • [官网链接](https://github.com/Nystik-gh/ignis)
+<kbd>0.8.14</kbd> • [官网链接](https://github.com/Nystik-gh/ignis)
 
 </td>
 </tr>
@@ -1353,7 +1353,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.33.3</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.33.6</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1437,7 +1437,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 Docker 镜像加速与私有部署服务，支持多平台和多架构
 
-<kbd>0.8.0</kbd> • [官网链接](https://kspeeder.istoreos.com/)
+<kbd>0.8.1</kbd> • [官网链接](https://kspeeder.istoreos.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1531,7 +1531,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 高性能网盘资源搜索API服务，支持TG频道和插件搜索，智能排序和网盘类型分类
 
-<kbd>sha-91f9516</kbd> • [官网链接](https://github.com/fish2018/pansou)
+<kbd>sha-94dc8e9</kbd> • [官网链接](https://github.com/fish2018/pansou)
 
 </td>
 <td width="33%" align="center">
@@ -1709,7 +1709,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧙‍♂️ 现代化开源Docker管理Web面板
 
-<kbd>2.13.1</kbd> • [官网链接](https://arcane.ofkm.dev/)
+<kbd>2.14.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
 
 </td>
 </tr>
