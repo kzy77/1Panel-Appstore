@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.103.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.103.2</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.42.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.42.2</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -446,7 +446,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.91</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.95</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -511,7 +511,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.14.0</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.14.1</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -780,7 +780,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>8.5.9</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>8.6.1</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -988,7 +988,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-09-29</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-10-01</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1271,7 +1271,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.3.14</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.3.17</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
