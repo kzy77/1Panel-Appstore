@@ -183,7 +183,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>2.0.0-rc.43</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>2.0.0-rc.44</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.42.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.42.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -335,7 +335,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 📝 私有的、多模型的Google Notebook LM替代方案，支持多模态内容和AI播客生成
 
-<kbd>1.14.0</kbd> • [官网链接](https://www.open-notebook.ai/)
+<kbd>1.15.0</kbd> • [官网链接](https://www.open-notebook.ai/)
 
 </td>
 <td width="33%" align="center">
@@ -417,7 +417,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>8.0.13</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>8.0.16</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -780,7 +780,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>8.6.4</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>8.7.1</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -988,7 +988,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-10-04</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-10-06</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1012,7 +1012,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔥 在浏览器中运行 Obsidian，无需远程桌面
 
-<kbd>0.8.15</kbd> • [官网链接](https://github.com/Nystik-gh/ignis)
+<kbd>0.8.16</kbd> • [官网链接](https://github.com/Nystik-gh/ignis)
 
 </td>
 </tr>
@@ -1139,7 +1139,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 开源 IP 与网络检测工具箱，支持 IP 信息、DNS 泄露、测速、延迟、MTR、Whois 等检测
 
-<kbd>7.6.0</kbd> • [官网链接](https://ipcheck.ing)
+<kbd>7.7.0</kbd> • [官网链接](https://ipcheck.ing)
 
 </td>
 </tr>
@@ -1668,7 +1668,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 监控Docker基础镜像自动更新
 
-<kbd>9.2.1</kbd> • [官网链接](https://github.com/sergi0g/cup/)
+<kbd>9.3.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
 
 </td>
 </tr>
@@ -1709,7 +1709,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧙‍♂️ 现代化开源Docker管理Web面板
 
-<kbd>2.14.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
+<kbd>2.15.0</kbd> • [官网链接](https://arcane.ofkm.dev/)
 
 </td>
 </tr>
