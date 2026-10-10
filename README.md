@@ -142,7 +142,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.11.10</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.11.11</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.10.7-6671d89be</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.10.9-f4822b3fc</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.43.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.43.3</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -405,7 +405,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.2.14</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.2.15</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -780,7 +780,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>8.7.3</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>8.7.4</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -988,7 +988,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-10-07</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-10-09</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1295,7 +1295,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.9.3</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.10.1</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
@@ -1726,7 +1726,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🐳 轻量化 docker 可视化管理面板
 
-<kbd>1.11.0</kbd> • [官网链接](https://dpanel.cc/)
+<kbd>1.11.1</kbd> • [官网链接](https://dpanel.cc/)
 
 </td>
 </tr>
