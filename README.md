@@ -159,7 +159,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.42</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.43</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -323,7 +323,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI驱动的图表创建工具
 
-<kbd>0.4.15</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
+<kbd>0.5.0</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
 
 </td>
 <td width="33%" align="center">
@@ -988,7 +988,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-10-09</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-10-10</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1182,7 +1182,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖼️ 高效云存储和图床平台管理工具
 
-<kbd>2.4.2</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
+<kbd>3.0.0</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
 
 </td>
 </tr>
@@ -1668,7 +1668,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 监控Docker基础镜像自动更新
 
-<kbd>9.3.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
+<kbd>9.4.1</kbd> • [官网链接](https://github.com/sergi0g/cup/)
 
 </td>
 </tr>
