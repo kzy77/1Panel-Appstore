@@ -183,7 +183,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>2.0.0-rc.45</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>2.0.0-rc.48</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.10.9-f4822b3fc</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.10.11-ad46ebd7d</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.104.2</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.105.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -417,7 +417,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>8.0.20</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>8.0.23</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -511,7 +511,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.14.1</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.15.0</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -569,7 +569,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.1.2</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.1.3</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -581,7 +581,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎭 提供浏览器自动化功能的 MCP 服务器
 
-<kbd>0.0.82</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
+<kbd>0.0.83</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
 
 </td>
 <td width="33%" align="center">
@@ -988,7 +988,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-10-10</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-10-11</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1012,7 +1012,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔥 在浏览器中运行 Obsidian，无需远程桌面
 
-<kbd>0.8.16</kbd> • [官网链接](https://github.com/Nystik-gh/ignis)
+<kbd>0.8.17</kbd> • [官网链接](https://github.com/Nystik-gh/ignis)
 
 </td>
 </tr>
@@ -1182,7 +1182,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖼️ 高效云存储和图床平台管理工具
 
-<kbd>3.0.0</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
+<kbd>3.0.1</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
 
 </td>
 </tr>
@@ -1295,7 +1295,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖥️ 简单好用安全的开源交互审计系统
 
-<kbd>3.10.1</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
+<kbd>3.10.2</kbd> • [官网链接](https://github.com/dushixiang/next-terminal)
 
 </td>
 </tr>
@@ -1312,7 +1312,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📈 Linux性能实时监测工具，全方位性能监控
 
-<kbd>2.12.0</kbd> • [官网链接](https://github.com/netdata/netdata)
+<kbd>2.12.1</kbd> • [官网链接](https://github.com/netdata/netdata)
 
 </td>
 <td width="33%" align="center">
@@ -1408,7 +1408,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 多AdGuardHome实例间配置同步工具
 
-<kbd>0.9.3</kbd> • [官网链接](https://github.com/bakito/adguardhome-sync)
+<kbd>0.9.4</kbd> • [官网链接](https://github.com/bakito/adguardhome-sync)
 
 </td>
 <td width="33%" align="center">
@@ -1461,7 +1461,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌌 简单易用的自托管VPN服务，支持多平台和Docker快速部署
 
-<kbd>6.1.1</kbd> • [官网链接](https://github.com/starvpn/starvpn)
+<kbd>6.1.3</kbd> • [官网链接](https://github.com/starvpn/starvpn)
 
 </td>
 </tr>
@@ -1478,7 +1478,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.44</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.47</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1502,7 +1502,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 基于P2P的极速文件同步工具，支持多平台和多架构，适合家庭与企业备份
 
-<kbd>2.21.3</kbd> • [官网链接](https://github.com/Jonnyan404/verysync)
+<kbd>2.33.2</kbd> • [官网链接](https://github.com/Jonnyan404/verysync)
 
 </td>
 </tr>
@@ -1531,7 +1531,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔍 高性能网盘资源搜索API服务，支持TG频道和插件搜索，智能排序和网盘类型分类
 
-<kbd>sha-94dc8e9</kbd> • [官网链接](https://github.com/fish2018/pansou)
+<kbd>sha-4429f9f</kbd> • [官网链接](https://github.com/fish2018/pansou)
 
 </td>
 <td width="33%" align="center">
@@ -1625,7 +1625,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔔 注重隐私、免费开源的 iOS 推送通知服务
 
-<kbd>2.3.7</kbd> • [官网链接](https://github.com/Finb/bark-server)
+<kbd>2.3.9</kbd> • [官网链接](https://github.com/Finb/bark-server)
 
 </td>
 </tr>
