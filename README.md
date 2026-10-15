@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.105.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.105.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.44.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.44.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -511,7 +511,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.15.1</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.15.2</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -634,7 +634,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 📚 腾讯开源的 LLM 知识平台，支持 RAG 问答、智能体与知识图谱
 
-<kbd>0.8.2</kbd> • [官网链接](https://github.com/Tencent/WeKnora)
+<kbd>0.8.3</kbd> • [官网链接](https://github.com/Tencent/WeKnora)
 
 </td>
 </tr>
@@ -823,7 +823,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.96.0</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.97.0-beta.1</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -988,7 +988,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-10-13</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-10-14</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1182,7 +1182,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🖼️ 高效云存储和图床平台管理工具
 
-<kbd>3.0.1</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
+<kbd>3.0.2</kbd> • [官网链接](https://github.com/Kuingsmile/PicList)
 
 </td>
 </tr>
@@ -1584,7 +1584,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎭 专业的 Web 应用自动化测试环境，支持多浏览器
 
-<kbd>1.64.0-noble</kbd> • [官网链接](https://playwright.dev/)
+<kbd>1.64.1-noble</kbd> • [官网链接](https://playwright.dev/)
 
 </td>
 </tr>
