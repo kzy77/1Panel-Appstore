@@ -1,6 +1,6 @@
 services:
   npc:
-    image: ghcr.io/djylb/npc:v0.34.7
+    image: ghcr.io/djylb/npc:v0.34.8
     restart: always
     network_mode: host
     command: -server=${NPS_SERVER_ADDR} -vkey=${NPS_VKEY}
