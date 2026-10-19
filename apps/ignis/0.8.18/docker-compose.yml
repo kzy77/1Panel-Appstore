@@ -1,18 +1,19 @@
 services:
-  gpt4free:
-    image: hlohaus789/g4f:v8.7.6-slim
+  ignis:
+    image: nobbe/ignis:0.8.18
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:
       - 1panel-network
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
     volumes:
-      - ./har_and_cookies:/app/har_and_cookies
-      - ./generated_media:/app/generated_media
+      - ./data/vaults:/vaults
+      - ./data/app:/app/data
+      - ./data/obsidian-app:/app/obsidian-app
     ports:
       - ${PANEL_APP_PORT_HTTP}:8080
-      - ${PANEL_APP_PORT_API}:8080
-    environment:
-      - OLLAMA_HOST=host.docker.internal
     labels:
       createdBy: Apps
 networks:
