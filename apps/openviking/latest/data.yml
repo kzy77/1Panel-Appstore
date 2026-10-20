@@ -1,0 +1,133 @@
+additionalProperties:
+  formFields:
+    - default: 1933
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP 端口
+      required: true
+      rule: paramPort
+      type: number
+      label:
+        en: HTTP Port
+        zh: HTTP 端口
+        zh-Hant: HTTP 埠
+        ja: HTTP ポート
+        ko: HTTP 포트
+    - default: ""
+      edit: true
+      envKey: ROOT_API_KEY
+      labelEn: Root API Key
+      labelZh: 根 API 密钥
+      random: true
+      required: true
+      type: password
+      label:
+        en: Root API Key
+        zh: 根 API 密钥
+        zh-Hant: 根 API 金鑰
+        ja: ルート API キー
+        ko: 루트 API 키
+    - default: openai
+      edit: true
+      envKey: MODEL_PROVIDER
+      labelEn: Model Provider
+      labelZh: 模型提供商
+      required: true
+      type: select
+      values:
+        - label: OpenAI Compatible
+          value: openai
+        - label: Volcengine (Doubao)
+          value: volcengine
+        - label: Ollama
+          value: ollama
+      label:
+        en: Model Provider
+        zh: 模型提供商
+        zh-Hant: 模型供應商
+        ja: モデルプロバイダー
+        ko: 모델 공급자
+    - default: https://api.openai.com/v1
+      edit: true
+      envKey: MODEL_API_BASE
+      labelEn: Model API Base URL
+      labelZh: 模型 API 地址
+      required: true
+      type: text
+      label:
+        en: Model API Base URL
+        zh: 模型 API 地址
+        zh-Hant: 模型 API 位址
+        ja: モデル API ベース URL
+        ko: 모델 API 기본 URL
+    - default: ""
+      edit: true
+      envKey: MODEL_API_KEY
+      labelEn: Model API Key
+      labelZh: 模型 API 密钥
+      required: true
+      type: password
+      label:
+        en: Model API Key
+        zh: 模型 API 密钥
+        zh-Hant: 模型 API 金鑰
+        ja: モデル API キー
+        ko: 모델 API 키
+    - default: text-embedding-3-small
+      edit: true
+      envKey: EMBEDDING_MODEL
+      labelEn: Embedding Model
+      labelZh: 向量嵌入模型
+      required: true
+      type: text
+      label:
+        en: Embedding Model
+        zh: 向量嵌入模型
+        zh-Hant: 向量嵌入模型
+        ja: 埋め込みモデル
+        ko: 임베딩 모델
+    - default: 1536
+      edit: true
+      envKey: EMBEDDING_DIMENSION
+      labelEn: Embedding Dimension
+      labelZh: 向量维度
+      required: true
+      type: number
+      label:
+        en: Embedding Dimension
+        zh: 向量维度
+        zh-Hant: 向量維度
+        ja: 埋め込み次元数
+        ko: 임베딩 차원
+    - default: text
+      edit: true
+      envKey: EMBEDDING_INPUT
+      labelEn: Embedding Input Type
+      labelZh: 嵌入输入类型
+      required: true
+      type: select
+      values:
+        - label: text
+          value: text
+        - label: multimodal
+          value: multimodal
+      label:
+        en: Embedding Input Type
+        zh: 嵌入输入类型
+        zh-Hant: 嵌入輸入類型
+        ja: 埋め込み入力タイプ
+        ko: 임베딩 입력 유형
+    - default: gpt-5.4
+      edit: true
+      envKey: VLM_MODEL
+      labelEn: VLM Model
+      labelZh: 视觉语言模型 (VLM)
+      required: true
+      type: text
+      label:
+        en: VLM Model
+        zh: 视觉语言模型 (VLM)
+        zh-Hant: 視覺語言模型 (VLM)
+        ja: VLM モデル
+        ko: VLM 모델

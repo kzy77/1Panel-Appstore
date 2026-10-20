@@ -640,6 +640,23 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 </tr>
 </table>
 
+<table>
+<tr>
+<td width="33%" align="center">
+
+<a href="./apps/openviking/README.md">
+<img src="./apps/openviking/logo.png" width="60" height="60" alt="OpenViking">
+<br><b>OpenViking</b>
+</a>
+
+🧠 火山引擎开源的自进化 AI Agent 上下文数据库，统一记忆、知识 RAG 与技能
+
+<kbd>0.5.0</kbd> • [官网链接](https://github.com/volcengine/OpenViking)
+
+</td>
+</tr>
+</table>
+
 #### 🤖LLM免费API接口
 
 - 支持一键部署AI免费API接口，使用方式请参考应用内**README介绍**

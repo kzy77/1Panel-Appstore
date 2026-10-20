@@ -1,0 +1,38 @@
+name: OpenViking
+tags:
+  - AI
+  - Database
+  - DevTool
+title: 面向 AI Agent 的自进化上下文数据库
+description: 统一智能体记忆、知识 RAG 与技能的自进化上下文数据库，以虚拟文件系统组织上下文
+additionalProperties:
+  key: openviking
+  name: OpenViking
+  tags:
+    - AI
+    - Database
+    - DevTool
+  shortDescZh: 面向 AI Agent 的自进化上下文数据库，统一记忆、知识 RAG 与技能
+  shortDescEn: A self-evolving context database for AI agents that unifies memory, knowledge RAG and skills
+  description:
+    en: OpenViking is an open-source, self-evolving context database for AI agents. It unifies agent memory, knowledge RAG and skills in one virtual filesystem under viking:// so agents can navigate, search and manage everything they know. Includes the OpenViking HTTP service, a Web Studio console and the VikingBot agent runtime.
+    zh: OpenViking 是面向 AI Agent 的开源自进化上下文数据库，将智能体记忆、知识 RAG 与技能统一到 viking:// 虚拟文件系统中，Agent 可以像操作文件一样浏览、检索和管理上下文。内置 HTTP 服务、Web Studio 控制台与 VikingBot 智能体运行时。
+    zh-Hant: OpenViking 是面向 AI Agent 的開源自進化上下文資料庫，將智慧體記憶、知識 RAG 與技能統一至 viking:// 虛擬檔案系統中。內建 HTTP 服務、Web Studio 控制台與 VikingBot 智慧體執行環境。
+    ja: OpenViking は、AI エージェント向けの自己進化型コンテキストデータベースです。エージェントの記憶・ナレッジ RAG・スキルを viking:// 仮想ファイルシステムに統合し、HTTP サービス、Web Studio、VikingBot を提供します。
+    ko: OpenViking은 AI 에이전트를 위한 자기 진화형 컨텍스트 데이터베이스로, 에이전트 메모리·지식 RAG·스킬을 viking:// 가상 파일 시스템으로 통합합니다.
+    ms: OpenViking ialah pangkalan data konteks yang berkembang sendiri untuk ejen AI, menyatukan memori, RAG pengetahuan dan kemahiran dalam sistem fail maya viking://.
+    pt-br: OpenViking é um banco de dados de contexto auto-evolutivo para agentes de IA, unificando memória, RAG de conhecimento e habilidades em um sistema de arquivos virtual viking://.
+    ru: OpenViking — саморазвивающаяся контекстная база данных для ИИ-агентов, объединяющая память, RAG знаний и навыки в виртуальной файловой системе viking://.
+    es-es: OpenViking es una base de datos de contexto auto-evolutiva para agentes de IA que unifica memoria, RAG de conocimiento y habilidades en un sistema de archivos virtual viking://.
+    tr: OpenViking, yapay zeka ajanları için kendi kendine gelişen bir bağlam veritabanıdır; ajan belleğini, bilgi RAG'ini ve becerileri viking:// sanal dosya sisteminde birleştirir.
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://openviking.ai
+  github: https://github.com/volcengine/OpenViking
+  document: https://docs.openviking.ai/
+  architectures:
+    - amd64
+    - arm64
+  memoryRequired: 2048

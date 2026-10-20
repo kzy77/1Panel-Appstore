@@ -1,0 +1,63 @@
+services:
+  openviking:
+    image: ghcr.io/volcengine/openviking:latest
+    # Mainland China mirror (uncomment if ghcr.io is slow/unreachable):
+    # image: openviking-cn-beijing.cr.volces.com/volcengine/openviking:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:1933"
+    volumes:
+      - ./data:/app/.openviking
+    environment:
+      # The bundled VikingBot is disabled by default: in API-key mode it needs a
+      # User/Admin key (a root key cannot be used). See the README to enable it.
+      OPENVIKING_WITH_BOT: "0"
+      OPENVIKING_SERVER_HOST: "0.0.0.0"
+      OPENVIKING_CONFIG_FILE: /app/.openviking/ov.conf
+      # On first start (no ov.conf yet) the entrypoint writes this JSON to
+      # /app/.openviking/ov.conf. Later changes must be made in that file.
+      OPENVIKING_CONF_CONTENT: |
+        {
+          "embedding": {
+            "dense": {
+              "provider": "${MODEL_PROVIDER}",
+              "model": "${EMBEDDING_MODEL}",
+              "api_base": "${MODEL_API_BASE}",
+              "api_key": "${MODEL_API_KEY}",
+              "dimension": ${EMBEDDING_DIMENSION},
+              "input": "${EMBEDDING_INPUT}"
+            }
+          },
+          "vlm": {
+            "provider": "${MODEL_PROVIDER}",
+            "model": "${VLM_MODEL}",
+            "api_base": "${MODEL_API_BASE}",
+            "api_key": "${MODEL_API_KEY}",
+            "thinking": false
+          },
+          "storage": {
+            "workspace": "./data",
+            "agfs": { "backend": "local" },
+            "vectordb": { "backend": "local" }
+          },
+          "server": {
+            "host": "0.0.0.0",
+            "port": 1933,
+            "root_api_key": "${ROOT_API_KEY}",
+            "cors_origins": ["*"]
+          }
+        }
+    healthcheck:
+      test: ["CMD", "openviking-entrypoint", "--healthcheck"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+    networks:
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+networks:
+  1panel-network:
+    external: true
