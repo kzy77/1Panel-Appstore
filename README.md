@@ -142,7 +142,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.11.11</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.11.12</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -183,7 +183,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>2.0.0-rc.51</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>2.0.0-rc.53</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.10.17-1c10abe2d</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.10.19-81371861f</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -282,7 +282,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.12.6</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.12.7</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.106.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.107.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.44.3</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.45.1</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -347,7 +347,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 网关，接入 237 个 AI 提供商（90+ 免费），兼容 OpenAI/Claude/Gemini API
 
-<kbd>3.8.51</kbd> • [官网链接](https://omniroute.online)
+<kbd>3.8.52</kbd> • [官网链接](https://omniroute.online)
 
 </td>
 </tr>
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎓 终身个性化 AI 辅导平台，支持 RAG 知识库、多模型与长期记忆
 
-<kbd>1.6.14</kbd> • [官网链接](https://deeptutor.info)
+<kbd>1.6.15</kbd> • [官网链接](https://deeptutor.info)
 
 </td>
 <td width="33%" align="center">
@@ -388,7 +388,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧠 DeepSeek 开源智能体开发环境
 
-<kbd>0.2.0-rc.2</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
+<kbd>0.2.1-rc.2</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
 
 </td>
 </tr>
@@ -417,7 +417,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>8.0.33</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>8.0.37</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -511,7 +511,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.15.3</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.15.5</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -540,7 +540,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>1.0.3</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>1.0.8</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -569,7 +569,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.1.6</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.1.7</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -622,7 +622,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 通过 SearXNG 为 AI 助手提供私有网络搜索的 MCP 服务器
 
-<kbd>2.6.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
+<kbd>2.7.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
 
 </td>
 <td width="33%" align="center">
@@ -651,7 +651,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧠 火山引擎开源的自进化 AI Agent 上下文数据库，统一记忆、知识 RAG 与技能
 
-<kbd>0.5.0</kbd> • [官网链接](https://github.com/volcengine/OpenViking)
+<kbd>0.5.1</kbd> • [官网链接](https://github.com/volcengine/OpenViking)
 
 </td>
 </tr>
@@ -797,7 +797,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>8.7.7</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>8.8.3</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -1005,7 +1005,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-10-18</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-10-20</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1060,7 +1060,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 NPS客户端，轻量级高性能内网穿透代理工具
 
-<kbd>0.34.8</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.34.10</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 <td width="33%" align="center">
@@ -1072,7 +1072,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 轻量级高性能内网穿透代理服务器
 
-<kbd>0.34.8</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.34.10</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 </tr>
@@ -1089,7 +1089,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.4.2</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.4.3</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -1132,7 +1132,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔐 私有 WireGuard 网络组网工具
 
-<kbd>1.104.1</kbd> • [官网链接](https://tailscale.com)
+<kbd>1.104.2</kbd> • [官网链接](https://tailscale.com)
 
 </td>
 <td width="33%" align="center">
@@ -1144,7 +1144,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛰️ Tailscale DERP 中继服务器，无需域名即可使用
 
-<kbd>1.104.1</kbd> • [官网链接](https://tailscale.com)
+<kbd>1.104.2</kbd> • [官网链接](https://tailscale.com)
 
 </td>
 <td width="33%" align="center">
@@ -1370,7 +1370,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.33.10</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.33.11</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1413,7 +1413,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 跨平台P2P文件同步和分享工具
 
-<kbd>3.1.2.1076-1-ls262</kbd> • [官网链接](https://www.resilio.com/sync/)
+<kbd>3.1.2.1076-1-ls263</kbd> • [官网链接](https://www.resilio.com/sync/)
 
 </td>
 <td width="33%" align="center">
@@ -1495,7 +1495,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.51</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.52</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1589,7 +1589,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛠️ 功能强大的日常任务网络工具，自托管无广告追踪
 
-<kbd>0.6.0</kbd> • [官网链接](https://omnitools.app/)
+<kbd>0.7.0</kbd> • [官网链接](https://omnitools.app/)
 
 </td>
 <td width="33%" align="center">
