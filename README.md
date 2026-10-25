@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.10.23-629368e40</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.10.24-ef0ec03da</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.106.2</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.106.3</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -569,7 +569,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.1.9</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.1.10</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -840,7 +840,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.97.0-beta.1</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.97.0</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -1005,7 +1005,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-10-23</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-10-24</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1187,7 +1187,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📁 开源支持多存储的文件列表程序和私人网盘
 
-<kbd>4.2.7</kbd> • [官网链接](https://github.com/OpenListTeam/OpenList)
+<kbd>4.2.8</kbd> • [官网链接](https://github.com/OpenListTeam/OpenList)
 
 </td>
 <td width="33%" align="center">
@@ -1685,7 +1685,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 监控Docker基础镜像自动更新
 
-<kbd>9.5.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
+<kbd>9.6.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
 
 </td>
 </tr>
@@ -1714,7 +1714,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔔 Docker镜像更新监控和通知工具
 
-<kbd>4.33.0</kbd> • [官网链接](https://github.com/crazy-max/diun)
+<kbd>4.33.1</kbd> • [官网链接](https://github.com/crazy-max/diun)
 
 </td>
 <td width="33%" align="center">
