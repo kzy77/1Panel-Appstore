@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.10.24-ef0ec03da</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.10.25-54ca1d9cf</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>2.45.3</kbd> • [官网链接](https://n8n.io/)
+<kbd>2.45.4</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -446,7 +446,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.109</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.111</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -511,7 +511,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.15.6</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.15.7</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -1005,7 +1005,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-10-25</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-10-26</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
