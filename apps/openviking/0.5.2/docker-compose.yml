@@ -2,7 +2,8 @@ services:
   openviking:
     image: ghcr.io/volcengine/openviking:v0.5.2
     # Mainland China mirror (uncomment if ghcr.io is slow/unreachable):
-    # image: openviking-cn-beijing.cr.volces.com/volcengine/openviking:v0.5.0
+    # Verify that the mirror publishes v0.5.2 before switching registries.
+    # image: openviking-cn-beijing.cr.volces.com/volcengine/openviking:v0.5.2
     container_name: ${CONTAINER_NAME}
     restart: always
     ports:
