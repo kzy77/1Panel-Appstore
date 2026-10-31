@@ -1,0 +1,30 @@
+name: TencentDB Agent Memory
+tags:
+  - AI
+  - Database
+  - DevTool
+title: 面向 AI Agent 的长期记忆与知识管理服务
+description: 集成 Memory Core、Memory Hub 与 Memory Proxy，为智能体提供长期记忆、知识管理和上下文注入
+additionalProperties:
+  key: tencentdb-agent-memory
+  name: TencentDB Agent Memory
+  tags:
+    - AI
+    - Database
+    - DevTool
+  shortDescZh: AI Agent 长期记忆服务，集成管理面板、知识服务与 LLM 代理
+  shortDescEn: Agent memory stack with a management panel, knowledge service and LLM proxy
+  description:
+    zh: 腾讯云开源的 AI Agent 长期记忆服务，提供 L0 对话、L1 原子记忆、L2 场景归纳和 L3 用户画像。本应用集成 Core、Hub 和 Proxy 三件套，使用本地 SQLite 存储，支持知识管理、用户鉴权与上下文注入。
+    en: TencentDB Agent Memory provides progressive agent memory from L0 conversations through L1 atomic memories and L2 scenes to L3 profiles. This package combines Core, Hub and Proxy with local SQLite storage, knowledge management, user authentication and context injection.
+  type: website
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://github.com/TencentCloud/TencentDB-Agent-Memory
+  github: https://github.com/TencentCloud/TencentDB-Agent-Memory
+  document: https://github.com/TencentCloud/TencentDB-Agent-Memory/tree/feat/server_team/deploy/global-images
+  architectures:
+    - amd64
+    - arm64
+  memoryRequired: 4096

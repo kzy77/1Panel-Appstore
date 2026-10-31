@@ -1,0 +1,126 @@
+services:
+  memory-core:
+    image: agentmemory/memory-core:latest
+    container_name: ${CONTAINER_NAME}-core
+    restart: always
+    command: ["node", "/opt/1panel/core.cjs"]
+    environment:
+      TDAI_GATEWAY_HOST: "0.0.0.0"
+      TDAI_GATEWAY_PORT: "8420"
+      # Upstream Proxy auth/verify does not send a Gateway Bearer token.
+      # Core is isolated from the shared 1Panel network; do not expose it publicly.
+      TDAI_GATEWAY_API_KEY: ""
+      TDAI_DATA_DIR: /data/tdai-memory
+      STORE_MODE: sqlite
+      MEMORY_LLM_BASE_URL: ${MEMORY_LLM_BASE_URL}
+      MEMORY_LLM_API_KEY: ${MEMORY_LLM_API_KEY}
+      MEMORY_LLM_MODEL: ${MEMORY_LLM_MODEL}
+      MEMORY_PROMPT_MODE: ${MEMORY_PROMPT_MODE}
+      ADMIN_USERNAME: ${ADMIN_USERNAME}
+      ADMIN_USER_KEY: ${ADMIN_USER_KEY}
+    ports:
+      - "127.0.0.1:${PANEL_APP_PORT_API}:8420"
+    volumes:
+      - ./data/core:/data/tdai-memory
+      - ./data/scripts/core.cjs:/opt/1panel/core.cjs:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD-SHELL", "test -f /data/tdai-memory/.1panel-initialized && curl -fsS http://127.0.0.1:8420/health >/dev/null"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+      start_period: 120s
+    networks:
+      - memory-stack
+    labels:
+      createdBy: "Apps"
+
+  memory-hub:
+    image: agentmemory/memory-hub:latest
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    depends_on:
+      memory-core:
+        condition: service_healthy
+    environment:
+      PANEL_PORT: "8125"
+      KNOWLEDGE_PORT: "8424"
+      KNOWLEDGE_PUBLIC_BASE_URL: ${KNOWLEDGE_PUBLIC_BASE_URL:-http://${CONTAINER_NAME}:8424/v3}
+      KNOWLEDGE_SERVICE_KEY: ${KNOWLEDGE_SERVICE_KEY}
+      KNOWLEDGE_AUTH_TOKEN: ${KNOWLEDGE_SERVICE_KEY}
+      REMOTE_INSTANCE_ID: default
+      REMOTE_INSTANCE_NAME: default
+      REMOTE_INSTANCE_URL: http://${CONTAINER_NAME}-core:8420
+      REMOTE_INSTANCE_KEY: local
+      REMOTE_INSTANCE_PROXY_URL: ${PROXY_PUBLIC_URL}
+      LLM_MODE: custom
+      LLM_PROTOCOL: openai
+      LLM_API_KEY: ${MEMORY_LLM_API_KEY}
+      LLM_BASE_URL: ${MEMORY_LLM_BASE_URL}
+      LLM_MODEL: ${MEMORY_LLM_MODEL}
+      KNOWLEDGE_LLM_BINDING_SYNC: "0"
+    ports:
+      - "${BIND_ADDRESS}:${PANEL_APP_PORT_HTTP}:8125"
+      - "${BIND_ADDRESS}:${PANEL_APP_PORT_ADMIN}:8424"
+    volumes:
+      - ./data/hub:/data/knowledge
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8125/health >/dev/null && curl -fsS http://127.0.0.1:8424/health >/dev/null"]
+      interval: 20s
+      timeout: 8s
+      retries: 6
+      start_period: 120s
+    networks:
+      - memory-stack
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+  memory-proxy:
+    image: agentmemory/memory-proxy:latest
+    container_name: ${CONTAINER_NAME}-proxy
+    restart: always
+    # Prepare the bind mount as root; proxy.cjs drops to uid/gid 10001.
+    user: "0:0"
+    entrypoint: ["/usr/bin/tini", "--", "node", "/opt/1panel/proxy.cjs"]
+    command: []
+    depends_on:
+      memory-core:
+        condition: service_healthy
+      memory-hub:
+        condition: service_healthy
+    environment:
+      CORE_URL: http://${CONTAINER_NAME}-core:8420
+      PROXY_UPSTREAM_URL: ${PROXY_UPSTREAM_URL}
+      PROXY_UPSTREAM_API_KEY: ${PROXY_UPSTREAM_API_KEY}
+      PROXY_ADMIN_API_KEY: ${PROXY_ADMIN_API_KEY}
+      TDAI_PROXY_ADMIN_API_KEY: ${PROXY_ADMIN_API_KEY}
+      PROXY_DB_PATH: /data/tdai-memory-proxy/proxy.db
+    ports:
+      - "${BIND_ADDRESS}:${PANEL_APP_PORT_PROXY}:8096"
+    volumes:
+      - ./data/proxy:/data/tdai-memory-proxy
+      - ./data/scripts/proxy.cjs:/opt/1panel/proxy.cjs:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8096/health >/dev/null"]
+      interval: 20s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+    networks:
+      - memory-stack
+      - 1panel-network
+    labels:
+      createdBy: "Apps"
+
+networks:
+  # Per-install network prevents unrelated 1Panel apps reaching unauthenticated Core.
+  memory-stack:
+    driver: bridge
+  1panel-network:
+    external: true

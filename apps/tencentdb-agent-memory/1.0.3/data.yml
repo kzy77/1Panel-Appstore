@@ -1,0 +1,184 @@
+additionalProperties:
+  formFields:
+  - default: 8125
+    edit: true
+    envKey: PANEL_APP_PORT_HTTP
+    labelZh: 管理面板端口
+    labelEn: Panel Port
+    required: true
+    type: number
+    label:
+      zh: 管理面板端口
+      en: Panel Port
+    rule: paramPort
+  - default: 8420
+    edit: true
+    envKey: PANEL_APP_PORT_API
+    labelZh: Core API 端口（仅本机）
+    labelEn: Core API Port (localhost only)
+    required: true
+    type: number
+    label:
+      zh: Core API 端口（仅本机）
+      en: Core API Port (localhost only)
+    rule: paramPort
+  - default: 8424
+    edit: true
+    envKey: PANEL_APP_PORT_ADMIN
+    labelZh: Knowledge API 端口
+    labelEn: Knowledge API Port
+    required: true
+    type: number
+    label:
+      zh: Knowledge API 端口
+      en: Knowledge API Port
+    rule: paramPort
+  - default: 8096
+    edit: true
+    envKey: PANEL_APP_PORT_PROXY
+    labelZh: LLM 代理端口
+    labelEn: LLM Proxy Port
+    required: true
+    type: number
+    label:
+      zh: LLM 代理端口
+      en: LLM Proxy Port
+    rule: paramPort
+  - default: 127.0.0.1
+    edit: true
+    envKey: BIND_ADDRESS
+    labelZh: 面板/知识/代理监听地址
+    labelEn: Panel / Knowledge / Proxy Bind Address
+    required: true
+    type: text
+    label:
+      zh: 面板/知识/代理监听地址
+      en: Panel / Knowledge / Proxy Bind Address
+  - default: https://api.openai.com/v1
+    edit: true
+    envKey: MEMORY_LLM_BASE_URL
+    labelZh: 记忆模型 API 地址
+    labelEn: Memory LLM API Base URL
+    required: true
+    type: text
+    label:
+      zh: 记忆模型 API 地址
+      en: Memory LLM API Base URL
+  - default: ''
+    edit: true
+    envKey: MEMORY_LLM_API_KEY
+    labelZh: 记忆模型 API 密钥
+    labelEn: Memory LLM API Key
+    required: true
+    type: password
+    label:
+      zh: 记忆模型 API 密钥
+      en: Memory LLM API Key
+  - default: gpt-4.1
+    edit: true
+    envKey: MEMORY_LLM_MODEL
+    labelZh: 记忆模型名称
+    labelEn: Memory LLM Model
+    required: true
+    type: text
+    label:
+      zh: 记忆模型名称
+      en: Memory LLM Model
+  - default: code
+    edit: true
+    envKey: MEMORY_PROMPT_MODE
+    labelZh: 记忆提示词模式
+    labelEn: Memory Prompt Mode
+    required: true
+    type: select
+    label:
+      zh: 记忆提示词模式
+      en: Memory Prompt Mode
+    values:
+    - label: Code / 团队工程
+      value: code
+    - label: Chat / 个人助手
+      value: chat
+  - default: https://api.openai.com/v1
+    edit: true
+    envKey: PROXY_UPSTREAM_URL
+    labelZh: 代理上游 API 地址
+    labelEn: Proxy Upstream API URL
+    required: true
+    type: text
+    label:
+      zh: 代理上游 API 地址
+      en: Proxy Upstream API URL
+  - default: ''
+    edit: true
+    envKey: PROXY_UPSTREAM_API_KEY
+    labelZh: 代理上游 API 密钥
+    labelEn: Proxy Upstream API Key
+    required: true
+    type: password
+    label:
+      zh: 代理上游 API 密钥
+      en: Proxy Upstream API Key
+  - default: http://localhost:8096
+    edit: true
+    envKey: PROXY_PUBLIC_URL
+    labelZh: 客户端可访问的代理地址
+    labelEn: Client-facing Proxy URL
+    required: true
+    type: text
+    label:
+      zh: 客户端可访问的代理地址
+      en: Client-facing Proxy URL
+  - default: ''
+    edit: true
+    envKey: KNOWLEDGE_PUBLIC_BASE_URL
+    labelZh: Knowledge 可达地址（留空使用内部地址，含 /v3）
+    labelEn: Knowledge URL (empty for internal; include /v3)
+    required: false
+    type: text
+    label:
+      zh: Knowledge 可达地址（留空使用内部地址，含 /v3）
+      en: Knowledge URL (empty for internal; include /v3)
+  - default: admin
+    edit: false
+    envKey: ADMIN_USERNAME
+    labelZh: 首次初始化管理员用户名
+    labelEn: Initial Admin Username
+    required: true
+    type: text
+    label:
+      zh: 首次初始化管理员用户名
+      en: Initial Admin Username
+  - default: ''
+    edit: false
+    envKey: ADMIN_USER_KEY
+    labelZh: 首次初始化管理员密钥（请保存）
+    labelEn: Initial Admin User Key (save it)
+    required: true
+    type: password
+    label:
+      zh: 首次初始化管理员密钥（请保存）
+      en: Initial Admin User Key (save it)
+    random: true
+  - default: ''
+    edit: true
+    envKey: KNOWLEDGE_SERVICE_KEY
+    labelZh: Panel 与 Knowledge 通信密钥
+    labelEn: Panel / Knowledge Service Key
+    required: true
+    type: password
+    label:
+      zh: Panel 与 Knowledge 通信密钥
+      en: Panel / Knowledge Service Key
+    random: true
+  - default: ''
+    edit: true
+    envKey: PROXY_ADMIN_API_KEY
+    labelZh: Proxy 管理 API 密钥
+    labelEn: Proxy Admin API Key
+    required: true
+    type: password
+    label:
+      zh: Proxy 管理 API 密钥
+      en: Proxy Admin API Key
+    random: true
