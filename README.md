@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.10.30-1cd13d98d</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.10.30-ffa88e3ba</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -323,7 +323,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI驱动的图表创建工具
 
-<kbd>0.5.0</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
+<kbd>0.5.1</kbd> • [官网链接](https://next-ai-drawio.jiang.jp/)
 
 </td>
 <td width="33%" align="center">
@@ -569,7 +569,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.1.14</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.1.15</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -797,7 +797,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>8.8.8</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>8.8.9</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -1005,7 +1005,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-10-30</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-10-31</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1685,7 +1685,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 监控Docker基础镜像自动更新
 
-<kbd>9.6.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
+<kbd>9.7.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
 
 </td>
 </tr>
