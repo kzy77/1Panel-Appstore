@@ -142,7 +142,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.15.0</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.15.1</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>3.0.1</kbd> • [官网链接](https://n8n.io/)
+<kbd>3.1.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -569,7 +569,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.2.0</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.2.1</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -622,7 +622,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 通过 SearXNG 为 AI 助手提供私有网络搜索的 MCP 服务器
 
-<kbd>2.9.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
+<kbd>2.10.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
 
 </td>
 <td width="33%" align="center">
