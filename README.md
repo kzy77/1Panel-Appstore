@@ -142,7 +142,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.15.1</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.15.2</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.11.8-3a3dd15bf</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.11.9-57ff753ad</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.3358</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.3471</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -1077,7 +1077,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 NPS客户端，轻量级高性能内网穿透代理工具
 
-<kbd>0.34.10</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.35.0</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 <td width="33%" align="center">
@@ -1089,7 +1089,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 轻量级高性能内网穿透代理服务器
 
-<kbd>0.34.10</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.35.0</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 </tr>
