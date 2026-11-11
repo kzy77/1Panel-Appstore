@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.108.3</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.108.4</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>3.1.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>3.2.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.3471</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.3644</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -528,7 +528,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.15.8</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.15.9</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -922,7 +922,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 自托管协作书签管理工具，支持网页归档和团队协作
 
-<kbd>2.16.3</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
+<kbd>2.17.0</kbd> • [官网链接](https://github.com/linkwarden/linkwarden)
 
 </td>
 </tr>
@@ -1022,7 +1022,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-09</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-10</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1077,7 +1077,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 NPS客户端，轻量级高性能内网穿透代理工具
 
-<kbd>0.35.0</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.35.1</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 <td width="33%" align="center">
@@ -1089,7 +1089,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 轻量级高性能内网穿透代理服务器
 
-<kbd>0.35.0</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.35.1</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 </tr>
@@ -1387,7 +1387,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.34.0</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.34.2</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
