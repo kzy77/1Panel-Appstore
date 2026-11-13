@@ -159,7 +159,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 新一代大模型网关与AI资产管理系统，支持多种模型统一调用
 
-<kbd>1.0.0-rc.49</kbd> • [官网链接](https://docs.newapi.pro/)
+<kbd>1.0.0-rc.50</kbd> • [官网链接](https://docs.newapi.pro/)
 
 </td>
 <td width="33%" align="center">
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.11.11-626105eec</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.11.12-de722ab1b</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.109.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.109.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.3808</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.3957</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -405,7 +405,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧠 DeepSeek 开源智能体开发环境
 
-<kbd>0.2.2-rc.1</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
+<kbd>0.2.2-rc.2</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
 
 </td>
 </tr>
@@ -639,7 +639,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 通过 SearXNG 为 AI 助手提供私有网络搜索的 MCP 服务器
 
-<kbd>2.10.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
+<kbd>2.10.1</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
 
 </td>
 <td width="33%" align="center">
@@ -1022,7 +1022,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-11</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-12</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
