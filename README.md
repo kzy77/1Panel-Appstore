@@ -183,7 +183,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 智能密钥轮询的多渠道AI代理，高性能企业级AI接口透明代理服务
 
-<kbd>2.0.0-rc.63</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
+<kbd>2.0.0-rc.64</kbd> • [官网链接](https://github.com/tbphp/gpt-load)
 
 </td>
 </tr>
@@ -212,7 +212,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 模型上下文协议调试工具，支持MCP服务器测试与开发
 
-<kbd>2.14.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
+<kbd>2.15.0</kbd> • [官网链接](https://github.com/modelcontextprotocol/inspector)
 
 </td>
 <td width="33%" align="center">
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.11.13-219b63b20</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.11.14-a7128d5d1</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.4095</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.4214</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -434,7 +434,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>8.0.61</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>8.0.70</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -586,7 +586,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.2.3</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.2.4</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -598,7 +598,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎭 提供浏览器自动化功能的 MCP 服务器
 
-<kbd>0.0.83</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
+<kbd>0.0.85</kbd> • [官网链接](https://github.com/microsoft/playwright-mcp)
 
 </td>
 <td width="33%" align="center">
@@ -1022,7 +1022,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-13</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-14</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1077,7 +1077,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 NPS客户端，轻量级高性能内网穿透代理工具
 
-<kbd>0.35.1</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.35.2</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 <td width="33%" align="center">
@@ -1089,7 +1089,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 轻量级高性能内网穿透代理服务器
 
-<kbd>0.35.1</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.35.2</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 </tr>
@@ -1274,7 +1274,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎵 LX Music 数据同步服务器与 Web 播放器
 
-<kbd>2.1.4</kbd> • [官网链接](https://xcq0607.github.io/lxserver/)
+<kbd>2.2.0</kbd> • [官网链接](https://xcq0607.github.io/lxserver/)
 
 </td>
 <td width="33%" align="center">
@@ -1399,7 +1399,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 ⚡ 轻量级服务器监控代理，支持实时性能数据收集
 
-<kbd>0.21.1</kbd> • [官网链接](https://github.com/henrygd/beszel)
+<kbd>0.21.2</kbd> • [官网链接](https://github.com/henrygd/beszel)
 
 </td>
 <td width="33%" align="center">
@@ -1430,7 +1430,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 跨平台P2P文件同步和分享工具
 
-<kbd>3.1.2.1076-1-ls265</kbd> • [官网链接](https://www.resilio.com/sync/)
+<kbd>3.1.2.1076-1-ls266</kbd> • [官网链接](https://www.resilio.com/sync/)
 
 </td>
 <td width="33%" align="center">
@@ -1495,7 +1495,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌌 简单易用的自托管VPN服务，支持多平台和Docker快速部署
 
-<kbd>6.1.4</kbd> • [官网链接](https://github.com/starvpn/starvpn)
+<kbd>6.2.0</kbd> • [官网链接](https://github.com/starvpn/starvpn)
 
 </td>
 </tr>
@@ -1512,7 +1512,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.57</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.59</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1618,7 +1618,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🎭 专业的 Web 应用自动化测试环境，支持多浏览器
 
-<kbd>1.65.0-noble</kbd> • [官网链接](https://playwright.dev/)
+<kbd>1.65.1-noble</kbd> • [官网链接](https://playwright.dev/)
 
 </td>
 </tr>
