@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.11.14-a7128d5d1</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.11.15-2d500cb6b</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.4214</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.4288</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -381,7 +381,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎓 终身个性化 AI 辅导平台，支持 RAG 知识库、多模型与长期记忆
 
-<kbd>1.7.2</kbd> • [官网链接](https://deeptutor.info)
+<kbd>1.7.3</kbd> • [官网链接](https://deeptutor.info)
 
 </td>
 <td width="33%" align="center">
@@ -434,7 +434,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔗 AI CLI/OAuth 账号代理 API 服务
 
-<kbd>8.0.70</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
+<kbd>8.0.74</kbd> • [官网链接](https://github.com/router-for-me/CLIProxyAPI)
 
 </td>
 <td width="33%" align="center">
@@ -463,7 +463,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.116</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.119</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -528,7 +528,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.15.9</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.15.10</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -910,7 +910,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 自托管全能书签管理工具，支持AI自动标签功能
 
-<kbd>0.34.1</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
+<kbd>0.35.0</kbd> • [官网链接](https://github.com/karakeep-app/karakeep)
 
 </td>
 <td width="33%" align="center">
@@ -1022,7 +1022,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-14</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-15</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1065,7 +1065,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 简单安全去中心化的内网穿透 VPN 组网方案
 
-<kbd>2.7.0</kbd> • [官网链接](https://github.com/EasyTier/Easytier)
+<kbd>2.7.1</kbd> • [官网链接](https://github.com/EasyTier/Easytier)
 
 </td>
 <td width="33%" align="center">
@@ -1077,7 +1077,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 NPS客户端，轻量级高性能内网穿透代理工具
 
-<kbd>0.35.2</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.35.3</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 <td width="33%" align="center">
@@ -1089,7 +1089,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 轻量级高性能内网穿透代理服务器
 
-<kbd>0.35.2</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.35.3</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 </tr>
@@ -1512,7 +1512,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📺 动漫自动订阅与下载工具，支持多平台和主流下载器，适合NAS自动追番
 
-<kbd>3.2.59</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
+<kbd>3.2.61</kbd> • [官网链接](https://github.com/wushuo894/ani-rss)
 
 </td>
 <td width="33%" align="center">
@@ -1743,7 +1743,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧙‍♂️ 现代化开源Docker管理Web面板
 
-<kbd>2.17.3</kbd> • [官网链接](https://arcane.ofkm.dev/)
+<kbd>3.0.1</kbd> • [官网链接](https://arcane.ofkm.dev/)
 
 </td>
 </tr>
