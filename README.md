@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.11.15-2d500cb6b</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.11.17-b99cf7496</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>3.2.2</kbd> • [官网链接](https://n8n.io/)
+<kbd>3.3.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.4340</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.4401</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -422,7 +422,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.2.21</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.2.22</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -528,7 +528,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.15.10</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.15.11</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -557,7 +557,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧭 Hermes Agent 的全功能 Web 管理面板
 
-<kbd>1.0.9</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
+<kbd>1.1.0</kbd> • [官网链接](https://github.com/EKKOLearnAI/hermes-web-ui)
 
 </td>
 <td width="33%" align="center">
@@ -639,7 +639,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 通过 SearXNG 为 AI 助手提供私有网络搜索的 MCP 服务器
 
-<kbd>2.10.1</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
+<kbd>2.11.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
 
 </td>
 <td width="33%" align="center">
@@ -1022,7 +1022,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-16</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-17</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
