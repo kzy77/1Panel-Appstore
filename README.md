@@ -112,13 +112,13 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 <td width="33%" align="center">
 
 <a href="./apps/lobe-chat-data/README.md">
-<img src="./apps/lobe-chat-data/logo.png" width="60" height="60" alt="LobeChat-Data">
-<br><b>LobeChat-Data</b>
+<img src="./apps/lobe-chat-data/logo.png" width="60" height="60" alt="LobeHub">
+<br><b>LobeHub</b>
 </a>
 
-💬 开源现代设计的 ChatGPT/LLMs UI/框架
+💬 开源 AI 智能体协作平台（服务端数据库版）
 
-<kbd>1.143.3</kbd> • [官网链接](https://github.com/lobehub/lobe-chat)
+<kbd>2.3.4</kbd> • [官网链接](https://github.com/lobehub/lobehub)
 
 </td>
 <td width="33%" align="center">
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.11.18-b867c56a5</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.11.19-368baa340</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.110.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.110.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.4501</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.4570</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -405,7 +405,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧠 DeepSeek 开源智能体开发环境
 
-<kbd>0.2.2-rc.4</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
+<kbd>0.2.2-rc.5</kbd> • [官网链接](https://github.com/deepseek-ai/deepseek-harness)
 
 </td>
 </tr>
@@ -857,7 +857,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.98.0-beta.1</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.98.0-beta.2</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -992,7 +992,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 开源Airtable替代品，将任何数据库转换为智能电子表格
 
-<kbd>2026.10.1</kbd> • [官网链接](https://github.com/nocodb/nocodb)
+<kbd>2026.10.2</kbd> • [官网链接](https://github.com/nocodb/nocodb)
 
 </td>
 <td width="33%" align="center">
@@ -1022,7 +1022,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-18</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-19</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1077,7 +1077,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔗 NPS客户端，轻量级高性能内网穿透代理工具
 
-<kbd>0.35.3</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.35.5</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 <td width="33%" align="center">
@@ -1089,7 +1089,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 轻量级高性能内网穿透代理服务器
 
-<kbd>0.35.3</kbd> • [官网链接](https://github.com/djylb/nps)
+<kbd>0.35.5</kbd> • [官网链接](https://github.com/djylb/nps)
 
 </td>
 </tr>
@@ -1106,7 +1106,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.4.4</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.4.5</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -1204,7 +1204,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📁 开源支持多存储的文件列表程序和私人网盘
 
-<kbd>4.2.9</kbd> • [官网链接](https://github.com/OpenListTeam/OpenList)
+<kbd>4.2.10</kbd> • [官网链接](https://github.com/OpenListTeam/OpenList)
 
 </td>
 <td width="33%" align="center">
@@ -1411,7 +1411,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔒 Docker socket代理，支持访问规则限制和权限控制
 
-<kbd>3.4.7</kbd> • [官网链接](https://github.com/Tecnativa/docker-socket-proxy)
+<kbd>3.4.8</kbd> • [官网链接](https://github.com/Tecnativa/docker-socket-proxy)
 
 </td>
 </tr>
