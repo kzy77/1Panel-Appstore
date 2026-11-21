@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.11.19-368baa340</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.11.20-cd6d28091</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.110.1</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.110.2</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -347,7 +347,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 网关，接入 237 个 AI 提供商（90+ 免费），兼容 OpenAI/Claude/Gemini API
 
-<kbd>3.8.53</kbd> • [官网链接](https://omniroute.online)
+<kbd>3.8.54</kbd> • [官网链接](https://omniroute.online)
 
 </td>
 </tr>
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.4570</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.4622</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -381,7 +381,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🎓 终身个性化 AI 辅导平台，支持 RAG 知识库、多模型与长期记忆
 
-<kbd>1.7.3</kbd> • [官网链接](https://deeptutor.info)
+<kbd>1.7.4</kbd> • [官网链接](https://deeptutor.info)
 
 </td>
 <td width="33%" align="center">
@@ -422,7 +422,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.2.23</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.2.24</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -668,7 +668,19 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧠 火山引擎开源的自进化 AI Agent 上下文数据库，统一记忆、知识 RAG 与技能
 
-<kbd>0.5.2</kbd> • [官网链接](https://github.com/volcengine/OpenViking)
+<kbd>0.5.5</kbd> • [官网链接](https://github.com/volcengine/OpenViking)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/tencentdb-agent-memory/README.md">
+<img src="./apps/tencentdb-agent-memory/logo.png" width="60" height="60" alt="TencentDB Agent Memory">
+<br><b>TencentDB Agent Memory</b>
+</a>
+
+🧠 腾讯云开源的 AI Agent 长期记忆服务，L0 对话到 L3 画像的渐进式记忆
+
+<kbd>1.0.4</kbd> • [官网链接](https://github.com/TencentCloud/TencentDB-Agent-Memory)
 
 </td>
 </tr>
@@ -857,7 +869,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.98.0-beta.2</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.98.0</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -1022,7 +1034,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-19</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-20</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1106,7 +1118,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.4.5</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.4.6</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -1173,7 +1185,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🌐 开源 IP 与网络检测工具箱，支持 IP 信息、DNS 泄露、测速、延迟、MTR、Whois 等检测
 
-<kbd>8.1.0</kbd> • [官网链接](https://ipcheck.ing)
+<kbd>8.2.0</kbd> • [官网链接](https://ipcheck.ing)
 
 </td>
 </tr>
@@ -1305,7 +1317,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源轻量易用的服务器监控运维工具
 
-<kbd>2.6.2</kbd> • [官网链接](https://github.com/naiba/nezha/)
+<kbd>2.7.0</kbd> • [官网链接](https://github.com/naiba/nezha/)
 
 </td>
 <td width="33%" align="center">
@@ -1731,7 +1743,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔔 Docker镜像更新监控和通知工具
 
-<kbd>4.33.1</kbd> • [官网链接](https://github.com/crazy-max/diun)
+<kbd>4.34.0</kbd> • [官网链接](https://github.com/crazy-max/diun)
 
 </td>
 <td width="33%" align="center">

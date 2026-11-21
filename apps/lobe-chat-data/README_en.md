@@ -1,92 +1,126 @@
-# LobeHub (formerly LobeChat Database)
+# LobeHub
 
-[LobeHub](https://github.com/lobehub/lobehub) is an open-source AI agent platform with multi-model chat, knowledge bases and server-side synchronization. The app key remains `lobe-chat-data`. This package was reviewed against upstream **v2.3.4**.
+[LobeHub](https://github.com/lobehub/lobehub) is an open-source AI agent platform with multi-model conversations, knowledge bases, multimodal interaction and tool calling. Data is stored on the server for access across devices.
 
-## Versions and upgrade warning
+## Features
 
-- `2.3.4`: recommended for new installations; main image `lobehub/lobehub:2.3.4`.
-- `latest`: main image `lobehub/lobehub:latest`; future upstream changes may break compatibility.
-- `1.143.3`: original LobeChat/Casdoor/MinIO package, preserved for reference, not a maintenance guarantee.
+- Connect OpenAI, Claude, Gemini, Ollama and other model providers.
+- Upload files, search knowledge bases, and work with images and audio.
+- Use web search, MCP tools and collaborative agents.
+- Run server-side tasks through the Agent gateway and connect desktop/CLI devices through the device gateway.
+- Built-in email/password authentication, with optional registration allowlists and SSO.
 
-**Do not rebuild an existing 1.x installation with the new 2.x configuration.** The image, authentication system, database extensions and storage layout changed. Cross-version updates are disabled in app metadata. Old `latest` installations also require manual migration. Install/upgrade hooks refuse to proceed when the old `./data/PG_VERSION` layout is detected.
+## Requirements
+
+- Supports `amd64` and `arm64`.
+- At least 2 CPU cores, 4 GB RAM and 20 GB free disk recommended; 4 cores and 8 GB RAM for regular use.
+- Browsers and connected devices must be able to reach the application, S3 API and both gateways.
+
+The package includes LobeHub, PostgreSQL, Redis, RustFS, SearXNG and gateway services. Database, Redis and search ports are not published to the host.
 
 ## Installation
 
-Allow at least 2 CPU cores, 4 GB RAM and 20 GB disk; 4 cores and 8 GB RAM are recommended for production.
+When installing through 1Panel, replace `Your-IP` with the server's actual IP or domain. Ports can keep their defaults. If a port changes, update the corresponding public URL too.
 
-### Generate unique secrets
+| Setting | Default | Purpose |
+| --- | --- | --- |
+| Application URL | `http://Your-IP:3210` | Must match the browser's actual scheme, host and port; no path or trailing slash |
+| S3 URL | `http://Your-IP:9000` | Browser uploads and downloads |
+| Agent gateway URL | `http://Your-IP:8787` | Server-side agent execution and streaming |
+| Device gateway URL | `http://Your-IP:8788` | Desktop and CLI device connections |
+| RustFS console port | `9001` | Storage administration; restrict to trusted networks |
+| Registration email allowlist | Empty | Empty allows any email; supports full email addresses or domains, separated by commas |
 
-Before installation, run from the selected version directory on a trusted machine:
+Database/storage passwords and authentication keys are generated automatically. A successful exit (code 0) from the one-shot `rustfs-init` container is normal.
+
+### Domains and HTTPS
+
+Use HTTPS in production and configure reverse proxies for all four public services:
+
+| Service | Example | Default target port |
+| --- | --- | --- |
+| LobeHub | `https://lobe.example.com` | `3210` |
+| S3 | `https://s3.example.com` | `9000` |
+| Agent gateway | `https://agent.example.com` | `8787` |
+| Device gateway | `https://device.example.com` | `8788` |
+
+- Set the installation URLs to their corresponding HTTPS addresses.
+- The application proxy must forward the correct `Host`, `X-Forwarded-Host` and `X-Forwarded-Proto`.
+- Enable WebSocket upgrades and suitable read timeouts on both gateway proxies.
+- Use HTTPS for S3 and gateways when the application uses HTTPS to avoid mixed-content blocking.
+
+## First use
+
+1. Wait for database initialization and application startup.
+2. Open the configured **application URL** and select Sign up.
+3. Enter a valid email and an **8–64 character password**, then follow the on-screen instructions.
+4. Add your model provider and API key in settings.
+
+There are no predefined application credentials. Email/password registration is enabled by default without email verification or SMTP. Configure an email service only when enabling features such as email verification and password-reset emails; see the [authentication documentation](https://lobehub.com/docs/self-hosting/environment-variables/auth).
+
+If an allowlist is configured, the registration email must match an address or domain in it. For example, `owner@example.com,company.com` permits the specified address and emails from `company.com`.
+
+### Connect a device
+
+After installing the LobeHub CLI on your device, connect using the configured device gateway:
 
 ```bash
-cd apps/lobe-chat-data/2.3.4
-docker run --rm -i --entrypoint /bin/node lobehub/lobehub:2.3.4 - < generate-secrets.cjs
-# Or, with local Node.js:
-# node generate-secrets.cjs
+lh connect --gateway https://device.example.com
 ```
 
-Copy the seven generated values into the matching 1Panel fields: `POSTGRES_PASSWORD`, `RUSTFS_SECRET_KEY`, `KEY_VAULTS_SECRET`, `AUTH_SECRET`, `GATEWAY_SERVICE_TOKEN`, `JWKS_KEY` and `JWKS_PUBLIC_KEY`. Paste only the part after `=`. Both JWKS values must be matching single-line JSON, without surrounding quotes.
+### RustFS console
 
-The generator only prints secrets; it does not change existing deployments. Use unique values for each instance and back them up securely. Never publish them or regenerate them during a rebuild. Losing/replacing `KEY_VAULTS_SECRET` makes existing encrypted data unreadable. Generated hexadecimal database passwords avoid URI-escaping problems.
+The console defaults to `http://server-ip:9001`, username `admin`. Its password is the `RUSTFS_SECRET_KEY` field in `data/secrets/state.json` inside the installed application directory. View credentials only through a trusted terminal. Do not publish them or expose the console port to the public internet.
 
-### Configure addresses
+## Data and backups
 
-Replace every `Your-IP` with the address reachable by the browser. Update both port and URL fields when changing ports. Do not use container names or `localhost` as public addresses.
+| Path | Contents |
+| --- | --- |
+| `data/postgresql/` | Users, conversations and knowledge-base database |
+| `data/rustfs/` | Uploaded files and object storage |
+| `data/redis/` | Redis persistence |
+| `data/secrets/` | Database passwords, authentication/encryption keys and service credentials |
+| `data/searxng-settings.yml` | Web search configuration |
 
-| Port field | Default | Public URL field / purpose |
-| --- | --- | --- |
-| `PANEL_APP_PORT_HTTP` | 3210 | `APP_URL`, no trailing slash |
-| `PANEL_APP_PORT_S3` | 9000 | `S3_ENDPOINT`, browser-accessible S3 API |
-| `PANEL_APP_PORT_ADMIN` | 9001 | RustFS console, restrict to trusted networks |
-| `PANEL_APP_PORT_API` | 8787 | `AGENT_GATEWAY_URL`, HTTP/HTTPS with WebSocket proxying |
-| `PANEL_APP_PORT_PROXY` | 8788 | Optional `DEVICE_GATEWAY_PUBLIC_URL` for connected devices |
+**Back up `data/secrets/` together with application data.** Rebuilds and upgrades reuse saved credentials. Losing or changing the encryption key makes existing encrypted data unreadable.
 
-For HTTPS deployments, use HTTPS for S3 and the Agent gateway too. Enable WebSocket upgrades and long read timeouts on the gateway proxy. Devices can connect using `lh connect --gateway <device-gateway-url>`; proxy this endpoint with WebSocket support if needed.
-
-Internal application callbacks use `http://localhost:3210`, and server-side S3 traffic uses `http://rustfs:9000`. PostgreSQL, Redis and SearXNG have no published host ports. Only the application joins `1panel-network`; dependencies communicate over the instance-specific bridge network.
-
-### Sign in
-
-Better Auth provides email/password registration and login. **There are no predefined application credentials and no bundled Casdoor.** Set `AUTH_ALLOWED_EMAILS` to a comma-separated allowlist before public exposure. Leaving it blank allows everyone to register/log in; it does not disable registration.
-
-The RustFS console uses `RUSTFS_ACCESS_KEY` (default `admin`) and `RUSTFS_SECRET_KEY`. Restrict its published port, accounting for Docker's actual firewall rules.
-
-For SMTP, email verification, password resets, SSO or server-side model credentials, explicitly add upstream variables to `lobe.environment`. Email verification and password reset require an email service. The full `.env` is deliberately not passed to dependency containers; the gateway receives only the public JWKS, never its private counterpart.
-
-## Components and persistence
-
-- ParadeDB PostgreSQL 17 with `pgvector` / `pg_search`: `./data/postgresql`.
-- Redis 7 with AOF: `./data/redis`.
-- RustFS: `./data/rustfs`; the install hook prepares directory ownership for UID/GID `10001`.
-- `rustfs-init`: creates the fixed `lobe` bucket, enables anonymous object reads, and configures browser CORS for `APP_URL`. Successful exit is expected, so this one-shot service uses `restart: no`. **Anyone holding an object URL can read that object. Do not treat the bucket as private storage.**
-- SearXNG search settings: `./data/searxng-settings.yml`.
-- Gateway `0.5.0`: Agent/device connections; in-flight state is lost on gateway restart.
-
-Only the main application image is pinned in the versioned directory. Some dependency images follow upstream rolling tags; back up before pulling updates. PostgreSQL `pg_search` is used by default; optional Elasticsearch is not bundled.
-
-From the installed Compose directory, back up the database:
+From the installed application directory, back up the database:
 
 ```bash
 docker compose exec -T postgresql sh -c 'pg_dump -U postgres "$POSTGRES_DB"' > lobehub.sql
 ```
 
-Also back up configuration/`.env`, all secrets, Compose and `./data/`. Stop services or use consistent snapshots for filesystem-level database backups. Restore matching database, files and secrets together. Never delete the database to fix migration errors.
+Also save Compose, `.env` and the entire `data/` directory. Stop services or use consistent snapshots before copying database files directly. Back up before pulling image updates; restore matching databases, files and keys together.
 
-After changing `APP_URL`, run `docker compose run --rm rustfs-init` to refresh bucket CORS. For manual Compose installations, run `bash scripts/init.sh` first; 1Panel runs it during installation.
+Objects in the storage bucket can be read by anyone holding their URLs; do not treat it as private storage. Gateway in-flight state is held in memory, so restarting the gateway interrupts active tasks.
 
-## Migrating from 1.x
+## Troubleshooting
 
-1. Stop writes and back up the old `.env`, Compose, PostgreSQL (including Casdoor), `./data` and `./s3_data`. Preserve the original `KEY_VAULTS_SECRET` for existing encrypted data. The legacy package's hardcoded key is public and must not be reused for a fresh installation.
-2. Deploy 2.x in a separate test directory with different ports. Do not attach the old `./data` directly to the new database path or let two PostgreSQL servers share a data directory. Test logical backup restoration and schema migration with a database supporting `pg_search`.
-3. Follow the official [2.0 breaking changes](https://lobehub.com/docs/self-hosting/migration/v2/breaking-changes) and [NextAuth migration](https://lobehub.com/docs/self-hosting/migration/v2/auth/nextauth-to-betterauth). Simply enabling new email registration does not preserve old SSO user associations. Configure the original provider and migrate account links as documented.
-4. Keep the original Casdoor until migration is verified. Users need valid email addresses. Configure the new Better Auth provider/callback using the [Casdoor guide](https://lobehub.com/docs/self-hosting/auth/providers/casdoor); the old NextAuth callback must not be assumed valid.
-5. Copy MinIO objects through the S3 API while preserving object keys. Do not mount a MinIO data directory into RustFS. Verify stored file/public URLs. To retain MinIO temporarily, explicitly adapt S3 variables and service dependencies in the new Compose file.
-6. Verify users, chat history, knowledge bases, uploads/downloads and gateways before switching traffic. Rollback requires the matching old database backup and configuration, not just the old image.
+### Registration or login fails
 
-This package does not automatically migrate databases, authentication or object storage.
+- The browser address must exactly match `APP_URL`, including HTTP/HTTPS, domain/IP and port. Do not leave `Your-IP` unchanged.
+- Check that the registration allowlist permits your email or domain. Use ordinary commas as separators.
+- Passwords must be 8–64 characters.
+- Verify forwarded host/protocol headers if using a reverse proxy. After changing URLs, recreate the application container and clear old site cookies before retrying.
+- If the problem persists, inspect the status/response of `/api/auth/sign-up/email` in browser developer tools and run `docker compose logs --tail=100 lobe`. Remove passwords, tokens and cookies before sharing diagnostics.
 
-## References
+### Redis reports `NOAUTH Authentication required`
 
-- [Upstream v2.3.4 Compose](https://github.com/lobehub/lobehub/blob/v2.3.4/docker-compose/deploy/docker-compose.yml)
+The connected Redis requires authentication, but the application has not supplied matching credentials. This package uses a dedicated Redis on its private network and must not connect to another application's Redis on the shared network. `REDIS_URL` should be `redis://${CONTAINER_NAME}-redis:6379`, not the ambiguous `redis://redis:6379`.
+
+Run `docker compose exec redis redis-cli ping` from the installed directory; the package default should return `PONG`. If the dedicated Redis also returns `NOAUTH`, check whether a password was added to that service and configure the application's matching `REDIS_PASSWORD`. Do not disable authentication on other Redis instances.
+
+### File uploads fail
+
+Ensure the browser can reach `S3_ENDPOINT` and that its HTTP/HTTPS scheme is compatible with the application. After changing the application URL, refresh upload CORS from the installed application directory:
+
+```bash
+docker compose run --rm rustfs-init
+```
+
+## Links
+
+- [Source repository](https://github.com/lobehub/lobehub)
+- [Documentation](https://lobehub.com/docs)
 - [Docker Compose deployment](https://lobehub.com/docs/self-hosting/platform/docker-compose)
-- [Authentication variables](https://lobehub.com/docs/self-hosting/environment-variables/auth)
+- [Authentication configuration](https://lobehub.com/docs/self-hosting/environment-variables/auth)
