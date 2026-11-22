@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.11.20-cd6d28091</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.11.21-c6ee3e9fd</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.4622</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.4657</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -586,7 +586,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.2.6</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.3.0</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -1034,7 +1034,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-20</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-21</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1118,7 +1118,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🛡️ 简单好用的Web应用防火墙(WAF)
 
-<kbd>9.4.6</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
+<kbd>9.4.7</kbd> • [官网链接](https://github.com/chaitin/SafeLine)
 
 </td>
 
@@ -1647,7 +1647,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📡 多平台热点推送
 
-<kbd>6.11.0</kbd> • [官网链接](https://github.com/sansan0/TrendRadar)
+<kbd>6.12.0</kbd> • [官网链接](https://github.com/sansan0/TrendRadar)
 
 </td>
 <td width="33%" align="center">
@@ -1714,7 +1714,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🔄 监控Docker基础镜像自动更新
 
-<kbd>9.8.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
+<kbd>9.9.0</kbd> • [官网链接](https://github.com/sergi0g/cup/)
 
 </td>
 </tr>
