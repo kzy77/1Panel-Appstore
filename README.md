@@ -142,7 +142,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.16.0</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.16.2</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -253,7 +253,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 开源无广告元搜索引擎，保护隐私无追踪，支持自建部署
 
-<kbd>2026.11.21-c6ee3e9fd</kbd> • [官网链接](https://docs.searxng.org/)
+<kbd>2026.11.23-a7163d091</kbd> • [官网链接](https://docs.searxng.org/)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.4682</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.4728</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -463,7 +463,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费 AI 路由器和 Token 节省工具
 
-<kbd>0.5.119</kbd> • [官网链接](https://9router.com)
+<kbd>0.5.123</kbd> • [官网链接](https://9router.com)
 
 </td>
 <td width="33%" align="center">
@@ -528,7 +528,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.15.11</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.16.0</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -869,7 +869,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 轻量级文档管理系统，支持多人协作编辑与版本控制
 
-<kbd>0.98.0</kbd> • [官网链接](https://github.com/docmost/docmost)
+<kbd>0.98.1-cf.beta.1</kbd> • [官网链接](https://github.com/docmost/docmost)
 
 </td>
 <td width="33%" align="center">
@@ -1034,7 +1034,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-22</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-23</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1772,7 +1772,19 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🐳 轻量化 docker 可视化管理面板
 
-<kbd>1.11.2</kbd> • [官网链接](https://dpanel.cc/)
+<kbd>1.11.3</kbd> • [官网链接](https://dpanel.cc/)
+
+</td>
+<td width="33%" align="center">
+
+<a href="./apps/multica/README.md">
+<img src="./apps/multica/logo.png" width="60" height="60" alt="Multica">
+<br><b>Multica</b>
+</a>
+
+🤖 把 issue 指派给 AI Agent 的自托管协作工作台
+
+<kbd>0.12.1</kbd> • [官网链接](https://github.com/multica-ai/multica)
 
 </td>
 </tr>
