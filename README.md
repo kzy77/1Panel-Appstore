@@ -142,7 +142,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 强大的AI提示词优化工具，支持多种主流大语言模型
 
-<kbd>2.16.2</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
+<kbd>2.17.0-beta.4</kbd> • [官网链接](https://github.com/arch3rPro/Prompt-Optimizer)
 
 </td>
 </tr>
@@ -282,7 +282,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔮 强大的AI应用构建平台，可视化设计AI驱动的工作流和代理
 
-<kbd>1.13.3</kbd> • [官网链接](https://langflow.org/)
+<kbd>1.13.4</kbd> • [官网链接](https://langflow.org/)
 
 </td>
 <td width="33%" align="center">
@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.110.2</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.110.3</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -306,7 +306,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔄 n8n汉化版，具有原生AI能力的Fair-code工作流自动化平台
 
-<kbd>3.3.0</kbd> • [官网链接](https://n8n.io/)
+<kbd>3.4.0</kbd> • [官网链接](https://n8n.io/)
 
 </td>
 </tr>
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.4728</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.4775</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -422,7 +422,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🍥 AI API 网关平台，支持订阅配额分发、API Key 管理、计费和负载均衡
 
-<kbd>0.2.24</kbd> • [官网链接](https://sub2api.org)
+<kbd>0.2.25</kbd> • [官网链接](https://sub2api.org)
 
 </td>
 <td width="33%" align="center">
@@ -528,7 +528,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🤖 AI Agent工作空间，支持多LLM提供商和MCP集成
 
-<kbd>0.16.0</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
+<kbd>0.16.1</kbd> • [官网链接](https://github.com/lukilabs/craft-agents-oss)
 
 </td>
 </tr>
@@ -639,7 +639,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔍 通过 SearXNG 为 AI 助手提供私有网络搜索的 MCP 服务器
 
-<kbd>2.11.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
+<kbd>2.12.0</kbd> • [官网链接](https://github.com/ihor-sokoliuk/mcp-searxng)
 
 </td>
 <td width="33%" align="center">
@@ -651,7 +651,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 📚 腾讯开源的 LLM 知识平台，支持 RAG 问答、智能体与知识图谱
 
-<kbd>0.9.0</kbd> • [官网链接](https://github.com/Tencent/WeKnora)
+<kbd>0.9.1</kbd> • [官网链接](https://github.com/Tencent/WeKnora)
 
 </td>
 </tr>
@@ -668,7 +668,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🧠 火山引擎开源的自进化 AI Agent 上下文数据库，统一记忆、知识 RAG 与技能
 
-<kbd>0.5.5</kbd> • [官网链接](https://github.com/volcengine/OpenViking)
+<kbd>0.5.6</kbd> • [官网链接](https://github.com/volcengine/OpenViking)
 
 </td>
 <td width="33%" align="center">
@@ -1034,7 +1034,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-23</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-24</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1399,7 +1399,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.34.3</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.34.4</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
