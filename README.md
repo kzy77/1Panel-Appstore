@@ -294,7 +294,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔧 使用OpenAI格式统一调用所有LLM API，支持多种云服务商
 
-<kbd>1.110.3</kbd> • [官网链接](https://github.com/BerriAI/litellm)
+<kbd>1.111.0</kbd> • [官网链接](https://github.com/BerriAI/litellm)
 
 </td>
 <td width="33%" align="center">
@@ -364,7 +364,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 多 Agent 统一 AI 网关，任意模型给任意 AI 编程工具，支持复用订阅账号
 
-<kbd>0.1.4775</kbd> • [官网链接](https://usemagpie.ai)
+<kbd>0.1.4819</kbd> • [官网链接](https://usemagpie.ai)
 
 </td>
 </tr>
@@ -586,7 +586,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🔌 MCP 服务器统一管理中心
 
-<kbd>1.3.0</kbd> • [官网链接](https://docs.mcphub.app)
+<kbd>1.3.1</kbd> • [官网链接](https://docs.mcphub.app)
 
 </td>
 <td width="33%" align="center">
@@ -826,7 +826,7 @@ docker run -d --name=nginx -p 80:80 nginx:latest
 
 🚀 免费的GPT-4和其他大语言模型API接口
 
-<kbd>8.9.3</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
+<kbd>8.9.4</kbd> • [官网链接](https://github.com/xtekky/gpt4free)
 
 </td>
 <td width="33%" align="center">
@@ -1034,7 +1034,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🧡 万物皆可 RSS，开源自托管 RSS 内容聚合器，内置 Redis 缓存
 
-<kbd>chromium-bundled-2026-11-24</kbd> • [官网链接](https://docs.rsshub.app/)
+<kbd>chromium-bundled-2026-11-25</kbd> • [官网链接](https://docs.rsshub.app/)
 
 </td>
 <td width="33%" align="center">
@@ -1399,7 +1399,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 📊 开源 all-in-one 数据洞察中心，集成网站分析、服务监控、服务器状态监控
 
-<kbd>1.34.4</kbd> • [官网链接](https://tianji.msgbyte.com/)
+<kbd>1.34.5</kbd> • [官网链接](https://tianji.msgbyte.com/)
 
 </td>
 <td width="33%" align="center">
@@ -1784,7 +1784,7 @@ AI驱动的开源代码知识库与文档协作平台，支持多模型、多数
 
 🤖 把 issue 指派给 AI Agent 的自托管协作工作台
 
-<kbd>0.12.1</kbd> • [官网链接](https://github.com/multica-ai/multica)
+<kbd>0.13.0</kbd> • [官网链接](https://github.com/multica-ai/multica)
 
 </td>
 </tr>
